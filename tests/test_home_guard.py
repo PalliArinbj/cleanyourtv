@@ -6,7 +6,8 @@ testing is the one no TV reproduces on demand, so tools/tv.py is replaced by a f
 queries from a JSON file: the real disable script runs, only the ADB transport is simulated.
 
 Run from the repository root: python3 -m unittest discover -s tests -v
-The PowerShell cases need `pwsh` on PATH and skip without it; CI has no PowerShell.
+The PowerShell cases need `pwsh` on PATH and skip without it. tests/test_powershell_scripts.py runs
+disable.ps1 under Windows PowerShell 5.1, the shell README sends Windows users to (CI's windows job).
 """
 import json
 import os

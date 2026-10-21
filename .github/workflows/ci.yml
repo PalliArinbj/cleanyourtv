@@ -26,6 +26,17 @@ jobs:
           CLEANYOURTV_STRICT: ${{ github.event_name == 'push' && '1' || '' }}
         run: python3 -m unittest discover -s tests -v
 
+  windows-powershell:
+    name: Windows PowerShell scripts
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: The .ps1 scripts under Windows PowerShell 5.1, against a simulated TV
+        run: python -m unittest discover -s tests -p test_powershell_scripts.py -v
+
   launcher:
     name: Launcher build and unit tests
     runs-on: ubuntu-latest
