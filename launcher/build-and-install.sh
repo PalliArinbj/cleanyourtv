@@ -32,15 +32,19 @@ if [ -z "${JAVA_HOME:-}" ]; then
     case "$("$JH/bin/java" -version 2>&1 || true)" in *'version "17.'*) ;; *) JH="" ;; esac
   fi
   if [ -z "$JH" ] && [ -d /opt/homebrew/opt/openjdk@17 ]; then JH=/opt/homebrew/opt/openjdk@17; fi
-  if [ -z "$JH" ]; then JH="$(java -XshowSettings:properties -version 2>&1 | awk '/java.home/ {print $3}')"; fi
+  # The whole value after "java.home = ": on Windows it has spaces (C:\Program Files\Android\...\jbr).
+  if [ -z "$JH" ]; then JH="$(java -XshowSettings:properties -version 2>&1 | sed -n 's/^[[:space:]]*java\.home = //p')"; fi
   JAVA_HOME="$JH"
 fi
 export JAVA_HOME
-# Android Studio's default SDK location on macOS, then on Linux, then Homebrew's command-line tools.
-export ANDROID_HOME="${ANDROID_HOME:-$(for d in ~/Library/Android/sdk ~/Android/Sdk; do [ -d "$d" ] && echo "$d" && break; done)}"
+# Android Studio's default SDK location on macOS, then on Linux, then on Windows (Git Bash), then Homebrew's
+# command-line tools.
+export ANDROID_HOME="${ANDROID_HOME:-$(for d in ~/Library/Android/sdk ~/Android/Sdk "${LOCALAPPDATA:-}/Android/Sdk"; do [ -d "$d" ] && echo "$d" && break; done)}"
 export ANDROID_HOME="${ANDROID_HOME:-/opt/homebrew/share/android-commandlinetools}"
 export PATH="$JAVA_HOME/bin:$PATH"
-[ -f local.properties ] || echo "sdk.dir=$ANDROID_HOME" > local.properties
+# A backslash is an escape in a .properties file, so a Windows path (C:\Users\...) is written with each one
+# doubled, as Android Studio writes it; otherwise Gradle reads C:Users... and cannot find the SDK.
+[ -f local.properties ] || printf 'sdk.dir=%s\n' "$(printf '%s' "$ANDROID_HOME" | sed 's/\\/\\\\/g')" > local.properties
 ./gradlew assembleRelease -q --console=plain
 # Which app owns Home differs by build (com.google.android.tvlauncher on Android TV,
 # com.google.android.apps.tv.launcherx on newer Google TV), so ask the TV instead of guessing.

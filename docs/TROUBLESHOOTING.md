@@ -46,7 +46,9 @@ Things that bit us or contributors, so they don't bite you. Commands use `tools/
   exists. Every attempt with an unaccepted key queues one more prompt on the TV, so dismiss them all
   (Back) before testing with key presses.
 - **Git Bash rewrites paths** like `/data/local/tmp` into Windows paths. The scripts set
-  `MSYS_NO_PATHCONV=1` for you. Set `JAVA_HOME` and `ANDROID_HOME` before building there.
+  `MSYS_NO_PATHCONV=1` for you. To build there, `launcher/build-and-install.sh` finds Android Studio's
+  SDK under `%LOCALAPPDATA%\Android\Sdk` and the `java` on PATH; set `JAVA_HOME` and `ANDROID_HOME` when
+  yours are elsewhere. Windows paths with backslashes are fine: `local.properties` gets them escaped.
 
 ## Working on the TV
 
