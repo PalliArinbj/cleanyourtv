@@ -402,6 +402,67 @@ class RecoveryRecordTest(RecordCase):
                     self.assertEqual(path.read_bytes(), before, "the file is left for inspection")
 
 
+class DryRunTest(RecordCase):
+    """disable.sh --dry-run: every check a real run makes, the record's included, and nothing written or sent."""
+
+    def dry_run(self, host="192.168.1.50"):
+        return self.run_script("disable.sh", "--dry-run", str(self.list_path), host=host)
+
+    def test_a_dry_run_records_nothing_and_sends_nothing(self):
+        self.tv()
+        result = self.dry_run()
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIsNone(self.record())
+        self.assertEqual(self.sent(), [])
+        self.assertIn("dry run: would record 3 listed packages", result.stdout)
+        self.assertIn("3 package(s) would be disabled", result.stdout)
+
+    def test_a_dry_run_reports_names_the_record_would_gain(self):
+        self.tv()
+        self.assertEqual(self.run_script("disable.sh", str(self.list_path)).returncode, 0)
+        first = self.record()
+        self.write_list(["com.example.enabled", "com.example.already_off", "com.example.absent",
+                         "com.example.added_later"])
+        self.tv(installed=["com.example.enabled", "com.example.already_off", "com.example.added_later",
+                           "com.google.android.tvlauncher"])
+        result = self.dry_run()
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("would add 1 names", result.stdout)
+        self.assertIn("com.example.added_later", result.stdout)
+        self.assertEqual(self.record(), first, "the record is left exactly as it was")
+        self.assertEqual(self.sent(), [])
+
+    def test_a_dry_run_stops_where_a_real_run_would(self):
+        # An unusable record stops a real run before the TV is touched; the dry run says so too.
+        self.tv()
+        self.assertEqual(self.run_script("disable.sh", str(self.list_path)).returncode, 0)
+        path = next((self.home / ".cleanyourtv").glob("recovery-*.json"))
+        path.write_text("{not json")
+        self.tv()
+        result = self.dry_run()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("not a usable recovery record", result.stderr)
+        self.assertEqual(path.read_text(), "{not json")
+
+    def test_a_dry_run_at_a_new_address_names_the_old_record(self):
+        self.tv()
+        self.assertEqual(self.run_script("disable.sh", str(self.list_path)).returncode, 0)
+        self.tv(disabled=["com.example.enabled", "com.example.already_off"])
+        result = self.dry_run(host="192.168.1.77")
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("another address", result.stderr)
+        self.assertEqual(self.sent(), [])
+
+    def test_a_list_path_with_a_space_survives_the_option(self):
+        spaced = self.base / "my lists" / "tv.txt"
+        spaced.parent.mkdir()
+        spaced.write_text("# My TV\ncom.example.enabled\n")
+        self.tv()
+        result = self.run_script("disable.sh", "--dry-run", str(spaced))
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("1 package(s) would be disabled", result.stdout)
+
+
 class MovedTvTest(RecordCase):
     """The record is found by the TV's address, and DHCP can give the same TV a new one (#239 follow-up)."""
 

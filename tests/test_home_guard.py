@@ -140,14 +140,15 @@ class HomeGuardTest(unittest.TestCase):
         state.update(overrides)
         self.state_path.write_text(json.dumps(state))
 
-    def disable(self, entry, extra_env=None, list_path=None):
+    def disable(self, entry, extra_env=None, list_path=None, dry_run=False):
         # USERPROFILE as well: Python on Windows finds the home folder (and so the recovery record) there.
         env = dict(os.environ, TV_HOST="192.168.1.50", HOME=str(self.home), USERPROFILE=str(self.home),
                    FAKE_TV_STATE=str(self.state_path), **(extra_env or {}))
         if entry == "sh":
-            argv = ["bash", str(self.tools / "disable.sh"), str(list_path or self.list_path)]
+            argv = ["bash", str(self.tools / "disable.sh"), *(["--dry-run"] if dry_run else []),
+                    str(list_path or self.list_path)]
         else:
-            argv = [PWSH, "-NoProfile", "-File", str(self.tools / "disable.ps1"),
+            argv = [PWSH, "-NoProfile", "-File", str(self.tools / "disable.ps1"), *(["-DryRun"] if dry_run else []),
                     "-TvHost", "192.168.1.50", str(list_path or self.list_path)]
         result = subprocess.run(argv, cwd=self.repo, env=env, capture_output=True, text=True,
                                 timeout=180)
@@ -244,6 +245,19 @@ class HomeGuardTest(unittest.TestCase):
                 self.assertEqual(sent, [], "nothing may reach the TV without the Home check")
                 self.assertIn("could not ask the TV which app owns Home", self.output(result))
                 self.assertFalse((self.home / ".cleanyourtv").exists(), "no record of a run that did not start")
+
+    def test_a_dry_run_runs_the_guard_and_changes_nothing(self):
+        for entry in self.entries():
+            with self.subTest(entry=entry):
+                self.tv()
+                result, sent = self.disable(entry, dry_run=True)
+                self.assertEqual(result.returncode, 0, self.output(result))
+                self.assertEqual(sent, [], "a dry run sends no batch")
+                self.assertFalse((self.home / ".cleanyourtv").exists(), "a dry run writes no record")
+                self.assertIn(f"Skipping {STOCK}", self.output(result))
+                plan = result.stdout.split("would be disabled:", 1)[1].split()
+                self.assertEqual(plan, ["com.example.before", "com.example.after"],
+                                 "the plan is the list after the guards")
 
     def test_force_disables_the_owner(self):
         for entry in self.entries():

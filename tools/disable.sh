@@ -3,8 +3,17 @@
 # Packages are disabled for user 0, never uninstalled. Undo with tools/restore.sh <same file>.
 #
 # Usage: TV_HOST=192.168.1.50 tools/disable.sh examples/xiaomi-mi-tv-4a/debloat.txt
+#        TV_HOST=192.168.1.50 tools/disable.sh --dry-run examples/xiaomi-mi-tv-4a/debloat.txt
+# --dry-run asks the TV the same questions and runs every guard below, then prints what would be disabled;
+# nothing is recorded or disabled.
 set -euo pipefail
-LIST="${1:?usage: disable.sh <debloat list>}"
+DRY_RUN=""
+ARGS=()
+for ARG in "$@"; do
+  case "$ARG" in --dry-run) DRY_RUN=1 ;; *) ARGS+=("$ARG") ;; esac
+done
+set -- ${ARGS[@]+"${ARGS[@]}"}
+LIST="${1:?usage: disable.sh [--dry-run] <debloat list>}"
 # Resolve the list against the caller's directory before moving into the repo. Git Bash's pwd says
 # /c/Users/..., which the Windows Python cannot open with MSYS_NO_PATHCONV=1 set; pwd -W gives
 # C:/Users/..., the same path (and so the same record) as the PowerShell scripts.
@@ -149,12 +158,20 @@ fi
 # The state undo needs goes to disk before the first command reaches the TV, and a failed save stops
 # here with the TV untouched: a record written afterwards would describe a TV that is already broken,
 # and a retry must not overwrite the one taken before the first change (#239).
-"$PY" -I tools/recovery.py --save "$LIST"
+# A dry run makes the same record checks (an unusable record, one under another address) without writing.
+if [ -n "$DRY_RUN" ]; then
+  "$PY" -I tools/recovery.py --dry-run "$LIST"
+  COUNT=$(printf '%s\n' "$PKGS" | grep -c . || true)
+  echo "Dry run: nothing was recorded or disabled. $COUNT package(s) would be disabled:"
+  if [ -n "$PKGS" ]; then printf '%s\n' "$PKGS" | sed 's/^/  /'; fi
+else
+  "$PY" -I tools/recovery.py --save "$LIST"
 
-{
-  [ -n "$PKGS" ] && printf '%s\n' "$PKGS" | sed 's/^/pm disable-user --user 0 /'
-  echo "pm list packages -d"
-} | "$PY" -I tools/tv.py --batch
+  {
+    [ -n "$PKGS" ] && printf '%s\n' "$PKGS" | sed 's/^/pm disable-user --user 0 /'
+    echo "pm list packages -d"
+  } | "$PY" -I tools/tv.py --batch
+fi
 
 if [ "$ADB_SECURE" = "0" ]; then
   echo "Warning: this TV reports ro.adb.secure=0, so network ADB on port 5555 accepts any device on" >&2

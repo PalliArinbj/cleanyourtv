@@ -2,6 +2,8 @@
 """The state a debloat list is about to change, so that undo means undo (#239).
 
     recovery.py --save <debloat list>                read the TV and write the record
+    recovery.py --dry-run <debloat list>             the checks --save makes and what it would do,
+                                                     without asking the TV or writing (disable.sh --dry-run)
     recovery.py --commands <list> [stock launcher]   print a batch for tools/tv.py --batch that puts
                                                      the recorded states back
 
@@ -188,7 +190,9 @@ def package_state(name, installed, disabled):
             else "enabled")
 
 
-def save(list_path, host):
+def save(list_path, host, dry_run=False):
+    """Write the record, or with dry_run make every check that could stop the save and say what it
+    would write, without asking the TV or touching the file."""
     path = record_path(list_path, host)
     if path.exists():
         record = load_record(path)
@@ -201,6 +205,9 @@ def save(list_path, host):
         print(f"keeping the recovery record from {record.get('created')}: {path}")
         if not added:
             print("nothing was recorded again: it holds the state from before the first run.")
+            return 0
+        if dry_run:
+            print(f"dry run: would add {len(added)} names the list gained since then: {', '.join(added)}")
             return 0
         dev = connect()
         try:
@@ -220,6 +227,10 @@ def save(list_path, host):
     others = other_records(list_path, host)
     if others and not os.environ.get("IGNORE_OTHER_RECORDS"):
         stop_for_other_records(others, host, path, "record this TV as it is now")
+    if dry_run:
+        print(f"dry run: would record {len(packages)} listed packages, Home and the animation scales "
+              f"before anything is disabled: {path}")
+        return 0
     dev = connect()
     try:
         installed, disabled = query_packages(dev)
@@ -328,8 +339,8 @@ def restore_commands(list_path, stock, host):
 def main():
     args = sys.argv[1:]
     host = os.environ.get("TV_HOST", "")
-    if len(args) == 2 and args[0] == "--save":
-        return save(args[1], host)
+    if len(args) == 2 and args[0] in ("--save", "--dry-run"):
+        return save(args[1], host, dry_run=args[0] == "--dry-run")
     if len(args) in (2, 3) and args[0] == "--commands":
         if not host:
             sys.stderr.write("Set TV_HOST to your TV's IP address, e.g. TV_HOST=192.168.1.50\n")
@@ -338,6 +349,7 @@ def main():
             print(command)
         return 0
     sys.stderr.write("usage: recovery.py --save <debloat list>\n"
+                     "       recovery.py --dry-run <debloat list>\n"
                      "       recovery.py --commands <debloat list> [stock launcher package]\n")
     return 2
 

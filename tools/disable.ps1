@@ -3,9 +3,13 @@
 # Undo with tools\restore.ps1 <same file>.
 #
 # Usage: tools\disable.ps1 -TvHost 192.168.1.50 examples\xiaomi-mi-tv-4a\debloat.txt
+#        tools\disable.ps1 -DryRun -TvHost 192.168.1.50 examples\xiaomi-mi-tv-4a\debloat.txt
+# -DryRun asks the TV the same questions and runs every guard below, then prints what would be disabled;
+# nothing is recorded or disabled (disable.sh --dry-run).
 param(
     [Parameter(Mandatory = $true, Position = 0)][string]$List,
-    [string]$TvHost = $env:TV_HOST
+    [string]$TvHost = $env:TV_HOST,
+    [switch]$DryRun
 )
 $ErrorActionPreference = 'Stop'
 # Pipe plain UTF-8 to native commands; the default here prepends a BOM that corrupts the first command.
@@ -104,12 +108,19 @@ if (-not $env:TVINPUT_ALLOW -and $pkgs.Count -gt 0) {
     }
 }
 # Same as disable.sh: the state undo needs is recorded before the first command reaches the TV, and
-# a failed save leaves the TV untouched (#239).
-& $py -I (Join-Path $repo 'tools\recovery.py') --save $List
-if ($LASTEXITCODE -ne 0) { throw 'no recovery record was written, so nothing was disabled' }
+# a failed save leaves the TV untouched (#239). A dry run makes the same record checks without writing.
+if ($DryRun) {
+    & $py -I (Join-Path $repo 'tools\recovery.py') --dry-run $List
+    if ($LASTEXITCODE -ne 0) { throw 'the recovery record check stops here (see above), and a real run would stop here too' }
+    Write-Host "Dry run: nothing was recorded or disabled. $(@($pkgs).Count) package(s) would be disabled:"
+    $pkgs | ForEach-Object { Write-Host "  $_" }
+} else {
+    & $py -I (Join-Path $repo 'tools\recovery.py') --save $List
+    if ($LASTEXITCODE -ne 0) { throw 'no recovery record was written, so nothing was disabled' }
 
-$cmds = @($pkgs | ForEach-Object { "pm disable-user --user 0 $_" }) + 'pm list packages -d'
-$cmds | & $py -I (Join-Path $repo 'tools\tv.py') --batch
+    $cmds = @($pkgs | ForEach-Object { "pm disable-user --user 0 $_" }) + 'pm list packages -d'
+    $cmds | & $py -I (Join-Path $repo 'tools\tv.py') --batch
+}
 
 if ($adbSecure -eq '0') {
     Write-Warning "This TV reports ro.adb.secure=0, so network ADB on port 5555 accepts any device on your network without the `"Allow`" prompt. When you are done, turn USB debugging and Network/ADB debugging off on the TV and reboot it (README: `"Isn't ADB access a security hole?`")."

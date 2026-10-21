@@ -355,7 +355,7 @@ class DisableScriptTest(PowerShellCase):
         self.list_path = self.base / "debloat.txt"
         self.list_path.write_text(f"# My TV\ncom.example.before\n{STOCK}\ncom.example.after\n")
 
-    def disable(self, extra_env=None, host="192.168.1.50", **overrides):
+    def disable(self, extra_env=None, host="192.168.1.50", dry_run=False, **overrides):
         state = {
             "installed": ["com.example.before", "com.example.after", STOCK],
             "disabled": [],
@@ -367,8 +367,8 @@ class DisableScriptTest(PowerShellCase):
         }
         state.update(overrides)
         self.state_path.write_text(json.dumps(state))
-        result, state = self.powershell(self.tools / "disable.ps1", "-TvHost", host,
-                                        str(self.list_path), env=extra_env)
+        result, state = self.powershell(self.tools / "disable.ps1", *(["-DryRun"] if dry_run else []),
+                                        "-TvHost", host, str(self.list_path), env=extra_env)
         return result, state["commands"]
 
     def records(self):
@@ -396,6 +396,24 @@ class DisableScriptTest(PowerShellCase):
         self.assertEqual(sent, [], "nothing may reach the TV without the Home check")
         self.assertIn("could not ask the TV which app owns Home", " ".join(self.output(result).split()))
         self.assertEqual(self.records(), [], "no record of a run that did not start")
+
+    def test_a_dry_run_runs_the_guards_and_changes_nothing(self):
+        result, sent = self.disable(dry_run=True)
+        self.assertEqual(result.returncode, 0, self.output(result))
+        self.assertEqual(sent, [], "a dry run sends no batch")
+        self.assertEqual(self.records(), [], "a dry run writes no record")
+        self.assertIn(f"Skipping {STOCK}", self.output(result))
+        plan = result.stdout.split("would be disabled:", 1)[1].split()
+        self.assertEqual(plan, ["com.example.before", "com.example.after"])
+
+    def test_a_dry_run_stops_where_a_real_run_would(self):
+        first, _ = self.disable()
+        self.assertEqual(first.returncode, 0, self.output(first))
+        result, sent = self.disable(host="192.168.1.77", dry_run=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(sent, [])
+        self.assertIn("another address", self.output(result))
+        self.assertEqual(len(self.records()), 1)
 
     def test_a_tv_at_a_new_address_is_not_recorded_again(self):
         # The same TV after a DHCP change: re-applying the list must not save the cleaned-up TV as the

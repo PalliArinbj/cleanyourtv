@@ -317,6 +317,7 @@ export TV_HOST=192.168.1.50                                   # your TV's IP add
 
 tools/venv/bin/python -I tools/tv.py --probe                 # model, Android version, firmware
 tools/venv/bin/python -I tools/tv.py 'pm list packages'      # one shell command on the TV
+tools/disable.sh --dry-run examples/xiaomi-mi-tv-4a/debloat.txt  # what it would disable; changes nothing
 tools/disable.sh examples/xiaomi-mi-tv-4a/debloat.txt        # apply a debloat list
 tools/restore.sh examples/xiaomi-mi-tv-4a/debloat.txt        # undo it, stock launcher back
 tools/venv/bin/python -I tools/check.py examples/xiaomi-mi-tv-4a/debloat.txt   # what a firmware update undid
@@ -329,7 +330,7 @@ tools/theme.sh themes/aurora                                 # push a theme; --r
 | [`tools/tv.py`](tools/tv.py) | Pure-Python ADB client: shell, batch, push, pull. Works where the stock `adb` binary is blocked. |
 | [`tools/b64push.py`](tools/b64push.py) | Uploads large files such as APKs in base64 chunks and verifies the checksum. |
 | [`tools/relay.py`](tools/relay.py) | Forwards a local port to the TV's ADB port, for assistants whose sandbox can't reach your network. Listens on this computer only. [Guide](tools/relay.md). |
-| [`tools/disable.sh`](tools/disable.sh), [`restore.sh`](tools/restore.sh) | Apply or undo a debloat list, the undo from the state recorded before the change. |
+| [`tools/disable.sh`](tools/disable.sh), [`restore.sh`](tools/restore.sh) | Apply or undo a debloat list, the undo from the state recorded before the change. `--dry-run` runs every check and prints what would be disabled, without changing anything. |
 | [`tools/recovery.py`](tools/recovery.py) | Writes the record `disable.sh` needs to undo itself, and prints the restore batch. |
 | [`tools/check.py`](tools/check.py) | Compares the TV with the list that was applied, for what a firmware update undid; `--fix` puts it back. |
 | [`tools/theme.sh`](tools/theme.sh) | Push a folder from [`themes/`](themes/) to the launcher and restart Home. |
@@ -348,8 +349,11 @@ else is needed:
 ```powershell
 python -m venv tools\venv; tools\venv\Scripts\python.exe -m pip install -r tools\requirements.txt
 powershell -ExecutionPolicy Bypass -File launcher\build-and-install.ps1 -TvHost 192.168.1.50
+powershell -ExecutionPolicy Bypass -File tools\disable.ps1 -DryRun -TvHost 192.168.1.50 examples\xiaomi-mi-tv-4a\debloat.txt
 powershell -ExecutionPolicy Bypass -File tools\disable.ps1 -TvHost 192.168.1.50 examples\xiaomi-mi-tv-4a\debloat.txt
 ```
+
+`-DryRun` is the PowerShell spelling of `disable.sh --dry-run`.
 
 </details>
 
