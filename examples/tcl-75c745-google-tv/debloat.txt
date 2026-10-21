@@ -1,0 +1,91 @@
+# TCL 75C745 (device G08, model "Smart TV Pro", product G08_4K_GB, MediaTek tcl9618 / mt5896)
+# Google TV, Android 14 (SDK 34), firmware UTT2.250416.001 AU02 - the same build as examples/tcl-q7c-google-tv,
+# which this list starts from (every one of its entries is installed here). On Ethernet, no saved Wi-Fi.
+# A PS5 on HDMI 1 (VRR and the TCL game bar in use) and a soundbar on HDMI 4 (eARC); no antenna, no casting,
+# no Google Assistant.
+#
+# Applied on 21 October 2026 in the five batches below, one file growing a batch at a time, so the recovery record
+# added each new name with its state before it was disabled; a dry run (disable.sh --dry-run) came before each.
+# Checked after every batch: Home, the PS5 picture and game bar on HDMI 1, soundbar sound from an app and from the
+# PS5, the remote's volume and Input keys; after batch 4 also Settings, picture, sound and About. After the
+# launcher and a reboot: none of the 41 came back, Home is the new launcher, and gear, Netflix and YouTube work.
+# Lived with for one evening so far.
+#
+# Apply:   FORCE_SETUPWRAITH=1 TV_HOST=<tv ip> tools/disable.sh examples/tcl-75c745-google-tv/debloat.txt
+#          FORCE_SETUPWRAITH=1 only because this set is on Ethernet with no saved Wi-Fi (README).
+# Undo:    TV_HOST=<tv ip> tools/restore.sh examples/tcl-75c745-google-tv/debloat.txt com.google.android.apps.tv.launcherx
+# Everything is DISABLED, not uninstalled.
+#
+# Stock launcher: com.google.android.apps.tv.launcherx. HOME also answers: setupwraith's RecoveryActivity
+# (priority 1) and an installed third-party launcher (Projectivy, priority 0). The Home guard counts Projectivy as
+# a fallback, but setupwraith outranks it, so launcherx must not go before setupwraith is off and the new
+# launcher is Home.
+# Left enabled on purpose: com.tcl.tv, com.tcl.tvinput (HDMI and the tuner), com.tcl.suspension (input menu),
+# com.tcl.gamebar (game mode / VRR for the PS5), com.tcl.autopair (remote pairing),
+# com.tcl.inputmethod.international (the only keyboard), com.tcl.systemserver, com.tcl.providers.config,
+# com.tcl.initsetup, com.tcl.useragreement, com.tcl.globalkeyoverlay, com.tcl.systemui.plugin, com.tcl.dashboard,
+# com.tcl.partnercustomizer (also holds the T-key activities), com.google.android.tv.remote.service,
+# Play Store and Play Services, all com.mediatek.* and com.dolby.* except AirPlay, com.tcl.showmode.
+# Launcher: config.json next to this list is the theme (tools/theme.sh examples/tcl-75c745-google-tv), built with
+# HOME_KEY_SERVICE=1 and settings_key_scancodes 561 (the IR remote's gear) in config.xml; TCL's boot manager needs
+# `appops set com.gathin.tvhome AUTO_START allow; appops write-settings` (the op is AUTO_START on this firmware).
+# The dock and tile order were then arranged on the TV (Settings pill, hold OK: Reorder apps / Edit dock). That
+# order is saved under the theme's dock_apps, so dock_apps stays as first pushed: changing it would make the next
+# theme push discard the arrangement.
+# Checked on the TV: com.tcl.ttvs holds Samba TV ACR, TCL BI analytics, Alexa, T-Cast AND the firmware updater
+# (versionUpdateApp.core.service.SystemUpdateService): off by choice, so re-enable it to update.
+# com.tcl.UpdatePeripheral only updates TCL soundbars and cameras.
+
+# Batch 1: TCL promos, push messages, content rows, store demo, telemetry and partner installs
+com.tcl.messagebox                     # TCL pushed messages and promos
+com.tcl.esticker                       # retail-demo sticker
+com.tcl.exhibit                        # store demo
+com.tcl.tv.tclhome_passive             # TCL content pushed to the home screen at boot
+com.tcl.waterfall.overseas             # TCL Channel / content waterfall
+com.tcl.channelplus                    # TCL Live FAST channels (a Live TV input)
+com.tcl.usercenter                     # TCL account
+com.tcl.guard                          # TCL "app manager" / cleaner, device-use service at boot
+com.tcl.logkit                         # log capture
+com.tcl.interactive                    # TCL TIAS background service
+com.google.android.feedback
+com.android.tv.feedbackconsent
+com.android.adservices.api             # Privacy Sandbox
+com.android.ondevicepersonalization.services
+com.android.federatedcompute.services
+android.autoinstalls.config.google.gtvpai   # silently installs partner apps
+com.google.android.partnersetup        # partner attribution (RLZ)
+
+# Batch 2: extras nobody asked for
+com.tcl.ocean.instructions             # on-TV manual
+com.tcl.repairguide                    # self-diagnosis
+com.android.printspooler
+com.google.android.syncadapters.calendar
+com.google.android.onetimeinitializer
+com.tcl.hearaid                        # hearing test, TCL wireless speakers
+com.tcl.t_solo                         # Bluetooth "listen alone"
+com.tcl.UpdatePeripheral               # TCL soundbar and camera firmware updater
+com.tcl.smartalexa                     # Alexa
+com.tcl.ui_mediaCenter                 # USB / DLNA media player, off by choice
+com.tcl.gallery                        # USB photos and TCL's screensavers, off by choice
+
+# Batch 3: voice and casting, off by choice. With katniss off, the remote's mic button brings up TCL's "Voice
+# control is not available, enable it after remote control is paired" with Pair and Cancel. The remote
+# (BT_RC833_U1) was bonded but its Bluetooth link not connected at the time, so its buttons arrived over infrared,
+# which does everything but the mic; Cancel closes the prompt. Home, HDMI, eARC and the Input key unaffected.
+com.google.android.katniss             # Google Assistant / voice search
+com.tcl.airplay2
+com.mediatek.AirplayAPK
+com.mediatek.airplaydaemon
+com.tcl.miracast
+com.tcl.magiconnectfree                # T-Cast / MagiConnect
+com.google.android.apps.mediashell     # Chromecast receiver
+
+# Batch 4: streaming preloads, the tracker/updater, and the setup wizard (before the launcher handover)
+com.google.android.videos              # Google TV / Play Movies storefront
+com.google.android.play.games
+com.tcl.ttvs                           # Samba TV ACR, TCL analytics, Alexa, T-Cast and the firmware updater
+com.google.android.tungsten.setupwraith   # second HOME claimant; no saved Wi-Fi here (FORCE_SETUPWRAITH=1)
+
+# Batch 5: once the new launcher is Home and the screensaver is its Clock
+com.google.android.apps.tv.launcherx   # build-and-install.sh disables it; listed so restore brings it back
+com.google.android.apps.tv.dreamx      # ambient screensaver with promos (screensaver switched first)
