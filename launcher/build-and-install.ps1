@@ -19,6 +19,22 @@ $OutputEncoding = New-Object System.Text.UTF8Encoding $false
 if (-not $TvHost) { throw 'pass -TvHost <tv ip> or set $env:TV_HOST' }
 $env:TV_HOST = $TvHost
 Set-Location $PSScriptRoot
+$py = '..\tools\venv\Scripts\python.exe'
+if (-not (Test-Path $py)) { throw 'run: python -m venv tools\venv; tools\venv\Scripts\python.exe -m pip install -r tools\requirements.txt' }
+$homeQuery = 'cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME'
+
+# Below minSdk, `pm install` refuses the APK with INSTALL_FAILED_OLDER_SDK, and only after the build and the
+# upload (#576). Ask the TV first, as build-and-install.sh does; the number comes from the build file. A TV
+# that does not answer, or a build file without the line, skips the check rather than blocking the install.
+$minSdk = Select-String -Path app\build.gradle -Pattern '^\s*minSdk\s+(\d{1,3})\s*$' -ErrorAction SilentlyContinue |
+    Select-Object -First 1 | ForEach-Object { [int]$_.Matches[0].Groups[1].Value }
+# Windows PowerShell turns redirected stderr into an error that 'Stop' would throw.
+$ErrorActionPreference = 'Continue'
+$tvSdk = ((& $py -I ..\tools\tv.py 'getprop ro.build.version.sdk' 2>$null) -join '') -replace '[^0-9]', ''
+$ErrorActionPreference = 'Stop'
+if ($minSdk -and $tvSdk -and [int]$tvSdk -lt $minSdk) {
+    throw "this TV runs SDK $tvSdk and the launcher is built with minSdk $minSdk (app\build.gradle), so pm install would answer INSTALL_FAILED_OLDER_SDK. Nothing was built, pushed or disabled. The debloat half of the repo still applies to that set, from its own home screen; the launcher half would need your own build with a lower minSdk (docs/TROUBLESHOOTING.md)."
+}
 
 if (-not $env:JAVA_HOME -or -not (Test-Path "$env:JAVA_HOME\bin\java.exe")) {
     $jbr = Get-ChildItem 'C:\Program Files\Android' -Directory -ErrorAction SilentlyContinue |
@@ -34,12 +50,11 @@ if (-not (Test-Path local.properties)) {
 .\gradlew.bat assembleRelease -q --console=plain
 if ($LASTEXITCODE -ne 0) { throw 'Gradle build failed' }
 
-$py = '..\tools\venv\Scripts\python.exe'
 # Which app owns Home differs by build; ask the TV, but only accept a launcher we recognise (the answer
 # can also be Android's chooser "android", the setup wizard, or another third-party launcher).
 $knownStock = @('com.google.android.tvlauncher', 'com.google.android.apps.tv.launcherx', 'com.google.android.leanbacklauncher', 'com.mitv.tvhome')
 if (-not $StockLauncher) {
-    $homePkg = & $py -I ..\tools\tv.py 'cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME' | Select-Object -Last 1
+    $homePkg = & $py -I ..\tools\tv.py $homeQuery | Select-Object -Last 1
     if ($LASTEXITCODE -ne 0 -or -not $homePkg) { throw 'could not ask the TV which launcher owns Home; check -TvHost and the debugging prompt, or pass -StockLauncher <package>' }
     $homePkg = "$homePkg".Trim().Split('/')[0]
     if ($knownStock -contains $homePkg) { $StockLauncher = $homePkg }
@@ -62,6 +77,12 @@ $apk = 'app\build\outputs\apk\release\app-release.apk'
 if ($LASTEXITCODE -ne 0) { throw 'APK upload failed' }
 $out = & $py -I ..\tools\tv.py 'pm install -r /data/local/tmp/tvhome.apk; rm -f /data/local/tmp/tvhome.apk'
 Write-Host $out
+if ("$out" -match 'INSTALL_FAILED_OLDER_SDK') {
+    # The check above missed it (a TV whose getprop did not answer): name the real cause instead of leaving
+    # the raw Failure line to be read as an ADB problem.
+    $floor = if ($minSdk) { $minSdk } else { 'in app\build.gradle' }
+    throw "pm install refused the APK as too new for this set (INSTALL_FAILED_OLDER_SDK): the TV runs an older SDK than the launcher's minSdk $floor. The stock launcher was left untouched. Read both numbers and see docs/TROUBLESHOOTING.md."
+}
 if ("$out" -notmatch 'Success') { throw 'pm install failed; the stock launcher was left untouched' }
 # Start the launcher on its own, before Home is touched at all (see build-and-install.sh, #239): in the
 # batch a failed start only prints an Error line and the stock launcher would be disabled anyway. The home
@@ -75,16 +96,59 @@ if ($start -notmatch 'Status: ok' -or $start -match '(?m)^Error') { throw "the n
     $disableStock,
     'cmd package set-home-activity --user 0 com.gathin.tvhome/.MainActivity'
 ) | & $py -I ..\tools\tv.py --batch
+
+# Home's owner, or an empty string when the TV cannot be reached. Windows PowerShell stops the script on a
+# method call on $null, so an unanswered query must never reach .Trim(): it would end the script right where
+# the rollback below is needed.
+function Get-Home {
+    $ErrorActionPreference = 'Continue'
+    $answer = @(& $py -I ..\tools\tv.py $homeQuery 2>$null) | Where-Object { "$_".Trim() } | Select-Object -Last 1
+    if ($LASTEXITCODE -ne 0) { return '' }
+    return "$answer".Trim()
+}
+
+# Put the stock launcher back and check that it took (rollback_home in build-and-install.sh). A TV whose new
+# Home does not start can only be rescued over ADB, so the commands go into a file in the home folder as well:
+# when it is the connection that broke, this window may never get them back.
+function Undo-Handover {
+    if ($StockLauncher -eq 'none') {
+        Write-Host 'ERROR: Home is not the new launcher, and no stock launcher was disabled; nothing to roll back.'
+        return $false
+    }
+    $ErrorActionPreference = 'Continue'
+    & $py -I ..\tools\tv.py "pm enable --user 0 $StockLauncher" 2>$null | Out-Null
+    # set-home-activity needs pkg/activity on Android 9, so resolve the stock component on the TV.
+    & $py -I ..\tools\tv.py "cmd package set-home-activity --user 0 `$(cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME $StockLauncher | tail -n 1)" 2>$null | Out-Null
+    $back = Get-Home
+    if ($back -like "$StockLauncher/*") {
+        Write-Host "$StockLauncher owns Home again."
+        return $true
+    }
+    $folder = if ($env:USERPROFILE) { $env:USERPROFILE } elseif ($env:HOME) { $env:HOME } else { (Get-Location).Path }
+    $rec = Join-Path $folder ('cleanyourtv-handover-' + ($TvHost -replace '[^A-Za-z0-9._-]', '_') + '.txt')
+    $lines = @(
+        "# cleanyourtv: the launcher handover on $TvHost did not finish. In PowerShell, from the repo root:",
+        "`$env:TV_HOST = '$TvHost'",
+        "tools\venv\Scripts\python.exe -I tools\tv.py 'pm enable --user 0 $StockLauncher'",
+        "tools\venv\Scripts\python.exe -I tools\tv.py 'cmd package set-home-activity --user 0 `$(cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME $StockLauncher | tail -n 1)'",
+        "# then check: tools\venv\Scripts\python.exe -I tools\tv.py '$homeQuery'"
+    )
+    try { [IO.File]::WriteAllLines($rec, [string[]]$lines) } catch { $rec = $null }
+    Write-Host "ERROR: recovery is incomplete; Home still resolves to '$(if ($back) { $back } else { 'nothing' })'."
+    if ($rec) { Write-Host "The commands that finish it are in $rec; the TV still needs ADB for them." }
+    else { Write-Host "Re-run once the TV answers: pm enable --user 0 $StockLauncher, then set its Home activity." }
+    return $false
+}
+
 # Order matters, see build-and-install.sh: start the new launcher, disable the stock one, set the
 # preference last, then check where Home ended up and put the stock launcher back if it is not ours.
-$homeNow = (& $py -I ..\tools\tv.py 'cmd package resolve-activity --brief -c android.intent.category.HOME -a android.intent.action.MAIN' | Select-Object -Last 1).Trim()
+$homeNow = Get-Home
 if ($homeNow -notlike 'com.gathin.tvhome/*') {
-    if ($StockLauncher -ne 'none') {
-        & $py -I ..\tools\tv.py "pm enable --user 0 $StockLauncher" | Out-Null
-        # set-home-activity needs pkg/activity on Android 9, so resolve the stock component on the TV.
-        & $py -I ..\tools\tv.py "cmd package set-home-activity --user 0 `$(cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME $StockLauncher | tail -n 1)" | Out-Null
-    }
-    throw "Home resolves to '$homeNow', not to the new launcher; $StockLauncher was re-enabled. On Google TV this usually means com.google.android.tungsten.setupwraith also claims Home: add it to your debloat list (see README, Troubleshooting), apply it, then run this script again."
+    if (-not $homeNow) { Write-Host 'ERROR: the TV stopped answering while Home was being switched, so the outcome is unknown.' }
+    else { Write-Host "ERROR: Home resolves to $homeNow, not to the new launcher." }
+    $null = Undo-Handover
+    if ($homeNow) { throw 'On Google TV this usually means com.google.android.tungsten.setupwraith also claims Home: add it to your debloat list (see README, Troubleshooting), apply the list, then run this script again.' }
+    throw 'the launcher handover did not finish; see above.'
 }
 Write-Host "Home now resolves to $homeNow"
 # Optional accessibility services, appended to enabled_accessibility_services without dropping others.

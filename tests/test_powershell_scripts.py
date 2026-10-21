@@ -283,6 +283,66 @@ class InstallScriptTest(PowerShellCase):
         self.assertTrue(homes, commands)
         self.assertLess(start, homes[0], "the home preference follows a launcher that came up")
 
+    def rescue_file(self):
+        files = list(self.home.glob("cleanyourtv-handover-*.txt"))
+        self.assertLessEqual(len(files), 1)
+        return files[0].read_text() if files else None
+
+    def test_lost_connection_reports_incomplete_recovery(self):
+        # The TV stops answering right after the stock launcher is disabled: the Home check gets no answer,
+        # which used to stop Windows PowerShell on .Trim() of nothing before the rollback ran.
+        result, state = self.install(drop_after_handover=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertNotIn("null-valued", self.output(result))
+        self.assertIn("stopped answering", self.output(result))
+        self.assertIn("recovery is incomplete", self.output(result))
+        self.assertTrue(any(f"pm enable --user 0 {STOCK}" in c for c in state["commands"]))
+        text = self.rescue_file()
+        self.assertIsNotNone(text, "an unreachable TV needs the recovery commands on disk")
+        self.assertIn(f"pm enable --user 0 {STOCK}", text or "")
+
+    def test_home_that_stays_on_another_launcher_is_rolled_back(self):
+        result, state = self.install(set_home_fails=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("owns Home again", self.output(result))
+        self.assertIn("setupwraith", self.output(result))
+        self.assertFalse(state["stock_disabled"])
+        self.assertIsNone(self.rescue_file())
+
+    def test_failed_rollback_is_not_reported_as_recovered(self):
+        result, state = self.install(set_home_fails=True, enable_fails=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertNotIn("owns Home again", self.output(result))
+        self.assertIn("recovery is incomplete", self.output(result))
+        self.assertTrue(any(f"pm enable --user 0 {STOCK}" in c for c in state["commands"]))
+        self.assertIsNotNone(self.rescue_file())
+
+    def test_a_tv_below_min_sdk_is_stopped_before_the_build(self):
+        result, state = self.install(sdk="25")
+        self.assertNotEqual(result.returncode, 0)
+        output = " ".join(self.output(result).split())   # PowerShell wraps a long error message
+        self.assertIn("SDK 25", output)
+        self.assertIn("minSdk 26", output)
+        self.assertIn("Nothing was built", output)
+        self.assertFalse(self.marker.exists(), "the APK must not be built for a set that refuses it")
+        self.assertEqual(state["commands"], ["getprop ro.build.version.sdk"],
+                         "the SDK probe is all that may reach the TV")
+
+    def test_an_unanswered_getprop_does_not_block_the_install(self):
+        result, _ = self.install(sdk="")
+        self.assertEqual(result.returncode, 0, self.output(result))
+        self.assertTrue(self.marker.exists())
+
+    def test_install_refused_for_the_sdk_names_the_cause(self):
+        result, state = self.install(
+            install_output="Failure [INSTALL_FAILED_OLDER_SDK: Failed parse during installPackageLI: "
+                           "requires newer sdk version]\n")
+        self.assertNotEqual(result.returncode, 0)
+        output = " ".join(self.output(result).split())
+        self.assertIn("minSdk 26", output)
+        self.assertIn("stock launcher was left untouched", output)
+        self.assertFalse(any("pm disable-user" in c for c in state["commands"]))
+
 
 class DisableScriptTest(PowerShellCase):
     def setUp(self):

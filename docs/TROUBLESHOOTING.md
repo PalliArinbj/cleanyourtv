@@ -108,9 +108,8 @@ Things that bit us or contributors, so they don't bite you. Commands use `tools/
   build at all ([#576](https://github.com/Gathin23/cleanyourtv/issues/576)). Read both numbers before
   changing anything: `tools/tv.py 'getprop ro.build.version.sdk'` and
   `grep minSdk launcher/app/build.gradle` (26, i.e. Android 8.0, at the time of writing).
-  `launcher/build-and-install.sh` now asks the TV first and stops with both numbers, so nothing is
-  built or pushed for a set that will refuse it; `build-and-install.ps1` only reports it after
-  `pm install`, which fails safely with the stock launcher untouched. Lowering `minSdk` is a source
+  `launcher/build-and-install.sh` and `build-and-install.ps1` now ask the TV first and stop with both
+  numbers, so nothing is built or pushed for a set that will refuse it. Lowering `minSdk` is a source
   change, not a setting, and it means maintaining your own copy: the launcher uses AndroidX and
   framework calls newer than API 25, so expect compile errors or a launcher that starts and then
   crashes. An APK produced by rebuilding the project elsewhere (an assistant, an online builder, a
