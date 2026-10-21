@@ -1,6 +1,7 @@
 package com.gathin.tvhome;
 
 import android.accessibilityservice.AccessibilityService;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.provider.Settings;
 import android.view.KeyEvent;
@@ -58,9 +59,14 @@ public class HomeKeyService extends AccessibilityService {
         // The stock launcher handled the remote's Settings button; with it disabled the button does nothing.
         if (isSettingsKey(event)) {
             if (event.getAction() == KeyEvent.ACTION_UP && !event.isCanceled()) {
+                // The same lookup as Home's Settings pill: China-market MIUI TV firmware has no standard
+                // Settings screen. This runs in the launcher's process, so a throw here would take Home down.
                 Intent open = settingsPanel ? new Intent(this, QuickSettingsActivity.class)
-                        : new Intent(Settings.ACTION_SETTINGS);
-                startActivity(open.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+                        : SystemIntents.settings(this, Settings.ACTION_SETTINGS);
+                try {
+                    startActivity(open.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+                } catch (ActivityNotFoundException ignored) {
+                }
             }
             return true;
         }
