@@ -134,8 +134,6 @@ def answer(command):
             sys.exit(1)
         return "".join(f"  {c if '/' in c else c + '/.MainActivity'}\n" for c in state["claims"])
     if command.startswith("cmd package resolve-activity"):
-        if state["home_fails"]:
-            sys.exit(1)
         return (state["home"] or "") + "\n"
     if command.startswith("settings get global "):
         return "null\n"
@@ -164,6 +162,10 @@ def main():
                 state["commands"].append(line)
         save()
         return 0
+    if state["home_fails"] and args[-1].startswith("cmd package resolve-activity"):
+        # The guard's own query is dropped while the connections after it work, as on a flaky link.
+        sys.stderr.write("adb: connection reset by peer\n")
+        return 1
     print(answer(args[-1]), end="")
     return 0
 
@@ -387,6 +389,13 @@ class DisableScriptTest(PowerShellCase):
                                     home=NEW_HOME, claims=["com.gathin.tvhome", STOCK])
         self.assertEqual(result.returncode, 0, self.output(result))
         self.assertIn(f"pm disable-user --user 0 {STOCK}", sent)
+
+    def test_a_tv_that_cannot_say_who_owns_home_stops_the_run(self):
+        result, sent = self.disable(home_fails=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(sent, [], "nothing may reach the TV without the Home check")
+        self.assertIn("could not ask the TV which app owns Home", " ".join(self.output(result).split()))
+        self.assertEqual(self.records(), [], "no record of a run that did not start")
 
 
 if __name__ == "__main__":

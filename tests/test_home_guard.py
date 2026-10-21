@@ -57,8 +57,6 @@ def answer(command):
             sys.exit(1)
         return "".join(f"  {c if '/' in c else c + '/.MainActivity'}\n" for c in state["claims"])
     if command.startswith("cmd package resolve-activity"):
-        if state["home_fails"]:
-            sys.exit(1)
         return (state["home"] or "") + "\n"
     if command.startswith("settings get global "):
         return "null\n"
@@ -87,6 +85,10 @@ def main():
                 state["commands"].append(line)
         save()
         return 0
+    if state["home_fails"] and args[-1].startswith("cmd package resolve-activity"):
+        # The guard's own query is dropped while the connections after it work, as on a flaky link.
+        sys.stderr.write("adb: connection reset by peer\n")
+        return 1
     print(answer(args[-1]), end="")
     return 0
 
@@ -139,7 +141,8 @@ class HomeGuardTest(unittest.TestCase):
         self.state_path.write_text(json.dumps(state))
 
     def disable(self, entry, extra_env=None, list_path=None):
-        env = dict(os.environ, TV_HOST="192.168.1.50", HOME=str(self.home),
+        # USERPROFILE as well: Python on Windows finds the home folder (and so the recovery record) there.
+        env = dict(os.environ, TV_HOST="192.168.1.50", HOME=str(self.home), USERPROFILE=str(self.home),
                    FAKE_TV_STATE=str(self.state_path), **(extra_env or {}))
         if entry == "sh":
             argv = ["bash", str(self.tools / "disable.sh"), str(list_path or self.list_path)]
@@ -229,6 +232,18 @@ class HomeGuardTest(unittest.TestCase):
                 result, sent = self.disable(entry)
                 self.assertEqual(result.returncode, 0, self.output(result))
                 self.assertNotIn(f"pm disable-user --user 0 {STOCK}", sent)
+
+    def test_a_tv_that_cannot_say_who_owns_home_stops_the_run(self):
+        # tv.py fails on the Home query (a timeout, a connection reset): the guard cannot run, so nothing is
+        # recorded or disabled, rather than letting the list through with its owner unchecked.
+        for entry in self.entries():
+            with self.subTest(entry=entry):
+                self.tv(home_fails=True)
+                result, sent = self.disable(entry)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertEqual(sent, [], "nothing may reach the TV without the Home check")
+                self.assertIn("could not ask the TV which app owns Home", self.output(result))
+                self.assertFalse((self.home / ".cleanyourtv").exists(), "no record of a run that did not start")
 
     def test_force_disables_the_owner(self):
         for entry in self.entries():

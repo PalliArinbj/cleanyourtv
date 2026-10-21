@@ -60,9 +60,21 @@ ADB_SECURE="$("$PY" -I tools/tv.py "getprop ro.adb.secure" 2>/dev/null | tr -d '
 # The extra query is worth it only when the list holds Home's own package, which is how a list that
 # leaves the TV without a launcher looks before anything is disabled.
 HOME_QUERY='cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME'
-HOME_PKG=$("$PY" -I tools/tv.py "$HOME_QUERY" 2>/dev/null | tail -n 1 | tr -d '\r' | cut -d/ -f1 || true)
+HOME_PKG=""
+if [ -z "${FORCE_HOME:-}" ]; then
+  # Fail safe, like the setupwraith check above: when tv.py cannot ask the TV at all, the guard cannot tell
+  # whether this list takes the only launcher away, so stop before anything is recorded or disabled. An answer
+  # that names no component (Android's chooser, or old firmware without `cmd package`) still goes ahead.
+  if ! HOME_ANSWER="$("$PY" -I tools/tv.py "$HOME_QUERY" 2>/dev/null)"; then
+    echo "Stopping: could not ask the TV which app owns Home (tv.py failed), so the Home guard cannot check" >&2
+    echo "this list. Nothing was disabled. Check the connection (tools/tv.py --probe) and run it again, or set" >&2
+    echo "FORCE_HOME=1 to skip the guard." >&2
+    exit 1
+  fi
+  HOME_PKG=$(printf '%s\n' "$HOME_ANSWER" | tail -n 1 | tr -d '\r' | cut -d/ -f1)
+fi
 # grep without -q: an early exit could SIGPIPE printf and fail open under pipefail (see above).
-if [ -n "$HOME_PKG" ] && printf '%s\n' "$PKGS" | grep -xF "$HOME_PKG" >/dev/null && [ -z "${FORCE_HOME:-}" ]; then
+if [ -n "$HOME_PKG" ] && printf '%s\n' "$PKGS" | grep -xF "$HOME_PKG" >/dev/null; then
   # Every package with a HOME activity the TV can start now: disabled packages do not answer, so this
   # is "what could take Home if the list went through".
   CLAIMS=$("$PY" -I tools/tv.py 'cmd package query-activities --brief -a android.intent.action.MAIN -c android.intent.category.HOME' 2>/dev/null \

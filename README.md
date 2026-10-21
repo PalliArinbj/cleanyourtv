@@ -363,7 +363,8 @@ The install scripts ask the TV which launcher owns Home and only disable one the
 `tools/disable.sh` (`disable.ps1`) applies the same rule before it disables anything: if the list
 contains the app that owns Home and no other app on the TV answers HOME, it skips that entry, says
 why, and disables the rest of the list. So a list applied before the launcher handover cannot leave
-the TV with nothing to start. Run the same list again once `launcher/build-and-install.sh` has made
+the TV with nothing to start. If the TV cannot be asked which app owns Home, it stops before
+disabling anything. Run the same list again once `launcher/build-and-install.sh` has made
 the new launcher Home and the entry is applied; `FORCE_HOME=1` (`$env:FORCE_HOME`) disables it anyway.
 
 </details>

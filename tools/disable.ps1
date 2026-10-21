@@ -53,6 +53,11 @@ if (-not $env:FORCE_HOME) {
     $homeQuery = 'cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME'
     $homeLine = @(& $py -I (Join-Path $repo 'tools\tv.py') $homeQuery) |
         Where-Object { $_ -match '\S' } | Select-Object -Last 1
+    # Fail safe, like the setupwraith check: when tv.py cannot ask the TV at all, the guard cannot tell whether
+    # this list takes the only launcher away, so stop before anything is recorded or disabled (disable.sh).
+    if ($LASTEXITCODE -ne 0) {
+        throw "could not ask the TV which app owns Home (tv.py failed), so the Home guard cannot check this list. Nothing was disabled. Check the connection and run it again, or set `$env:FORCE_HOME=1 to skip the guard."
+    }
     $homePkg = "$homeLine".Trim() -split '/' | Select-Object -First 1
     if ($homePkg -and ($pkgs -contains $homePkg)) {
         # Every package with a HOME activity the TV can start now; a disabled one does not answer.
