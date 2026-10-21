@@ -157,7 +157,7 @@ tools\venv\Scripts\python.exe -m pip install -r tools\requirements.txt
 powershell -ExecutionPolicy Bypass -File launcher\build-and-install.ps1 -TvHost 192.168.1.50
 ```
 
-PowerShell 安装脚本使用 `-StockLauncher <包名>` 指定原始桌面，或使用 `-StockLauncher none` 保留其启用状态。当前 PowerShell 脚本会先请求设置新 HOME，再检查新桌面是否启动，与上述 Shell 脚本的顺序不同；操作前请确认 ADB 恢复路径可用。清理与恢复分别使用 [`tools/disable.ps1`](tools/disable.ps1) 和 [`tools/restore.ps1`](tools/restore.ps1)。
+PowerShell 安装脚本使用 `-StockLauncher <包名>` 指定原始桌面，或使用 `-StockLauncher none` 保留其启用状态。PowerShell 脚本与上述 Shell 脚本顺序相同：先确认新桌面能够启动，再停用原始桌面并将新桌面设为 HOME。清理与恢复分别使用 [`tools/disable.ps1`](tools/disable.ps1) 和 [`tools/restore.ps1`](tools/restore.ps1)。
 
 ### 工具索引
 
@@ -234,7 +234,7 @@ TV_HOST=192.168.1.50 tools/restore.sh "examples/你的机型/debloat.txt" com.go
 完整说明见 [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md)。
 
 - **macOS 提示 `No route to host`**：检查本地网络隐私权限；可尝试通过 `tools/venv/bin/python -I tools/tv.py` 使用仓库的 Python ADB 工具。
-- **替换后 HOME 异常**：应先确认新桌面已安装且能够运行，再停用原始桌面。Shell 安装脚本按这个顺序执行；Windows 脚本的现有顺序见上文。
+- **替换后 HOME 异常**：应先确认新桌面已安装且能够运行，再停用原始桌面。Shell 与 PowerShell 安装脚本都按这个顺序执行。
 - **Google TV 设置向导抢占 HOME**：`com.google.android.tungsten.setupwraith` 可能在原始桌面停用后抢占 HOME。先按故障排查文档检查它是否拥有当前 Wi-Fi 配置；直接停用可能删除该网络。清理工具会在这种情况下跳过它，需先在系统设置中忘记该 Wi-Fi，再重新加入。若已经异常，可尝试重新启用 Google TV 原始桌面：`tools/venv/bin/python -I tools/tv.py 'pm enable --user 0 com.google.android.apps.tv.launcherx'`。
 
 ## 常见问题

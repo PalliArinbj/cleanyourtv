@@ -63,12 +63,9 @@ if ($LASTEXITCODE -ne 0) { throw 'APK upload failed' }
 $out = & $py -I ..\tools\tv.py 'pm install -r /data/local/tmp/tvhome.apk; rm -f /data/local/tmp/tvhome.apk'
 Write-Host $out
 if ("$out" -notmatch 'Success') { throw 'pm install failed; the stock launcher was left untouched' }
-# Android 9 only accepts a component here; Android 10+ also takes a bare package name.
-$out = & $py -I ..\tools\tv.py 'cmd package set-home-activity --user 0 com.gathin.tvhome/.MainActivity'
-Write-Host $out
-if ("$out" -match 'Error') { throw 'could not set the new launcher as home; the stock launcher was left untouched' }
-# Start the launcher on its own, before the stock Home is touched (see build-and-install.sh, #239):
-# in the batch a failed start only prints an Error line and the stock launcher would be disabled anyway.
+# Start the launcher on its own, before Home is touched at all (see build-and-install.sh, #239): in the
+# batch a failed start only prints an Error line and the stock launcher would be disabled anyway. The home
+# preference waits for the batch too, so a launcher that does not start never becomes Home.
 $start = (& $py -I ..\tools\tv.py 'am start -W -n com.gathin.tvhome/.MainActivity') -join "`n"
 Write-Host $start
 if ($start -notmatch 'Status: ok' -or $start -match '(?m)^Error') { throw "the new launcher did not start (see above); $StockLauncher was left enabled" }

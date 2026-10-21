@@ -270,6 +270,18 @@ class InstallScriptTest(PowerShellCase):
         self.assertNotIn("Installed.", self.output(result))
         self.assertFalse(any("pm disable-user" in c for c in state["commands"]))
         self.assertFalse(state["stock_disabled"])
+        # Home must not point at a launcher that does not start, even with the stock one still enabled.
+        self.assertFalse(any("set-home-activity" in c for c in state["commands"]), state["commands"])
+        self.assertEqual(state["home"], STOCK_HOME)
+
+    def test_home_is_set_after_the_launcher_starts(self):
+        result, state = self.install()
+        self.assertEqual(result.returncode, 0, self.output(result))
+        commands = state["commands"]
+        start = next(i for i, c in enumerate(commands) if "am start" in c)
+        homes = [i for i, c in enumerate(commands) if "set-home-activity" in c and NEW_HOME in c]
+        self.assertTrue(homes, commands)
+        self.assertLess(start, homes[0], "the home preference follows a launcher that came up")
 
 
 class DisableScriptTest(PowerShellCase):

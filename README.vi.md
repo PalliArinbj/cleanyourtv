@@ -210,8 +210,8 @@ powershell -ExecutionPolicy Bypass -File launcher\build-and-install.ps1 -TvHost 
 ```
 
 Script PowerShell dùng `-StockLauncher <tên gói>` để chỉ định launcher gốc, hoặc `-StockLauncher none` để giữ nó bật.
-Script PowerShell hiện đặt màn hình chính mới trước rồi mới kiểm tra launcher mới có chạy không, ngược thứ tự với script
-Shell ở trên; hãy chắc chắn vẫn kết nối ADB được để khôi phục trước khi chạy. Dọn dẹp và khôi phục dùng
+Script PowerShell theo cùng thứ tự với script Shell ở trên: chạy thử launcher mới trước, rồi mới tắt launcher gốc và
+đặt nó làm màn hình chính. Dọn dẹp và khôi phục dùng
 [`tools/disable.ps1`](tools/disable.ps1) và [`tools/restore.ps1`](tools/restore.ps1).
 
 ### Danh sách công cụ
@@ -311,7 +311,7 @@ Hướng dẫn đầy đủ (tiếng Anh) trong [`docs/TROUBLESHOOTING.md`](docs
 - **macOS báo `No route to host`**: kiểm tra quyền Mạng cục bộ (Local Network) của macOS; có thể dùng công cụ ADB viết
   bằng Python của repo qua `tools/venv/bin/python -I tools/tv.py`.
 - **Màn hình chính bị lỗi sau khi thay**: phải chắc launcher mới đã cài và chạy được rồi mới tắt launcher gốc. Script
-  Shell làm đúng thứ tự này; thứ tự của script Windows xem ở trên.
+  Shell và script PowerShell đều làm đúng thứ tự này.
 - **Trình cài đặt Google TV chiếm màn hình chính**: `com.google.android.tungsten.setupwraith` có thể chiếm màn hình
   chính sau khi tắt launcher gốc. Trước tiên kiểm tra nó có đang giữ mạng Wi-Fi hiện tại không theo tài liệu xử lý sự
   cố; tắt nó ngay có thể xoá mạng đó và TV mất kết nối. Công cụ dọn dẹp tự bỏ qua nó trong trường hợp này, bạn cần
