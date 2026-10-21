@@ -516,6 +516,10 @@ in the list whether it was enabled, already disabled or not installed, which com
 and the three animation scales. That record lives in `~/.cleanyourtv/`, one file per TV and list, and
 a second run of the same list keeps the first record instead of saving the cleaned-up state over it.
 If you added packages to the list since, that run adds them to the record before disabling them.
+The record is found by the TV's address. If the TV has a new one (a new DHCP lease, or Tailscale
+instead of the LAN), `restore.sh` and `disable.sh` stop and name the record under the old address
+instead of going on without it: rename it as they say, or set `IGNORE_OTHER_RECORDS=1` for a
+different TV that uses the same list. A DHCP reservation for the TV on your router avoids this.
 
 Keep the list you applied. The restore script replays the record, so a package you had disabled
 yourself stays disabled and Home goes back to the component that owned it:

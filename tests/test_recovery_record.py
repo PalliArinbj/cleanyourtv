@@ -85,7 +85,9 @@ if __name__ == "__main__":
 '''
 
 
-class RecoveryRecordTest(unittest.TestCase):
+class RecordCase(unittest.TestCase):
+    """A copy of the scripts with the fake TV, and the helpers both test classes use."""
+
     def setUp(self):
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)
@@ -127,9 +129,11 @@ class RecoveryRecordTest(unittest.TestCase):
         state.update(overrides)
         self.state_path.write_text(json.dumps(state))
 
-    def run_script(self, script, *args):
-        env = dict(os.environ, TV_HOST="192.168.1.50", HOME=str(self.home),
-                   FAKE_TV_STATE=str(self.state_path))
+    def run_script(self, script, *args, host="192.168.1.50", extra_env=None):
+        # USERPROFILE as well: Python on Windows finds the home folder (and so the record) there.
+        env = {k: v for k, v in os.environ.items() if k != "IGNORE_OTHER_RECORDS"}
+        env.update(TV_HOST=host, HOME=str(self.home), USERPROFILE=str(self.home),
+                   FAKE_TV_STATE=str(self.state_path), **(extra_env or {}))
         return subprocess.run(
             ["bash", str(self.repo / "tools" / script), *args],
             cwd=self.repo, env=env, capture_output=True, text=True, timeout=120,
@@ -144,6 +148,8 @@ class RecoveryRecordTest(unittest.TestCase):
         with open(self.state_path) as f:
             return json.load(f)["commands"]
 
+
+class RecoveryRecordTest(RecordCase):
     def test_save_records_the_state_undo_needs(self):
         self.tv()
         result = self.run_script("disable.sh", str(self.list_path))
@@ -394,6 +400,73 @@ class RecoveryRecordTest(unittest.TestCase):
                     self.assertIn("not a usable recovery record", result.stderr)
                     self.assertEqual(self.sent(), [], "nothing reached the TV")
                     self.assertEqual(path.read_bytes(), before, "the file is left for inspection")
+
+
+class MovedTvTest(RecordCase):
+    """The record is found by the TV's address, and DHCP can give the same TV a new one (#239 follow-up)."""
+
+    OLD, NEW = "192.168.1.50", "192.168.1.77"
+
+    def records(self):
+        return sorted((self.home / ".cleanyourtv").glob("recovery-*.json"))
+
+    def debloat_at_the_old_address(self):
+        self.tv()
+        self.assertEqual(self.run_script("disable.sh", str(self.list_path), host=self.OLD).returncode, 0)
+        # The list is applied now: what the TV looks like at its new address.
+        self.tv(disabled=["com.example.enabled", "com.example.already_off"])
+
+    def test_restore_at_a_new_address_stops_and_names_the_record(self):
+        self.debloat_at_the_old_address()
+        result = self.run_script("restore.sh", str(self.list_path), host=self.NEW)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(self.sent(), [], "no fallback restore while the TV's record is elsewhere")
+        self.assertIn(self.OLD, result.stderr)
+        self.assertIn(str(self.records()[0]), result.stderr)
+        self.assertIn("IGNORE_OTHER_RECORDS=1", result.stderr)
+
+    def test_the_renamed_record_restores_at_the_new_address(self):
+        self.debloat_at_the_old_address()
+        old = self.records()[0]
+        old.rename(old.with_name(old.name.replace(self.OLD, self.NEW)))
+        result = self.run_script("restore.sh", str(self.list_path), host=self.NEW)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        sent = self.sent()
+        self.assertIn("pm enable com.example.enabled", sent)
+        self.assertNotIn("pm enable com.example.already_off", sent, "the record still decides")
+
+    def test_ignore_other_records_restores_without_one(self):
+        self.debloat_at_the_old_address()
+        result = self.run_script("restore.sh", str(self.list_path), host=self.NEW,
+                                 extra_env={"IGNORE_OTHER_RECORDS": "1"})
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("no recovery record", result.stderr)
+        self.assertIn("pm enable com.example.already_off", self.sent(), "the old fallback: the whole list")
+
+    def test_debloat_at_a_new_address_does_not_record_the_cleaned_tv(self):
+        # Re-applying the list after a move would otherwise save the cleaned-up TV as the original,
+        # and a later restore would replay it and leave everything disabled.
+        self.debloat_at_the_old_address()
+        result = self.run_script("disable.sh", str(self.list_path), host=self.NEW)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(self.sent(), [], "nothing is disabled before the record question is settled")
+        self.assertEqual(len(self.records()), 1, "no second record of the cleaned-up TV")
+        self.assertIn(self.OLD, result.stderr)
+
+    def test_ignore_other_records_records_another_tv(self):
+        self.debloat_at_the_old_address()
+        result = self.run_script("disable.sh", str(self.list_path), host=self.NEW,
+                                 extra_env={"IGNORE_OTHER_RECORDS": "1"})
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(len(self.records()), 2)
+
+    def test_a_record_of_another_list_does_not_count(self):
+        self.debloat_at_the_old_address()
+        other = self.base / "other.txt"
+        other.write_text("# Another TV\ncom.example.enabled\n")
+        result = self.run_script("restore.sh", str(other), host=self.NEW)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertNotIn("another address", result.stderr)
 
 
 if __name__ == "__main__":

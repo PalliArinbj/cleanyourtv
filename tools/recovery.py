@@ -13,6 +13,11 @@ reaches the TV, and `restore.sh` replays it.
 Records live in ~/.cleanyourtv/, one per TV and list. The first one wins: a retry after a
 half-applied list must not record the broken state as the original. A later run only adds the names
 the list gained since then, with their state before this list disabled them.
+
+A record is found by the TV's address, which can change (DHCP, Tailscale instead of the LAN). When
+there is none for this address but there is one for the same list under another, both --save and
+--commands stop and name it, rather than record a cleaned-up TV as the original or restore without
+the record. IGNORE_OTHER_RECORDS=1 goes ahead anyway, for a different TV with the same list.
 """
 import hashlib
 import json
@@ -55,12 +60,46 @@ def read_list(path):
     return names
 
 
+def list_digest(list_path):
+    return hashlib.sha1(str(Path(list_path).resolve()).encode()).hexdigest()[:8]
+
+
 def record_path(list_path, host):
     """One record per TV and list. The list is identified by its absolute path, so a copy of the
     same file somewhere else gets its own record."""
     tag = re.sub(r"[^A-Za-z0-9.-]", "_", host or "no-host")
-    digest = hashlib.sha1(str(Path(list_path).resolve()).encode()).hexdigest()[:8]
-    return Path.home() / ".cleanyourtv" / f"recovery-{tag}-{digest}.json"
+    return Path.home() / ".cleanyourtv" / f"recovery-{tag}-{list_digest(list_path)}.json"
+
+
+def other_records(list_path, host):
+    """Records of this same list taken at other addresses, as (file, host, created), oldest first.
+    Matched on the list path stored in the record, not only on the file name. A file that does not
+    read is skipped here: this only decides whether to stop and ask."""
+    mine = record_path(list_path, host)
+    wanted = str(Path(list_path).resolve())
+    found = []
+    for path in sorted(mine.parent.glob(f"recovery-*-{list_digest(list_path)}.json")):
+        if path == mine:
+            continue
+        try:
+            with open(path) as f:
+                record = json.load(f)
+        except (OSError, ValueError):
+            continue
+        if isinstance(record, dict) and record.get("list") == wanted:
+            found.append((path, record.get("host") or "?", record.get("created") or "?"))
+    return sorted(found, key=lambda item: str(item[2]))
+
+
+def stop_for_other_records(others, host, path, instead):
+    """Neither record a cleaned-up TV as the original nor restore without the record when the TV may
+    just have moved: say where its record is and how to use it, and how to go ahead if it is another TV."""
+    lines = [f"no recovery record for this list on {host or 'this TV'}, but there is one from another address:"]
+    lines += [f"  {other} (taken {created}): {found}" for found, other, created in others]
+    lines += [f"If this is the same TV at a new address, rename that file to {path.name} in the same folder",
+              "and run this again: it holds the state from before the first run, which undo needs.",
+              f"If it is another TV, set IGNORE_OTHER_RECORDS=1 to {instead}."]
+    raise SystemExit("\n".join(lines))
 
 
 def load_record(path):
@@ -176,6 +215,11 @@ def save(list_path, host):
         return 0
 
     packages = read_list(list_path)
+    # Checked before the TV is asked anything: a TV that moved is already cleaned up, and a record of
+    # it now would become the "original" that undo replays.
+    others = other_records(list_path, host)
+    if others and not os.environ.get("IGNORE_OTHER_RECORDS"):
+        stop_for_other_records(others, host, path, "record this TV as it is now")
     dev = connect()
     try:
         installed, disabled = query_packages(dev)
@@ -215,6 +259,11 @@ def restore_commands(list_path, stock, host):
     commands = []
 
     if not path.exists():
+        others = other_records(list_path, host)
+        if others and not os.environ.get("IGNORE_OTHER_RECORDS"):
+            stop_for_other_records(others, host, path,
+                                   "restore without a record (the whole list enabled, Home and the animation "
+                                   "scales reset)")
         sys.stderr.write(
             f"no recovery record for this TV and list ({path}).\n"
             "Enabling every listed package and resetting Home and the animation scales to their\n"

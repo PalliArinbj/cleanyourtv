@@ -355,7 +355,7 @@ class DisableScriptTest(PowerShellCase):
         self.list_path = self.base / "debloat.txt"
         self.list_path.write_text(f"# My TV\ncom.example.before\n{STOCK}\ncom.example.after\n")
 
-    def disable(self, extra_env=None, **overrides):
+    def disable(self, extra_env=None, host="192.168.1.50", **overrides):
         state = {
             "installed": ["com.example.before", "com.example.after", STOCK],
             "disabled": [],
@@ -367,7 +367,7 @@ class DisableScriptTest(PowerShellCase):
         }
         state.update(overrides)
         self.state_path.write_text(json.dumps(state))
-        result, state = self.powershell(self.tools / "disable.ps1", "-TvHost", "192.168.1.50",
+        result, state = self.powershell(self.tools / "disable.ps1", "-TvHost", host,
                                         str(self.list_path), env=extra_env)
         return result, state["commands"]
 
@@ -396,6 +396,17 @@ class DisableScriptTest(PowerShellCase):
         self.assertEqual(sent, [], "nothing may reach the TV without the Home check")
         self.assertIn("could not ask the TV which app owns Home", " ".join(self.output(result).split()))
         self.assertEqual(self.records(), [], "no record of a run that did not start")
+
+    def test_a_tv_at_a_new_address_is_not_recorded_again(self):
+        # The same TV after a DHCP change: re-applying the list must not save the cleaned-up TV as the
+        # original that restore would replay.
+        first, _ = self.disable()
+        self.assertEqual(first.returncode, 0, self.output(first))
+        result, sent = self.disable(host="192.168.1.77", disabled=["com.example.before", "com.example.after"])
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(sent, [], "nothing is disabled before the record question is settled")
+        self.assertEqual(len(self.records()), 1)
+        self.assertIn("another address", self.output(result))
 
 
 if __name__ == "__main__":
