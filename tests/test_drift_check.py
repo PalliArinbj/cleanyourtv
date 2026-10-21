@@ -83,8 +83,17 @@ def apply(command):
     save()
 
 
+class TcpTimeoutException(Exception):
+    """adb_shell's read timeout, which is not an OSError."""
+
+
+TcpTimeoutException.__module__ = "adb_shell.exceptions"
+
+
 class Device:
     def shell(self, command, read_timeout_s=None):
+        if state.get("drop_on") and command.startswith(state["drop_on"]):
+            raise TcpTimeoutException("Reading from 192.168.1.50:5555 timed out (120 seconds)")
         # The TV runs what it is sent and answers the queries; the fake does the same.
         if command.startswith(("pm disable-user", "pm enable", "cmd package set-home-activity")):
             apply(command)
@@ -98,6 +107,9 @@ class Device:
 def connect():
     if state.get("unreachable"):
         raise ConnectionError("could not connect to 192.168.1.50:5555")
+    if state.get("connect_times_out"):
+        # What an unanswered "Allow USB debugging?" prompt or a TV in standby gives adb_shell.
+        raise TcpTimeoutException("Reading from 192.168.1.50:5555 timed out (120 seconds)")
     return Device()
 
 
@@ -374,6 +386,36 @@ class DriftCheckTest(unittest.TestCase):
         result = self.run_check(str(self.list_path))
         self.assertEqual(result.returncode, 2)
         self.assertIn("could not reach the TV", result.stderr)
+
+    def test_an_adb_timeout_is_not_drift(self):
+        # adb_shell's errors are not OSErrors: they used to escape as a traceback, and Python's exit 1
+        # read as drift to a cron job watching a TV that was simply off.
+        self.tv(connect_times_out=True)
+        result = self.run_check(str(self.list_path))
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("could not reach the TV", result.stderr)
+        self.assertIn("TcpTimeoutException", result.stderr)
+        self.assertNotIn("Traceback", result.stderr)
+
+    def test_a_tv_that_goes_away_mid_check_is_not_drift(self):
+        self.tv(drop_on="pm list packages -d")
+        result = self.run_check(str(self.list_path))
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("lost the TV during the check", result.stderr)
+        self.assertNotIn("drift", result.stdout)
+
+    def test_a_tv_lost_during_fix_says_what_may_be_done(self):
+        self.tv(disabled=[STOCK], drop_on="pm disable-user")
+        result = self.run_check("--fix", str(self.list_path))
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("lost the TV during --fix", result.stderr)
+        self.assertIn("may already be disabled", result.stderr)
+
+    def test_a_tv_with_no_package_list_is_not_drift(self):
+        self.tv(installed=[])
+        result = self.run_check(str(self.list_path))
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("returned no packages", result.stderr)
 
     def test_a_hand_edited_list_stops_before_the_tv(self):
         self.write_list(["com.example.music", "com.example.store; reboot"])

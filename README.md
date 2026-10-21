@@ -545,7 +545,8 @@ compare the TV with the list you applied:
 TV_HOST=192.168.1.50 tools/venv/bin/python -I tools/check.py examples/<your tv>/debloat.txt
 ```
 
-It prints what drifted and exits 1 when anything did, so a weekly job on a home server or a Pi is
+It prints what drifted and exits 1 when anything did (2 when it cannot reach or read the TV, so a
+TV that is off is not reported as drift), so a weekly job on a home server or a Pi is
 enough to hear about it:
 
 ```bash

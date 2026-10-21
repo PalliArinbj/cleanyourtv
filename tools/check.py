@@ -20,11 +20,13 @@ moment those come back into play: the update can turn setupwraith back on for a 
 owns, and a fix that skipped the checks would take that TV off Wi-Fi with no way back in.
 
 Exit codes: 0 in sync (or fixed), 1 drift, an incomplete fix, or packages a safety check left on,
-2 the TV could not be read.
+2 the TV could not be reached or read, or stopped answering before the check was done: no verdict,
+so a cron job never reports a TV that is off as one that drifted.
 """
 import os
 import re
 import sys
+import traceback
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import recovery  # noqa: E402  (needs the tools/ directory on the path first)
@@ -232,6 +234,12 @@ def fix(dev, listed, back_on, home_drifted, preferred):
     return 1 if failed or left_on else 0
 
 
+def from_the_link(error):
+    """A lost or refused connection: the socket's own errors, and adb_shell's, which are not OSErrors.
+    Matched by module name, so this file needs no adb_shell import to tell them apart."""
+    return isinstance(error, OSError) or type(error).__module__.split(".")[0] == "adb_shell"
+
+
 def main():
     args = sys.argv[1:]
     wanted = "--fix" in args
@@ -245,19 +253,44 @@ def main():
     # TV's shell, and a list edited by hand since then is not to be trusted.
     listed = recovery.read_list(list_path)
 
+    # Exit 1 means drift and nothing else. Whatever keeps the check from a verdict is 2: adb_shell's own
+    # errors (a timeout, a refused authorisation) are not OSErrors and used to escape as a traceback with
+    # exit 1, and so did a TV that went away halfway through.
+    dev = None
+    fixing = False
     try:
         dev = recovery.connect()
-    except (OSError, ConnectionError) as e:
-        sys.stderr.write(f"could not reach the TV ({e}). Check it is on and TV_HOST is right "
-                         f"(tools/venv/bin/python -I tools/tv.py --probe).\n")
-        return 2
-    try:
         _, _, home, back_on, gone, home_drifted, expected = inspect(dev, listed, preferred)
         code = report(list_path, listed, home, back_on, gone, home_drifted, expected)
         if code and wanted:
+            fixing = True
             code = fix(dev, listed, back_on, home_drifted, preferred)
+    except SystemExit as e:
+        # recovery.py stops with a sentence when the TV answers nothing usable (no package list at all).
+        if not isinstance(e.code, str):
+            raise
+        sys.stderr.write(e.code + "\n")
+        return 2
+    except Exception as e:
+        if not from_the_link(e):
+            traceback.print_exc()   # not the connection: keep what a bug report needs
+        why = f"{type(e).__name__}: {e}" if str(e) else type(e).__name__
+        if dev is None:
+            sys.stderr.write(f"could not reach the TV ({why}). Check it is on and TV_HOST is right "
+                             f"(tools/venv/bin/python -I tools/tv.py --probe).\n")
+        elif fixing:
+            sys.stderr.write(f"lost the TV during --fix ({why}): some packages may already be disabled. "
+                             f"Run the check again once the TV answers.\n")
+        else:
+            sys.stderr.write(f"lost the TV during the check ({why}), so there is no verdict. "
+                             f"Run it again once the TV answers.\n")
+        return 2
     finally:
-        dev.close()
+        if dev is not None:
+            try:
+                dev.close()
+            except Exception:
+                pass   # the socket is already gone; the verdict above stands
     return code
 
 
