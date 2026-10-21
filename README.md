@@ -629,7 +629,8 @@ same as developing an Android app. Network ADB is plaintext on port 5555, and on
 1. On the TV: Developer options → turn **USB debugging** and **Network/ADB debugging** off, and
    revoke the USB debugging authorisations.
 2. Reboot the TV, then confirm the port is gone from your computer:
-   `python3 tools/adb-closed.py <tv ip>` must say the port is closed. With `nc -vz <tv ip> 5555`,
+   `python3 tools/adb-closed.py <tv ip>` must say the port is closed. A TV that answers on no port at
+   all (off, asleep, or at another address) gets exit 2, not a pass. With `nc -vz <tv ip> 5555`,
    only "Connection refused" counts: on macOS, Local Network privacy can block `nc` and make it
    fail with "No route to host" even while the port is open.
 

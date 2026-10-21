@@ -3,14 +3,39 @@
 
     adb-closed.py <tv ip> [port]       port defaults to TV_PORT or 5555; the IP to TV_HOST
 
-Exits 0 when the port refuses the connection or does not answer, 1 when it is still open, and 2
-when the check itself could not run (a name that does not resolve, no route to the TV).
+Exits 0 when the port is closed: it refuses the connection, or it stays silent while the TV answers on
+another port. 1 when it is still open. 2 when the check cannot tell: a name that does not resolve, no
+route to the TV, or no answer from the TV on any port, which is what a TV that is off or at another
+address looks like.
 """
+import concurrent.futures
 import os
 import socket
 import sys
 
 TIMEOUT_S = 3.0
+# Ports an Android TV answers while it is on, with debugging off: the Cast receiver (8008, 8009) and the
+# Android TV Remote service the Google TV app pairs with (6466, 6467). A connection or a refusal on any of
+# them proves the TV is up at this address; only a TV that is off, asleep or elsewhere stays silent on all.
+WITNESS_PORTS = (8008, 8009, 6466, 6467)
+
+
+def answers(host, port):
+    """True when host:port connects or refuses within the timeout: either way the host is up."""
+    try:
+        with socket.create_connection((host, port), timeout=TIMEOUT_S):
+            return True
+    except ConnectionRefusedError:
+        return True
+    except OSError:   # a timeout too
+        return False
+
+
+def witness(host, ports):
+    """The first of these ports the host answers on, all probed at once; None when it answers on none."""
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(ports)) as pool:
+        results = list(pool.map(lambda port: answers(host, port), ports))
+    return next((port for port, ok in zip(ports, results) if ok), None)
 
 
 def main():
@@ -35,10 +60,18 @@ def main():
         print(f"{host}:{port} is closed: the TV refused the connection.")
         return 0
     except socket.timeout:
-        # Some firmware drops instead of refusing, but so does a TV that is off or at another address.
-        print(f"{host}:{port} did not answer in {TIMEOUT_S:.0f} s: closed, unless the TV is off or not at "
-              "this address.")
-        return 0
+        # Some firmware drops instead of refusing, but so does a TV that is off or at another address. Only
+        # the TV answering somewhere else tells the two apart; silence everywhere proves nothing.
+        seen = witness(host, [p for p in WITNESS_PORTS if p != port])
+        if seen is not None:
+            print(f"{host}:{port} is closed: it did not answer in {TIMEOUT_S:.0f} s while the TV answers on port "
+                  f"{seen} (this firmware drops the connection instead of refusing it).")
+            return 0
+        sys.stderr.write(f"{host}:{port} did not answer in {TIMEOUT_S:.0f} s, and the TV answered on none of the "
+                         f"ports it answers while it is on ({', '.join(map(str, WITNESS_PORTS))}). That is what a TV "
+                         "that is off, asleep or at another address looks like, so it does not show the port is "
+                         "closed: wake the TV, check its address in Settings > Network, and run this again.\n")
+        return 2
     except OSError as e:
         sys.stderr.write(f"could not check {host}:{port} ({e}). Is the TV on and on this network?\n")
         return 2
