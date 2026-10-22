@@ -31,7 +31,8 @@
 # `appops set com.gathin.tvhome AUTO_START allow; appops write-settings` (the op is AUTO_START on this firmware).
 # The dock and tile order were then arranged on the TV (Settings pill, hold OK: Reorder apps / Edit dock). That
 # order is saved under the theme's dock_apps, so dock_apps stays as first pushed: changing it would make the next
-# theme push discard the arrangement.
+# theme push discard the arrangement. wallpapers/ is a copy of themes/scenes/wallpapers (rotated hourly), so this
+# folder alone puts the whole look back; the TV Settings tile is hidden, the Settings pill and gear still open it.
 # Checked on the TV: com.tcl.ttvs holds Samba TV ACR, TCL BI analytics, Alexa, T-Cast AND the firmware updater
 # (versionUpdateApp.core.service.SystemUpdateService): off by choice, so re-enable it to update.
 # com.tcl.UpdatePeripheral only updates TCL soundbars and cameras.

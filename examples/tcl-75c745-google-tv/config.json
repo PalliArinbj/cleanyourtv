@@ -10,13 +10,20 @@
     "com.tcl.dashboard",
     "com.tcl.partnercustomizer",
     "com.tcl.tv",
-    "com.spocky.projengmenu"
+    "com.spocky.projengmenu",
+    "com.android.tv.settings"
   ],
   "live_tv_package": "",
   "columns": 6,
   "advanced_effects": true,
   "background_color": "#000000",
-  "wallpaper": false,
+  "wallpaper": true,
+  "wallpaper_rotation_minutes": 60,
+  "ambient_glow": false,
+  "wallpaper_dim": 60,
+  "show_network_pill": false,
+  "show_inputs_pill": false,
+  "dock_title": false,
   "settings_key_panel": true,
   "app_keys": [
     "scan:566:com.netflix.ninja",
