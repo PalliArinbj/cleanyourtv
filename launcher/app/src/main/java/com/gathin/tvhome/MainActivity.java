@@ -162,6 +162,8 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     /** Optional time-of-day backdrop (config.xml, sky_intensity); 0 keeps it hidden. */
     private SkyView sky;
     private String vpnApp;
+    /** config.xml show_inputs_pill, overridable by a theme. Off: the Inputs pill stays hidden even with inputs. */
+    private boolean showInputsPill = true;
     private SpringAnimation springX, springY;
     private float glassTargetX, glassTargetY;
     // How far the grid has scrolled the glass. springY works without it, in grid content space, so a
@@ -372,6 +374,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             date.setPadding(0, (int) (4 * density), 0, 0);
         }
         vpnApp = cfg.vpnApp;
+        showInputsPill = cfg.showInputsPill;
         moduleCards = cfg.moduleCards;
         hiddenApps = new HashSet<>(cfg.hiddenApps);
 
@@ -2174,6 +2177,12 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
 
     /** Hides the Inputs pill when it would have nothing to list: streaming boxes have no HDMI-in, AV or tuner. */
     private void updateInputsButton() {
+        // show_inputs_pill false: hidden whatever the TV has, without asking the TvInputManager. The top bar's key
+        // handling already copes with a hidden Inputs pill, as on a streaming box.
+        if (!showInputsPill) {
+            btnInputs.setVisibility(View.GONE);
+            return;
+        }
         boolean any = liveTvIntent() != null || !sourcePanelService.isEmpty();
         TvInputManager tim = (TvInputManager) getSystemService(TV_INPUT_SERVICE);
         if (!any && tim != null) {

@@ -128,6 +128,10 @@
     <!-- The Wi-Fi/Ethernet pill in the top bar. false hides it (on Android 14 with Location off it can
          only say "Wi-Fi", not the network name). Can also be set with "show_network_pill" in a theme. -->
     <bool name="show_network_pill">true</bool>
+    <!-- The Inputs pill in the top bar. It only shows when the TV has an input to list (HDMI, AV, Live TV); false
+         hides it even then, for a remote whose own Input button opens the TV's source menu. Can also be set with
+         "show_inputs_pill" in a theme. -->
+    <bool name="show_inputs_pill">true</bool>
     <!-- Names under every tile, not only the focused one: unfocused names stay dimmed, the focused one is full white.
          With dock_row the band grows down to hold the dock's names too. -->
     <bool name="always_show_names">false</bool>
