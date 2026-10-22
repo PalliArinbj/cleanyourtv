@@ -21,6 +21,7 @@
   "wallpaper_rotation_minutes": 60,
   "ambient_glow": false,
   "wallpaper_dim": 60,
+  "wallpaper_true_color": true,
   "show_network_pill": false,
   "show_inputs_pill": false,
   "dock_title": false,
