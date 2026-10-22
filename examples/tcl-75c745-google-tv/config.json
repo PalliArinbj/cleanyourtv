@@ -23,7 +23,9 @@
   "wallpaper_dim": 60,
   "wallpaper_true_color": true,
   "show_network_pill": false,
-  "show_inputs_pill": false,
+  "show_inputs_pill": true,
+  "icon_only_buttons": true,
+  "icon_only_inputs": true,
   "dock_title": false,
   "settings_key_panel": true,
   "app_keys": [
