@@ -33,6 +33,8 @@
 # order is saved under the theme's dock_apps, so dock_apps stays as first pushed: changing it would make the next
 # theme push discard the arrangement. wallpapers/ is a copy of themes/scenes/wallpapers (rotated hourly), so this
 # folder alone puts the whole look back; the TV Settings tile is hidden, the Settings pill and gear still open it.
+# The launcher alone runs in Icelandic (greeting and date, launcher res/values-is; the TV stays English):
+# `cmd locale set-app-locales com.gathin.tvhome --locales is`, set again after a fresh install.
 # Checked on the TV: com.tcl.ttvs holds Samba TV ACR, TCL BI analytics, Alexa, T-Cast AND the firmware updater
 # (versionUpdateApp.core.service.SystemUpdateService): off by choice, so re-enable it to update.
 # com.tcl.UpdatePeripheral only updates TCL soundbars and cameras.
