@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icelandic: the greeting and the date only, so far. Every other string falls back to English. -->
+<resources>
+    <string name="good_morning">Góðan daginn</string>
+    <string name="good_afternoon">Góðan dag</string>
+    <string name="good_evening">Gott kvöld</string>
+    <string name="good_night">Góða nótt</string>
+    <string name="date_format">EEEE, d. MMMM</string>
+</resources>
