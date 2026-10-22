@@ -1,6 +1,7 @@
 package com.gathin.tvhome;
 
 import android.service.dreams.DreamService;
+import android.view.View;
 
 /**
  * Screensaver: the launcher's thin clock and date on black, over a slow ambient glow (ClockScene).
@@ -16,7 +17,8 @@ public class ClockDream extends DreamService {
         setInteractive(false);   // any key wakes the TV back to where it was
         setFullscreen(true);
         setScreenBright(false);
-        setContentView(R.layout.dream_clock);
+        // A service's own resources are in the TV's language, not the launcher's (AppLocale).
+        setContentView(View.inflate(AppLocale.localized(this), R.layout.dream_clock, null));
         scene = new ClockScene(getWindow().getDecorView());
     }
 

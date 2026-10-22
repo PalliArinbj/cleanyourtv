@@ -25,7 +25,7 @@
             android:layoutDirection="ltr"
             android:baselineAligned="true">
 
-            <TextClock
+            <com.gathin.tvhome.AppTextClock
                 android:id="@+id/dreamAmPm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
                 android:letterSpacing="0.08"
                 android:textAllCaps="true" />
 
-            <TextClock
+            <com.gathin.tvhome.AppTextClock
                 android:id="@+id/dreamClock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
                 android:includeFontPadding="false" />
         </LinearLayout>
 
-        <TextClock
+        <com.gathin.tvhome.AppTextClock
             android:id="@+id/dreamDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
