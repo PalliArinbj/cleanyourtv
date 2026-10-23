@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Push a theme (a folder with config.json and optionally wallpaper.jpg) to the launcher on the TV and
+# Push a theme (a folder with config.json and optionally wallpaper.jpg and trivia.txt) to the launcher on the TV and
 # restart Home so it picks it up. The launcher reads the files from its external files directory and
 # overlays config.json on its built-in config.xml; see themes/README.md for the keys.
 #
@@ -42,7 +42,7 @@ put() { echo "cp $(stage "$1") $DIR/$1 2>/dev/null || content write --uri $URI/$
 del() { echo "rm -f $DIR/$1 2>/dev/null; content delete --uri $URI/$1 2>/dev/null"; }
 
 if [ "${1:-}" = --reset ]; then
-  tv "mkdir -p $DIR 2>/dev/null; $(del config.json); $(del wallpaper.jpg); printf '%s' '$REVISION' > $TMP-theme_revision; $(put theme_revision); $RESTART; echo reset" | tail -n 1
+  tv "mkdir -p $DIR 2>/dev/null; $(del config.json); $(del wallpaper.jpg); $(del trivia.txt); printf '%s' '$REVISION' > $TMP-theme_revision; $(put theme_revision); $RESTART; echo reset" | tail -n 1
   exit 0
 fi
 THEME="${THEME_ARG:?usage: theme.sh <theme folder> | --reset}"
@@ -58,6 +58,13 @@ if [ -f "$THEME/wallpaper.jpg" ]; then
   tv "$(put wallpaper.jpg)"
 else
   tv "$(del wallpaper.jpg)" >/dev/null
+fi
+# trivia.txt (optional): tidbits shown in place of the greeting, see themes/README.md.
+if [ -f "$THEME/trivia.txt" ]; then
+  "$PY" -I b64push.py "$THEME/trivia.txt" "$TMP-trivia.txt"
+  tv "$(put trivia.txt)"
+else
+  tv "$(del trivia.txt)" >/dev/null
 fi
 tv "mkdir -p $DIR/wallpapers 2>/dev/null; rm -f $DIR/wallpapers/*.jpg $DIR/wallpapers/*.jpeg $DIR/wallpapers/*.png $DIR/wallpapers/*.webp $DIR/wallpapers/*.JPG $DIR/wallpapers/*.JPEG $DIR/wallpapers/*.PNG $DIR/wallpapers/*.WEBP 2>/dev/null; content delete --uri $URI/wallpapers 2>/dev/null" >/dev/null
 if [ -d "$THEME/wallpapers" ]; then

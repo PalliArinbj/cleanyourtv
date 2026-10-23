@@ -1,6 +1,6 @@
 # Themes
 
-A theme is a folder with a `config.json` and, optionally, a `wallpaper.jpg`. Pushing one changes the
+A theme is a folder with a `config.json` and, optionally, a `wallpaper.jpg` and a `trivia.txt`. Pushing one changes the
 launcher's dock, layout and look on the TV without rebuilding the APK: the launcher reads
 `config.json` as an overlay over its built-in `config.xml` the next time it starts.
 Choices made in Launcher settings take priority until you choose Follow theme. Pushing a theme or
@@ -76,6 +76,7 @@ is ignored, and a file that doesn't parse is ignored as a whole, so a theme can 
 | `race_calendar` | list of races | F1 race-weekend mode: from 12 hours before a weekend's first session until 4 hours after the race starts, a panel under the clock shows the next session with a countdown (or the live one) and the weekend's session times in the TV's time zone. Write it with `tools/race_calendar.py <theme folder>`, which fetches the season from the free Jolpica API; the launcher itself never goes online |
 | `home_idle_clock_minutes` | 0 to 1440 | Minutes Home may sit untouched before it shows the clock screensaver (a thin clock and date drifting over a slow glow, as the system "Clock" screensaver does). Any key returns to Home. It starts only from Home, never over Live TV or an app; 0 is off (default) |
 | `cinematic_home` | bool | Cinematic top shelf: the focused dock app's artwork, softened, fills the top of the screen in its colour, with a larger name, "Last opened" (apps opened from Home), dock position dots, a focus glow in the app's colour and a translucent dock band; off by default |
+| `trivia_minutes` | 0 to 1440 | With a `trivia.txt` in the theme, a new tidbit every this many minutes while Home stays in front (5 by default); 0 changes it only when Home comes back |
 | `ambient_glow` | bool | The glow behind the dock in the focused app's colour (`true` by default); `false` keeps only `background_color` or the wallpaper, e.g. for a calm photo background |
 
 ## Wallpapers
@@ -114,6 +115,24 @@ The original system idle screensaver is left unchanged.
 On the TV, Launcher settings has a Wallpaper row: pick one picture from the collection (or the theme's
 `wallpaper.jpg`), or None. A pick shows that one picture and stops the rotation until you choose Theme
 default, press Follow theme, or push a theme again.
+
+## Trivia
+
+A `trivia.txt` in the theme folder replaces the time-of-day greeting with a short tidbit, up to two lines
+over the clock. Home shows a new one each time it comes back (from an app, the screensaver or the TV
+turning on) and every `trivia_minutes` while it stays in front; festive greetings give way to it too.
+The file is UTF-8, one tidbit a line as `subject|age|text`; Home shows only the text, and the subject and
+the youngest age it is written for are there to keep the list balanced. Blank lines and lines starting
+with `#` are skipped.
+
+```text
+efnafraedi|13|Kvikasilfur (Hg) og bróm (Br) eru einu frumefnin sem eru fljótandi við stofuhita.
+```
+
+The tidbits come as a shuffled deck: each is shown once before any repeats, the place in the deck survives
+a restart, and a new deck never starts with the last one shown. A subject with three times the lines comes
+up three times as often. Pushing a theme with a changed list starts a new deck; a theme without the file
+brings the greeting back. Keep a tidbit to about 130 characters so it fits in two lines.
 
 ## Reduced motion
 
