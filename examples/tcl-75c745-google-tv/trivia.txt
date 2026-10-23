@@ -1965,3 +1965,125 @@ listir|16|Erró gaf Reykjavíkurborg stórt safn verka sinna, sem varðveitt er 
 plontur|10|Birki var eina tréð sem myndaði skóga á Íslandi við landnám.
 plontur|10|Kartöflurækt hófst á Íslandi um 1760.
 plontur|10|Sumar broddfurur í Kaliforníu eru yfir 4.800 ára gamlar.
+# Hvernig plöntur lifa
+plontur|7|Plöntur þurfa vatn, ljós og loft til að vaxa.
+plontur|7|Ræturnar sjúga vatn og næringu úr jörðinni.
+plontur|7|Í hverju fræi er lítil planta og nesti handa henni.
+plontur|7|Plöntur vaxa í átt að ljósinu.
+plontur|7|Blóm laða að sér býflugur og fiðrildi með litum og ilmi.
+plontur|7|Ung sólblóm snúa sér á eftir sólinni yfir daginn.
+plontur|7|Hlynsfræ snúast eins og þyrluspaðar þegar þau falla til jarðar.
+plontur|7|Ánamaðkar bæta jarðveginn með því að grafa göng og blanda hann.
+plontur|10|Ræturnar vaxa niður á við vegna þyngdaraflsins.
+plontur|10|Fræ geta legið í dvala árum saman og spírað þegar aðstæður verða réttar.
+plontur|10|Kókoshnetur geta flotið yfir höfin og vaxið upp á nýjum ströndum.
+plontur|10|Jarðvegur er að hluta úr rotnuðum leifum plantna.
+plontur|10|Molta verður til þegar matarleifar og garðúrgangur rotna.
+plontur|10|Sveppir eru ekki plöntur heldur sérstakt ríki lífvera.
+plontur|13|Laufblöð eru græn því að blaðgrænan nýtir rautt og blátt ljós en endurkastar því græna.
+plontur|13|Plöntur anda líka. Á nóttunni taka þær inn súrefni og losa koltvísýring.
+plontur|13|Um helmingur súrefnisins á jörðinni kemur frá örsmáum svifþörungum í hafinu.
+plontur|13|Belgjurtir, eins og baunir og lúpína, binda köfnunarefni úr loftinu með hjálp gerla.
+plontur|13|Áburður gefur plöntum einkum köfnunarefni (N), fosfór (P) og kalín (K).
+plontur|16|Plöntur gufa út vatni um laufin, og stórt tré getur gufað út hundruðum lítra á dag.
+plontur|16|Sumar plöntur blómstra aðeins þegar dagurinn er orðinn nógu langur, og það nýta gróðurhús sér með lýsingu.
+plontur|16|Plöntur hafa vaxið á þurru landi í um 470 milljónir ára.
+plontur|16|Fyrstu blómplönturnar komu fram fyrir um 130 milljónum ára, á tímum risaeðlanna.
+#? plontur|16|Tré geta varað hvert annað við hættu með efnaboðum sem berast um rætur og sveppþræði.
+
+# Tré
+plontur|7|Árhringirnir í trjástofni segja til um aldur trésins.
+plontur|7|Barrtré halda nálunum á veturna, en lauftré fella laufin á haustin.
+plontur|7|Jólatré eru oftast greni eða fura.
+plontur|7|Pappír er gerður úr trjákvoðu.
+plontur|10|Strandrauðviður í Kaliforníu er hæsta trjátegund heims, og hæstu trén eru yfir 110 metrar.
+plontur|10|Korkur er börkur korkeikarinnar.
+plontur|10|Gúmmí er unnið úr safa gúmmítrésins.
+plontur|13|Risafuran General Sherman í Kaliforníu er stærsta tré heims að rúmmáli.
+plontur|13|Í þurrum árum verða árhringirnir mjóir.
+plontur|13|Lerki er barrtré sem fellir nálarnar á haustin.
+plontur|13|Ilmreynir er eitt fárra trjáa sem óx villt á Íslandi frá upphafi.
+plontur|13|Fura og greni voru flutt til landsins til skógræktar á 20. öld.
+plontur|13|Sitkagreni frá Alaska er algengt í íslenskum skógum.
+plontur|13|Ösp vex hratt og er víða notuð í skjólbelti á Íslandi.
+plontur|13|Íslendingar gróðursetja milljónir trjáplantna á hverju ári.
+#? plontur|13|Hæsta tré á Íslandi er sitkagreni sem er orðið yfir 30 metra hátt.
+
+# Skrýtnar plöntur og met
+plontur|7|Kaktusar geyma vatn í stofninum.
+plontur|7|Sumar plöntur éta skordýr, eins og flugugildran.
+plontur|7|Túnfífillinn breytist í biðukollu sem vindurinn feykir burt.
+plontur|10|Bambus er gras og getur vaxið næstum metra á einum degi.
+plontur|10|Risablómið Rafflesia er stærsta stakblóm heims og lyktar eins og rotið kjöt.
+plontur|10|Mímósa leggur saman laufin þegar hún er snert.
+plontur|10|Brenninetla brennir húðina með örsmáum hárum full af ertandi efnum.
+plontur|13|Þyrnarnir á kaktusum eru ummynduð laufblöð.
+plontur|13|Flugugildran lokast þegar skordýr snertir hárin í henni tvisvar í röð.
+plontur|13|Á Íslandi vex lítil kjötæta, lyfjagras, sem veiðir skordýr á klístruð laufblöð.
+plontur|13|Döðlupálmi hefur vaxið upp af um 2.000 ára gömlu fræi.
+plontur|13|Stærsta fræ heims er af pálma á Seychelles-eyjum og getur vegið yfir 15 kíló.
+plontur|13|Minnsta blómplanta heims, Wolffia, er minni en hrísgrjónakorn.
+
+# Íslenskar plöntur og matur úr náttúrunni
+plontur|7|Bláber, aðalbláber og krækiber vaxa villt víða á Íslandi.
+plontur|7|Rabarbari er í mörgum görðum á Íslandi og er notaður í sultu og grauta.
+plontur|7|Hey er þurrkað gras sem skepnum er gefið á veturna.
+plontur|10|Fjallagrös eru ekki gras heldur flétta.
+plontur|10|Fjallagrös voru áður notuð í grauta og brauð á Íslandi.
+plontur|10|Rabarbari er grænmeti, þótt hann sé oft notaður eins og ávöxtur.
+plontur|10|Lauf rabarbarans eru eitruð, en leggirnir eru borðaðir.
+plontur|10|Túnfífill er ætur, bæði blöðin og blómin.
+plontur|10|Heyskapur var eitt mikilvægasta verk sumarsins á íslenskum sveitabæjum.
+plontur|13|Söl eru rauðþörungur sem Íslendingar hafa borðað frá landnámi.
+plontur|13|Hvönn var ræktuð og borðuð á Íslandi til forna.
+plontur|13|Kúmen vex villt víða á Íslandi.
+plontur|13|Á landnámsöld ræktuðu Íslendingar bygg, og nú er það aftur ræktað víða um land.
+plontur|13|Melgresi var sáð til að hefta sandfok.
+plontur|16|Landgræðslan á rætur að rekja til ársins 1907 og er ein elsta stofnun sinnar tegundar í heiminum.
+#? plontur|10|Rúllubaggar, hey pakkað í plast, fóru að sjást á íslenskum túnum upp úr 1980.
+
+# Ræktun á Íslandi
+plontur|7|Kartöflur, rófur og gulrætur vaxa vel úti á Íslandi.
+plontur|10|Gróðurhús á Íslandi eru hituð með jarðhita og lýst með rafmagnsljósum á veturna.
+plontur|10|Í gróðurhúsi Landbúnaðarháskólans á Reykjum í Ölfusi vaxa bananar.
+plontur|10|Flestar íslenskar gúrkur og tómatar eru ræktuð í gróðurhúsum.
+
+# Matjurtir heimsins
+plontur|7|Kartöflur vaxa neðanjarðar.
+plontur|7|Gulrætur eru rætur plöntunnar.
+plontur|7|Tómatar eru ávextir, samkvæmt grasafræðinni.
+plontur|7|Á jarðarberjum eru fræin utan á berinu.
+plontur|7|Súkkulaði er gert úr fræjum kakótrésins.
+plontur|7|Te er gert úr laufum terunnans.
+plontur|10|Bananar vaxa í klösum á stórum jurtum, ekki á trjám.
+plontur|10|Kaffibaunir eru fræ kaffirunnans.
+plontur|10|Hrísgrjón eru undirstöðufæða um helmings mannkyns.
+plontur|10|Kartaflan er upprunnin í Andesfjöllum í Suður-Ameríku.
+plontur|10|Bómull kemur af hárum á fræjum bómullarplöntunnar.
+plontur|13|Vanilla kemur úr fræbelgjum orkídeu.
+plontur|13|Maís, hrísgrjón og hveiti gefa mannkyninu stærstan hluta orkunnar í fæðunni.
+plontur|13|Tómatar, maís og kakó bárust frá Ameríku til Evrópu eftir 1492.
+plontur|13|Laukur, hvítlaukur og graslaukur eru af sömu ætt.
+plontur|13|Epli, perur, jarðarber og rósir eru öll af rósaætt.
+plontur|13|Hampur og lín hafa verið notuð í föt og reipi í þúsundir ára.
+plontur|13|Gregor Mendel uppgötvaði lögmál erfðanna með því að rækta baunir.
+plontur|16|Hveiti var fyrst ræktað í Frjósama hálfmánanum í Mið-Austurlöndum fyrir um 10.000 árum.
+plontur|16|Hungursneyðin á Írlandi um 1845 varð þegar kartöflumygla eyddi uppskerunni.
+
+# Plöntur sem lyf
+plontur|13|Aspirín var upphaflega unnið úr víðiberki.
+plontur|16|Kínín, lyf við malaríu, er unnið úr berki kínatrésins.
+plontur|16|Sum krabbameinslyf eru unnin úr plöntum, eins og ýviði.
+plontur|16|Í Kew-grasagarðinum í London er eitt stærsta plöntusafn heims.
+
+# Ræktun og umhverfi
+plontur|13|Fjölær planta lifir í mörg ár, en einær planta lýkur ævinni á einu sumri.
+plontur|16|Græna byltingin um miðja 20. öld margfaldaði uppskeru með nýjum korntegundum og áburði.
+plontur|16|Norman Borlaug, kallaður faðir grænu byltingarinnar, hlaut friðarverðlaun Nóbels árið 1970.
+plontur|16|Fræbankinn á Svalbarða geymir yfir milljón fræsýni frá genabönkum um allan heim.
+plontur|16|Erfðabreyttar plöntur hafa verið ræktaðar til sölu síðan á tíunda áratug 20. aldar.
+plontur|16|Tré binda koltvísýring úr loftinu í viðinn eftir því sem þau vaxa.
+plontur|16|Ágengar tegundir eru innfluttar plöntur sem dreifa sér og ryðja innlendum gróðri burt.
+plontur|16|Á 20. öld var votlendi víða ræst fram með skurðum á Íslandi til að búa til tún.
+plontur|16|Votlendi bindur mikið kolefni, og víða er nú mokað ofan í skurði til að endurheimta það.
+plontur|16|Svepprætur, samlífi sveppa og róta, hjálpa flestum plöntum að ná í vatn og næringu.
