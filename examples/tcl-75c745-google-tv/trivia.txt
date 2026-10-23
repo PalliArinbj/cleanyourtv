@@ -328,7 +328,7 @@ nattura-islands|10|Þingvallavatn er stærsta náttúrulega stöðuvatn landsins
 nattura-islands|13|Glymur var lengi talinn hæsti foss landsins, um 200 metra hár.
 #? nattura-islands|13|Morsárfoss kom í ljós þegar Morsárjökull hopaði og er nú talinn hæsti foss landsins.
 nattura-islands|13|Ásbyrgi mótaðist í hamfarahlaupum í Jökulsá á Fjöllum.
-nattura-islands|13|Kúluskítur, þörungar sem vaxa í kúlum, finnst í Mývatni og örfáum öðrum vötnum í heiminum.
+nattura-islands|13|Kúluskítur, þörungar sem vaxa í kúlum, óx í Mývatni, einu fárra vatna í heiminum, en hefur nær horfið þaðan.
 nattura-islands|16|Mývatn og Laxá eru á skrá Ramsar-samningsins yfir mikilvæg votlendi heims.
 
 # Strönd og eyjar
@@ -395,7 +395,7 @@ dyr|7|Hvalir eru spendýr og þurfa að koma upp á yfirborðið til að anda.
 dyr|10|Íslenska kýrin er af stofni sem kom til landsins með landnámsmönnum.
 dyr|10|Landnámshænan er gamalt og litríkt íslenskt hænsnakyn.
 dyr|10|Íslenska geitin er sjaldgæf og í útrýmingarhættu.
-dyr|10|Íslenski hesturinn er lágvaxinn, en hann er samt kallaður hestur en ekki smáhestur.
+dyr|10|Íslenski hesturinn er lágvaxinn, en er samt kallaður hestur, ekki smáhestur.
 dyr|10|Ekki má flytja hesta til Íslands, og hestur sem fer úr landi má aldrei koma aftur.
 dyr|10|Krían flýgur á hverju ári frá Íslandi suður til Suðurskautslandsins og aftur til baka.
 dyr|10|Hreindýrin voru flutt til Íslands frá Noregi á 18. öld.
@@ -554,7 +554,7 @@ geimurinn|10|Svarthol er svo þétt að ekki einu sinni ljós sleppur frá því
 geimurinn|13|Næsta stjarna við sólina er Proxima Centauri, um 4,2 ljósár í burtu.
 geimurinn|13|Ljósár er vegalengdin sem ljósið fer á einu ári, um 9,5 billjónir km.
 geimurinn|13|Litur stjörnu fer eftir hitanum. Bláar stjörnur eru heitastar og rauðar kaldastar.
-geimurinn|13|Andrómeduþokan, um 2,5 milljón ljósár í burtu, er fjarlægasti hlutur sem sést með berum augum.
+geimurinn|13|Andrómeduþokan, um 2,5 milljón ljósár í burtu, er fjarlægasti hlutur sem auðveldlega sést með berum augum.
 geimurinn|13|Nær allar stjörnur sem við sjáum á næturhimninum eru í Vetrarbrautinni.
 geimurinn|13|Stjörnumerkin á himninum eru 88.
 geimurinn|13|Stjörnur verða til í risastórum skýjum úr gasi og ryki, geimþokum.
@@ -633,7 +633,7 @@ mannslikaminn|7|Hjartað er á stærð við krepptan hnefa.
 mannslikaminn|7|Í fullorðnum manni eru um 5 lítrar af blóði.
 mannslikaminn|7|Hvít blóðkorn berjast gegn sýklum.
 mannslikaminn|7|Hjarta barna slær hraðar en hjarta fullorðinna.
-mannslikaminn|10|Æðar líkamans næðu um 100.000 km ef þær væru lagðar í eina línu, tvisvar í kringum jörðina.
+mannslikaminn|10|Æðar líkamans næðu um 100.000 km ef þær væru lagðar í eina línu, meira en tvisvar í kringum jörðina.
 mannslikaminn|10|Blóðið fer einn hring um líkamann á um einni mínútu.
 mannslikaminn|10|Blóðflögur stöðva blæðingu með því að mynda storku.
 mannslikaminn|13|Rauð blóðkorn lifa í um 120 daga.
@@ -760,7 +760,7 @@ edlisfraedi|13|Þriðja lögmál Newtons: hverjum krafti fylgir jafnstór gagnkr
 edlisfraedi|13|Eldflaugar komast áfram í tómu geimnum vegna þriðja lögmáls Newtons.
 edlisfraedi|13|Kraftur er mældur í njútonum, eftir Isaac Newton.
 edlisfraedi|13|Massi og þyngd eru ekki það sama. Á tunglinu er massinn sá sami en þyngdin minni.
-edlisfraedi|13|Arkímedes sagði: „Gefið mér fastan punkt og ég skal lyfta jörðinni“ með vogarstöng.
+edlisfraedi|13|Arkímedes á að hafa sagt að með nógu langri vogarstöng gæti hann lyft jörðinni.
 edlisfraedi|13|Vogarstöng, trissa, skrúfa og hjól á öxli eru einfaldar vélar sem létta vinnuna.
 
 # Orka og varmi
@@ -946,7 +946,7 @@ efnafraedi|13|Kvikasilfur (Hg) hefur sætistöluna 80. Táknið kemur af latnesk
 efnafraedi|13|Þallín (Tl) hefur sætistöluna 81 og er tregur málmur.
 efnafraedi|10|Blý (Pb) hefur sætistöluna 82 og er tregur málmur. Táknið kemur af latneska heitinu plumbum.
 efnafraedi|13|Bismút (Bi) hefur sætistöluna 83 og er tregur málmur. Kristallar þess glitra í regnbogalitum.
-efnafraedi|13|Pólon (Po) hefur sætistöluna 84. Marie Curie fann það og nefndi eftir Póllandi, heimalandi sínu.
+efnafraedi|13|Pólon (Po) hefur sætistöluna 84. Curie-hjónin fundu það, og Marie nefndi það eftir Póllandi, heimalandi sínu.
 efnafraedi|13|Astat (At) hefur sætistöluna 85 og er halógen. Það er eitt sjaldgæfasta frumefni jarðskorpunnar.
 efnafraedi|13|Radon (Rn) hefur sætistöluna 86 og er geislavirkt eðalgas.
 efnafraedi|13|Fransín (Fr) hefur sætistöluna 87 og er alkalímálmur, nefnt eftir Frakklandi.
@@ -1020,14 +1020,14 @@ efnafraedi|13|Alkalímálmar verða hvarfgjarnari eftir því sem neðar dregur 
 efnafraedi|13|Sesín (Cs) hvarfast enn harkalegar við vatn en natrín (Na) og kalín (K).
 efnafraedi|10|Jarðalkalímálmarnir eru í 2. flokki: beryllín (Be), magnesín (Mg), kalsín (Ca), strontín (Sr), barín (Ba) og radín (Ra).
 efnafraedi|13|Jarðalkalímálmar hafa tvær gildisrafeindir og mynda jónir með hleðsluna +2.
-efnafraedi|13|Hliðarmálmarnir eru í 3. til 12. flokki lotukerfisins.
+efnafraedi|13|Hliðarmálmarnir eru í 3. til 12. flokki lotukerfisins, en deilt er um 12. flokkinn.
 efnafraedi|10|Gull (Au), silfur (Ag) og kopar (Cu) eru öll í 11. flokki og hafa öll verið notuð í mynt.
 efnafraedi|16|Platínumálmarnir eru sex: rúþen (Ru), ródín (Rh), palladín (Pd), osmín (Os), iridín (Ir) og platína (Pt).
 efnafraedi|13|Í 13. flokki, bórflokknum, eru bór (B), ál (Al), gallín (Ga), indín (In), þallín (Tl) og níhonín (Nh).
-efnafraedi|13|Í 14. flokki, kolefnisflokknum, eru kolefni (C), kísill (Si), german (Ge), tin (Sn) og blý (Pb).
+efnafraedi|13|Í 14. flokki, kolefnisflokknum, eru meðal annars kolefni (C), kísill (Si), german (Ge), tin (Sn) og blý (Pb).
 efnafraedi|13|Kolefni (C) og kísill (Si) eru bæði í 14. flokki og mynda bæði fjögur efnatengi.
-efnafraedi|13|Í 15. flokki, niturflokknum, eru köfnunarefni (N), fosfór (P), arsen (As), antimon (Sb) og bismút (Bi).
-efnafraedi|13|Í 16. flokki, flokki kalkógena, eru súrefni (O), brennisteinn (S), selen (Se), tellúr (Te) og pólon (Po).
+efnafraedi|13|Í 15. flokki, niturflokknum, eru meðal annars köfnunarefni (N), fosfór (P), arsen (As), antimon (Sb) og bismút (Bi).
+efnafraedi|13|Í 16. flokki, flokki kalkógena, eru meðal annars súrefni (O), brennisteinn (S), selen (Se), tellúr (Te) og pólon (Po).
 #? efnafraedi|16|Kalkógen merkir „málmgrýtismyndari“, því margir málmar finnast í náttúrunni sem oxíð eða súlfíð.
 efnafraedi|13|Nafnið halógen merkir „saltmyndari“ á grísku, því efni úr þessum flokki mynda sölt með málmum.
 efnafraedi|13|Í flokki halógena er flúor (F) gas við stofuhita, bróm (Br) vökvi og joð (I) fast efni.
@@ -1440,7 +1440,7 @@ bokmenntir|13|Halldór Laxness skrifaði Sjálfstætt fólk, um bóndann Bjart �
 bokmenntir|13|Bækur Arnaldar Indriðasonar og Yrsu Sigurðardóttur hafa verið þýddar á tugi tungumála.
 bokmenntir|13|Hómer orti Ilíonskviðu og Ódysseifskviðu.
 bokmenntir|16|Þórbergur Þórðarson skrifaði Ofvitann.
-bokmenntir|16|Steinn Steinarr var eitt helsta skáld atómskáldanna.
+bokmenntir|16|Steinn Steinarr er talinn brautryðjandi módernisma í íslenskri ljóðagerð.
 bokmenntir|16|Don Kíkóti eftir Cervantes er oft talin fyrsta nútímaskáldsagan.
 bokmenntir|16|Sjón hlaut Bókmenntaverðlaun Norðurlandaráðs árið 2005 fyrir Skugga-Baldur.
 
@@ -1448,7 +1448,7 @@ bokmenntir|16|Sjón hlaut Bókmenntaverðlaun Norðurlandaráðs árið 2005 fyr
 bokmenntir|13|Stuðlar og höfuðstafir, ljóðstafir, eru enn notaðir í íslenskum kveðskap.
 bokmenntir|13|Handritin voru skrifuð á kálfskinn, og í eina stóra bók þurfti skinn af tugum kálfa.
 bokmenntir|13|Gunnar Gunnarsson skrifaði Aðventu, um Fjalla-Bensa sem leitar kinda á fjöllum um vetur.
-bokmenntir|16|Dróttkvæði var flóknasti bragarháttur fornskálda, með ljóðstöfum og innrími.
+bokmenntir|16|Dróttkvæður háttur var flóknasti bragarháttur fornskálda, með ljóðstöfum og innrími.
 bokmenntir|16|Í kenningum er hlutur nefndur með umorði, til dæmis er skip kallað hestur hafsins.
 bokmenntir|16|Fræðimenn deila um hve mikið Íslendingasögurnar byggja á munnmælum og hve mikið á skáldskap ritaranna.
 bokmenntir|16|Flateyjarbók er stærsta íslenska handritið frá miðöldum.
@@ -1492,8 +1492,7 @@ landafraedi|7|Kaupmannahöfn er höfuðborg Danmerkur, Ósló Noregs og Stokkhó
 landafraedi|7|Helsinki er höfuðborg Finnlands, Þórshöfn Færeyja og Nuuk Grænlands.
 landafraedi|7|Reykjavík er nyrsta höfuðborg sjálfstæðs ríkis.
 landafraedi|10|Finnland er kallað land þúsund vatna, en þar eru í raun um 188.000 vötn.
-landafraedi|10|Á Svalbarða er fræbanki sem geymir fræ frá öllum heiminum.
-landafraedi|10|Tókýó er fjölmennasta borgarsvæði heims.
+landafraedi|10|Samkvæmt Sameinuðu þjóðunum er Jakarta nú fjölmennasta borg heims, en Tókýó var það lengi.
 landafraedi|13|Sognfjörður í Noregi er um 200 km langur, einn lengsti fjörður heims.
 landafraedi|13|Grænland og Færeyjar eru sjálfstjórnarsvæði innan danska konungsríkisins.
 landafraedi|13|La Paz í Bólivíu er hæsta höfuðborg heims, í um 3.600 metra hæð.
@@ -2114,7 +2113,7 @@ plontur|7|Pappír er gerður úr trjákvoðu.
 plontur|10|Strandrauðviður í Kaliforníu er hæsta trjátegund heims, og hæstu trén eru yfir 110 metrar.
 plontur|10|Korkur er börkur korkeikarinnar.
 plontur|10|Gúmmí er unnið úr safa gúmmítrésins.
-plontur|13|Risafuran General Sherman í Kaliforníu er stærsta tré heims að rúmmáli.
+plontur|13|General Sherman, risastórt rauðviðartré í Kaliforníu, er stærsta tré heims að rúmmáli.
 plontur|13|Í þurrum árum verða árhringirnir mjóir.
 plontur|13|Lerki er barrtré sem fellir nálarnar á haustin.
 plontur|13|Ilmreynir er eitt fárra trjáa sem óx villt á Íslandi frá upphafi.
@@ -2131,7 +2130,7 @@ plontur|7|Túnfífillinn breytist í biðukollu sem vindurinn feykir burt.
 plontur|10|Bambus er gras og getur vaxið næstum metra á einum degi.
 plontur|10|Risablómið Rafflesia er stærsta stakblóm heims og lyktar eins og rotið kjöt.
 plontur|10|Mímósa leggur saman laufin þegar hún er snert.
-plontur|10|Brenninetla brennir húðina með örsmáum hárum full af ertandi efnum.
+plontur|10|Brenninetla brennir húðina með örsmáum hárum fullum af ertandi efnum.
 plontur|13|Þyrnarnir á kaktusum eru ummynduð laufblöð.
 plontur|13|Flugugildran lokast þegar skordýr snertir hárin í henni tvisvar í röð.
 plontur|13|Á Íslandi vex lítil kjötæta, lyfjagras, sem veiðir skordýr á klístruð laufblöð.
