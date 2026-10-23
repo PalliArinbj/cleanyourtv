@@ -611,6 +611,133 @@ mannslikaminn|7|Hjartað slær um 100.000 sinnum á sólarhring.
 mannslikaminn|7|Lærleggurinn er lengsta bein líkamans.
 mannslikaminn|7|Eineggja tvíburar hafa ekki sömu fingraför.
 mannslikaminn|10|Nýfætt barn hefur um 300 bein en fullorðinn maður 206, því mörg þeirra vaxa saman.
+# Bein og vöðvar
+mannslikaminn|7|Minnsta bein líkamans, ístaðið, er inni í eyranu.
+mannslikaminn|7|Höfuðkúpan ver heilann eins og hjálmur.
+mannslikaminn|7|Stærsti vöðvi líkamans er stóri þjóvöðvinn í rassinum.
+mannslikaminn|7|Hjartað er vöðvi sem hvílist aldrei.
+mannslikaminn|7|Við erum um einum sentímetra hærri á morgnana en á kvöldin.
+mannslikaminn|10|Í höndum og fótum er meira en helmingur allra beina líkamans.
+mannslikaminn|10|Vöðvar geta aðeins togað, ekki ýtt.
+mannslikaminn|10|Í líkamanum eru yfir 600 vöðvar.
+mannslikaminn|10|Bein eru lifandi og endurnýja sig sífellt.
+mannslikaminn|10|Hnéskel nýfæddra barna er úr brjóski og verður ekki að beini fyrr en á leikskólaaldri.
+mannslikaminn|13|Beinagrindin endurnýjast öll á um tíu árum.
+mannslikaminn|13|Axlarliðurinn er hreyfanlegasti liður líkamans.
+mannslikaminn|13|Sinar tengja vöðva við bein, en liðbönd tengja bein við bein.
+mannslikaminn|13|Hásinin aftan á ökklanum er sterkasta sin líkamans.
+#? mannslikaminn|13|Miðað við þyngd eru bein sterkari en stál.
+
+# Hjarta og blóð
+mannslikaminn|7|Hjartað er á stærð við krepptan hnefa.
+mannslikaminn|7|Í fullorðnum manni eru um 5 lítrar af blóði.
+mannslikaminn|7|Hvít blóðkorn berjast gegn sýklum.
+mannslikaminn|7|Hjarta barna slær hraðar en hjarta fullorðinna.
+mannslikaminn|10|Æðar líkamans næðu um 100.000 km ef þær væru lagðar í eina línu, tvisvar í kringum jörðina.
+mannslikaminn|10|Blóðið fer einn hring um líkamann á um einni mínútu.
+mannslikaminn|10|Blóðflögur stöðva blæðingu með því að mynda storku.
+mannslikaminn|13|Rauð blóðkorn lifa í um 120 daga.
+mannslikaminn|13|Á hverri sekúndu myndar líkaminn milljónir nýrra rauðra blóðkorna.
+mannslikaminn|13|Hjarta fullorðins manns dælir um 7.000 lítrum af blóði á sólarhring.
+mannslikaminn|16|William Harvey lýsti blóðrásinni fyrstur manna árið 1628.
+mannslikaminn|16|Fyrsta hjartaígræðslan var gerð í Suður-Afríku árið 1967.
+
+# Öndun
+mannslikaminn|7|Hiksti verður þegar þindin, vöðvinn undir lungunum, kippist til.
+mannslikaminn|7|Geispi smitast milli fólks.
+mannslikaminn|10|Við öndum um 20.000 sinnum á sólarhring.
+mannslikaminn|10|Hægra lungað er stærra en það vinstra, því hjartað tekur pláss vinstra megin.
+mannslikaminn|13|Í lungunum eru hundruð milljóna lungnablaðra, og flötur þeirra er um 70 fermetrar.
+
+# Heilinn og taugarnar
+mannslikaminn|7|Heilinn vegur tæplega eitt og hálft kíló.
+mannslikaminn|10|Vinstri hluti heilans stjórnar hægri hlið líkamans, og sá hægri vinstri hliðinni.
+mannslikaminn|10|Það er ekki rétt að við notum aðeins 10% af heilanum. Við notum hann allan.
+mannslikaminn|10|Svefn hjálpar heilanum að festa í minni það sem við lærðum yfir daginn.
+mannslikaminn|10|Mænan liggur inni í hryggnum og flytur boð milli heilans og líkamans.
+mannslikaminn|13|Heilinn notar um fimmtung af allri orku líkamans.
+mannslikaminn|13|Í heilanum eru um 86 milljarðar taugafrumna.
+mannslikaminn|13|Heilinn sjálfur finnur ekki til sársauka.
+mannslikaminn|13|Þegar við kippum hendinni frá heitri hellu fer viðbragðið um mænuna án þess að bíða eftir heilanum.
+mannslikaminn|16|Taugaboð geta ferðast um 120 metra á sekúndu.
+
+# Skynfærin
+mannslikaminn|7|Skilningarvitin eru oft talin fimm: sjón, heyrn, lykt, bragð og snerting.
+mannslikaminn|7|Brúnn er algengasti augnlitur í heiminum, en blá augu eru algeng á Norðurlöndum.
+mannslikaminn|7|Mikið af því sem við köllum bragð er í raun lykt.
+mannslikaminn|7|Fingurgómarnir eru meðal næmustu staða líkamans.
+mannslikaminn|10|Augað getur greint um milljón liti.
+mannslikaminn|10|Bragðlaukarnir greina sætt, súrt, salt, beiskt og umami.
+mannslikaminn|13|Í auganu er blindur blettur þar sem sjóntaugin liggur út, en heilinn fyllir í eyðuna.
+mannslikaminn|13|Myndin á sjónhimnunni er á hvolfi, og heilinn snýr henni rétt.
+mannslikaminn|13|Litblinda er mun algengari hjá körlum en konum.
+mannslikaminn|13|Bragðlaukarnir endurnýjast á um tveggja vikna fresti.
+mannslikaminn|13|Hæfnin til að heyra háa tóna minnkar með aldrinum.
+mannslikaminn|16|Ungt fólk heyrir hljóð frá um 20 upp í 20.000 sveiflur á sekúndu.
+#? mannslikaminn|13|Eyru og nef halda áfram að stækka alla ævi.
+
+# Meltingin
+mannslikaminn|7|Munnvatnið byrjar að melta matinn um leið og við tyggjum.
+mannslikaminn|7|Garnagaul eru hljóð frá gasi og vökva sem þarmarnir þrýsta áfram.
+mannslikaminn|10|Smáþarmarnir eru um sex metra langir.
+mannslikaminn|10|Lifrin er stærsta líffærið inni í líkamanum.
+mannslikaminn|10|Maður getur lifað góðu lífi með aðeins eitt nýra.
+mannslikaminn|13|Maginn fær nýja slímhúð á fárra daga fresti svo að magasýran meltir hann ekki sjálfan.
+mannslikaminn|13|Lifrin getur vaxið aftur þótt stór hluti hennar sé fjarlægður.
+mannslikaminn|13|Í þörmunum lifa tugir billjóna gerla sem hjálpa okkur að melta matinn.
+mannslikaminn|13|Nýrun sía allt blóðið í líkamanum mörgum sinnum á dag.
+
+# Húð, hár og neglur
+mannslikaminn|7|Húðin er stærsta líffæri líkamans.
+mannslikaminn|7|Neglurnar á fingrunum vaxa hraðar en á tánum.
+mannslikaminn|7|Á höfðinu eru um 100.000 hár.
+mannslikaminn|7|Við svitnum til að kæla líkamann.
+mannslikaminn|7|Freknur dökkna í sólinni.
+mannslikaminn|10|Í húðinni myndast D-vítamín þegar sólin skín á hana.
+mannslikaminn|13|Líkaminn losar sig við tugþúsundir húðfrumna á hverri mínútu.
+mannslikaminn|13|Gæsahúð er leifar frá því að forfeður okkar ýfðu feldinn til að halda á sér hita.
+mannslikaminn|13|Litarefnið melanín ræður lit húðar, hárs og augna.
+mannslikaminn|13|Á Íslandi er vetrarsólin svo lág að húðin myndar lítið sem ekkert D-vítamín frá október til mars.
+
+# Ónæmi, svefn og vöxtur
+mannslikaminn|7|Börn þurfa meiri svefn en fullorðnir.
+mannslikaminn|7|Við sofum um þriðjung ævinnar.
+mannslikaminn|7|Börn fá 20 barnatennur, en fullorðnir hafa 32 tennur.
+mannslikaminn|7|Börn vaxa hraðast á fyrsta árinu.
+mannslikaminn|10|Ónæmiskerfið man eftir sýklum sem það hefur barist við áður.
+mannslikaminn|10|Bóluefni kenna ónæmiskerfinu að þekkja sýkla áður en þeir valda veikindum.
+mannslikaminn|10|Glerungur tannanna er harðasta efni líkamans.
+mannslikaminn|10|Nýfædd börn gráta oftast án tára fyrstu vikurnar.
+mannslikaminn|13|Ungbörn geta andað og kyngt samtímis fyrstu mánuðina.
+mannslikaminn|13|Edward Jenner bjó til fyrsta bóluefnið, gegn bólusótt, árið 1796.
+mannslikaminn|13|Bólusótt er eini sjúkdómurinn í mönnum sem tekist hefur að útrýma, árið 1980.
+mannslikaminn|13|Draumar eru skýrastir í draumsvefni, þegar augun hreyfast hratt undir augnlokunum.
+
+# Frumur og erfðir
+mannslikaminn|13|Líkaminn er gerður úr um 37 billjónum frumna.
+mannslikaminn|13|DNA-ið í einni frumu væri um tveggja metra langt ef það væri rakið í sundur.
+mannslikaminn|13|Í flestum frumum eru 46 litningar, 23 frá hvoru foreldri.
+mannslikaminn|16|Ef allt DNA líkamans væri rakið út næði það hundruð sinnum til sólarinnar og til baka.
+mannslikaminn|16|Um 99,9% af erfðaefni allra manna er eins.
+mannslikaminn|16|Erfðamengi mannsins var raðgreint að mestu árið 2003.
+mannslikaminn|16|Íslendingar eru meðal þeirra þjóða sem mest hafa verið rannsakaðar erfðafræðilega.
+
+# Saga læknisfræðinnar
+mannslikaminn|13|Hippókrates, grískur læknir fyrir um 2.400 árum, er kallaður faðir læknisfræðinnar.
+mannslikaminn|13|Röntgengeislar fundust árið 1895 og gerðu læknum kleift að sjá bein án þess að skera.
+mannslikaminn|16|Ignaz Semmelweis sýndi um 1847 að handþvottur lækna bjargaði lífi mæðra á fæðingardeildum.
+mannslikaminn|16|Svæfing við skurðaðgerðir kom fyrst til sögunnar um miðja 19. öld.
+mannslikaminn|16|Insúlín fannst árið 1921 og breytti sykursýki úr banvænum sjúkdómi í sjúkdóm sem lifa má með.
+mannslikaminn|16|Bjarni Pálsson varð fyrsti landlæknir Íslands árið 1760.
+mannslikaminn|16|Landspítalinn tók til starfa árið 1930.
+
+# Hvernig líkaminn stjórnar sér
+mannslikaminn|16|Augasteinninn missir teygjanleika með aldrinum, og því þurfa flestir lesgleraugu upp úr fertugu.
+mannslikaminn|16|Líkamshitinn er venjulega um 37 °C, en sveiflast um allt að eina gráðu yfir sólarhringinn.
+mannslikaminn|16|Sjálfvirka taugakerfið stýrir hjartslætti, meltingu og öndun án þess að við hugsum um það.
+mannslikaminn|16|Hormón eru boðefni sem berast með blóðinu, eins og adrenalín sem býr líkamann undir átök eða flótta.
+mannslikaminn|16|Mótefni eru prótín sem ónæmiskerfið býr til og festast á tiltekna sýkla.
+mannslikaminn|16|Sýklalyf vinna á bakteríum en ekki á veirum.
 
 # Eðlisfræði
 edlisfraedi|7|Vatn þenst út þegar það frýs. Þess vegna flýtur ísinn ofan á vatninu.
