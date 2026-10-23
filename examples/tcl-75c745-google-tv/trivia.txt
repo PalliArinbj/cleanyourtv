@@ -270,6 +270,132 @@ efnafraedi|13|Silfurberg frá Helgustöðum í Reyðarfirði var um aldir notað
 efnafraedi|13|Á miðöldum var brennisteinn (S) unninn á íslenskum hverasvæðum og seldur úr landi í púður.
 efnafraedi|13|Úr einu grammi af gulli (Au) má hamra þynnu sem er um einn fermetri.
 
+# Efnafræði: efnahvörf og hugtök
+efnafraedi|7|Ryð myndast þegar járn (Fe) hvarfast við súrefni og vatn.
+efnafraedi|7|Eldur þarf þrennt til að loga: eldsneyti, súrefni og hita.
+efnafraedi|7|Sítrónur eru súrar vegna sítrónusýru.
+efnafraedi|10|Í efnahvarfi verða ný efni til, en atómin sjálf hverfa hvorki né verða til.
+efnafraedi|13|Massi efnanna er sá sami fyrir og eftir efnahvarf. Lavoisier sýndi fram á það á 18. öld.
+efnafraedi|10|Sýrur hafa pH-gildi undir 7, basar yfir 7, og hreint vatn er hlutlaust með pH 7.
+efnafraedi|13|Hvert skref á pH-kvarðanum er tífalt: lausn með pH 3 er tíu sinnum súrari en lausn með pH 4.
+efnafraedi|10|Magasýra er að mestu saltsýra (HCl) og hefur pH-gildi um 1,5 til 3,5.
+efnafraedi|10|Sýra og basi hlutleysa hvort annað og mynda salt og vatn.
+efnafraedi|13|Hvati hraðar efnahvarfi án þess að eyðast sjálfur.
+efnafraedi|13|Ensím eru hvatar líkamans og hraða efnahvörfum sem annars tækju óralangan tíma.
+efnafraedi|13|Í hvarfakút bíla breyta platína (Pt), palladín (Pd) og ródín (Rh) eitruðum útblæstri í skaðminni efni.
+efnafraedi|13|Oxun er þegar efni lætur frá sér rafeindir, afoxun þegar það tekur við þeim.
+efnafraedi|16|Í rafhlöðu verður oxun við annað skautið og afoxun við hitt, og rafeindirnar renna á milli um rafrásina.
+#? efnafraedi|13|Útvermið efnahvarf gefur frá sér varma, en innvermið efnahvarf tekur til sín varma.
+efnafraedi|10|Kælipokar í sjúkrakössum kólna af því að efnin í þeim taka til sín varma þegar þau leysast upp.
+efnafraedi|10|Hitapokar fyrir hendur hitna af því að járnduft ryðgar hratt inni í þeim.
+efnafraedi|13|Samgilt tengi myndast þegar tvö atóm deila rafeindum, en jónatengi þegar annað gefur hinu rafeind.
+efnafraedi|13|Vatnssameindin er beygð, og því er annar endi hennar örlítið neikvæður og hinn örlítið jákvæður.
+efnafraedi|10|Vatn leysir upp fleiri efni en nokkur annar vökvi.
+efnafraedi|10|Olía og vatn blandast ekki, því vatnssameindir laðast hver að annarri en ekki að olíunni.
+efnafraedi|13|Sápa virkar af því að annar endi sápusameindarinnar laðast að vatni en hinn að fitu.
+efnafraedi|16|Eitt mól af efni er um 602 trilljarðar sameinda eða atóma. Sú tala kallast Avogadro-talan.
+efnafraedi|13|Suðumark vatns lækkar með hæð. Á tindi Everest sýður vatn við um 70 °C.
+efnafraedi|10|Salti er stráð á götur á veturna því saltvatn frýs við lægra hitastig en hreint vatn.
+efnafraedi|13|Þurrís er frosinn koltvísýringur (CO₂), um −78 °C kaldur, og verður beint að gasi án þess að bráðna.
+efnafraedi|10|Efni geta verið föst, fljótandi eða gös. Fjórða ástandið, rafgas, er í eldingum og í sólinni.
+efnafraedi|13|Í kristöllum raðast atómin í reglulegt mynstur sem endurtekur sig.
+efnafraedi|16|Helmingunartími er tíminn sem það tekur helming geislavirks efnis að breytast í annað efni.
+efnafraedi|16|Aldursgreining með kolefni-14 byggir á því að helmingunartími þess er um 5.730 ár.
+efnafraedi|16|Hreint vatn leiðir rafmagn illa. Það eru uppleyst sölt sem gera vatn leiðandi.
+
+# Efnafræði: í daglegu lífi
+efnafraedi|7|Matarsódi og edik freyða saman því þau mynda koltvísýring.
+efnafraedi|7|Sykur leysist hraðar upp í heitu vatni en köldu.
+efnafraedi|7|Laufblöð verða gul og rauð á haustin þegar græna litarefnið, blaðgrænan, brotnar niður.
+efnafraedi|10|Lyftiduft lætur kökur lyfta sér með því að mynda koltvísýringsbólur í deiginu.
+efnafraedi|10|Ger lyftir brauði með því að breyta sykri í koltvísýring og alkóhól.
+efnafraedi|10|Laukur fær mann til að tárast því hann losar brennisteinsefni þegar hann er skorinn.
+efnafraedi|13|Epli verða brún þegar efni í þeim hvarfast við súrefni loftsins. Sítrónusafi hægir á því.
+efnafraedi|13|Brauð verður brúnt í brauðrist vegna efnahvarfs milli sykurs og prótína, Maillard-hvarfsins.
+efnafraedi|10|Blaðgræna gerir plöntur grænar og hjálpar þeim að breyta sólarljósi í næringu.
+efnafraedi|13|Ljóstillífun breytir koltvísýringi og vatni í sykur og súrefni með orku sólarljóssins.
+efnafraedi|10|Flugeldar fá litina úr frumefnum: strontín (Sr) gefur rautt, barín (Ba) grænt og kopar (Cu) blátt.
+efnafraedi|10|Natrín (Na) brennur með gulum loga, og gulu götuljósin voru natrínlampar.
+efnafraedi|13|Ósonlagið ver jörðina gegn útfjólubláu ljósi. Óson (O₃) er sameind úr þremur súrefnisatómum.
+efnafraedi|13|Montreal-bókunin frá 1987 bannaði efni sem eyddu ósonlaginu, og það er nú að jafna sig.
+efnafraedi|13|Koltvísýringur (CO₂) gerir gosdrykki freyðandi og leysist betur upp í köldum drykk en heitum.
+efnafraedi|13|Klórlyktin í sundlaugum kemur af efnum sem myndast þegar klór (Cl) hvarfast við svita og þvag.
+efnafraedi|13|Ryðfrítt stál ryðgar ekki því króm (Cr) í því myndar örþunna verndarhúð.
+efnafraedi|13|Ál (Al) ryðgar ekki eins og járn, því á það myndast þunn og þétt oxíðhúð.
+efnafraedi|10|Gler er að mestu búið til úr sandi, sem er að mestu kísill (Si) og súrefni.
+efnafraedi|13|Steypa harðnar ekki af því að hún þornar, heldur vegna efnahvarfs milli sements og vatns.
+efnafraedi|10|Plast er gert úr löngum keðjum sameinda sem kallast fjölliður.
+efnafraedi|13|Flest plast er unnið úr olíu, og það getur tekið hundruð ára að brotna niður.
+efnafraedi|13|Kolsýringur (CO) er lyktarlaust, eitrað gas sem myndast þegar eitthvað brennur án nægs súrefnis.
+efnafraedi|10|Gas til eldunar er lyktarlaust. Lyktarefni er sett í það svo að leki finnist.
+efnafraedi|13|Í tannkremi eru oft flúorsambönd, sem styrkja glerung tannanna.
+#? efnafraedi|13|Tennur og bein eru að mestu úr kalsínfosfati.
+efnafraedi|10|Blóðið er rautt vegna járns (Fe) í blóðrauðanum.
+efnafraedi|13|Kolkrabbar hafa blátt blóð því í því ber kopar (Cu) súrefnið en ekki járn (Fe).
+efnafraedi|10|Popp springur þegar vatnið inni í korninu verður að gufu og sprengir skelina.
+efnafraedi|13|Chili er sterkt vegna kapsaísíns. Það leysist í fitu, svo mjólk slær betur á sviðann en vatn.
+efnafraedi|10|Ilmurinn af ilmvatni berst um herbergið því sameindir þess gufa upp og dreifast um loftið.
+efnafraedi|13|Mjólk súrnar þegar gerlar breyta mjólkursykri í mjólkursýru.
+efnafraedi|13|Bensín og dísilolía eru unnin úr hráolíu með eimingu.
+efnafraedi|10|Þegar vetni (H) brennur verður aðeins vatn eftir.
+efnafraedi|13|Í flestum símum og rafbílum eru litínjónarafhlöður, kenndar við litín (Li).
+efnafraedi|10|Koffín finnst í kaffi, tei og súkkulaði og örvar taugakerfið.
+efnafraedi|10|Um 60% af mannslíkamanum er vatn.
+efnafraedi|10|Gull (Au) fellur ekki á, og því glóa gamlir gullpeningar enn eins og nýir.
+efnafraedi|13|Silfur (Ag) fellur á vegna brennisteins í loftinu, sem myndar svart silfursúlfíð.
+efnafraedi|10|Ljósið í eldflugum og sumum sjávardýrum kemur af efnahvarfi sem kallast lífljómun.
+efnafraedi|16|Grafen er eitt kolefnisatóm (C) á þykkt og eitt sterkasta efni sem fundist hefur.
+
+# Efnafræði: saga
+efnafraedi|10|Gríski heimspekingurinn Demókrítos taldi fyrir um 2.400 árum að allt væri úr örsmáum eindum, atómum.
+efnafraedi|10|Orðið atóm kemur af gríska orðinu atomos, sem merkir „ódeilanlegur“.
+efnafraedi|13|Gullgerðarmenn reyndu öldum saman að breyta blýi í gull, en fundu í staðinn mörg ný efni.
+efnafraedi|16|Robert Boyle hafnaði því árið 1661 að allt væri úr fjórum höfuðskepnum: jörð, vatni, lofti og eldi.
+efnafraedi|13|Henning Brand fann fosfór (P) árið 1669 þegar hann sauð niður þvag.
+efnafraedi|16|Carl Wilhelm Scheele fann súrefni nokkru áður en Joseph Priestley, sem birti fund sinn árið 1774.
+efnafraedi|13|Antoine Lavoisier gaf súrefni og vetni nöfn sín og er oft kallaður faðir nútímaefnafræði.
+efnafraedi|13|John Dalton setti fram atómkenningu sína í byrjun 19. aldar.
+efnafraedi|13|Svíinn Jöns Jacob Berzelius kom á efnatáknunum sem enn eru notuð, með stöfum úr latneskum heitum.
+efnafraedi|16|Charles Goodyear herti gúmmí með brennisteini (S) árið 1839 og gerði það endingargott.
+efnafraedi|10|Alfred Nobel fann upp dínamít árið 1867 og stofnaði síðar Nóbelsverðlaunin með auði sínum.
+efnafraedi|13|Hreint ál (Al) var eitt sinn dýrara en gull. Napóleon III bauð heiðursgestum að borða með álhnífapörum.
+efnafraedi|13|Sakkarín, fyrsta gervisætuefnið, fannst árið 1879 af því að efnafræðingur gleymdi að þvo sér um hendurnar.
+efnafraedi|13|J.J. Thomson fann rafeindina árið 1897.
+efnafraedi|13|Marie Curie bjó til orðið geislavirkni.
+efnafraedi|13|Minnisbækur Marie Curie eru enn geislavirkar og eru geymdar í blýklæddum kössum.
+efnafraedi|13|Ernest Rutherford sýndi árið 1911 að atóm hafa örsmáan kjarna og eru að mestu tóm.
+efnafraedi|13|Ef atóm væri á stærð við fótboltavöll væri kjarninn eins og baun á miðjum vellinum.
+efnafraedi|16|Fritz Haber fann leið til að vinna ammoníak úr lofti. Áburður úr því brauðfæðir nú milljarða manna.
+efnafraedi|10|Alexander Fleming fann pensilín árið 1928 þegar mygla óx í skál á rannsóknarstofu hans.
+efnafraedi|13|James Chadwick fann nifteindina árið 1932.
+efnafraedi|13|Teflon fannst fyrir slysni árið 1938 þegar gas í kút breyttist í hált, hvítt duft.
+efnafraedi|10|Rosalind Franklin tók röntgenmyndir sem sýndu að DNA er tvöfaldur gormur.
+efnafraedi|16|Linus Pauling er sá eini sem hlotið hefur tvenn Nóbelsverðlaun óskipt: í efnafræði og friðarverðlaunin.
+efnafraedi|16|Dorothy Hodgkin hlaut Nóbelsverðlaun í efnafræði árið 1964 fyrir að greina byggingu B12-vítamíns og pensilíns.
+
+# Efnafræði: Ísland
+efnafraedi|10|Hveralyktin, eins og af fúleggjum, kemur af brennisteinsvetni (H₂S).
+efnafraedi|13|Jarðhiti hitar um níu af hverjum tíu húsum á Íslandi.
+efnafraedi|13|Rafmagn á Íslandi er nær allt framleitt með vatnsafli og jarðhita.
+efnafraedi|13|Vatnið í Bláa lóninu sýnist blátt vegna kísils (Si) í því, sem endurkastar bláu ljósi.
+efnafraedi|16|Á Hellisheiði er koltvísýringi (CO₂) dælt niður í basalt, þar sem hann verður að steini á um tveimur árum.
+efnafraedi|10|Basalt, algengasta berg landsins, er storknað hraun.
+efnafraedi|13|Hrafntinna er eldfjallagler sem myndast þegar hraun kólnar svo hratt að það nær ekki að kristallast.
+efnafraedi|13|Ál (Al) er unnið úr súráli með rafgreiningu, sem krefst mikillar raforku. Þess vegna eru álver á Íslandi.
+efnafraedi|16|Kísilgúr var unninn úr botni Mývatns, úr skeljum kísilþörunga, þar til verksmiðjunni var lokað árið 2004.
+efnafraedi|16|Í Svartsengi er framleitt metanól úr koltvísýringi frá jarðvarmaverinu og vetni.
+efnafraedi|16|Leirhverir eru súrir: brennisteinsvetni breytist þar í brennisteinssýru, sem leysir bergið upp í leir.
+efnafraedi|13|Íslenskt neysluvatn er mjúkt, með lítið af uppleystu kalsíni (Ca) og magnesíni (Mg).
+efnafraedi|13|Eldgos losa brennisteinstvíoxíð (SO₂), sem veldur gosmengun.
+efnafraedi|16|Í Skaftáreldum 1783 losnaði svo mikið brennisteinsgas að móða lá yfir stórum hluta Evrópu.
+#? efnafraedi|16|Í heita vatnið frá Nesjavöllum er bætt örlitlu brennisteinsvetni sem bindur súrefni og ver lagnir gegn tæringu.
+efnafraedi|10|Skyr er búið til úr undanrennu með hjálp mjólkursýrugerla.
+efnafraedi|10|Lýsi er ríkt af D-vítamíni og ómega-3 fitusýrum.
+efnafraedi|10|Saltfiskur geymist lengi því saltið dregur vatnið úr fiskinum svo að gerlar þrífast ekki.
+efnafraedi|7|Harðfiskur geymist lengi því nær allt vatnið hefur verið þurrkað úr honum.
+efnafraedi|13|Hákarl er eitraður nýr, en við kæsingu brotnar eiturefnið niður og ammoníakslyktin myndast.
+efnafraedi|10|Hangikjöt er reykt, oft við tað, og reykurinn gefur bæði bragð og geymsluþol.
+
 # Íslensk tunga
 islensk-tunga|7|Íslenska hefur fjögur föll: nefnifall, þolfall, þágufall og eignarfall.
 islensk-tunga|10|Sigurður Nordal bjó til orðið „tölva“ úr orðunum „tala“ og „völva“.
