@@ -378,6 +378,114 @@ dyr|7|Lundinn getur borið meira en tíu síli í goggnum í einu.
 dyr|7|Steypireyðurin er stærsta dýr sem vitað er til að hafi lifað á jörðinni, stærri en nokkur risaeðla.
 dyr|7|Íslenski hesturinn getur haft fimm gangtegundir: fet, brokk, stökk, tölt og skeið.
 dyr|10|Melrakkinn var eina landspendýrið á Íslandi þegar landnámsmenn komu.
+# Íslensk dýr
+dyr|7|Lundinn verpir í holum sem hann grefur sjálfur í jörðina.
+dyr|7|Í Vestmannaeyjum rata lundapysjur stundum inn í bæinn, og börn hjálpa þeim út á sjó.
+dyr|7|Íslenska kindin getur verið hvít, svört, grá eða mórauð.
+dyr|7|Íslenski fjárhundurinn er eina hundakynið sem er upprunnið á Íslandi.
+dyr|7|Rjúpan er hvít á veturna og brún á sumrin.
+dyr|7|Melrakkinn getur verið hvítur eða mórauður.
+dyr|7|Krían ver hreiðrið sitt með því að steypa sér niður að fólki og gogga í það.
+dyr|7|Lóan er vorboði Íslendinga.
+dyr|7|Ísbirnir koma stundum til Íslands á hafís frá Grænlandi.
+dyr|7|Hreindýr lifa villt á Austurlandi.
+dyr|7|Á Íslandi eru engir froskar.
+dyr|7|Hnúfubakar stökkva oft upp úr sjónum og skella sér niður aftur.
+dyr|7|Hvalir eru spendýr og þurfa að koma upp á yfirborðið til að anda.
+dyr|10|Íslenska kýrin er af stofni sem kom til landsins með landnámsmönnum.
+dyr|10|Landnámshænan er gamalt og litríkt íslenskt hænsnakyn.
+dyr|10|Íslenska geitin er sjaldgæf og í útrýmingarhættu.
+dyr|10|Íslenski hesturinn er lágvaxinn, en hann er samt kallaður hestur en ekki smáhestur.
+dyr|10|Ekki má flytja hesta til Íslands, og hestur sem fer úr landi má aldrei koma aftur.
+dyr|10|Krían flýgur á hverju ári frá Íslandi suður til Suðurskautslandsins og aftur til baka.
+dyr|10|Hreindýrin voru flutt til Íslands frá Noregi á 18. öld.
+dyr|10|Haförninn er stærsti ránfugl landsins.
+dyr|10|Hvítur melrakki er hvítur á veturna en grábrúnn á sumrin.
+dyr|10|Minkurinn var fluttur til landsins til loðdýraræktar og slapp út í náttúruna.
+dyr|10|Laxinn syndir upp í ána þar sem hann klaktist til að hrygna.
+dyr|10|Þorskurinn hefur verið mikilvægasti nytjafiskur Íslendinga í aldir.
+dyr|10|Síldin var kölluð silfur hafsins.
+dyr|10|Grindhvalir synda saman í stórum hópum sem kallast vöður.
+dyr|10|Háhyrningar eru stærsta tegund höfrunga.
+dyr|10|Hrafninn er einn greindasti fugl heims.
+dyr|10|Hrafnar geta hermt eftir hljóðum, jafnvel mannamáli.
+dyr|10|Æðarfuglinn fóðrar hreiðrið með dún, sem bændur safna og selja.
+dyr|10|Grágæsir og heiðagæsir koma til Íslands á vorin til að verpa.
+dyr|13|Krían fer lengstu farleið allra dýra, um 70.000 km á ári.
+dyr|13|Lundinn getur kafað niður á um 60 metra dýpi.
+dyr|13|Um helmingur allra lunda í heiminum verpir á Íslandi.
+dyr|13|Í Vestmannaeyjum er stærsta lundabyggð heims.
+dyr|13|Hrossagaukurinn hneggjar með stélfjöðrunum þegar hann steypir sér í flugi.
+dyr|13|Æðardúnn er einn besti einangrari sem til er.
+dyr|13|Í Þingvallavatni lifa fjögur afbrigði af bleikju.
+dyr|13|Íslenska sauðféð kom með landnámsmönnum og hefur lítið blandast öðrum kynjum.
+dyr|13|Forystufé er sérstakt íslenskt fé sem leiðir hjörðina og er sagt veðurglöggt.
+dyr|13|Geirfuglinn var stór og ófleygur. Síðustu tveir fuglarnir voru drepnir í Eldey árið 1844.
+dyr|13|Yfir 20 hvalategundir lifa í hafinu umhverfis Ísland.
+dyr|13|Grænlandshákarlinn getur orðið að minnsta kosti 270 ára gamall.
+#? dyr|13|Glókollur, sem fór að verpa á Íslandi upp úr 1995, er minnsti fugl landsins.
+dyr|16|Haförninn var nærri útdauður á Íslandi en hefur fjölgað aftur síðan hann var friðaður árið 1914.
+dyr|16|Landselur og útselur eru einu selirnir sem kæpa við Ísland.
+dyr|16|Íslenski fjárhundurinn var nærri útdauður um miðja 20. öld.
+
+# Dýr heimsins
+dyr|7|Gíraffinn er hæsta dýr jarðar.
+dyr|7|Fíllinn er stærsta landdýr jarðar.
+dyr|7|Blettatígurinn er fljótasta landdýrið.
+dyr|7|Mörgæsir geta ekki flogið, en þær eru frábærir sundfuglar.
+dyr|7|Kengúrur bera ungana sína í poka framan á maganum.
+dyr|7|Býflugur búa til hunang úr blómasafa.
+dyr|7|Kóngulær hafa átta fætur en skordýr sex.
+dyr|7|Kamelljón geta skipt um lit.
+dyr|7|Kólibrífuglinn getur flogið afturábak.
+dyr|7|Engir tveir sebrahestar eru með eins rendur.
+dyr|7|Kolkrabbar hafa átta arma og geta skipt um lit.
+dyr|7|Sæotrar haldast í hendur þegar þeir sofa svo að þá reki ekki hvorn frá öðrum.
+dyr|7|Strúturinn verpir stærstu eggjum allra fugla.
+dyr|7|Maurar geta lyft margfaldri eigin þyngd.
+dyr|7|Kettir sofa 12 til 16 klukkustundir á sólarhring.
+dyr|7|Ísbjörninn er með svarta húð undir hvítum feldinum.
+dyr|10|Fiðrildi finna bragð með fótunum.
+dyr|10|Lyktarskyn hunda er þúsundum sinnum næmara en lyktarskyn manna.
+dyr|10|Uglur geta snúið höfðinu um 270 gráður.
+dyr|10|Hákarlar hafa engin bein. Beinagrind þeirra er úr brjóski.
+dyr|10|Leðurblökur rata í myrkri með því að gefa frá sér hljóð og hlusta eftir bergmálinu.
+dyr|10|Leðurblökur eru einu spendýrin sem geta flogið.
+dyr|10|Breiðnefurinn er spendýr sem verpir eggjum.
+dyr|10|Augu strútsins eru stærri en heilinn í honum.
+dyr|10|Hjarta steypireyðar vegur um 180 kíló.
+dyr|10|Tígrisdýr eru röndótt alveg inn að húð.
+dyr|10|Pandabirnir borða bambus í allt að 14 klukkustundir á dag.
+dyr|10|Axolótlinn getur látið nýjan fót vaxa ef hann missir fót.
+dyr|10|Býflugur dansa til að segja hinum í búinu hvar blóm er að finna.
+dyr|10|Simpansar nota verkfæri, eins og prik til að veiða termíta.
+dyr|10|Íkornar finna ekki allar hneturnar sem þeir grafa, og af sumum þeirra vaxa ný tré.
+dyr|10|Hjá sæhestum gengur karldýrið með afkvæmin.
+dyr|13|Hákarlar hafa verið til lengur en tré.
+dyr|13|Flóðhestar geta ekki synt. Þeir ganga eftir botninum.
+dyr|13|Sporðdrekar glóa í útfjólubláu ljósi.
+dyr|13|Höfrungar sofa með annan helming heilans í einu.
+dyr|13|Krókódílar hafa lítið breyst í tugmilljónir ára.
+dyr|13|Ein tegund marglyttu getur snúið aftur á æskuskeið og er því nánast ódauðleg.
+dyr|13|Bessadýr, örsmá dýr, hafa lifað af ferð út í geiminn.
+dyr|13|Fílar þekkja sjálfa sig í spegli.
+dyr|13|Fuglar eru afkomendur risaeðla.
+dyr|13|Hjarta kólibrífugls getur slegið yfir 1.200 slög á mínútu.
+dyr|13|Norðhvalurinn getur orðið yfir 200 ára gamall.
+dyr|13|Dúdúfuglinn á Máritíus dó út um 1680, innan við öld eftir að menn komu þangað.
+#? dyr|13|Kolkrabbar hafa níu heila: einn í höfðinu og einn í hverjum armi.
+
+# Lífríki og þróun
+dyr|16|Darwin setti fram þróunarkenninguna árið 1859, í bókinni Uppruni tegundanna.
+dyr|16|Finkur á Galápagoseyjum hafa ólíka gogga eftir því hvaða fæðu er að fá á hverri eyju.
+dyr|16|Linné gaf hverri tegund tvö latnesk heiti, ættkvíslarheiti og tegundarheiti.
+dyr|16|Skordýr eru fjölbreyttasti dýrahópur jarðar. Um milljón tegunda hefur verið lýst.
+dyr|16|Bjöllur eru um fjórðungur allra þekktra dýrategunda.
+dyr|16|Hvalir eru komnir af landdýrum sem lifðu fyrir um 50 milljónum ára.
+dyr|16|Flóðhesturinn er náskyldasti núlifandi ættingi hvalanna.
+dyr|16|Við heita hveri á hafsbotni lifa dýr þar sem sólarljós nær aldrei til.
+dyr|16|Kóralrif þekja innan við 1% hafsbotnsins, en þar býr um fjórðungur allra sjávartegunda.
+dyr|16|Um þriðjungur matjurta mannkyns er háður býflugum og öðrum frævunardýrum.
 
 # Geimurinn
 geimurinn|7|Fótspor geimfaranna sjást enn á tunglinu, því þar er enginn vindur sem afmáir þau.
