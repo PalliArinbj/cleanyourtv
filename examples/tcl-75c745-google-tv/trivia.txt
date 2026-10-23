@@ -1725,6 +1725,121 @@ ithrottir|7|Íslenska karlalandsliðið í handbolta vann silfur á Ólympíulei
 ithrottir|7|Árið 2018 varð Ísland fámennasta þjóð sem keppt hefur á HM karla í fótbolta.
 ithrottir|10|Fyrstu Ólympíuleikar nútímans fóru fram í Aþenu árið 1896.
 ithrottir|10|Vilhjálmur Einarsson vann fyrstu ólympíuverðlaun Íslendinga, silfur í þrístökki í Melbourne 1956.
+# Íslenskar íþróttir
+ithrottir|7|Glíma er gömul íslensk þjóðaríþrótt.
+ithrottir|7|Handbolti er oft kallaður þjóðaríþrótt Íslendinga nú á dögum.
+ithrottir|7|„Strákarnir okkar“ er gælunafn handboltalandsliðsins.
+ithrottir|7|Víkingaklappið varð heimsfrægt á EM í fótbolta árið 2016.
+ithrottir|7|Á EM 2016 vann Ísland England, 2–1, í 16 liða úrslitum.
+ithrottir|7|Hafþór Júlíus Björnsson, Fjallið, varð sterkasti maður heims árið 2018.
+ithrottir|7|Hafþór Júlíus lék Fjallið í sjónvarpsþáttunum Game of Thrones.
+ithrottir|7|Jón Páll Sigmarsson sagði: „Það er ekkert mál fyrir Jón Pál.“
+ithrottir|7|Í íslenskum sundlaugum þvær fólk sér án sundfata áður en það fer ofan í laugina.
+ithrottir|10|Í glímu taka keppendur tök á glímubeltum hvor annars.
+ithrottir|10|EM 2016 var fyrsta stórmót karlalandsliðsins í fótbolta.
+ithrottir|10|Á EM 2016 komst Ísland í átta liða úrslit, þar sem liðið tapaði fyrir Frakklandi.
+ithrottir|10|Heimir Hallgrímsson, sem þjálfaði landsliðið á EM 2016 og HM 2018, er tannlæknir.
+ithrottir|10|Hannes Þór Halldórsson varði vítaspyrnu frá Lionel Messi á HM 2018.
+ithrottir|10|Eiður Smári Guðjohnsen lék meðal annars með Chelsea og Barcelona.
+ithrottir|10|Íslendingar hafa unnið fern ólympíuverðlaun: silfur 1956, brons 1984, brons 2000 og silfur 2008.
+ithrottir|10|Vala Flosadóttir vann brons í stangarstökki á Ólympíuleikunum í Sydney árið 2000.
+ithrottir|10|Jón Páll Sigmarsson vann keppnina Sterkasti maður heims fjórum sinnum.
+ithrottir|10|Reykjavíkurmaraþonið er hlaupið á Menningarnótt í ágúst.
+ithrottir|13|Lars Lagerbäck og Heimir Hallgrímsson þjálfuðu karlalandsliðið saman á EM 2016.
+ithrottir|13|Hannes Þór Halldórsson er líka kvikmyndaleikstjóri.
+ithrottir|13|Eiður Smári kom inn á fyrir föður sinn, Arnór Guðjohnsen, í landsleik árið 1996.
+ithrottir|13|Kvennalandsliðið í fótbolta komst fyrst á EM árið 2009.
+ithrottir|13|Bjarni Friðriksson vann brons í júdó á Ólympíuleikunum í Los Angeles árið 1984.
+ithrottir|13|Karlalandsliðið í handbolta vann brons á EM árið 2010.
+ithrottir|13|Ólafur Stefánsson er talinn einn besti handboltamaður sem Ísland hefur átt.
+ithrottir|13|Magnús Ver Magnússon vann líka keppnina Sterkasti maður heims fjórum sinnum.
+ithrottir|13|Anníe Mist Þórisdóttir og Katrín Tanja Davíðsdóttir hafa báðar unnið heimsleikana í CrossFit tvisvar.
+ithrottir|13|Friðrik Ólafsson varð fyrsti stórmeistari Íslendinga í skák árið 1958.
+ithrottir|13|Íþróttamaður ársins hefur verið valinn síðan 1956, og Vilhjálmur Einarsson var fyrstur.
+ithrottir|13|Körfuboltalandsliðið komst fyrst á EM árið 2015.
+ithrottir|13|Laugavegshlaupið er um 55 km utanvegahlaup frá Landmannalaugum í Þórsmörk.
+ithrottir|13|Íslendingar sýndu glímu á Ólympíuleikunum í Stokkhólmi árið 1912.
+#? ithrottir|16|Ísland keppti fyrst undir eigin fána á Ólympíuleikunum í Berlín árið 1936.
+
+# Ólympíuleikar
+ithrottir|7|Ólympíuleikarnir eru haldnir á fjögurra ára fresti.
+ithrottir|7|Ólympíuhringirnir fimm tákna heimsálfurnar.
+ithrottir|10|Ólympíueldurinn er tendraður með sólargeislum í Ólympíu í Grikklandi.
+ithrottir|10|Á Ólympíuleikunum til forna kepptu menn naktir.
+ithrottir|10|Michael Phelps hefur unnið flest ólympíugull allra, 23 talsins.
+ithrottir|10|Usain Bolt hljóp 100 metra á 9,58 sekúndum árið 2009.
+ithrottir|10|Maraþonhlaup er 42,195 km.
+ithrottir|10|Sagt er að maraþonið dragi nafn af hlaupara sem hljóp frá Maraþon til Aþenu með sigurfregn.
+ithrottir|10|Tugþraut er keppni í tíu greinum frjálsíþrótta.
+ithrottir|10|Ólympíuleikunum í Tókýó 2020 var frestað um eitt ár vegna heimsfaraldursins.
+ithrottir|10|Hjólabretti, klifur og brimbretti urðu ólympíugreinar í Tókýó árið 2021.
+ithrottir|10|Á Ólympíuleikunum í París 2024 var keppt í breikdansi.
+ithrottir|10|Ólympíugullverðlaunin eru að mestu úr silfri, húðuð gulli.
+ithrottir|13|Usain Bolt náði um 44 km hraða á klukkustund í 100 metra hlaupinu.
+ithrottir|13|Fyrstu Vetrarólympíuleikarnir voru haldnir í Chamonix í Frakklandi árið 1924.
+ithrottir|13|Noregur hefur unnið flest verðlaun allra þjóða á Vetrarólympíuleikum.
+ithrottir|13|Ólympíumót fatlaðra var fyrst haldið í Róm árið 1960.
+ithrottir|13|Konur kepptu fyrst á Ólympíuleikum árið 1900.
+ithrottir|13|Nadia Comăneci fékk fyrst allra fullkomna einkunn, 10, í fimleikum árið 1976.
+ithrottir|13|Jesse Owens vann fern gullverðlaun á Ólympíuleikunum í Berlín árið 1936.
+ithrottir|16|Vegalengd maraþonsins, 42,195 km, var ákveðin á Ólympíuleikunum í London árið 1908.
+ithrottir|16|Bob Beamon stökk 8,90 metra í langstökki árið 1968, 55 sentímetrum lengra en heimsmetið.
+
+# Fótbolti
+ithrottir|7|Fótbolti er vinsælasta íþrótt heims.
+ithrottir|7|Í fótboltaliði eru ellefu leikmenn inni á vellinum.
+ithrottir|7|Markvörðurinn er eini leikmaðurinn sem má grípa boltann með höndunum.
+ithrottir|7|Brasilía hefur oftast orðið heimsmeistari í fótbolta, fimm sinnum.
+ithrottir|7|Argentína varð heimsmeistari í fótbolta árið 2022.
+ithrottir|10|Fyrsta HM í fótbolta var haldið í Úrúgvæ árið 1930.
+ithrottir|10|Pelé varð þrisvar heimsmeistari með Brasilíu.
+ithrottir|10|Lionel Messi hefur unnið Gullboltann oftar en nokkur annar.
+ithrottir|10|Hundurinn Pickles fann stolna HM-bikarinn í London árið 1966.
+ithrottir|10|HM 2026 var haldið í Bandaríkjunum, Kanada og Mexíkó, og þar kepptu 48 lið í fyrsta sinn.
+ithrottir|13|Gul og rauð spjöld voru fyrst notuð á HM 1970.
+ithrottir|13|Hugmyndin að gulu og rauðu spjöldunum kom til dómara sem beið á rauðu ljósi.
+ithrottir|13|Myndbandsdómgæsla, VAR, var fyrst notuð á HM árið 2018.
+
+# Aðrar íþróttir
+ithrottir|7|Á Wimbledon-mótinu í tennis eiga keppendur að klæðast hvítu.
+ithrottir|7|Golfvöllur hefur venjulega 18 holur.
+ithrottir|7|Skákborðið hefur 64 reiti.
+ithrottir|7|Sigurvegarinn í Tour de France klæðist gulri treyju.
+ithrottir|10|James Naismith fann upp körfubolta árið 1891, og fyrst var notuð ferskjukarfa.
+ithrottir|10|Golf er upprunnið í Skotlandi.
+ithrottir|10|Tour de France er hjólreiðakeppni sem stendur í þrjár vikur.
+ithrottir|10|Súmóglíma er þjóðaríþrótt Japans.
+ithrottir|13|Blak var fundið upp árið 1895.
+ithrottir|13|Handbolti nútímans á rætur sínar að rekja til Danmerkur og Þýskalands.
+ithrottir|13|Wimbledon er elsta tennismót heims, haldið fyrst árið 1877.
+ithrottir|13|Rugby er nefnt eftir skólanum Rugby á Englandi.
+ithrottir|13|Leikur í krikket getur staðið í fimm daga.
+ithrottir|13|Badmintonfjöður getur farið yfir 400 km á klukkustund eftir smass.
+ithrottir|13|Fullkominn leikur í keilu gefur 300 stig.
+ithrottir|13|Skíðastökkvarar geta svifið yfir 250 metra.
+
+# Íþróttavísindi
+ithrottir|13|Golfkúlur eru með dældir svo þær fljúgi lengra.
+ithrottir|13|Sundmenn raka af sér hárin til að minnka mótstöðuna í vatninu.
+ithrottir|16|Snúningur á bolta lætur hann sveigja á flugi. Það kallast Magnus-áhrif.
+ithrottir|16|Hlauparar æfa oft hátt yfir sjávarmáli til að líkaminn myndi fleiri rauð blóðkorn.
+ithrottir|16|Harðsperrur stafa af örsmáum skemmdum í vöðvunum, ekki af mjólkursýru eins og lengi var talið.
+ithrottir|16|Hjarta þjálfaðra langhlaupara getur slegið færri en 40 slög á mínútu í hvíld.
+ithrottir|16|Hámarkspúls er gróflega áætlaður 220 mínus aldurinn.
+ithrottir|16|Alþjóðalyfjaeftirlitið, WADA, var stofnað árið 1999.
+ithrottir|16|Fyrri HM-bikarnum, Jules Rimet-bikarnum, var stolið aftur árið 1983 í Brasilíu, og hann fannst aldrei.
+
+# Íþróttir í stærra samhengi
+ithrottir|16|Íþróttastarf á Íslandi er að miklu leyti borið uppi af sjálfboðaliðum í íþróttafélögunum.
+ithrottir|16|Knattspyrnuhús og vel menntaðir þjálfarar eru oft taldir skýra uppgang íslenska fótboltans.
+ithrottir|16|Á EM 2016 varð Ísland fámennasta þjóð sem keppt hefur á Evrópumóti karla í fótbolta.
+ithrottir|16|Ísland hefur aldrei unnið verðlaun á Vetrarólympíuleikum.
+ithrottir|16|Pierre de Coubertin endurvakti Ólympíuleikana og stofnaði Alþjóðaólympíunefndina árið 1894.
+ithrottir|16|Á leikunum í Berlín 1936 var ólympíukyndlinum fyrst hlaupið alla leið frá Grikklandi.
+ithrottir|16|Ólympíuleikarnir 1980 og 1984 einkenndust af því að ríki sniðgengu þá vegna kalda stríðsins.
+ithrottir|16|Á fyrstu Ólympíuleikum nútímans, 1896, var keppt í sundi í köldum sjónum.
+ithrottir|16|Heimsmetið í maraþoni karla er rétt um tvær klukkustundir.
+ithrottir|16|Eliud Kipchoge hljóp maraþon á innan við tveimur klukkustundum árið 2019, en ekki í opinberri keppni.
 
 # Listir og tónlist
 listir|10|Led Zeppelin samdi „Immigrant Song“ eftir tónleika í Laugardalshöll árið 1970.
