@@ -1224,6 +1224,120 @@ bokmenntir|7|Óðinn gaf annað auga sitt fyrir sopa úr Mímisbrunni og fékk v
 bokmenntir|10|Þriðjudagur hét áður týsdagur, eftir goðinu Tý.
 bokmenntir|10|Njáls saga er lengst Íslendingasagna.
 bokmenntir|10|Halldór Laxness hlaut Nóbelsverðlaunin í bókmenntum árið 1955.
+# Norræn goðafræði
+bokmenntir|7|Þór var þrumuguð og átti hamarinn Mjölni.
+bokmenntir|7|Þegar Þór kastaði Mjölni kom hamarinn alltaf aftur til hans.
+bokmenntir|7|Þór ók í vagni sem tveir hafrar drógu.
+bokmenntir|7|Óðinn átti tvo hrafna, Hugin og Munin, sem flugu um heiminn og sögðu honum fréttir.
+bokmenntir|7|Freyja átti vagn sem tveir kettir drógu.
+bokmenntir|7|Ásgarður var heimkynni goðanna en Miðgarður heimur mannanna.
+bokmenntir|7|Bifröst var regnbogabrúin milli Ásgarðs og Miðgarðs.
+bokmenntir|7|Loki var bragðarefur sem gat breytt sér í dýr.
+bokmenntir|7|Miðgarðsormur var svo langur að hann lá umhverfis alla jörðina og beit í sporð sér.
+bokmenntir|7|Iðunn geymdi eplin sem héldu goðunum ungum.
+bokmenntir|7|Myndirnar um Þór frá Marvel byggja lauslega á norrænni goðafræði.
+bokmenntir|10|Askur Yggdrasils er tréð sem heimarnir níu tengjast.
+bokmenntir|10|Íkorninn Ratatoskur hljóp upp og niður Yggdrasil og bar orð milli arnarins efst og ormsins neðst.
+bokmenntir|10|Fenrisúlfur var bundinn með fjötrinum Gleipni.
+bokmenntir|10|Týr lagði hönd sína í gin Fenrisúlfs og missti hana.
+bokmenntir|10|Baldur, sonur Óðins, var bestur og fegurstur goðanna.
+bokmenntir|10|Ragnarök eru endalok heimsins í norrænni goðafræði.
+bokmenntir|10|Valhöll var höll Óðins, þar sem fallnir hermenn, einherjar, bjuggu.
+bokmenntir|10|Valkyrjur völdu hverjir féllu í orrustu og fluttu þá til Valhallar.
+bokmenntir|10|Heimdallur var vörður Bifrastar og heyrði grasið vaxa.
+bokmenntir|10|Freyr átti skipið Skíðblaðni, sem mátti brjóta saman og stinga í pússið sitt.
+bokmenntir|10|Kýrin Auðhumla nærði jötuninn Ými með mjólk sinni.
+bokmenntir|10|Fyrstu mennirnir, Askur og Embla, voru skapaðir úr trjám.
+bokmenntir|10|Sagan segir að fjaran hafi orðið til þegar Þór drakk úr horni sem náði út í hafið.
+bokmenntir|10|Á ensku heitir Wednesday eftir Óðni, Thursday eftir Þór og Friday eftir Frigg.
+bokmenntir|13|Gleipnir var gerður úr því sem ekki er til, eins og skeggi konu og rótum fjalls.
+bokmenntir|13|Baldur dó þegar Höður skaut að honum mistilteini að ráði Loka.
+bokmenntir|13|Frigg lét allt heita því að skaða ekki Baldur, nema mistilteininn, sem henni þótti of ungur.
+bokmenntir|13|Í Ragnarökum berst Þór við Miðgarðsorm og Óðinn við Fenrisúlf.
+bokmenntir|13|Eftir Ragnarök rís ný jörð úr sjónum, græn og fögur.
+bokmenntir|13|Í Valhöll var etið kjöt af geltinum Sæhrímni, sem lifnaði við á hverjum degi.
+bokmenntir|13|Heimdallur blæs í Gjallarhorn þegar Ragnarök hefjast.
+bokmenntir|13|Óðinn hékk níu nætur á Yggdrasil til að nema rúnirnar.
+bokmenntir|13|Skáldamjöðurinn gaf þeim sem drakk hann skáldagáfu.
+bokmenntir|13|Heimurinn var skapaður úr líkama jötunsins Ýmis, fyrstu verunnar.
+bokmenntir|13|Sleipnir var sonur Loka.
+bokmenntir|13|Börn Loka voru Fenrisúlfur, Miðgarðsormur og Hel.
+bokmenntir|13|Hel réð ríkjum í Helheimi, þangað sem þeir fóru sem ekki féllu í orrustu.
+bokmenntir|16|Fyrir sköpun heimsins var Ginnungagap, tóm milli Múspellsheims og Niflheims.
+
+# Eddurnar og sögurnar
+bokmenntir|10|Íslendingasögurnar eru um 40 talsins.
+bokmenntir|10|Höfundar flestra Íslendingasagna eru óþekktir.
+bokmenntir|10|Samkvæmt Egils sögu orti Egill Skalla-Grímsson fyrsta ljóð sitt þriggja ára gamall.
+bokmenntir|10|Grettir sterki glímdi við drauginn Glám.
+bokmenntir|10|Völsunga saga segir frá Sigurði Fáfnisbana, sem drap drekann Fáfni.
+bokmenntir|10|Tolkien sótti nöfn dverganna í Hobbitanum í Völuspá.
+bokmenntir|13|Snorra-Edda var skrifuð sem kennslubók í skáldskap.
+bokmenntir|13|Konungsbók eddukvæða er talin merkasta handrit Íslendinga.
+bokmenntir|13|Völuspá, fyrsta kvæðið í Konungsbók, segir frá sköpun heimsins og endalokum.
+bokmenntir|13|„Deyr fé, deyja frændur“ er úr Hávamálum.
+bokmenntir|13|Íslendingasögurnar voru skrifaðar á 13. og 14. öld en segja frá atburðum á 10. og 11. öld.
+bokmenntir|13|Grettir sterki var útlagi í nærri 20 ár og dvaldi síðustu árin í Drangey.
+bokmenntir|13|Gunnar á Hlíðarenda sagði „Fögur er hlíðin“ og sneri aftur heim, þótt það kostaði hann lífið.
+bokmenntir|13|Hallgerður langbrók neitaði Gunnari um lokk úr hári sínu í bogastreng.
+bokmenntir|13|Eiríks saga rauða og Grænlendinga saga segja frá Vínlandsferðunum.
+bokmenntir|13|Heimskringla eftir Snorra Sturluson er saga Noregskonunga.
+bokmenntir|13|Gandálfur er líka dvergsnafn í Völuspá.
+#? bokmenntir|13|Tolkien kunni forníslensku og kenndi hana við Oxford-háskóla.
+bokmenntir|16|Hávamál eru heilræði sem lögð eru Óðni í munn.
+bokmenntir|16|Egill Skalla-Grímsson orti Sonatorrek eftir að hafa misst syni sína.
+bokmenntir|16|Í Laxdæla sögu segir Guðrún Ósvífursdóttir: „Þeim var ek verst er ek unna mest.“
+bokmenntir|16|Í Njáls sögu er Njáll brenndur inni á Bergþórshvoli ásamt fjölskyldu sinni.
+bokmenntir|16|Fornaldarsögur segja frá köppum og drekum á tímum fyrir landnám Íslands.
+bokmenntir|16|Íslendingasögurnar eru sagðar í knöppum stíl, án mikilla lýsinga á tilfinningum.
+bokmenntir|16|Handritasafn Árna Magnússonar er á minningaskrá UNESCO.
+
+# Þjóðsögur og þjóðtrú
+bokmenntir|7|Jólasveinarnir eru þrettán og koma til byggða einn á dag fyrir jólin.
+bokmenntir|7|Stekkjarstaur kemur fyrstur jólasveinanna, 12. desember.
+bokmenntir|7|Kertasníkir kemur síðastur jólasveinanna, á aðfangadag.
+bokmenntir|7|Grýla og Leppalúði eru foreldrar jólasveinanna.
+bokmenntir|7|Jólakötturinn er sagður éta þá sem fá engin ný föt fyrir jólin.
+bokmenntir|7|Ketkrókur krækir sér í kjöt með löngum krók.
+bokmenntir|7|Samkvæmt þjóðtrúnni býr huldufólk í steinum og hólum.
+bokmenntir|7|Tröll verða að steini ef sólin skín á þau.
+bokmenntir|7|Sagan segir að Reynisdrangar séu tröll sem urðu að steini.
+bokmenntir|7|Lagarfljótsormurinn er sagður búa í Lagarfljóti.
+bokmenntir|10|Jóhannes úr Kötlum orti kvæðið um jólasveinana sem flest íslensk börn kunna.
+bokmenntir|10|Vegum hefur stundum verið breytt til að raska ekki álfasteinum.
+bokmenntir|10|Í draugasögunni um djáknann á Myrká kallar djákninn: „Garún, Garún.“
+bokmenntir|10|Sæmundur fróði er sagður hafa riðið heim frá námi á sel sem var í raun kölski.
+bokmenntir|10|Nykur er vatnahestur í þjóðsögum sem lokkar fólk út í vötn.
+bokmenntir|10|Sagt er að álfar flytji búferlum á nýársnótt og að kýr geti þá talað.
+bokmenntir|13|Jón Árnason safnaði íslenskum þjóðsögum og gaf þær út á 19. öld.
+bokmenntir|13|Fjalla-Eyvindur og Halla voru útilegumenn á 18. öld.
+bokmenntir|13|Ægishjálmur er galdrastafur sem átti að vernda þann sem bar hann.
+#? bokmenntir|16|Á 17. öld voru yfir 20 manns brenndir fyrir galdur á Íslandi.
+
+# Bókmenntir síðari alda
+bokmenntir|7|Astrid Lindgren skrifaði bækurnar um Línu langsokk.
+bokmenntir|7|H.C. Andersen skrifaði Litlu hafmeyjuna og Ljóta andarungann.
+bokmenntir|7|Grimmsbræður söfnuðu ævintýrum eins og Mjallhvíti og Rauðhettu.
+bokmenntir|10|Harry Potter-bækurnar hafa selst í yfir 500 milljónum eintaka.
+bokmenntir|10|Fleiri bækur koma út á Íslandi miðað við fólksfjölda en í flestum öðrum löndum.
+bokmenntir|13|Jónas Hallgrímsson orti kvæðið „Ísland“, sem hefst á orðunum „Ísland, farsælda frón“.
+bokmenntir|13|Halldór Laxness skrifaði Sjálfstætt fólk, um bóndann Bjart í Sumarhúsum.
+bokmenntir|13|Bækur Arnaldar Indriðasonar og Yrsu Sigurðardóttur hafa verið þýddar á tugi tungumála.
+bokmenntir|13|Hómer orti Ilíonskviðu og Ódysseifskviðu.
+bokmenntir|16|Þórbergur Þórðarson skrifaði Ofvitann.
+bokmenntir|16|Steinn Steinarr var eitt helsta skáld atómskáldanna.
+bokmenntir|16|Don Kíkóti eftir Cervantes er oft talin fyrsta nútímaskáldsagan.
+bokmenntir|16|Sjón hlaut Bókmenntaverðlaun Norðurlandaráðs árið 2005 fyrir Skugga-Baldur.
+
+# Skáldskapur og handrit
+bokmenntir|13|Stuðlar og höfuðstafir, ljóðstafir, eru enn notaðir í íslenskum kveðskap.
+bokmenntir|13|Handritin voru skrifuð á kálfskinn, og í eina stóra bók þurfti skinn af tugum kálfa.
+bokmenntir|13|Gunnar Gunnarsson skrifaði Aðventu, um Fjalla-Bensa sem leitar kinda á fjöllum um vetur.
+bokmenntir|16|Dróttkvæði var flóknasti bragarháttur fornskálda, með ljóðstöfum og innrími.
+bokmenntir|16|Í kenningum er hlutur nefndur með umorði, til dæmis er skip kallað hestur hafsins.
+bokmenntir|16|Fræðimenn deila um hve mikið Íslendingasögurnar byggja á munnmælum og hve mikið á skáldskap ritaranna.
+bokmenntir|16|Flateyjarbók er stærsta íslenska handritið frá miðöldum.
+bokmenntir|16|Í Íslandsklukkunni segir Laxness frá Jóni Hreggviðssyni og Snæfríði Íslandssól.
 
 # Landafræði heimsins
 landafraedi|7|Kyrrahafið er stærra en allt þurrlendi jarðar til samans.
