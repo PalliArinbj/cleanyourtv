@@ -1344,6 +1344,126 @@ landafraedi|7|Kyrrahafið er stærra en allt þurrlendi jarðar til samans.
 landafraedi|10|Rússland nær yfir 11 tímabelti.
 landafraedi|10|Everest er um 8.849 metra hátt, rúmlega fjórum sinnum hærra en Hvannadalshnúkur.
 landafraedi|10|Amasónfljótið ber meira vatn til sjávar en nokkurt annað fljót í heiminum.
+# Heimsálfur, höf og lönd
+landafraedi|7|Heimsálfurnar eru sjö: Afríka, Asía, Evrópa, Norður-Ameríka, Suður-Ameríka, Eyjaálfa og Suðurskautslandið.
+landafraedi|7|Höfin eru fimm: Kyrrahaf, Atlantshaf, Indlandshaf, Norður-Íshaf og Suðurhaf.
+landafraedi|7|Um 71% af yfirborði jarðar er þakið vatni.
+landafraedi|7|Asía er stærsta heimsálfan.
+landafraedi|7|Suðurskautslandið er kaldasta heimsálfan.
+landafraedi|7|Rússland er stærsta land heims.
+landafraedi|7|Vatíkanið í Róm er minnsta land heims.
+landafraedi|7|Grænland er stærsta eyja heims.
+landafraedi|7|Á norðurpólnum er ekkert land, aðeins hafís á hafinu.
+landafraedi|7|Miðbaugur er ímynduð lína sem liggur umhverfis jörðina miðja.
+landafraedi|7|Í Ástralíu eru árstíðirnar öfugar við okkar, og jólin eru þar um hásumar.
+landafraedi|10|Indland og Kína eru fjölmennustu lönd heims, með yfir milljarð íbúa hvort.
+landafraedi|10|Ríki heims eru um 195, og 193 þeirra eru í Sameinuðu þjóðunum.
+landafraedi|10|Í Afríku eru flest ríki allra heimsálfa, 54 talsins.
+landafraedi|10|Japan er gert úr þúsundum eyja.
+landafraedi|10|Kanada hefur lengstu strandlengju allra landa.
+landafraedi|10|Lengstu landamæri heims eru milli Kanada og Bandaríkjanna.
+landafraedi|10|Um fjórðungur Hollands er undir sjávarmáli.
+landafraedi|13|Í Indónesíu eru yfir 17.000 eyjar.
+landafraedi|13|Mónakó er þéttbýlasta land heims.
+landafraedi|13|Lesótó er alveg umlukið Suður-Afríku.
+landafraedi|13|Bólivía og Paragvæ eru einu landluktu ríkin í Suður-Ameríku.
+landafraedi|13|Brasilía á landamæri að öllum löndum Suður-Ameríku nema tveimur, Síle og Ekvador.
+landafraedi|16|Mongólía er strjálbýlasta sjálfstæða ríki heims.
+landafraedi|16|Liechtenstein og Úsbekistan eru einu ríkin sem eru umlukin landluktum ríkjum.
+landafraedi|16|Frakkland nær yfir fleiri tímabelti en nokkurt annað land, vegna landsvæða sinna víða um heim.
+
+# Norðurlönd og höfuðborgir
+landafraedi|7|Kaupmannahöfn er höfuðborg Danmerkur, Ósló Noregs og Stokkhólmur Svíþjóðar.
+landafraedi|7|Helsinki er höfuðborg Finnlands, Þórshöfn Færeyja og Nuuk Grænlands.
+landafraedi|7|Reykjavík er nyrsta höfuðborg sjálfstæðs ríkis.
+landafraedi|10|Finnland er kallað land þúsund vatna, en þar eru í raun um 188.000 vötn.
+landafraedi|10|Á Svalbarða er fræbanki sem geymir fræ frá öllum heiminum.
+landafraedi|10|Tókýó er fjölmennasta borgarsvæði heims.
+landafraedi|13|Sognfjörður í Noregi er um 200 km langur, einn lengsti fjörður heims.
+landafraedi|13|Grænland og Færeyjar eru sjálfstjórnarsvæði innan danska konungsríkisins.
+landafraedi|13|La Paz í Bólivíu er hæsta höfuðborg heims, í um 3.600 metra hæð.
+landafraedi|13|Wellington á Nýja-Sjálandi er syðsta höfuðborg sjálfstæðs ríkis.
+#? landafraedi|13|Á Svalbarða eru ísbirnir fleiri en fólkið.
+
+# Fjöll, vötn og eyðimerkur
+landafraedi|7|Níl og Amasónfljótið eru lengstu ár heims.
+landafraedi|7|Sahara er stærsta heita eyðimörk jarðar.
+landafraedi|7|Dauðahafið er svo salt að fólk flýtur auðveldlega í því.
+landafraedi|7|Amasón-regnskógurinn er stærsti regnskógur heims.
+landafraedi|7|Í Feneyjum eru síki í stað gatna.
+landafraedi|7|Í eyðimörkum geta næturnar verið kaldar þótt dagarnir séu heitir.
+landafraedi|10|Suðurskautslandið er stærsta eyðimörk jarðar, því þar fellur svo lítil úrkoma.
+landafraedi|10|Sahara er álíka stór og Bandaríkin.
+landafraedi|10|Kilimanjaro er hæsta fjall Afríku, og á tindinum er snjór þótt fjallið sé nálægt miðbaug.
+landafraedi|10|Maríanadjúpið er dýpsti staður hafsins, um 11 km.
+landafraedi|10|Kaspíahaf er stærsta stöðuvatn heims.
+landafraedi|10|Angel-fossinn í Venesúela er hæsti foss heims, um 980 metrar.
+landafraedi|10|Kóralrifið mikla við Ástralíu er stærsta kóralrif heims og sést utan úr geimnum.
+landafraedi|10|Tíbet er kallað þak heimsins.
+landafraedi|13|Dauðahafið er lægsti staður á þurru landi, yfir 400 metra undir sjávarmáli.
+landafraedi|13|Ef Everest væri sett ofan í Maríanadjúpið væri tindurinn enn um 2 km undir sjávarmáli.
+landafraedi|13|Andesfjöll eru lengsti fjallgarður á þurru landi.
+landafraedi|13|Himalajafjöll hækka enn, því Indland þrýstist inn í Asíu.
+landafraedi|13|Mið-Atlantshafshryggurinn, sem liggur um Ísland, er hluti af lengsta fjallgarði jarðar, að mestu í hafi.
+landafraedi|13|Bajkalvatn í Síberíu er dýpsta og elsta stöðuvatn heims.
+landafraedi|13|Viktoríufossar á landamærum Sambíu og Simbabve eru einn stærsti foss heims.
+landafraedi|13|Atacama-eyðimörkin í Síle er einn þurrasti staður jarðar.
+landafraedi|13|Hawaii-eyjar urðu til í eldgosum yfir heitum reit, eins og Ísland.
+landafraedi|13|Mauna Kea á Hawaii er hæsta fjall heims ef talið er frá rótum þess á hafsbotni.
+landafraedi|16|Í Bajkalvatni er um fimmtungur alls ferskvatns á yfirborði jarðar.
+landafraedi|16|Superior-vatn í Norður-Ameríku er stærsta ferskvatnsvatn heims að flatarmáli.
+landafraedi|16|Tindur Chimborazo í Ekvador er sá staður á jörðinni sem lengst er frá miðju hennar.
+landafraedi|16|Sahara var græn og full af vötnum fyrir um 6.000 til 10.000 árum.
+
+# Veður og loftslag
+landafraedi|10|Við miðbaug er dagurinn um tólf klukkustundir allt árið.
+landafraedi|13|Kaldasti hiti sem mælst hefur á jörðinni er −89,2 °C, á Vostok-stöðinni á Suðurskautslandinu.
+landafraedi|13|Mesti hiti sem opinberlega hefur mælst er 56,7 °C, í Dauðadal í Kaliforníu árið 1913.
+landafraedi|13|Monsúnvindar valda miklum rigningum í Suður-Asíu á sumrin.
+landafraedi|13|Fellibyljir snúast rangsælis á norðurhveli jarðar en réttsælis á suðurhveli.
+landafraedi|13|Í Síberíu og Kanada er jörðin víða frosin allt árið undir yfirborðinu. Það kallast sífreri.
+landafraedi|16|Mawsynram á Indlandi er einn úrkomumesti staður jarðar.
+landafraedi|16|Regnskógar þekja um 6% af landi jarðar, en þar lifir yfir helmingur allra dýra- og plöntutegunda.
+
+# Kort og hnattstaða
+landafraedi|10|Breiddargráður segja hve norðarlega staður er, og lengdargráður hve austarlega.
+landafraedi|10|Núllbaugurinn liggur um Greenwich í London.
+landafraedi|10|Kína notar aðeins eitt tímabelti, þótt landið sé mjög breitt.
+landafraedi|10|Á mörgum kortum sýnist Grænland stórt, en Afríka er í raun um 14 sinnum stærri.
+landafraedi|10|Ummál jarðar um miðbaug er um 40.000 km.
+landafraedi|13|Reykjavík er á um 64 gráðum norðlægrar breiddar.
+landafraedi|13|Heimskautsbaugarnir eru á um 66,5 gráðum breiddar.
+landafraedi|13|Vestan við daglínuna í Kyrrahafi er dagsetningin einum degi á undan.
+landafraedi|13|Jörðin er örlítið flatari við pólana en við miðbaug.
+landafraedi|16|Hvarfbaugarnir eru þar sem sólin getur verið beint yfir höfði á sólstöðum.
+landafraedi|16|Mercator-varpanið frá 1569 er enn algengt á kortum, þótt það stækki lönd nærri pólunum.
+
+# Fólk og leiðir
+landafraedi|7|Hollendingar eru meðal hávöxnustu þjóða heims.
+landafraedi|10|Meira en helmingur mannkyns býr í borgum.
+landafraedi|10|Á Indlandi eru töluð hundruð tungumála.
+landafraedi|10|Kínverska er það mál sem flestir tala að móðurmáli.
+landafraedi|10|Súesskurðurinn tengir Miðjarðarhaf og Rauðahaf.
+landafraedi|10|Panamaskurðurinn tengir Atlantshaf og Kyrrahaf.
+landafraedi|13|Í Papúa Nýju-Gíneu eru töluð yfir 800 tungumál, fleiri en í nokkru öðru landi.
+landafraedi|13|Enska er það mál sem flestir tala þegar þeir sem læra hana eru taldir með.
+landafraedi|13|Bosporussund skiptir Istanbúl milli Evrópu og Asíu.
+landafraedi|13|Úralfjöll eru oft talin mörk Evrópu og Asíu.
+
+# Landrek
+landafraedi|10|Jörðin er um 4,5 milljarða ára gömul.
+landafraedi|10|Meginlöndin færast til um nokkra sentímetra á ári.
+landafraedi|13|Fyrir um 300 til 200 milljónum ára voru öll meginlöndin samföst í einu risameginlandi, Pangeu.
+landafraedi|16|Alfred Wegener setti fram landrekskenninguna árið 1912.
+landafraedi|16|Atlantshafið breikkar ár frá ári, en Kyrrahafið mjókkar.
+
+# Hnötturinn í heild
+landafraedi|16|Hafstraumar flytja varma frá miðbaug til pólanna og jafna loftslag jarðar.
+landafraedi|16|Golfstraumurinn ber um hundrað sinnum meira vatn en allar ár jarðar til samans.
+landafraedi|16|Um 90% mannkyns býr á norðurhveli jarðar.
+landafraedi|16|Mannfjöldi jarðar hefur meira en fjórfaldast síðan 1920.
+landafraedi|16|Við ósa stórfljóta myndast óshólmar, kallaðir delta eftir gríska bókstafnum sem þeir líkjast.
+landafraedi|16|Point Nemo í Kyrrahafi, sá staður sem lengst er frá landi, er um 2.700 km frá næstu strönd.
 
 # Uppfinningar og tækni
 taekni|7|Wright-bræður flugu fyrstu vélknúnu flugvélinni árið 1903 og flugið stóð í 12 sekúndur.
