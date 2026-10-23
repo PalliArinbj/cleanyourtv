@@ -36,7 +36,7 @@ saga-islands|16|Fimmtardómur var stofnaður um 1005, eins konar hæstiréttur �
 saga-islands|16|Í Grágás eru lög þjóðveldisins varðveitt.
 saga-islands|13|Guðríður Þorbjarnardóttir fæddi son á Vínlandi, Snorra, sem talinn er fyrsta evrópska barnið fætt í Ameríku.
 saga-islands|13|Ísleifur Gissurarson varð fyrsti biskup Íslands árið 1056 og sat í Skálholti.
-#? saga-islands|16|Tíund var lögleidd á Íslandi árið 1096, fyrst allra skatta á Norðurlöndum.
+saga-islands|16|Tíund, fyrsti skatturinn á Íslandi, var lögleidd árið 1096.
 saga-islands|13|Ari fróði skrifaði Íslendingabók um 1130. Hún er elsta saga Íslands sem rituð var á íslensku.
 saga-islands|13|Snorri Sturluson er talinn hafa skrifað Snorra-Eddu og Heimskringlu.
 saga-islands|13|Snorri Sturluson var veginn í Reykholti árið 1241.
@@ -100,7 +100,7 @@ saga-islands|10|Ísland varð fullvalda ríki 1. desember 1918.
 saga-islands|13|Árið 1918 var viðburðaríkt: frostaveturinn mikli, Kötlugos, spænska veikin og fullveldið.
 saga-islands|10|Fyrsta flugið á Íslandi var árið 1919.
 saga-islands|10|Ingibjörg H. Bjarnason varð fyrsta konan sem settist á Alþingi, árið 1922.
-#? saga-islands|16|Íslendingar urðu fyrst fleiri en 100.000 árið 1925.
+saga-islands|16|Íslendingar urðu fyrst fleiri en 100.000 árið 1925.
 saga-islands|13|Alþingishátíðin var haldin á Þingvöllum árið 1930, á þúsund ára afmæli Alþingis.
 saga-islands|10|Breskur her hernam Ísland 10. maí 1940.
 saga-islands|7|Lýðveldið Ísland var stofnað á Þingvöllum 17. júní 1944, í rigningu.
@@ -185,7 +185,7 @@ mannkynssaga|13|Djengis Khan stofnaði Mongólaveldið, stærsta samfellda landv
 mannkynssaga|13|Kalmarsambandið sameinaði Danmörku, Noreg og Svíþjóð undir einum konungi árið 1397.
 mannkynssaga|13|Konstantínópel, nú Istanbúl, féll í hendur Tyrkja árið 1453.
 mannkynssaga|13|Astekar reistu höfuðborgina Tenochtitlan á eyju í stöðuvatni, þar sem Mexíkóborg stendur nú.
-#? mannkynssaga|13|Víkingar kembdu sér og böðuðu sig oftar en margir aðrir Evrópubúar á þeirra tíma.
+mannkynssaga|13|Víkingar kembdu sér og böðuðu sig oftar en margir aðrir Evrópubúar á þeirra tíma.
 mannkynssaga|16|Í lífverði keisarans í Miklagarði, Væringjasveitinni, voru margir norrænir menn.
 mannkynssaga|16|Bayeux-refillinn, um 70 metra langur, segir frá innrás Normanna í England.
 mannkynssaga|16|Magna Carta frá 1215 takmarkaði vald Englandskonungs.
@@ -200,7 +200,7 @@ mannkynssaga|10|Shakespeare skrifaði um 37 leikrit.
 mannkynssaga|10|Bandaríkin lýstu yfir sjálfstæði 4. júlí 1776.
 mannkynssaga|10|Napóleon var ekki lágvaxinn. Hann var um 1,69 m, meðalhár maður á sínum tíma.
 mannkynssaga|10|James Watt endurbætti gufuvélina, og mælieiningin vatt er nefnd eftir honum.
-#? mannkynssaga|10|Kólumbus hélt allt til dauðadags að hann hefði fundið siglingaleið til Asíu.
+mannkynssaga|10|Kólumbus hélt allt til dauðadags að hann hefði fundið siglingaleið til Asíu.
 mannkynssaga|13|Vasco da Gama sigldi fyrstur Evrópumanna sjóleiðina til Indlands, árið 1498.
 mannkynssaga|13|Leiðangur Magellans 1519 til 1522 sigldi fyrstur umhverfis jörðina, en Magellan lést á leiðinni.
 mannkynssaga|13|Marteinn Lúther hóf siðbótina árið 1517 þegar hann birti 95 greinar sínar.
@@ -326,7 +326,7 @@ nattura-islands|10|Sigríður í Brattholti er sögð hafa barist gegn því að
 nattura-islands|10|Þjórsá er lengsta á landsins, um 230 km.
 nattura-islands|10|Þingvallavatn er stærsta náttúrulega stöðuvatn landsins.
 nattura-islands|13|Glymur var lengi talinn hæsti foss landsins, um 200 metra hár.
-#? nattura-islands|13|Morsárfoss kom í ljós þegar Morsárjökull hopaði og er nú talinn hæsti foss landsins.
+nattura-islands|13|Morsárfoss kom í ljós þegar Morsárjökull hopaði og er nú talinn hæsti foss landsins.
 nattura-islands|13|Ásbyrgi mótaðist í hamfarahlaupum í Jökulsá á Fjöllum.
 nattura-islands|13|Kúluskítur, þörungar sem vaxa í kúlum, óx í Mývatni, einu fárra vatna í heiminum, en hefur nær horfið þaðan.
 nattura-islands|16|Mývatn og Laxá eru á skrá Ramsar-samningsins yfir mikilvæg votlendi heims.
@@ -339,7 +339,7 @@ nattura-islands|10|Norðurheimskautsbaugurinn liggur um Grímsey.
 nattura-islands|10|Látrabjarg er eitt stærsta fuglabjarg Evrópu.
 nattura-islands|13|Bjargtangar við Látrabjarg eru vestasti oddi Íslands.
 nattura-islands|13|Kolbeinsey, nyrsti oddi Íslands, hefur minnkað mikið vegna sjávarrofs.
-#? nattura-islands|13|Strandlengja Íslands er um 5.000 km löng.
+nattura-islands|16|Lengd strandlengju Íslands fer eftir því hve nákvæmlega er mælt: því smærri sem mælikvarðinn er, því lengri verður hún.
 
 # Veður og birta
 nattura-islands|7|Á sumrin er bjart nær allan sólarhringinn á Íslandi.
@@ -370,7 +370,7 @@ nattura-islands|10|Í Raufarhólshelli er hægt að ganga inn í gamla hraunrás
 nattura-islands|13|Á Íslandi eru þrír þjóðgarðar: Þingvellir, Snæfellsjökull og Vatnajökull.
 nattura-islands|16|Víðgelmir í Hallmundarhrauni er einn stærsti hraunhellir landsins.
 nattura-islands|16|Vatnajökulsþjóðgarður var settur á heimsminjaskrá UNESCO árið 2019.
-#? nattura-islands|16|Vatnajökulsþjóðgarður er einn stærsti þjóðgarður Evrópu.
+nattura-islands|16|Vatnajökulsþjóðgarður er einn stærsti þjóðgarður Evrópu.
 
 # Dýraríkið
 dyr|7|Kolkrabbar hafa þrjú hjörtu og blátt blóð.
@@ -423,7 +423,7 @@ dyr|13|Forystufé er sérstakt íslenskt fé sem leiðir hjörðina og er sagt v
 dyr|13|Geirfuglinn var stór og ófleygur. Síðustu tveir fuglarnir voru drepnir í Eldey árið 1844.
 dyr|13|Yfir 20 hvalategundir lifa í hafinu umhverfis Ísland.
 dyr|13|Grænlandshákarlinn getur orðið að minnsta kosti 270 ára gamall.
-#? dyr|13|Glókollur, sem fór að verpa á Íslandi upp úr 1995, er minnsti fugl landsins.
+dyr|13|Glókollur, sem fór að verpa á Íslandi upp úr 1995, er minnsti fugl landsins.
 dyr|16|Haförninn var nærri útdauður á Íslandi en hefur fjölgað aftur síðan hann var friðaður árið 1914.
 dyr|16|Landselur og útselur eru einu selirnir sem kæpa við Ísland.
 dyr|16|Íslenski fjárhundurinn var nærri útdauður um miðja 20. öld.
@@ -473,7 +473,7 @@ dyr|13|Fuglar eru afkomendur risaeðla.
 dyr|13|Hjarta kólibrífugls getur slegið yfir 1.200 slög á mínútu.
 dyr|13|Norðhvalurinn getur orðið yfir 200 ára gamall.
 dyr|13|Dúdúfuglinn á Máritíus dó út um 1680, innan við öld eftir að menn komu þangað.
-#? dyr|13|Kolkrabbar hafa níu heila: einn í höfðinu og einn í hverjum armi.
+dyr|13|Um tveir þriðju taugafrumna kolkrabba eru í örmunum, sem geta brugðist við án aðstoðar heilans.
 
 # Lífríki og þróun
 dyr|16|Darwin setti fram þróunarkenninguna árið 1859, í bókinni Uppruni tegundanna.
@@ -530,10 +530,10 @@ geimurinn|13|Evrópa, tungl Júpíters, er talin hafa haf af fljótandi vatni un
 geimurinn|13|Á Íó, tungli Júpíters, eru hundruð virkra eldfjalla.
 geimurinn|13|Ganýmedes, tungl Júpíters, er stærsta tungl sólkerfisins, stærra en reikistjarnan Merkúríus.
 geimurinn|13|Á Venusi rís sólin í vestri, því Venus snýst öfugt miðað við flestar reikistjörnur.
-#? geimurinn|13|Satúrnus hefur flest þekkt tungl sólkerfisins, yfir 270 árið 2025.
+geimurinn|13|Satúrnus hefur flest þekkt tungl sólkerfisins, yfir 270 árið 2025.
 geimurinn|16|Tunglið er talið hafa orðið til þegar hnöttur á stærð við Mars rakst á jörðina.
 geimurinn|16|Títan, tungl Satúrnusar, hefur þykkan lofthjúp og stöðuvötn úr fljótandi metani.
-#? geimurinn|16|Í iðrum Júpíters og Satúrnusar gæti rignt demöntum.
+geimurinn|16|Í iðrum Júpíters og Satúrnusar gæti rignt demöntum.
 
 # Sólin
 geimurinn|13|Sólin er um 4,6 milljarða ára gömul.
@@ -572,7 +572,7 @@ geimurinn|16|Fyrsta reikistjarnan sem fannst við aðra sólstjörnu fannst ári
 geimurinn|16|Um 85% af efni alheimsins er hulduefni, sem enginn hefur séð.
 geimurinn|16|Myrk orka er talin vera um 68% af öllu sem er í alheiminum.
 geimurinn|16|Andrómeduþokan og Vetrarbrautin munu rekast saman eftir nokkra milljarða ára.
-#? geimurinn|16|Um 100 tonn af geimryki falla á jörðina á hverjum degi.
+geimurinn|16|Talið er að um 100 tonn af geimryki falli á jörðina á hverjum degi.
 
 # Geimferðir
 geimurinn|7|Tíkin Laika var fyrsta dýrið sem fór á braut um jörðina, árið 1957.
@@ -626,7 +626,7 @@ mannslikaminn|13|Beinagrindin endurnýjast öll á um tíu árum.
 mannslikaminn|13|Axlarliðurinn er hreyfanlegasti liður líkamans.
 mannslikaminn|13|Sinar tengja vöðva við bein, en liðbönd tengja bein við bein.
 mannslikaminn|13|Hásinin aftan á ökklanum er sterkasta sin líkamans.
-#? mannslikaminn|13|Miðað við þyngd eru bein sterkari en stál.
+mannslikaminn|13|Miðað við þyngd eru bein sterkari en stál.
 
 # Hjarta og blóð
 mannslikaminn|7|Hjartað er á stærð við krepptan hnefa.
@@ -674,7 +674,7 @@ mannslikaminn|13|Litblinda er mun algengari hjá körlum en konum.
 mannslikaminn|13|Bragðlaukarnir endurnýjast á um tveggja vikna fresti.
 mannslikaminn|13|Hæfnin til að heyra háa tóna minnkar með aldrinum.
 mannslikaminn|16|Ungt fólk heyrir hljóð frá um 20 upp í 20.000 sveiflur á sekúndu.
-#? mannslikaminn|13|Eyru og nef halda áfram að stækka alla ævi.
+mannslikaminn|13|Eyru og nef virðast stækka með aldrinum, því brjóskið í þeim slaknar og lengist.
 
 # Meltingin
 mannslikaminn|7|Munnvatnið byrjar að melta matinn um leið og við tyggjum.
@@ -857,7 +857,6 @@ edlisfraedi|16|Stephen Hawking sýndi fram á að svarthol gefa frá sér örlit
 edlisfraedi|10|Örbylgjuofn hitar matinn með því að láta vatnssameindirnar í honum titra.
 edlisfraedi|13|Rör virkar af því að loftþrýstingurinn ýtir drykknum upp þegar sogið er.
 edlisfraedi|16|Loftþrýstingur við sjávarmál jafngildir um tíu tonnum á hvern fermetra.
-#? edlisfraedi|13|Skautar renna af því að þunnt vatnslag myndast milli íssins og blaðsins.
 
 # Efnafræði: frumefnaspjöld, eitt á hvert frumefni í röð sætistölu.
 # Heiti eftir is.wikipedia.org/wiki/Listi_yfir_frumefni; flokkar: alkalímálmur, jarðalkalímálmur, hliðarmálmur,
@@ -1028,7 +1027,7 @@ efnafraedi|13|Í 14. flokki, kolefnisflokknum, eru meðal annars kolefni (C), k�
 efnafraedi|13|Kolefni (C) og kísill (Si) eru bæði í 14. flokki og mynda bæði fjögur efnatengi.
 efnafraedi|13|Í 15. flokki, niturflokknum, eru meðal annars köfnunarefni (N), fosfór (P), arsen (As), antimon (Sb) og bismút (Bi).
 efnafraedi|13|Í 16. flokki, flokki kalkógena, eru meðal annars súrefni (O), brennisteinn (S), selen (Se), tellúr (Te) og pólon (Po).
-#? efnafraedi|16|Kalkógen merkir „málmgrýtismyndari“, því margir málmar finnast í náttúrunni sem oxíð eða súlfíð.
+efnafraedi|16|Nafnið kalkógen er dregið af gríska orðinu chalkos, kopar, því mörg málmgrýti eru súlfíð eða oxíð.
 efnafraedi|13|Nafnið halógen merkir „saltmyndari“ á grísku, því efni úr þessum flokki mynda sölt með málmum.
 efnafraedi|13|Í flokki halógena er flúor (F) gas við stofuhita, bróm (Br) vökvi og joð (I) fast efni.
 efnafraedi|10|Eðalgösin eru í 18. flokki: helín (He), neon (Ne), argon (Ar), krypton (Kr), xenon (Xe) og radon (Rn).
@@ -1037,14 +1036,14 @@ efnafraedi|16|Árið 1962 tókst fyrst að búa til efnasamband með eðalgasi. 
 efnafraedi|16|Helín (He) er eina frumefnið sem frýs ekki við venjulegan loftþrýsting, sama hve kalt verður.
 efnafraedi|13|Atómin minnka eftir því sem farið er til hægri í lotu, því kjarninn togar fastar í rafeindirnar.
 efnafraedi|13|Atómin stækka eftir því sem neðar dregur í flokki, því við bætist rafeindahvel.
-#? efnafraedi|16|Sesín (Cs) og fransín (Fr) hafa stærstu atómin, en helín (He) það minnsta.
+efnafraedi|16|Sesín (Cs) og fransín (Fr) hafa stærstu atómin, en helín (He) það minnsta.
 efnafraedi|13|Málmeiginleikar aukast eftir því sem neðar dregur í flokki og vinstra megin í lotu.
 efnafraedi|13|Málmar láta frá sér rafeindir og mynda jákvæðar jónir, en málmleysingjar taka við rafeindum og mynda neikvæðar.
 efnafraedi|16|Jónunarorka er orkan sem þarf til að slíta rafeind frá atómi.
 efnafraedi|16|Jónunarorkan hækkar eftir því sem farið er til hægri í lotu og lækkar niður eftir flokki.
 efnafraedi|16|Helín (He) hefur hæstu jónunarorku allra frumefna.
-#? efnafraedi|16|Flúor (F) hefur mesta rafdrægni allra frumefna: það togar fastast í rafeindir annarra atóma.
-#? efnafraedi|13|Atóm leitast við að fá átta rafeindir í ysta hvelið, eins og eðalgösin hafa. Það kallast áttureglan.
+efnafraedi|16|Flúor (F) hefur mesta rafneikvæðni allra frumefna: það togar fastast í rafeindir annarra atóma.
+efnafraedi|13|Atóm leitast við að fá átta rafeindir í ysta hvelið, eins og eðalgösin hafa. Það kallast áttureglan.
 efnafraedi|13|Málmungar liggja á mörkum málma og málmleysingja í lotukerfinu, eins og trappa.
 efnafraedi|13|Málmungarnir eru oftast taldir sex: bór (B), kísill (Si), german (Ge), arsen (As), antimon (Sb) og tellúr (Te).
 efnafraedi|13|Tregir málmar eru málmarnir hægra megin við hliðarmálmana, eins og ál (Al), tin (Sn) og blý (Pb).
@@ -1061,7 +1060,7 @@ efnafraedi|16|Teknetín (Tc) og prómetín (Pm) eru einu frumefnin léttari en b
 efnafraedi|16|Frumefni 1 til 94 finnast í náttúrunni, þótt sum aðeins í örlitlu magni.
 efnafraedi|13|Fjögur síðustu frumefni 7. lotu fengu nöfn árið 2016: níhonín (Nh), moskóvín (Mc), tennessín (Ts) og oganesson (Og).
 efnafraedi|13|Frumefni 118, oganesson (Og), fullskipar 7. lotu lotukerfisins.
-#? efnafraedi|13|Engum hefur enn tekist að búa til frumefni 119, sem yrði fyrsta frumefni 8. lotu.
+efnafraedi|13|Engum hefur enn tekist að búa til frumefni 119, sem yrði fyrsta frumefni 8. lotu.
 efnafraedi|16|Oganesson (Og) er nefnt eftir Júríj Oganesjan. Hann var á lífi þegar frumefnið fékk nafn hans.
 efnafraedi|10|Súrefni (O) er algengasta frumefnið í jarðskorpunni og kísill (Si) kemur næst.
 efnafraedi|13|Járn (Fe) er algengasta frumefni jarðarinnar í heild, því kjarni hennar er að mestu úr járni.
@@ -1098,7 +1097,7 @@ efnafraedi|13|Ensím eru hvatar líkamans og hraða efnahvörfum sem annars tæk
 efnafraedi|13|Í hvarfakút bíla breyta platína (Pt), palladín (Pd) og ródín (Rh) eitruðum útblæstri í skaðminni efni.
 efnafraedi|13|Oxun er þegar efni lætur frá sér rafeindir, afoxun þegar það tekur við þeim.
 efnafraedi|16|Í rafhlöðu verður oxun við annað skautið og afoxun við hitt, og rafeindirnar renna á milli um rafrásina.
-#? efnafraedi|13|Útvermið efnahvarf gefur frá sér varma, en innvermið efnahvarf tekur til sín varma.
+efnafraedi|13|Útvermið efnahvarf gefur frá sér varma, en innvermið efnahvarf tekur til sín varma.
 efnafraedi|10|Kælipokar í sjúkrakössum kólna af því að efnin í þeim taka til sín varma þegar þau leysast upp.
 efnafraedi|10|Hitapokar fyrir hendur hitna af því að járnduft ryðgar hratt inni í þeim.
 efnafraedi|13|Samgilt tengi myndast þegar tvö atóm deila rafeindum, en jónatengi þegar annað gefur hinu rafeind.
@@ -1142,7 +1141,7 @@ efnafraedi|13|Flest plast er unnið úr olíu, og það getur tekið hundruð á
 efnafraedi|13|Kolsýringur (CO) er lyktarlaust, eitrað gas sem myndast þegar eitthvað brennur án nægs súrefnis.
 efnafraedi|10|Gas til eldunar er lyktarlaust. Lyktarefni er sett í það svo að leki finnist.
 efnafraedi|13|Í tannkremi eru oft flúorsambönd, sem styrkja glerung tannanna.
-#? efnafraedi|13|Tennur og bein eru að mestu úr kalsínfosfati.
+efnafraedi|13|Tennur og bein eru að mestu úr kalsíumfosfati.
 efnafraedi|10|Blóðið er rautt vegna járns (Fe) í blóðrauðanum.
 efnafraedi|13|Kolkrabbar hafa blátt blóð því í því ber kopar (Cu) súrefnið en ekki járn (Fe).
 efnafraedi|10|Popp springur þegar vatnið inni í korninu verður að gufu og sprengir skelina.
@@ -1169,6 +1168,7 @@ efnafraedi|16|Carl Wilhelm Scheele fann súrefni nokkru áður en Joseph Priestl
 efnafraedi|13|Antoine Lavoisier gaf súrefni og vetni nöfn sín og er oft kallaður faðir nútímaefnafræði.
 efnafraedi|13|John Dalton setti fram atómkenningu sína í byrjun 19. aldar.
 efnafraedi|13|Svíinn Jöns Jacob Berzelius kom á efnatáknunum sem enn eru notuð, með stöfum úr latneskum heitum.
+efnafraedi|10|Efnatáknin eru eins um allan heim, þótt frumefnin heiti ólíkum nöfnum á hverju tungumáli.
 efnafraedi|16|Charles Goodyear herti gúmmí með brennisteini (S) árið 1839 og gerði það endingargott.
 efnafraedi|10|Alfred Nobel fann upp dínamít árið 1867 og stofnaði síðar Nóbelsverðlaunin með auði sínum.
 efnafraedi|13|Hreint ál (Al) var eitt sinn dýrara en gull. Napóleon III bauð heiðursgestum að borða með álhnífapörum.
@@ -1201,7 +1201,7 @@ efnafraedi|16|Leirhverir eru súrir: brennisteinsvetni breytist þar í brennist
 efnafraedi|13|Íslenskt neysluvatn er mjúkt, með lítið af uppleystu kalsíni (Ca) og magnesíni (Mg).
 efnafraedi|13|Eldgos losa brennisteinstvíoxíð (SO₂), sem veldur gosmengun.
 efnafraedi|16|Í Skaftáreldum 1783 losnaði svo mikið brennisteinsgas að móða lá yfir stórum hluta Evrópu.
-#? efnafraedi|16|Í heita vatnið frá Nesjavöllum er bætt örlitlu brennisteinsvetni sem bindur súrefni og ver lagnir gegn tæringu.
+efnafraedi|16|Í heita vatnið frá Nesjavöllum er bætt örlitlu brennisteinsvetni sem bindur súrefni og ver lagnir gegn tæringu.
 efnafraedi|10|Skyr er búið til úr undanrennu með hjálp mjólkursýrugerla.
 efnafraedi|10|Lýsi er ríkt af D-vítamíni og ómega-3 fitusýrum.
 efnafraedi|10|Saltfiskur geymist lengi því saltið dregur vatnið úr fiskinum svo að gerlar þrífast ekki.
@@ -1241,7 +1241,7 @@ islensk-tunga|10|Hugbúnaður og vélbúnaður eru íslensku orðin yfir softwar
 islensk-tunga|13|Bifreið var búin til úr orðunum að bifast, sem merkir að hreyfast, og reið.
 islensk-tunga|13|Rafmagn heitir eftir rafi, því menn kynntust rafmagni fyrst með því að nudda raf.
 islensk-tunga|13|Skjár var upphaflega himna eða líknarbelgur sem strengdur var í glugga á torfbæjum.
-#? islensk-tunga|13|Jónas Hallgrímsson bjó til mörg nýyrði, meðal annars „sporbaugur“ og „aðdráttarafl“.
+islensk-tunga|13|Jónas Hallgrímsson bjó til mörg nýyrði, meðal annars „sporbaugur“ og „aðdráttarafl“.
 islensk-tunga|16|Á Íslandi eru nýyrði skipulega búin til, meðal annars í orðanefndum og Íðorðabanka Árnastofnunar.
 
 # Málfræðin
@@ -1398,7 +1398,7 @@ bokmenntir|13|Hallgerður langbrók neitaði Gunnari um lokk úr hári sínu í 
 bokmenntir|13|Eiríks saga rauða og Grænlendinga saga segja frá Vínlandsferðunum.
 bokmenntir|13|Heimskringla eftir Snorra Sturluson er saga Noregskonunga.
 bokmenntir|13|Gandálfur er líka dvergsnafn í Völuspá.
-#? bokmenntir|13|Tolkien kunni forníslensku og kenndi hana við Oxford-háskóla.
+bokmenntir|13|Tolkien kunni forníslensku og kenndi hana við Oxford-háskóla.
 bokmenntir|16|Hávamál eru heilræði sem lögð eru Óðni í munn.
 bokmenntir|16|Egill Skalla-Grímsson orti Sonatorrek eftir að hafa misst syni sína.
 bokmenntir|16|Í Laxdæla sögu segir Guðrún Ósvífursdóttir: „Þeim var ek verst er ek unna mest.“
@@ -1427,7 +1427,7 @@ bokmenntir|10|Sagt er að álfar flytji búferlum á nýársnótt og að kýr ge
 bokmenntir|13|Jón Árnason safnaði íslenskum þjóðsögum og gaf þær út á 19. öld.
 bokmenntir|13|Fjalla-Eyvindur og Halla voru útilegumenn á 18. öld.
 bokmenntir|13|Ægishjálmur er galdrastafur sem átti að vernda þann sem bar hann.
-#? bokmenntir|16|Á 17. öld voru yfir 20 manns brenndir fyrir galdur á Íslandi.
+bokmenntir|16|Á 17. öld voru yfir 20 manns brenndir fyrir galdur á Íslandi.
 
 # Bókmenntir síðari alda
 bokmenntir|7|Astrid Lindgren skrifaði bækurnar um Línu langsokk.
@@ -1497,7 +1497,6 @@ landafraedi|13|Sognfjörður í Noregi er um 200 km langur, einn lengsti fjörð
 landafraedi|13|Grænland og Færeyjar eru sjálfstjórnarsvæði innan danska konungsríkisins.
 landafraedi|13|La Paz í Bólivíu er hæsta höfuðborg heims, í um 3.600 metra hæð.
 landafraedi|13|Wellington á Nýja-Sjálandi er syðsta höfuðborg sjálfstæðs ríkis.
-#? landafraedi|13|Á Svalbarða eru ísbirnir fleiri en fólkið.
 
 # Fjöll, vötn og eyðimerkur
 landafraedi|7|Níl og Amasónfljótið eru lengstu ár heims.
@@ -1594,7 +1593,7 @@ taekni|10|Vatnsmyllur og vindmyllur nýttu krafta náttúrunnar til að mala kor
 taekni|13|Kínverjar fundu líka upp púður og prentun með útskornum trékubbum.
 taekni|13|Sjónaukinn var fundinn upp í Hollandi árið 1608, og Galíleó endurbætti hann.
 taekni|13|Antonie van Leeuwenhoek sá fyrstur manna bakteríur, í smásjá sem hann smíðaði sjálfur.
-#? taekni|13|Talið er að víkingar hafi notað sólarsteina úr silfurbergi til að finna sólina í skýjuðu veðri.
+taekni|13|Talið er að víkingar hafi notað sólarsteina úr silfurbergi til að finna sólina í skýjuðu veðri.
 taekni|16|Atómklukkur skeika um innan við sekúndu á milljónum ára.
 
 # Rafmagn og orka
@@ -1667,7 +1666,7 @@ taekni|13|Tim Berners-Lee fann upp veraldarvefinn árið 1989.
 taekni|13|Gervigreind er tölva sem lærir af gögnum í stað þess að fylgja aðeins föstum reglum.
 taekni|13|Skáktölvan Deep Blue sigraði heimsmeistarann Garrí Kasparov árið 1997.
 taekni|13|Orðið róbót kemur úr tékknesku leikriti frá árinu 1920.
-#? taekni|13|Ísland tengdist netinu árið 1986.
+taekni|13|Ísland tengdist netinu árið 1986.
 
 # Hversdagslegar uppfinningar
 taekni|7|LEGO-kubbarnir eru frá Danmörku, og nafnið kemur af dönsku orðunum leg godt, leiktu vel.
@@ -1780,7 +1779,7 @@ staerdfraedi|13|Þríhyrningur með hliðarnar 3, 4 og 5 er rétthyrndur.
 staerdfraedi|13|Kúla hefur minnst yfirborð miðað við rúmmál af öllum formum, og því eru sápukúlur kúlulaga.
 staerdfraedi|13|Möbíusarborði hefur aðeins eina hlið og eina brún.
 staerdfraedi|13|Flatarmál hrings er pí sinnum radíusinn í öðru veldi.
-#? staerdfraedi|13|Pí hefur verið reiknað upp á yfir 100 billjónir aukastafa.
+staerdfraedi|13|Pí hefur verið reiknað upp á yfir 100 billjónir aukastafa.
 staerdfraedi|16|Af reglulegum marghyrningum geta aðeins þríhyrningar, ferningar og sexhyrningar fyllt flöt án bila.
 staerdfraedi|16|Reglulegu margflötungarnir, platónsku hlutirnir, eru aðeins fimm, og teningurinn er einn þeirra.
 
@@ -1873,7 +1872,7 @@ ithrottir|13|Íþróttamaður ársins hefur verið valinn síðan 1956, og Vilhj
 ithrottir|13|Körfuboltalandsliðið komst fyrst á EM árið 2015.
 ithrottir|13|Laugavegshlaupið er um 55 km utanvegahlaup frá Landmannalaugum í Þórsmörk.
 ithrottir|13|Íslendingar sýndu glímu á Ólympíuleikunum í Stokkhólmi árið 1912.
-#? ithrottir|16|Ísland keppti fyrst undir eigin fána á Ólympíuleikunum í Berlín árið 1936.
+ithrottir|16|Ísland keppti fyrst undir eigin fána á Ólympíuleikunum í Berlín árið 1936.
 
 # Ólympíuleikar
 ithrottir|7|Ólympíuleikarnir eru haldnir á fjögurra ára fresti.
@@ -2024,7 +2023,7 @@ listir|16|Pönkið varð til um miðjan áttunda áratuginn sem andsvar við lö
 listir|16|Judas Priest gerði leður- og naglaklæðnað að einkennisbúningi þungarokksins.
 listir|16|Ronnie James Dio söng bæði með Rainbow og Black Sabbath.
 listir|16|Jim Marshall byrjaði að smíða gítarmagnara í London árið 1962.
-#? listir|16|Geisladiskurinn tók 74 mínútur svo að níunda sinfónía Beethovens kæmist fyrir á einum diski.
+listir|16|Sagt er að geisladiskurinn hafi verið hafður 74 mínútur svo að níunda sinfónía Beethovens kæmist fyrir.
 
 # Íslensk tónlist
 listir|7|Hatari keppti fyrir Ísland í Eurovision árið 2019.
@@ -2038,12 +2037,12 @@ listir|10|Hildur Guðnadóttir hlaut Óskarsverðlaun árið 2020 fyrir tónlist
 listir|10|Laufey hlaut Grammy-verðlaun árið 2024 fyrir plötuna „Bewitched“.
 listir|10|HAM, Dimma og Skálmöld eru meðal þekktustu þungarokkshljómsveita landsins.
 listir|10|Metallica lék í Egilshöll í Reykjavík árið 2004.
-#? listir|10|Iron Maiden lék í Egilshöll í Reykjavík árið 2005.
+listir|10|Iron Maiden lék í Egilshöll í Reykjavík árið 2005.
 listir|13|Sykurmolarnir slógu í gegn erlendis með laginu „Birthday“ árið 1987.
 listir|13|Björk var tilnefnd til Óskarsverðlauna fyrir lag í myndinni „Dancer in the Dark“.
 listir|13|Hljómar frá Keflavík voru kallaðir íslensku Bítlarnir.
 listir|13|Bubbi Morthens gaf út fyrstu sólóplötu sína, „Ísbjarnarblús“, árið 1980.
-#? listir|13|HAM var stofnuð árið 1988.
+listir|13|HAM var stofnuð árið 1988.
 listir|13|Þungarokkshátíðin Eistnaflug hefur verið haldin í Neskaupstað frá árinu 2005.
 listir|13|Sinfóníuhljómsveit Íslands var stofnuð árið 1950.
 listir|13|Rímur eru gömul íslensk kveðskaparhefð, kveðnar undir rímnalögum.
@@ -2103,7 +2102,7 @@ plontur|16|Plöntur gufa út vatni um laufin, og stórt tré getur gufað út hu
 plontur|16|Sumar plöntur blómstra aðeins þegar dagurinn er orðinn nógu langur, og það nýta gróðurhús sér með lýsingu.
 plontur|16|Plöntur hafa vaxið á þurru landi í um 470 milljónir ára.
 plontur|16|Fyrstu blómplönturnar komu fram fyrir um 130 milljónum ára, á tímum risaeðlanna.
-#? plontur|16|Tré geta varað hvert annað við hættu með efnaboðum sem berast um rætur og sveppþræði.
+plontur|16|Rannsóknir benda til að tré geti sent hvert öðru efnaboð um rætur og sveppþræði.
 
 # Tré
 plontur|7|Árhringirnir í trjástofni segja til um aldur trésins.
@@ -2121,7 +2120,7 @@ plontur|13|Fura og greni voru flutt til landsins til skógræktar á 20. öld.
 plontur|13|Sitkagreni frá Alaska er algengt í íslenskum skógum.
 plontur|13|Ösp vex hratt og er víða notuð í skjólbelti á Íslandi.
 plontur|13|Íslendingar gróðursetja milljónir trjáplantna á hverju ári.
-#? plontur|13|Hæsta tré á Íslandi er sitkagreni sem er orðið yfir 30 metra hátt.
+plontur|13|Hæsta tré á Íslandi er sitkagreni sem er orðið yfir 30 metra hátt.
 
 # Skrýtnar plöntur og met
 plontur|7|Kaktusar geyma vatn í stofninum.
@@ -2154,7 +2153,7 @@ plontur|13|Kúmen vex villt víða á Íslandi.
 plontur|13|Á landnámsöld ræktuðu Íslendingar bygg, og nú er það aftur ræktað víða um land.
 plontur|13|Melgresi var sáð til að hefta sandfok.
 plontur|16|Landgræðslan á rætur að rekja til ársins 1907 og er ein elsta stofnun sinnar tegundar í heiminum.
-#? plontur|10|Rúllubaggar, hey pakkað í plast, fóru að sjást á íslenskum túnum upp úr 1980.
+plontur|10|Rúllubaggar, hey pakkað í plast, fóru að sjást á íslenskum túnum upp úr 1980.
 
 # Ræktun á Íslandi
 plontur|7|Kartöflur, rófur og gulrætur vaxa vel úti á Íslandi.
