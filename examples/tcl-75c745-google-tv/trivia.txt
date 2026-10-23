@@ -1,0 +1,142 @@
+# Fróðleiksmolar í stað kveðjunnar á heimaskjánum (themes/README.md, Trivia).
+# Ein lína á mola: efnisflokkur|aldur|texti. Aldur er yngsti aldurinn sem molinn er skrifaður fyrir: 7, 10, 13 eða 16.
+# Tónn: ein staðreynd, stutt staðhæfing (engin spurning, engin upphrópunarmerki), mest um 130 stafir.
+# Frumefni fá efnatáknið í sviga við fyrstu nefningu: kvikasilfur (Hg). Efnafræði á að vera um þrefalt stærri en hinir flokkarnir.
+
+# Saga Íslands
+saga-islands|7|Ingólfur Arnarson er talinn fyrsti landnámsmaðurinn. Hann settist að í Reykjavík um árið 874.
+saga-islands|7|Alþingi var stofnað á Þingvöllum árið 930 og er eitt elsta þjóðþing heims.
+saga-islands|10|Sveinn Björnsson var fyrsti forseti Íslands. Alþingi kaus hann á Þingvöllum 17. júní 1944.
+saga-islands|13|Kristni var lögtekin á Alþingi árið 1000, eftir að Þorgeir Ljósvetningagoði hafði legið undir feldi.
+saga-islands|13|Í Móðuharðindunum eftir Skaftárelda 1783 dó um fimmtungur landsmanna.
+
+# Mannkynssaga
+mannkynssaga|7|Leifur heppni Eiríksson kom til Norður-Ameríku um árið 1000, nærri 500 árum á undan Kólumbusi.
+mannkynssaga|7|Neil Armstrong og Buzz Aldrin stigu fyrstir manna fæti á tunglið 20. júlí 1969.
+mannkynssaga|10|Pýramídinn mikli í Egyptalandi var hæsta mannvirki heims í um 3.800 ár.
+mannkynssaga|13|Berlínarmúrinn féll 9. nóvember 1989 og árið eftir sameinaðist Þýskaland á ný.
+
+# Náttúra Íslands
+nattura-islands|7|Surtsey reis úr sjó í eldgosi sem hófst í nóvember 1963.
+nattura-islands|7|Geysir í Haukadal hefur gefið goshverum um allan heim nafn sitt.
+nattura-islands|10|Vatnajökull er stærsti jökull landsins og þekur um 7% af Íslandi.
+nattura-islands|10|Ísland liggur þar sem Norður-Ameríkuflekinn og Evrasíuflekinn reka sundur, um 2 cm á ári.
+
+# Dýraríkið
+dyr|7|Kolkrabbar hafa þrjú hjörtu og blátt blóð.
+dyr|7|Lundinn getur borið meira en tíu síli í goggnum í einu.
+dyr|7|Steypireyðurin er stærsta dýr sem vitað er til að hafi lifað á jörðinni, stærri en nokkur risaeðla.
+dyr|7|Íslenski hesturinn getur haft fimm gangtegundir: fet, brokk, stökk, tölt og skeið.
+dyr|10|Melrakkinn var eina landspendýrið á Íslandi þegar landnámsmenn komu.
+
+# Geimurinn
+geimurinn|7|Fótspor geimfaranna sjást enn á tunglinu, því þar er enginn vindur sem afmáir þau.
+geimurinn|10|Ljósið frá sólinni er rúmar átta mínútur á leiðinni til jarðar.
+geimurinn|10|Satúrnus er eðlisléttari en vatn.
+geimurinn|13|Venus er lengur að snúast einn hring um sjálfa sig en að fara einn hring um sólina.
+
+# Mannslíkaminn
+mannslikaminn|7|Hjartað slær um 100.000 sinnum á sólarhring.
+mannslikaminn|7|Lærleggurinn er lengsta bein líkamans.
+mannslikaminn|7|Eineggja tvíburar hafa ekki sömu fingraför.
+mannslikaminn|10|Nýfætt barn hefur um 300 bein en fullorðinn maður 206, því mörg þeirra vaxa saman.
+
+# Eðlisfræði
+edlisfraedi|7|Vatn þenst út þegar það frýs. Þess vegna flýtur ísinn ofan á vatninu.
+edlisfraedi|7|Á tunglinu falla fjöður og hamar jafnhratt, því þar er ekkert loft.
+edlisfraedi|10|Ljósið fer næstum milljón sinnum hraðar en hljóðið.
+
+# Efnafræði: frumefnaspjöld
+efnafraedi|10|Argon (Ar) hefur sætistöluna 18 og er eðallofttegund.
+efnafraedi|13|Samaríum (Sm) hefur sætistöluna 62 og tilheyrir lantaníðum.
+efnafraedi|10|Kalíum (K) hefur sætistöluna 19 og er alkalímálmur.
+efnafraedi|10|Járn (Fe) hefur sætistöluna 26 og er hliðarmálmur.
+efnafraedi|13|Kísill (Si) hefur sætistöluna 14 og er málmungur.
+efnafraedi|10|Brennisteinn (S) hefur sætistöluna 16 og er málmleysingi.
+efnafraedi|13|Joð (I) hefur sætistöluna 53 og er halógen.
+efnafraedi|13|Úran (U) hefur sætistöluna 92 og tilheyrir aktiníðum.
+efnafraedi|10|Kopar (Cu) hefur sætistöluna 29. Táknið kemur af latneska heitinu cuprum.
+efnafraedi|13|Wolfram (W) hefur sætistöluna 74 og hæsta bræðslumark allra málma, um 3.400 °C.
+
+# Efnafræði: lotukerfið
+efnafraedi|10|Sætistala frumefnis er fjöldi róteinda í kjarna þess.
+efnafraedi|13|Lotan sem frumefni er í segir til um hve mörg rafeindahvel það hefur.
+efnafraedi|13|Eðallofttegundir hvarfast nánast ekki við önnur efni, því ysta rafeindahvel þeirra er fullt.
+efnafraedi|10|Neon (Ne) er eðallofttegund og glóir rauðappelsínugult í neonljósum.
+efnafraedi|10|Alkalímálmar eins og natríum (Na) og kalíum (K) eru svo mjúkir að það má skera þá með hníf.
+efnafraedi|13|Alkalímálmar hvarfast harkalega við vatn og eru því geymdir í olíu.
+efnafraedi|13|Halógenar eru í 17. flokki lotukerfisins. Þar eru meðal annars flúor (F), klór (Cl) og joð (I).
+efnafraedi|13|Flest frumefni eru málmar. Málmleysingjarnir eru innan við tuttugu.
+efnafraedi|13|Kísill (Si) er málmungur, með eiginleika bæði málma og málmleysingja, og er undirstaða tölvukubba.
+efnafraedi|13|Hliðarmálmarnir eru í miðju lotukerfisins. Þar eru meðal annars járn (Fe), kopar (Cu) og gull (Au).
+efnafraedi|13|Þrátt fyrir nafnið eru sjaldgæfu jarðmálmarnir flestir algengari í jarðskorpunni en silfur (Ag).
+efnafraedi|13|Allir aktiníðar eru geislavirkir, þar á meðal úran (U) og plútóníum (Pu).
+
+# Efnafræði: almenn
+efnafraedi|7|Ein vatnssameind er úr tveimur vetnisatómum og einu súrefnisatómi: H₂O.
+efnafraedi|13|Kvikasilfur (Hg) og bróm (Br) eru einu frumefnin sem eru fljótandi við stofuhita.
+efnafraedi|10|Natríum (Na) og klór (Cl) eru hættuleg hvort í sínu lagi, en saman mynda þau matarsalt (NaCl).
+efnafraedi|10|Helíum (He) fannst fyrst í ljósi sólarinnar árið 1868, mörgum árum áður en það fannst á jörðinni.
+efnafraedi|10|Marie Curie er eina manneskjan sem hlotið hefur Nóbelsverðlaun bæði í eðlisfræði og efnafræði.
+efnafraedi|13|Mendelejev birti lotukerfið árið 1869 og skildi eftir eyður fyrir frumefni sem enn höfðu ekki fundist.
+efnafraedi|13|Frumefnið hafníum (Hf) er nefnt eftir Kaupmannahöfn, sem heitir Hafnia á latínu.
+efnafraedi|13|Fjögur frumefni eru nefnd eftir sænska þorpinu Ytterby: yttríum (Y), ytterbíum (Yb), terbíum (Tb) og erbíum (Er).
+efnafraedi|10|Demantar og grafítið í blýöntum eru hvort tveggja hreint kolefni (C).
+efnafraedi|13|Silfurberg frá Helgustöðum í Reyðarfirði var um aldir notað í ljósfræðitæki um allan heim.
+efnafraedi|13|Á miðöldum var brennisteinn (S) unninn á íslenskum hverasvæðum og seldur úr landi í púður.
+efnafraedi|13|Úr einu grammi af gulli (Au) má hamra þynnu sem er um einn fermetri.
+
+# Íslensk tunga
+islensk-tunga|7|Íslenska hefur fjögur föll: nefnifall, þolfall, þágufall og eignarfall.
+islensk-tunga|10|Sigurður Nordal bjó til orðið „tölva“ úr orðunum „tala“ og „völva“.
+islensk-tunga|10|Stafirnir þ og ð voru líka notaðir í fornensku.
+islensk-tunga|10|Orðið „sími“ merkti áður „þráður“ og var tekið upp á ný þegar síminn kom til landsins.
+
+# Bókmenntir og goðafræði
+bokmenntir|7|Sleipnir, hestur Óðins, hafði átta fætur.
+bokmenntir|7|Óðinn gaf annað auga sitt fyrir sopa úr Mímisbrunni og fékk visku í staðinn.
+bokmenntir|10|Þriðjudagur hét áður týsdagur, eftir goðinu Tý.
+bokmenntir|10|Njáls saga er lengst Íslendingasagna.
+bokmenntir|10|Halldór Laxness hlaut Nóbelsverðlaunin í bókmenntum árið 1955.
+
+# Landafræði heimsins
+landafraedi|7|Kyrrahafið er stærra en allt þurrlendi jarðar til samans.
+landafraedi|10|Rússland nær yfir 11 tímabelti.
+landafraedi|10|Everest er um 8.849 metra hátt, rúmlega fjórum sinnum hærra en Hvannadalshnúkur.
+landafraedi|10|Amasónfljótið ber meira vatn til sjávar en nokkurt annað fljót í heiminum.
+
+# Uppfinningar og tækni
+taekni|7|Wright-bræður flugu fyrstu vélknúnu flugvélinni árið 1903 og flugið stóð í 12 sekúndur.
+taekni|10|Gutenberg prentaði fyrstu bækurnar með lausaletri um miðja 15. öld.
+taekni|10|Ísland komst í símasamband við útlönd árið 1906, þegar sæstrengur var lagður til Seyðisfjarðar.
+taekni|13|Fyrsta tölva landsins, IBM 1620, kom til Háskóla Íslands árið 1964.
+
+# Stærðfræði og tölur
+staerdfraedi|10|Rómverjar áttu ekkert tákn fyrir núll.
+staerdfraedi|10|Summa allra talna frá 1 upp í 100 er 5050.
+staerdfraedi|10|Ef þversumma tölu deilist með 9, þá deilist talan sjálf líka með 9.
+staerdfraedi|13|Aukastafir tölunnar pí taka aldrei enda og endurtaka sig aldrei.
+
+# Íþróttir
+ithrottir|7|Íslenska karlalandsliðið í handbolta vann silfur á Ólympíuleikunum í Peking 2008.
+ithrottir|7|Árið 2018 varð Ísland fámennasta þjóð sem keppt hefur á HM karla í fótbolta.
+ithrottir|10|Fyrstu Ólympíuleikar nútímans fóru fram í Aþenu árið 1896.
+ithrottir|10|Vilhjálmur Einarsson vann fyrstu ólympíuverðlaun Íslendinga, silfur í þrístökki í Melbourne 1956.
+
+# Listir og tónlist
+listir|10|Led Zeppelin samdi „Immigrant Song“ eftir tónleika í Laugardalshöll árið 1970.
+listir|10|Black Sabbath er oft talin fyrsta þungarokkshljómsveitin. Fyrsta plata hennar kom út árið 1970.
+listir|10|Tony Iommi í Black Sabbath missti fingurgóma í vinnuslysi og spilaði eftir það með heimasmíðuðum gervigómum.
+listir|10|„Bohemian Rhapsody“ með Queen er tæpar sex mínútur að lengd og hefur ekkert viðlag.
+listir|10|Árið 2013 lék Metallica í öllum sjö heimsálfum, líka á Suðurskautslandinu.
+listir|10|Bruce Dickinson, söngvari Iron Maiden, er flugmaður og flaug sjálfur þotu hljómsveitarinnar á tónleikaferðum.
+listir|10|Skálmöld syngur þungarokk á íslensku og sækir efnivið í goðafræði og fornsögur.
+listir|13|Lagið „Smoke on the Water“ með Deep Purple segir frá bruna í Montreux í Sviss árið 1971.
+listir|13|Fender Stratocaster-gítarinn kom á markað árið 1954 og er enn framleiddur í svipaðri mynd.
+listir|10|Mynd af Jóhannesi Kjarval prýðir 2.000 króna seðilinn.
+listir|10|Leonardo da Vinci málaði Mónu Lísu í byrjun 16. aldar.
+
+# Plöntur og ræktun
+plontur|10|Birki var eina tréð sem myndaði skóga á Íslandi við landnám.
+plontur|10|Kartöflurækt hófst á Íslandi um 1760.
+plontur|10|Sumar broddfurur í Kaliforníu eru yfir 4.800 ára gamlar.
