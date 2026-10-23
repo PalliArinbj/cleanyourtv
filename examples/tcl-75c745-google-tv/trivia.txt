@@ -1599,6 +1599,126 @@ staerdfraedi|10|Rómverjar áttu ekkert tákn fyrir núll.
 staerdfraedi|10|Summa allra talna frá 1 upp í 100 er 5050.
 staerdfraedi|10|Ef þversumma tölu deilist með 9, þá deilist talan sjálf líka með 9.
 staerdfraedi|13|Aukastafir tölunnar pí taka aldrei enda og endurtaka sig aldrei.
+# Tölur og talning
+staerdfraedi|7|Tölustafirnir eru tíu: 0, 1, 2, 3, 4, 5, 6, 7, 8 og 9.
+staerdfraedi|7|Við teljum í tugakerfi, líklega af því að við höfum tíu fingur.
+staerdfraedi|7|Slétt tala deilist með 2, en oddatala ekki.
+staerdfraedi|7|Neikvæðar tölur eru minni en núll, eins og frostið á hitamælinum.
+staerdfraedi|7|Á teningi er summa talnanna á andstæðum hliðum alltaf 7.
+staerdfraedi|7|Vikudagarnir eru sjö, og talan 7 hefur lengi verið talin happatala.
+staerdfraedi|10|Núll er hvorki jákvæð né neikvæð tala.
+staerdfraedi|10|Tölustafirnir okkar eru kallaðir arabískir, en þeir eru upprunnir á Indlandi.
+staerdfraedi|10|Í rómverskum tölum er I einn, V fimm, X tíu, L fimmtíu, C hundrað, D fimm hundruð og M þúsund.
+staerdfraedi|10|Árið 2026 er MMXXVI í rómverskum tölum.
+staerdfraedi|10|Milljón er þúsund þúsund, og milljarður er þúsund milljónir.
+staerdfraedi|10|Googol er 1 með hundrað núllum, og nafnið Google er dregið af því.
+staerdfraedi|10|Það tæki um ellefu og hálfan dag að telja upp í milljón, ef talið væri einu sinni á sekúndu.
+staerdfraedi|10|Að telja upp í milljarð, einu sinni á sekúndu, tæki meira en 31 ár.
+staerdfraedi|10|Tylft er tólf, og gros er tólf tylftir, 144.
+staerdfraedi|13|Babýloníumenn töldu í sextugakerfi, og þess vegna eru 60 mínútur í klukkustund og 360 gráður í hring.
+staerdfraedi|13|Billjón á íslensku er milljón milljónir, en billion á ensku er aðeins milljarður.
+staerdfraedi|13|Sjaldgæfara er að fá tvær sexur með tveimur teningum en að fá summuna 7.
+
+# Frumtölur
+staerdfraedi|10|Frumtala deilist aðeins með einum og sjálfri sér, eins og 2, 3, 5 og 7.
+staerdfraedi|10|Talan 2 er eina slétta frumtalan.
+staerdfraedi|13|Talan 1 er ekki talin frumtala.
+staerdfraedi|13|Frumtölurnar taka aldrei enda. Evklíð sannaði það fyrir um 2.300 árum.
+staerdfraedi|13|Tvíburafrumtölur eru frumtölur sem munar tveimur á, eins og 11 og 13.
+staerdfraedi|16|Stærstu þekktu frumtölurnar hafa tugi milljóna tölustafa.
+staerdfraedi|16|Goldbach taldi að hver slétt tala stærri en 2 væri summa tveggja frumtalna, en það hefur enginn sannað.
+staerdfraedi|16|Dulkóðun á netinu byggir á því hve erfitt er að þátta mjög stórar tölur í frumþætti.
+
+# Reikningur og brellur
+staerdfraedi|7|Hvaða tala sem er sinnum núll er núll.
+staerdfraedi|7|Tala deilist með 5 ef hún endar á 0 eða 5.
+staerdfraedi|7|Helmingur er 50% og fjórðungur 25%.
+staerdfraedi|7|Þegar heil tala er margfölduð með 10 bætist núll aftan við hana.
+staerdfraedi|10|Það má ekki deila með núlli.
+staerdfraedi|10|Í níföldunartöflunni upp í 90 er þversumman alltaf 9: 18, 27, 36 og svo framvegis.
+staerdfraedi|10|Tala deilist með 3 ef þversumma hennar deilist með 3.
+staerdfraedi|10|Prósent merkir „af hundraði“.
+staerdfraedi|10|Kvaðratrótin af 144 er 12.
+staerdfraedi|10|Ferningstölurnar 1, 4, 9, 16 og 25 fást með því að margfalda tölu með sjálfri sér.
+staerdfraedi|10|Sagt er að Gauss hafi fundið summuna 5050 sem skólastrákur, með því að para tölurnar saman.
+staerdfraedi|13|111.111.111 sinnum 111.111.111 eru 12.345.678.987.654.321.
+staerdfraedi|13|Til að margfalda tveggja stafa tölu með 11 má setja summu stafanna á milli þeirra: 11 × 23 = 253.
+staerdfraedi|13|Tala deilist með 4 ef síðustu tveir stafirnir mynda tölu sem deilist með 4.
+staerdfraedi|13|2 í tíunda veldi er 1024.
+staerdfraedi|13|Ef blað væri brotið saman 42 sinnum yrði það nógu þykkt til að ná til tunglsins.
+staerdfraedi|13|Sá sem fengi eina krónu fyrsta daginn og tvöfalt meira hvern dag eftir það fengi yfir milljarð á 31. degi.
+staerdfraedi|13|Summa fyrstu oddatalnanna er alltaf ferningstala: 1 + 3 + 5 = 9.
+staerdfraedi|13|Neikvæð tala sinnum neikvæð tala gefur jákvæða tölu.
+staerdfraedi|16|0,999… með endalausum níum er nákvæmlega jafnt og 1.
+
+# Rúmfræði
+staerdfraedi|7|Þríhyrningur hefur þrjár hliðar og ferhyrningur fjórar.
+staerdfraedi|7|Hringur hefur engin horn.
+staerdfraedi|7|Fiðrildi og manneskjur eru nokkurn veginn eins báðum megin, spegilsamhverf.
+staerdfraedi|10|Hornin í þríhyrningi eru samtals alltaf 180 gráður.
+staerdfraedi|10|Hornin í ferhyrningi eru samtals alltaf 360 gráður.
+staerdfraedi|10|Býflugur byggja sexhyrnd hólf, því sexhyrningar fylla flötinn án bila og spara vaxið.
+staerdfraedi|10|Hefðbundinn fótbolti er saumaður úr 12 fimmhyrningum og 20 sexhyrningum.
+staerdfraedi|10|Ummál hrings er pí sinnum þvermálið.
+staerdfraedi|10|Pí-dagurinn er 14. mars, því dagsetningin er skrifuð 3/14 í Bandaríkjunum.
+staerdfraedi|13|Regla Pýþagórasar: í rétthyrndum þríhyrningi er a² + b² = c².
+staerdfraedi|13|Þríhyrningur með hliðarnar 3, 4 og 5 er rétthyrndur.
+staerdfraedi|13|Kúla hefur minnst yfirborð miðað við rúmmál af öllum formum, og því eru sápukúlur kúlulaga.
+staerdfraedi|13|Möbíusarborði hefur aðeins eina hlið og eina brún.
+staerdfraedi|13|Flatarmál hrings er pí sinnum radíusinn í öðru veldi.
+#? staerdfraedi|13|Pí hefur verið reiknað upp á yfir 100 billjónir aukastafa.
+staerdfraedi|16|Af reglulegum marghyrningum geta aðeins þríhyrningar, ferningar og sexhyrningar fyllt flöt án bila.
+staerdfraedi|16|Reglulegu margflötungarnir, platónsku hlutirnir, eru aðeins fimm, og teningurinn er einn þeirra.
+
+# Fibonacci og gullinsnið
+staerdfraedi|10|Í Fibonacci-rununni 1, 1, 2, 3, 5, 8, 13 er hver tala summa tveggja síðustu.
+staerdfraedi|13|Krónublöð margra blóma eru 3, 5 eða 8 talsins, sem allt eru Fibonacci-tölur.
+staerdfraedi|13|Sólblómafræ raðast í gorma, og fjöldi gormanna er oft Fibonacci-tala.
+staerdfraedi|13|Gullinsniðið, um 1,618, hefur heillað listamenn og stærðfræðinga í þúsundir ára.
+staerdfraedi|16|Hlutfallið milli tveggja samliggjandi Fibonacci-talna nálgast gullinsniðið.
+
+# Saga stærðfræðinnar
+staerdfraedi|10|Pýþagóras var grískur stærðfræðingur sem var uppi fyrir um 2.500 árum.
+staerdfraedi|10|Arkímedes er sagður hafa hrópað „Evreka“ í baðinu þegar hann fann leið til að mæla rúmmál.
+staerdfraedi|13|Evklíð skrifaði Frumþættina, eina mest lesnu kennslubók sögunnar.
+staerdfraedi|13|Indverskir stærðfræðingar fóru fyrstir að reikna með núlli sem tölu.
+staerdfraedi|13|Orðið algebra kemur úr arabísku, úr bók eftir al-Khwarizmi.
+staerdfraedi|13|Orðið algrím er dregið af nafni al-Khwarizmis.
+staerdfraedi|13|Hvert landakort má lita með aðeins fjórum litum svo að nágrannalönd fái aldrei sama lit.
+staerdfraedi|13|Í 23 manna hópi eru meira en helmingslíkur á að tveir eigi sama afmælisdag.
+staerdfraedi|16|Fibonacci kynnti arabísku tölustafina fyrir Evrópubúum árið 1202.
+staerdfraedi|16|Plús- og mínustáknin komu fyrst fram á prenti í þýskri bók árið 1489.
+staerdfraedi|16|Jafnaðarmerkið var fundið upp árið 1557 af Walesverjanum Robert Recorde.
+staerdfraedi|16|Newton og Leibniz fundu upp örsmæðareikning, hvor í sínu lagi.
+staerdfraedi|16|Hypatía í Alexandríu er elsti kvenkyns stærðfræðingurinn sem vitað er um með vissu.
+staerdfraedi|16|Emmy Noether er talin einn merkasti stærðfræðingur 20. aldar.
+staerdfraedi|16|Andrew Wiles sannaði síðustu setningu Fermats árið 1994, um 350 árum eftir að Fermat setti hana fram.
+staerdfraedi|16|Fjögurra lita setningin var fyrst sönnuð með hjálp tölvu árið 1976.
+
+# Líkur og óendanleiki
+staerdfraedi|7|Þegar peningi er kastað eru jafnar líkur á hvorri hlið.
+staerdfraedi|7|Í spilastokki eru 52 spil í fjórum sortum.
+staerdfraedi|10|Meðaltal er summa talnanna deilt með fjölda þeirra.
+staerdfraedi|10|Í talnalási með fjórum tölustöfum eru 10.000 möguleikar.
+staerdfraedi|13|Miðgildi er talan í miðjunni þegar tölunum hefur verið raðað.
+staerdfraedi|13|Spilunum í stokki má raða á fleiri vegu en atómin í jörðinni eru mörg.
+staerdfraedi|13|Rubik-kubburinn getur verið í yfir 43 trilljónum ólíkra staðna.
+staerdfraedi|13|Á milli 0 og 1 eru óendanlega mörg brot.
+staerdfraedi|16|Rubik-kubbinn má alltaf leysa í 20 snúningum eða færri.
+staerdfraedi|16|Cantor sýndi að til eru misstórir óendanleikar.
+staerdfraedi|16|Hótel með óendanlega mörgum herbergjum getur alltaf tekið við fleiri gestum, þótt það sé fullt.
+
+# Tölur í daglegu lífi
+staerdfraedi|7|Kennitala Íslendinga hefst á fæðingardeginum.
+staerdfraedi|7|Á klukku eru 12 tölur, og stóri vísirinn fer einn hring á klukkustund.
+staerdfraedi|7|Ferningur hefur fjórar jafnlangar hliðar og fjögur rétt horn.
+staerdfraedi|7|Í einum metra eru hundrað sentímetrar.
+staerdfraedi|10|Síðasti stafurinn í kennitölu segir til um öldina: 9 fyrir 20. öld og 0 fyrir þá 21.
+staerdfraedi|10|Í sólarhring eru 86.400 sekúndur.
+staerdfraedi|13|Níundi stafurinn í kennitölu er vartala, reiknuð úr hinum til að finna villur.
+staerdfraedi|13|Í ári sem ekki er hlaupár eru 31.536.000 sekúndur.
+staerdfraedi|13|Hlaupár er fjórða hvert ár, en aldamótaár aðeins ef þau deilast með 400. Því var 2000 hlaupár en 1900 ekki.
+staerdfraedi|16|Strikamerki hafa líka vartölu sem finnur villur í skönnun.
 
 # Íþróttir
 ithrottir|7|Íslenska karlalandsliðið í handbolta vann silfur á Ólympíuleikunum í Peking 2008.
