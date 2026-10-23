@@ -9,6 +9,124 @@ saga-islands|7|Alþingi var stofnað á Þingvöllum árið 930 og er eitt elsta
 saga-islands|10|Sveinn Björnsson var fyrsti forseti Íslands. Alþingi kaus hann á Þingvöllum 17. júní 1944.
 saga-islands|13|Kristni var lögtekin á Alþingi árið 1000, eftir að Þorgeir Ljósvetningagoði hafði legið undir feldi.
 saga-islands|13|Í Móðuharðindunum eftir Skaftárelda 1783 dó um fimmtungur landsmanna.
+# Landnám
+saga-islands|7|Fyrstu landnámsmennirnir komu til Íslands á víkingaskipum, flestir frá Noregi.
+saga-islands|7|Ingólfur Arnarson kastaði öndvegissúlum sínum fyrir borð og settist að þar sem þær rak á land.
+saga-islands|7|Hrafna-Flóki hafði með sér hrafna á skipinu til að vísa sér leiðina til lands.
+saga-islands|7|Landnámsmenn tóku með sér kindur, kýr, geitur, svín og hesta.
+saga-islands|7|Víkingar báru ekki horn á hjálmum sínum. Hornin komu fyrst löngu síðar, í leikritum og á myndum.
+saga-islands|10|Reykjavík fékk nafn sitt af gufunni sem steig upp af laugunum.
+saga-islands|10|Hrafna-Flóki gaf Íslandi nafn sitt þegar hann sá fjörð fullan af hafís.
+saga-islands|10|Naddoddur var einn fyrsti norræni maðurinn sem kom til Íslands. Hann kallaði landið Snæland.
+saga-islands|10|Írskir munkar, papar, eru taldir hafa dvalið á Íslandi áður en norrænir menn komu.
+saga-islands|10|Auður djúpúðga var ein fárra kvenna sem námu land. Hún bjó í Hvammi í Dölum.
+saga-islands|10|Leifar af skála frá landnámsöld eru til sýnis undir Aðalstræti í Reykjavík.
+saga-islands|10|Á landnámsöld skrifuðu menn með rúnum. Latneska stafrófið kom með kristninni.
+saga-islands|13|Landnámabók segir frá um 400 landnámsmönnum og hvar þeir námu land.
+saga-islands|16|Gjóskulag úr eldgosi um 871, landnámslagið, hjálpar fornleifafræðingum að tímasetja landnámið.
+saga-islands|16|Erfðarannsóknir benda til þess að stór hluti landnámskvenna hafi verið af keltneskum uppruna.
+
+# Þjóðveldisöld
+saga-islands|7|Á Alþingi á Þingvöllum komu menn saman einu sinni á ári, um hásumarið.
+saga-islands|7|Eiríkur rauði kallaði Grænland þessu nafni til að fá fólk til að flytja þangað.
+saga-islands|10|Lögsögumaðurinn sagði upp lögin á Lögbergi, þriðjung þeirra á hverju sumri.
+saga-islands|10|Snorralaug í Reykholti er gömul laug sem kennd er við Snorra Sturluson.
+saga-islands|13|Á þjóðveldisöld var enginn konungur á Íslandi. Goðar fóru með völdin.
+saga-islands|16|Fimmtardómur var stofnaður um 1005, eins konar hæstiréttur þjóðveldisins.
+saga-islands|16|Í Grágás eru lög þjóðveldisins varðveitt.
+saga-islands|13|Guðríður Þorbjarnardóttir fæddi son á Vínlandi, Snorra, sem talinn er fyrsta evrópska barnið fætt í Ameríku.
+saga-islands|13|Ísleifur Gissurarson varð fyrsti biskup Íslands árið 1056 og sat í Skálholti.
+#? saga-islands|16|Tíund var lögleidd á Íslandi árið 1096, fyrst allra skatta á Norðurlöndum.
+saga-islands|13|Ari fróði skrifaði Íslendingabók um 1130. Hún er elsta saga Íslands sem rituð var á íslensku.
+saga-islands|13|Snorri Sturluson er talinn hafa skrifað Snorra-Eddu og Heimskringlu.
+saga-islands|13|Snorri Sturluson var veginn í Reykholti árið 1241.
+saga-islands|13|Sturlungaöld var tími harðra átaka milli valdamestu ætta landsins á 13. öld.
+saga-islands|16|Örlygsstaðabardagi árið 1238 var mannskæðasti bardagi Íslandssögunnar.
+saga-islands|16|Í Flugumýrarbrennu árið 1253 reyndu óvinir Gissurar Þorvaldssonar að brenna hann inni, en hann komst lífs af.
+saga-islands|13|Með Gamla sáttmála 1262 til 1264 gengu Íslendingar Noregskonungi á hönd.
+
+# Síðmiðaldir og siðaskipti
+saga-islands|10|Vaðmál, ofinn ullardúkur, var notað sem gjaldmiðill á Íslandi til forna.
+saga-islands|13|Ísland komst undir Danakonung árið 1380, þegar Noregur og Danmörk fengu sama konung.
+saga-islands|13|Svarti dauði kom til Íslands árið 1402 og felldi stóran hluta landsmanna.
+saga-islands|16|15. öldin er stundum kölluð enska öldin, því enskir sjómenn og kaupmenn voru þá áberandi hér.
+saga-islands|13|Siðaskiptin urðu á Íslandi árið 1550, og landið varð lúterskt.
+saga-islands|13|Jón Arason, síðasti kaþólski biskupinn, var hálshöggvinn í Skálholti árið 1550 ásamt tveimur sonum sínum.
+saga-islands|16|Fyrsta prentsmiðja landsins var á Hólum, á biskupsárum Jóns Arasonar.
+saga-islands|13|Guðbrandsbiblía, fyrsta heildarþýðing Biblíunnar á íslensku, var prentuð á Hólum árið 1584.
+
+# 1600 til 1800
+saga-islands|7|Flestir Íslendingar bjuggu í torfbæjum fram á 19. öld.
+saga-islands|7|Í baðstofunni í torfbænum svaf fólkið, vann og sagði sögur.
+saga-islands|7|Torfbæir héldu vel hita, því þykkir torfveggirnir einangruðu þá.
+saga-islands|7|Áður fyrr léku íslensk börn sér að beinum og hornum, sem voru kýrnar þeirra og kindurnar.
+saga-islands|10|Á kvöldvökum var lesið upp úr sögum og kveðnar rímur meðan fólkið vann.
+saga-islands|13|Danska einokunarverslunin stóð frá 1602 til 1787.
+saga-islands|16|Á tímum einokunarinnar máttu Íslendingar aðeins versla við kaupmenn sem konungur hafði leyft.
+saga-islands|13|Í Tyrkjaráninu árið 1627 voru um 400 Íslendingar teknir og seldir í þrældóm í Norður-Afríku.
+saga-islands|16|Guðríður Símonardóttir var hertekin í Tyrkjaráninu, keypt laus og giftist síðar Hallgrími Péturssyni.
+saga-islands|13|Hallgrímur Pétursson orti Passíusálmana á 17. öld.
+saga-islands|13|Árni Magnússon safnaði íslenskum handritum og flutti þau til Kaupmannahafnar um 1700.
+saga-islands|16|Í Kaupmannahafnarbrunanum 1728 brann hluti af safni Árna Magnússonar, en flestum handritunum var bjargað.
+saga-islands|13|Fyrsta manntalið á Íslandi var tekið árið 1703. Þá bjuggu um 50.000 manns á landinu.
+saga-islands|16|Stórabóla 1707 til 1709 felldi um fjórðung landsmanna.
+saga-islands|13|Skúli Magnússon landfógeti stofnaði Innréttingarnar í Reykjavík um 1750, og þar óx bærinn.
+saga-islands|13|Reykjavík fékk kaupstaðarréttindi árið 1786.
+saga-islands|13|Alþingi var lagt niður árið 1800.
+saga-islands|16|Daninn Jörundur hundadagakonungur lýsti sig æðsta ráðamann Íslands sumarið 1809.
+
+# 19. öld
+saga-islands|7|Þjóðhátíðardagur Íslendinga er 17. júní, afmælisdagur Jóns Sigurðssonar.
+saga-islands|10|Jón Sigurðsson er kallaður sjálfstæðishetja Íslendinga.
+saga-islands|13|Alþingi var endurreist í Reykjavík og kom fyrst saman árið 1845.
+saga-islands|13|Á þjóðfundinum 1851 sögðu fulltrúar Íslendinga: „Vér mótmælum allir.“
+saga-islands|10|Þjóðhátíð hefur verið haldin í Vestmannaeyjum síðan 1874.
+saga-islands|13|Ísland fékk sína fyrstu stjórnarskrá árið 1874, á þúsund ára afmæli landnámsins.
+saga-islands|16|Askja gaus árið 1875, og öskufallið var ein ástæða þess að margir fluttu vestur um haf.
+saga-islands|16|Milli 1870 og 1914 fluttu um 15.000 Íslendingar til Vesturheims, flestir til Kanada.
+saga-islands|10|Í Gimli í Manitoba í Kanada búa enn margir af íslenskum ættum.
+saga-islands|16|Landsbanki Íslands var stofnaður árið 1885.
+
+# 20. öld
+saga-islands|7|Íslenski fáninn er blár með hvítum krossi og rauðum krossi innan í.
+saga-islands|7|Forseti Íslands býr á Bessastöðum.
+saga-islands|7|Í gamla daga réru sjómenn til fiskjar á árabátum.
+saga-islands|10|Fyrsti bíllinn kom til Íslands árið 1904.
+saga-islands|13|Ísland fékk heimastjórn árið 1904 og Hannes Hafstein varð fyrsti íslenski ráðherrann.
+saga-islands|10|Háskóli Íslands var stofnaður árið 1911.
+saga-islands|16|Árið 1915 fengu konur 40 ára og eldri kosningarétt til Alþingis.
+saga-islands|10|Íslenski fáninn var viðurkenndur árið 1915 og varð ríkisfáni við fullveldið 1918.
+saga-islands|10|Ísland varð fullvalda ríki 1. desember 1918.
+saga-islands|13|Árið 1918 var viðburðaríkt: frostaveturinn mikli, Kötlugos, spænska veikin og fullveldið.
+saga-islands|10|Fyrsta flugið á Íslandi var árið 1919.
+saga-islands|10|Ingibjörg H. Bjarnason varð fyrsta konan sem settist á Alþingi, árið 1922.
+#? saga-islands|16|Íslendingar urðu fyrst fleiri en 100.000 árið 1925.
+saga-islands|13|Alþingishátíðin var haldin á Þingvöllum árið 1930, á þúsund ára afmæli Alþingis.
+saga-islands|10|Breskur her hernam Ísland 10. maí 1940.
+saga-islands|7|Lýðveldið Ísland var stofnað á Þingvöllum 17. júní 1944, í rigningu.
+saga-islands|13|Ísland var eitt stofnríkja Atlantshafsbandalagsins, NATO, árið 1949.
+saga-islands|16|Inngangan í NATO leiddi til óeirða á Austurvelli 30. mars 1949.
+saga-islands|10|Ísland hefur aldrei haft eigin her.
+saga-islands|13|Sjónvarpið hóf útsendingar árið 1966 og sendi lengi ekkert út á fimmtudögum.
+saga-islands|13|Þorskastríðin voru þrjár deilur við Breta um fiskveiðilögsöguna á árunum 1958 til 1976.
+saga-islands|10|Í þorskastríðunum klipptu íslensk varðskip á togvíra breskra togara.
+saga-islands|16|Ísland gekk í EFTA árið 1970 og í Evrópska efnahagssvæðið árið 1994.
+saga-islands|13|Handritin, meðal annars Konungsbók eddukvæða og Flateyjarbók, komu heim frá Danmörku árið 1971.
+saga-islands|13|Einvígi Fischers og Spasskís um heimsmeistaratitilinn í skák fór fram í Reykjavík árið 1972.
+saga-islands|7|Þegar fór að gjósa á Heimaey árið 1973 voru nær allir íbúarnir, um 5.000, fluttir upp á land á einni nóttu.
+saga-islands|13|Á Heimaey var sjó dælt á hraunið til að kæla það og bjarga höfninni.
+saga-islands|16|Hringvegurinn var opnaður allur árið 1974, þegar brýrnar á Skeiðarársandi voru tilbúnar.
+saga-islands|10|Á kvennafrídaginn 24. október 1975 lögðu um 90% íslenskra kvenna niður störf.
+saga-islands|7|Vigdís Finnbogadóttir var forseti Íslands í 16 ár, frá 1980 til 1996.
+saga-islands|13|Reagan og Gorbatsjov hittust í Höfða í Reykjavík árið 1986.
+saga-islands|13|Bjór var bannaður á Íslandi til 1. mars 1989.
+saga-islands|10|Þingvellir voru settir á heimsminjaskrá UNESCO árið 2004.
+saga-islands|16|Bobby Fischer fékk íslenskan ríkisborgararétt árið 2005 og er grafinn á Íslandi.
+
+# 21. öld
+saga-islands|16|Í hruninu haustið 2008 féllu þrír stærstu bankar landsins á nokkrum dögum.
+saga-islands|13|Jóhanna Sigurðardóttir varð fyrsta konan sem gegndi embætti forsætisráðherra Íslands, árið 2009.
+saga-islands|10|Eyjafjallajökull gaus árið 2010 og askan stöðvaði flugumferð í Evrópu dögum saman.
 
 # Mannkynssaga
 mannkynssaga|7|Leifur heppni Eiríksson kom til Norður-Ameríku um árið 1000, nærri 500 árum á undan Kólumbusi.
