@@ -133,6 +133,119 @@ mannkynssaga|7|Leifur heppni Eiríksson kom til Norður-Ameríku um árið 1000,
 mannkynssaga|7|Neil Armstrong og Buzz Aldrin stigu fyrstir manna fæti á tunglið 20. júlí 1969.
 mannkynssaga|10|Pýramídinn mikli í Egyptalandi var hæsta mannvirki heims í um 3.800 ár.
 mannkynssaga|13|Berlínarmúrinn féll 9. nóvember 1989 og árið eftir sameinaðist Þýskaland á ný.
+# Forsaga og fornöld
+mannkynssaga|7|Risaeðlurnar dóu út löngu áður en fyrstu mennirnir komu fram.
+mannkynssaga|7|Steinöld, bronsöld og járnöld eru nefndar eftir efninu sem menn smíðuðu verkfæri sín úr.
+mannkynssaga|7|Pýramídarnir í Egyptalandi voru grafhýsi faraóa.
+mannkynssaga|7|Fornegyptar skrifuðu með myndum sem kallast híeróglýfur.
+mannkynssaga|7|Fornegyptar smurðu lík hinna látnu og bjuggu til múmíur.
+mannkynssaga|7|Tútankamon varð faraó Egyptalands aðeins um níu ára gamall.
+mannkynssaga|7|Skylmingaþrælar börðust í hringleikahúsinu Kólosseum í Róm.
+mannkynssaga|10|Menn bjuggu til verkfæri úr steini fyrir meira en tveimur milljónum ára.
+mannkynssaga|10|Menn fóru að rækta korn og temja dýr fyrir um 10.000 árum.
+mannkynssaga|10|Hellamálverkin í Lascaux í Frakklandi eru um 17.000 ára gömul.
+mannkynssaga|10|Hjólið var fundið upp í Mesópótamíu fyrir um 5.500 árum.
+mannkynssaga|10|Gröf Tútankamons fannst nær ósnert árið 1922.
+mannkynssaga|10|Fornegyptar léku sér að borðspili sem heitir senet.
+mannkynssaga|10|Kleópatra var síðasti faraó Egyptalands.
+mannkynssaga|10|Kínamúrinn var byggður í mörgum áföngum á um 2.000 árum.
+mannkynssaga|10|Kínamúrinn sést ekki með berum augum utan úr geimnum, þótt oft sé sagt að svo sé.
+mannkynssaga|10|Fyrstu Ólympíuleikarnir í Grikklandi til forna eru taldir hafa verið haldnir árið 776 f.Kr.
+mannkynssaga|10|Júlí er nefndur eftir Júlíusi Sesari og ágúst eftir Ágústusi keisara.
+mannkynssaga|10|Rómverska borgin Pompei grófst í ösku úr eldfjallinu Vesúvíusi árið 79.
+mannkynssaga|10|Rómverjar byggðu vatnsveitur sem fluttu vatn tugi kílómetra til borganna.
+mannkynssaga|10|Í Kólosseum í Róm gátu um 50.000 áhorfendur setið.
+mannkynssaga|10|Silkivegurinn var verslunarleið sem tengdi Kína við löndin við Miðjarðarhafið.
+mannkynssaga|13|Súmerar í Mesópótamíu fundu upp eitt elsta ritmál heims, fleygrúnir.
+mannkynssaga|13|Kleópatra lifði nær okkar tíma en þeim tíma þegar pýramídinn mikli var reistur.
+mannkynssaga|13|Á Rósettusteininum er sami texti á þremur ritmálum, og hann hjálpaði mönnum að ráða híeróglýfur.
+mannkynssaga|13|Í Aþenu til forna varð til eitt fyrsta lýðræði heims, fyrir um 2.500 árum.
+mannkynssaga|13|Alexander mikli varð konungur tvítugur og lagði undir sig lönd allt austur til Indlands.
+mannkynssaga|13|Júlíus Sesar var myrtur í Róm 15. mars árið 44 f.Kr.
+mannkynssaga|13|Á 2. öld náði Rómaveldi frá Bretlandi í norðri til Egyptalands í suðri.
+mannkynssaga|13|Maya-menn í Mið-Ameríku notuðu tákn fyrir núll löngu á undan Evrópumönnum.
+mannkynssaga|16|Lög Hammúrabís frá Babýlon, frá um 1750 f.Kr., eru eitt elsta ritaða lagasafn heims.
+mannkynssaga|16|Sókrates skrifaði ekkert sjálfur. Hugmyndir hans þekkjum við frá Platoni, nemanda hans.
+mannkynssaga|16|Hvolfþak Pantheon í Róm er enn stærsta hvolfþak heims úr óstyrktri steinsteypu.
+mannkynssaga|16|Vestrómverska ríkið leið undir lok árið 476.
+
+# Miðaldir
+mannkynssaga|7|Riddarar á miðöldum klæddust brynjum sem gátu vegið yfir 20 kíló.
+mannkynssaga|7|Kastalar á miðöldum voru oft umkringdir síkjum fullum af vatni.
+mannkynssaga|7|Á miðöldum voru gafflar óalgengir. Fólk borðaði með hníf, skeið og fingrunum.
+mannkynssaga|10|Munkar á miðöldum varðveittu þekkingu með því að afrita bækur í höndunum.
+mannkynssaga|10|Víkingar sigldu alla leið til Miklagarðs, sem nú heitir Istanbúl.
+mannkynssaga|10|Fyrstu gleraugun voru gerð á Ítalíu undir lok 13. aldar.
+mannkynssaga|10|Marco Polo ferðaðist til Kína á 13. öld og sagði frá ferðinni í frægri bók.
+mannkynssaga|13|Víkingaöld er talin hefjast með árás á klaustrið á Lindisfarne á Englandi árið 793.
+mannkynssaga|13|Víkingar stofnuðu borgina Dublin á Írlandi.
+mannkynssaga|13|Normannar, afkomendur víkinga, lögðu England undir sig árið 1066.
+mannkynssaga|13|Svarti dauði felldi um þriðjung Evrópubúa um miðja 14. öld.
+mannkynssaga|13|Djengis Khan stofnaði Mongólaveldið, stærsta samfellda landveldi sögunnar.
+mannkynssaga|13|Kalmarsambandið sameinaði Danmörku, Noreg og Svíþjóð undir einum konungi árið 1397.
+mannkynssaga|13|Konstantínópel, nú Istanbúl, féll í hendur Tyrkja árið 1453.
+mannkynssaga|13|Astekar reistu höfuðborgina Tenochtitlan á eyju í stöðuvatni, þar sem Mexíkóborg stendur nú.
+#? mannkynssaga|13|Víkingar kembdu sér og böðuðu sig oftar en margir aðrir Evrópubúar á þeirra tíma.
+mannkynssaga|16|Í lífverði keisarans í Miklagarði, Væringjasveitinni, voru margir norrænir menn.
+mannkynssaga|16|Bayeux-refillinn, um 70 metra langur, segir frá innrás Normanna í England.
+mannkynssaga|16|Magna Carta frá 1215 takmarkaði vald Englandskonungs.
+mannkynssaga|16|Margrét fyrsta, drottning Danmerkur og Noregs, kom Kalmarsambandinu á.
+mannkynssaga|16|Inkar höfðu ekkert ritmál en héldu tölum til haga með hnútaböndum, kipu.
+
+# Nýöld
+mannkynssaga|7|Á 17. og 18. öld sigldu sjóræningjar um Karíbahafið, eins og Svartskeggur.
+mannkynssaga|7|Kristófer Kólumbus kom til Ameríku árið 1492.
+mannkynssaga|10|Leonardo da Vinci teiknaði flugvélar og kafbáta hundruðum ára áður en þeir voru smíðaðir.
+mannkynssaga|10|Shakespeare skrifaði um 37 leikrit.
+mannkynssaga|10|Bandaríkin lýstu yfir sjálfstæði 4. júlí 1776.
+mannkynssaga|10|Napóleon var ekki lágvaxinn. Hann var um 1,69 m, meðalhár maður á sínum tíma.
+mannkynssaga|10|James Watt endurbætti gufuvélina, og mælieiningin vatt er nefnd eftir honum.
+#? mannkynssaga|10|Kólumbus hélt allt til dauðadags að hann hefði fundið siglingaleið til Asíu.
+mannkynssaga|13|Vasco da Gama sigldi fyrstur Evrópumanna sjóleiðina til Indlands, árið 1498.
+mannkynssaga|13|Leiðangur Magellans 1519 til 1522 sigldi fyrstur umhverfis jörðina, en Magellan lést á leiðinni.
+mannkynssaga|13|Marteinn Lúther hóf siðbótina árið 1517 þegar hann birti 95 greinar sínar.
+mannkynssaga|13|Galíleó Galílei var dæmdur árið 1633 fyrir að halda því fram að jörðin snerist um sólina.
+mannkynssaga|13|Franska byltingin hófst með áhlaupinu á Bastilluna 14. júlí 1789.
+mannkynssaga|13|Napóleon beið lokaósigur í orrustunni við Waterloo árið 1815.
+mannkynssaga|13|Iðnbyltingin hófst í Bretlandi á 18. öld, með gufuvélum og vélum í vefnaði.
+mannkynssaga|13|Þrælahald var afnumið í Bandaríkjunum árið 1865.
+mannkynssaga|16|Þrjátíu ára stríðið, frá 1618 til 1648, var háð víða um Evrópu.
+mannkynssaga|16|Vestfalíufriðurinn 1648 er oft talinn upphaf ríkjaskipunar nútímans í Evrópu.
+mannkynssaga|16|Pétur mikli Rússakeisari stofnaði Sankti Pétursborg árið 1703.
+mannkynssaga|16|Haítí varð fyrsta ríkið sem stofnað var eftir uppreisn þræla, árið 1804.
+mannkynssaga|16|Þrælahald var bannað í breska heimsveldinu árið 1833.
+mannkynssaga|16|Noregur var í konungssambandi við Danmörku í um 400 ár, til 1814.
+
+# 19. og 20. öld
+mannkynssaga|7|Karl Benz smíðaði fyrsta bensínbílinn árið 1886.
+mannkynssaga|7|Eiffelturninn var reistur fyrir heimssýninguna í París árið 1889.
+mannkynssaga|7|Frelsisstyttan í New York var gjöf frá Frakklandi.
+mannkynssaga|7|Bangsar heita „teddy bears“ á ensku eftir Theodore „Teddy“ Roosevelt Bandaríkjaforseta.
+mannkynssaga|7|Titanic sökk í fyrstu ferð sinni árið 1912.
+mannkynssaga|7|Júrí Gagarín varð fyrsti maðurinn til að fara út í geiminn, árið 1961.
+mannkynssaga|10|Fyrri heimsstyrjöldin stóð frá 1914 til 1918.
+mannkynssaga|10|Seinni heimsstyrjöldin stóð frá 1939 til 1945.
+mannkynssaga|10|Sameinuðu þjóðirnar voru stofnaðar árið 1945.
+mannkynssaga|10|Berlínarmúrinn var reistur árið 1961 og skipti borginni í tvennt í 28 ár.
+mannkynssaga|10|Mahatma Gandhi barðist fyrir sjálfstæði Indlands án ofbeldis.
+mannkynssaga|10|Nelson Mandela sat 27 ár í fangelsi og varð síðar forseti Suður-Afríku.
+mannkynssaga|10|Fyrsta vefsíðan var sett á netið árið 1991.
+mannkynssaga|10|Árið 2000 voru jarðarbúar um 6 milljarðar, en þeir urðu 8 milljarðar árið 2022.
+mannkynssaga|13|Konur á Nýja-Sjálandi fengu kosningarétt árið 1893, fyrstar kvenna í sjálfstjórnarríki.
+mannkynssaga|13|Noregur fékk sjálfstæði frá Svíþjóð árið 1905.
+mannkynssaga|13|Rússneska byltingin varð árið 1917, og sama ár varð Finnland sjálfstætt.
+mannkynssaga|13|Þýskaland hernam Danmörku og Noreg 9. apríl 1940.
+mannkynssaga|13|Ísland gekk í Sameinuðu þjóðirnar árið 1946.
+mannkynssaga|13|Indland fékk sjálfstæði frá Bretum árið 1947.
+mannkynssaga|13|Í kalda stríðinu skipti „járntjaldið“ Evrópu í austur og vestur.
+mannkynssaga|13|Martin Luther King flutti ræðuna „I have a dream“ í Washington árið 1963.
+mannkynssaga|13|Sovétríkin liðu undir lok árið 1991.
+mannkynssaga|13|Ísland varð fyrst ríkja til að viðurkenna sjálfstæði Eystrasaltsríkjanna árið 1991.
+mannkynssaga|13|Covid-19 heimsfaraldurinn hófst um áramótin 2019 til 2020.
+mannkynssaga|16|Spænska veikin 1918 til 1920 smitaði um þriðjung mannkyns.
+mannkynssaga|16|Kreppan mikla hófst með hruninu á hlutabréfamarkaðnum í New York árið 1929.
+mannkynssaga|16|Kúbudeilan árið 1962 er talin það sem næst hefur komið kjarnorkustríði.
+mannkynssaga|16|Færeyjar fengu heimastjórn frá Danmörku árið 1948 og Grænland árið 1979.
 
 # Náttúra Íslands
 nattura-islands|7|Surtsey reis úr sjó í eldgosi sem hófst í nóvember 1963.
