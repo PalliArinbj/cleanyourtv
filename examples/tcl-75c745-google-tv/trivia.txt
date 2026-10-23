@@ -252,6 +252,125 @@ nattura-islands|7|Surtsey reis úr sjó í eldgosi sem hófst í nóvember 1963.
 nattura-islands|7|Geysir í Haukadal hefur gefið goshverum um allan heim nafn sitt.
 nattura-islands|10|Vatnajökull er stærsti jökull landsins og þekur um 7% af Íslandi.
 nattura-islands|10|Ísland liggur þar sem Norður-Ameríkuflekinn og Evrasíuflekinn reka sundur, um 2 cm á ári.
+# Eldfjöll
+nattura-islands|7|Eldfjöll gjósa þegar bráðið berg, kvika, brýst upp á yfirborðið.
+nattura-islands|7|Kvika sem rennur upp á yfirborðið kallast hraun.
+nattura-islands|7|Í eldgosi geta komið upp gufa, aska og glóandi hraun.
+nattura-islands|10|Á Íslandi eru um 30 virk eldstöðvakerfi.
+nattura-islands|10|Í Evrópu á miðöldum var Hekla stundum kölluð hlið helvítis.
+nattura-islands|10|Árið 2021 hófust eldgos á Reykjanesskaga eftir nær 800 ára hlé.
+nattura-islands|10|Herðubreið er oft kölluð drottning íslenskra fjalla.
+nattura-islands|10|Í skáldsögu Jules Verne liggur leiðin að miðju jarðar niður um Snæfellsjökul.
+nattura-islands|10|Vestmannaeyjar eru um 15 eyjar, og Heimaey er sú eina sem er í byggð.
+nattura-islands|13|Að meðaltali verða um 20 eldgos á Íslandi á hverri öld.
+nattura-islands|13|Katla er undir Mýrdalsjökli og hefur gosið um 20 sinnum frá landnámi.
+nattura-islands|13|Grímsvötn undir Vatnajökli eru eitt virkasta eldfjall landsins.
+nattura-islands|13|Í Skaftáreldum 1783 rann hraun úr um 27 km langri gígaröð, Lakagígum.
+nattura-islands|13|Herðubreið er stapi. Hún myndaðist í gosi undir þykkum jökli á ísöld.
+nattura-islands|13|Surtsey hefur verið friðuð frá upphafi, og aðeins vísindamenn mega fara þangað.
+nattura-islands|13|Holuhraun gaus 2014 til 2015, og hraunið þekur um 85 ferkílómetra.
+nattura-islands|13|Öskjuvatn er um 220 metra djúpt og eitt dýpsta stöðuvatn landsins.
+nattura-islands|16|Eldgjárgosið um árið 934 er talið mesta hraungos á sögulegum tíma í heiminum.
+nattura-islands|16|Móberg myndast þegar kvika kemst í snertingu við vatn eða ís og storknar snöggt.
+nattura-islands|16|Surtsey hefur minnkað um nær helming síðan gosinu lauk, vegna sjávarrofs.
+nattura-islands|16|Víti við Öskju er sprengigígur sem myndaðist árið 1875.
+
+# Jöklar
+nattura-islands|7|Jöklar þekja um tíunda hluta Íslands.
+nattura-islands|7|Jöklar eru úr snjó sem hefur þjappast saman í ís á mörgum árum.
+nattura-islands|7|Í íshellum inni í jöklum er ísinn blár.
+nattura-islands|10|Ísjakarnir í Jökulsárlóni brotna af Breiðamerkurjökli.
+nattura-islands|10|Langjökull er næststærsti jökull landsins.
+nattura-islands|10|Jökulár eru gráar og gruggugar vegna bergmylsnu sem jökullinn sverfur úr undirlaginu.
+nattura-islands|10|Íslenskir jöklar hafa hopað mikið vegna hlýnandi loftslags.
+nattura-islands|13|Jökulsárlón er dýpsta stöðuvatn landsins, um 280 metra djúpt.
+nattura-islands|13|Jökulhlaup verða þegar vatn undir jökli brýst skyndilega fram, oft vegna eldgoss.
+nattura-islands|13|Vatnajökull er allt að um 900 metra þykkur.
+nattura-islands|16|Okjökull var fyrsti íslenski jökullinn sem missti stöðu sína sem jökull, árið 2014.
+nattura-islands|16|Í jökulhlaupinu úr Grímsvötnum árið 1996 eyðilögðust brýr á Skeiðarársandi.
+nattura-islands|16|Hvannadalshnúkur, hæsti tindur landsins, rís upp úr Öræfajökli, sem er eldfjall.
+nattura-islands|16|Land við Vatnajökul rís um allt að 3 cm á ári, því jökullinn þynnist og léttir á jarðskorpunni.
+
+# Jarðhiti
+nattura-islands|7|Víða á Íslandi er heitt vatn í jörðinni sem hitar hús og sundlaugar.
+nattura-islands|7|Geysir gaus stundum allt upp í 70 metra hæð.
+nattura-islands|10|Strokkur gýs á fáeinna mínútna fresti, oft 15 til 20 metra hátt.
+nattura-islands|10|Deildartunguhver er vatnsmesti hver Evrópu.
+nattura-islands|10|Hveragerði er kallaður blómabærinn vegna gróðurhúsa sem hituð eru með jarðhita.
+nattura-islands|13|Hverir myndast þar sem grunnvatn hitnar af heitu bergi og leitar aftur upp á yfirborðið.
+nattura-islands|16|Háhitasvæði eru þar sem hiti í jörðu er yfir 200 °C á eins kílómetra dýpi.
+nattura-islands|16|Árið 2009 boraði Íslenska djúpborunarverkefnið óvart niður í kviku við Kröflu.
+
+# Jarðfræði og jarðskjálftar
+nattura-islands|7|Á Þingvöllum má sjá gjár þar sem flekarnir reka í sundur.
+nattura-islands|7|Stuðlabergssúlurnar í Reynisfjöru og við Svartafoss eru oft sexstrendar.
+nattura-islands|10|Ísland er ungt land. Elsta bergið er aðeins um 16 milljón ára gamalt.
+nattura-islands|10|Silfra á Þingvöllum er gjá full af tæru lindarvatni, og þar má kafa milli flekanna.
+nattura-islands|10|Jarðskjálftar verða á Íslandi á hverjum degi, en flestir eru svo litlir að enginn finnur þá.
+nattura-islands|10|Í Landmannalaugum eru fjöllin litrík vegna líparíts, ljósrar bergtegundar.
+nattura-islands|13|Elsta berg landsins er á Vestfjörðum og Austfjörðum, lengst frá gosbeltinu.
+nattura-islands|13|Vatnið í Silfru er svo tært að skyggnið er oft yfir 100 metrar.
+nattura-islands|13|Stuðlaberg myndast þegar þykkt hraun kólnar hægt og dregst saman í súlur.
+nattura-islands|16|Undir Íslandi er heitur reitur, möttulstrókur, sem gerir landið eldvirkara en aðra hluta hryggjarins.
+nattura-islands|16|Suðurlandsskjálftarnir árin 2000 og 2008 voru á bilinu 6 til 6,5 að stærð.
+
+# Fossar, ár og vötn
+nattura-islands|7|Gullfoss fellur í tveimur þrepum ofan í djúpt gljúfur.
+nattura-islands|7|Hægt er að ganga á bak við Seljalandsfoss.
+nattura-islands|7|Skógafoss er um 60 metra hár.
+nattura-islands|7|Þjóðsagan segir að Þrasi landnámsmaður hafi falið gullkistu á bak við Skógafoss.
+nattura-islands|7|Ásbyrgi er hóflaga gljúfur, og sagan segir að það sé hófspor Sleipnis.
+nattura-islands|7|Mývatn heitir eftir mýinu sem þar er mikið af á sumrin.
+nattura-islands|10|Dettifoss er aflmesti foss Evrópu.
+nattura-islands|10|Sigríður í Brattholti er sögð hafa barist gegn því að Gullfoss yrði virkjaður.
+nattura-islands|10|Þjórsá er lengsta á landsins, um 230 km.
+nattura-islands|10|Þingvallavatn er stærsta náttúrulega stöðuvatn landsins.
+nattura-islands|13|Glymur var lengi talinn hæsti foss landsins, um 200 metra hár.
+#? nattura-islands|13|Morsárfoss kom í ljós þegar Morsárjökull hopaði og er nú talinn hæsti foss landsins.
+nattura-islands|13|Ásbyrgi mótaðist í hamfarahlaupum í Jökulsá á Fjöllum.
+nattura-islands|13|Kúluskítur, þörungar sem vaxa í kúlum, finnst í Mývatni og örfáum öðrum vötnum í heiminum.
+nattura-islands|16|Mývatn og Laxá eru á skrá Ramsar-samningsins yfir mikilvæg votlendi heims.
+
+# Strönd og eyjar
+nattura-islands|7|Reynisfjara er svört af því að sandurinn er úr svörtu basalti.
+nattura-islands|7|Hvítserkur er klettur í Húnaflóa sem minnir á tröll eða dýr sem drekkur úr sjónum.
+nattura-islands|10|Ísland er um 103.000 ferkílómetrar, næststærsta eyja Evrópu á eftir Stóra-Bretlandi.
+nattura-islands|10|Norðurheimskautsbaugurinn liggur um Grímsey.
+nattura-islands|10|Látrabjarg er eitt stærsta fuglabjarg Evrópu.
+nattura-islands|13|Bjargtangar við Látrabjarg eru vestasti oddi Íslands.
+nattura-islands|13|Kolbeinsey, nyrsti oddi Íslands, hefur minnkað mikið vegna sjávarrofs.
+#? nattura-islands|13|Strandlengja Íslands er um 5.000 km löng.
+
+# Veður og birta
+nattura-islands|7|Á sumrin er bjart nær allan sólarhringinn á Íslandi.
+nattura-islands|7|Í desember er sólin aðeins á lofti í um fjórar klukkustundir í Reykjavík.
+nattura-islands|7|Norðurljósin sjást best á dimmum og heiðskírum vetrarkvöldum.
+nattura-islands|7|Íslendingar segja að ef manni líki ekki veðrið eigi maður að bíða í fimm mínútur.
+nattura-islands|10|Norðurljós myndast þegar agnir frá sólinni rekast á lofthjúp jarðar.
+nattura-islands|10|Grænu norðurljósin koma frá súrefni hátt uppi í lofthjúpnum.
+nattura-islands|10|Golfstraumurinn gerir Ísland hlýrra en önnur lönd á sömu breiddargráðu.
+nattura-islands|13|Mesti hiti sem mælst hefur á Íslandi er 30,5 °C, á Teigarhorni árið 1939.
+nattura-islands|13|Mesti kuldi sem mælst hefur á Íslandi er −38 °C, á Grímsstöðum og í Möðrudal árið 1918.
+nattura-islands|16|Á hafísárunum 1965 til 1971 rak hafís oft að landi fyrir norðan og austan.
+
+# Gróður
+nattura-islands|7|Í gríni er sagt að ef maður villist í íslenskum skógi eigi maður bara að standa upp.
+nattura-islands|7|Holtasóley er þjóðarblóm Íslendinga.
+nattura-islands|7|Mosi þekur stór svæði í íslenskum hraunum.
+nattura-islands|10|Lúpína var flutt til landsins til að hefta sandfok, en hún dreifir sér nú víða.
+nattura-islands|10|Hallormsstaðaskógur á Héraði er einn stærsti skógur landsins.
+nattura-islands|13|Við landnám er talið að birkiskógur hafi þakið að minnsta kosti fjórðung landsins.
+nattura-islands|13|Nú er skógur á aðeins um 2% landsins.
+nattura-islands|13|Það getur tekið mosa áratugi að jafna sig eftir að hann hefur verið troðinn niður.
+nattura-islands|16|Gróðurþekja Íslands rýrnaði mikið frá landnámi vegna skógarhöggs, beitar og jarðvegsrofs.
+
+# Þjóðgarðar og hellar
+nattura-islands|7|Á Íslandi eru hvorki slöngur né önnur skriðdýr.
+nattura-islands|10|Í Raufarhólshelli er hægt að ganga inn í gamla hraunrás.
+nattura-islands|13|Á Íslandi eru þrír þjóðgarðar: Þingvellir, Snæfellsjökull og Vatnajökull.
+nattura-islands|16|Víðgelmir í Hallmundarhrauni er einn stærsti hraunhellir landsins.
+nattura-islands|16|Vatnajökulsþjóðgarður var settur á heimsminjaskrá UNESCO árið 2019.
+#? nattura-islands|16|Vatnajökulsþjóðgarður er einn stærsti þjóðgarður Evrópu.
 
 # Dýraríkið
 dyr|7|Kolkrabbar hafa þrjú hjörtu og blátt blóð.
