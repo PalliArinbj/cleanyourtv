@@ -1099,6 +1099,124 @@ islensk-tunga|7|Íslenska hefur fjögur föll: nefnifall, þolfall, þágufall o
 islensk-tunga|10|Sigurður Nordal bjó til orðið „tölva“ úr orðunum „tala“ og „völva“.
 islensk-tunga|10|Stafirnir þ og ð voru líka notaðir í fornensku.
 islensk-tunga|10|Orðið „sími“ merkti áður „þráður“ og var tekið upp á ný þegar síminn kom til landsins.
+# Stafrófið
+islensk-tunga|7|Í íslenska stafrófinu eru 32 stafir.
+islensk-tunga|7|Ö er síðasti stafurinn í íslenska stafrófinu.
+islensk-tunga|7|Stafurinn þ heitir þorn og stafurinn ð heitir eð.
+islensk-tunga|7|Æ er einn stafur í íslensku, en ekki a og e saman.
+islensk-tunga|7|Stafirnir c, q, w og z eru ekki í íslenska stafrófinu.
+islensk-tunga|7|Stafirnir þ og ð eru ekki í enska stafrófinu, þótt þeir hafi verið notaðir í ensku til forna.
+islensk-tunga|13|Bókstafurinn z var tekinn úr íslenskri stafsetningu árið 1973.
+islensk-tunga|13|Stafurinn þ er kominn af rúninni þurs.
+islensk-tunga|16|Í stafsetningu er skrifað y og ý eftir uppruna orða, þótt þau séu borin fram eins og i og í.
+islensk-tunga|16|Y var upphaflega sérstakt hljóð í fornmáli, en rann saman við i á síðmiðöldum.
+islensk-tunga|16|Fyrsta málfræðiritgerðin, frá 12. öld, er elsta ritgerð um hljóðfræði á Norðurlöndum.
+
+# Nýyrði
+islensk-tunga|7|Eldflaug er eldur sem flýgur.
+islensk-tunga|7|Geimfar er far sem fer út í geiminn.
+islensk-tunga|7|Ljósmynd er mynd sem ljósið býr til.
+islensk-tunga|7|Tölvupóstur og snjallsími eru íslensk orð yfir nýja tækni.
+islensk-tunga|10|Í íslensku eru oft búin til ný orð úr gömlum í stað þess að taka upp erlend orð.
+islensk-tunga|10|Orðið „þyrla“ er dregið af sögninni að þyrlast.
+islensk-tunga|10|Orðið „þota“ er dregið af sögninni að þjóta.
+islensk-tunga|10|Sjónvarp varpar sjón og útvarp varpar hljóði út til fólks.
+islensk-tunga|10|Smásjá sýnir hið smáa, og sjónauki eykur sjónina.
+islensk-tunga|10|Hugbúnaður og vélbúnaður eru íslensku orðin yfir software og hardware.
+islensk-tunga|13|Bifreið var búin til úr orðunum að bifast, sem merkir að hreyfast, og reið.
+islensk-tunga|13|Rafmagn heitir eftir rafi, því menn kynntust rafmagni fyrst með því að nudda raf.
+islensk-tunga|13|Skjár var upphaflega himna eða líknarbelgur sem strengdur var í glugga á torfbæjum.
+#? islensk-tunga|13|Jónas Hallgrímsson bjó til mörg nýyrði, meðal annars „sporbaugur“ og „aðdráttarafl“.
+islensk-tunga|16|Á Íslandi eru nýyrði skipulega búin til, meðal annars í orðanefndum og Íðorðabanka Árnastofnunar.
+
+# Málfræðin
+islensk-tunga|7|Íslensk nafnorð eru í þremur kynjum: karlkyni, kvenkyni og hvorugkyni.
+islensk-tunga|7|Sagnir breytast eftir því hver gerir: ég fer, þú ferð, hann fer.
+islensk-tunga|7|Lýsingarorð stigbreytast: góður, betri, bestur.
+islensk-tunga|7|Í íslensku má búa til mjög löng orð með því að skeyta saman mörgum orðum.
+islensk-tunga|10|Eitt lengsta orð íslenskunnar er Vaðlaheiðarvegavinnuverkfærageymsluskúraútidyralyklakippuhringur.
+islensk-tunga|10|Ákveðni greinirinn er skeyttur aftan við orðið: hestur verður hesturinn.
+islensk-tunga|10|Í íslensku er enginn óákveðinn greinir eins og a á ensku.
+islensk-tunga|10|Sögnin að vera er óregluleg: ég er, ég var, ég hef verið.
+islensk-tunga|13|Íslenska er beygingarmál: orðin breyta um mynd eftir hlutverki sínu í setningunni.
+islensk-tunga|13|Orðið hestur hefur 16 beygingarmyndir, í fjórum föllum, tveimur tölum og með greini og án.
+islensk-tunga|13|Sterkar sagnir skipta um sérhljóð í þátíð: bíta, beit, bitum, bitið.
+islensk-tunga|13|Veikar sagnir fá endingu í þátíð: kalla, kallaði.
+islensk-tunga|13|Tölurnar einn til fjórir beygjast í kynjum og föllum: einn, ein, eitt.
+islensk-tunga|13|Að segja „mér langar“ í stað „mig langar“ kallast þágufallshneigð.
+islensk-tunga|13|Hán er nýlegt persónufornafn sem margt kynsegin fólk notar um sig.
+islensk-tunga|13|Vér er gamalt fornafn í stað við og heyrist nú helst í hátíðlegu máli.
+islensk-tunga|16|Við og þið voru upphaflega tvítala og áttu aðeins við um tvo.
+
+# Saga málsins
+islensk-tunga|7|Íslenska er norrænt mál, skylt norsku, sænsku, dönsku og færeysku.
+islensk-tunga|7|Færeyska er það mál sem líkist íslensku mest.
+islensk-tunga|7|Íslendingar geta enn lesið sögur sem skrifaðar voru fyrir 800 árum.
+islensk-tunga|10|Íslenska hefur breyst minna en flest önnur norræn mál frá miðöldum.
+islensk-tunga|10|Innan við hálf milljón manna talar íslensku að móðurmáli.
+islensk-tunga|13|Á víkingaöld var talað nær sama mál um öll Norðurlönd, og það var kallað dönsk tunga.
+islensk-tunga|13|Guðbrandsbiblía frá 1584 er talin hafa átt mikinn þátt í því að íslenskan lifði.
+islensk-tunga|13|Árnastofnun varðveitir handritin og rannsakar íslenska tungu.
+islensk-tunga|16|Á 18. og 19. öld var mikið af dönskum orðum í íslensku, sem málhreinsunarmenn reyndu að útrýma.
+islensk-tunga|16|Rasmus Rask spáði því árið 1813 að fáir myndu skilja íslensku í Reykjavík eftir hundrað ár.
+islensk-tunga|16|Samkvæmt lögum frá 2011 er íslenska opinbert mál á Íslandi.
+islensk-tunga|16|Sömu lög viðurkenna íslenskt táknmál sem fyrsta mál þeirra sem það þurfa.
+islensk-tunga|16|Unnið er að máltækni svo að tölvur og snjalltæki skilji og tali íslensku.
+
+# Framburður og mállýskur
+islensk-tunga|13|Mállýskumunur er lítill á Íslandi, en harðmæli heyrist helst á Norðurlandi.
+islensk-tunga|16|Í harðmæli eru p, t og k borin fram með blæstri inni í orðum, eins og í orðinu taka.
+islensk-tunga|16|Í rödduðum framburði, sem heyrist á Norðurlandi, eru l, m og n rödduð á undan p, t og k.
+islensk-tunga|16|Í flámæli, sem eitt sinn var algengt, runnu saman i og e, og u og ö.
+
+# Nöfn og dagatal
+islensk-tunga|7|Íslendingar kenna sig flestir við föður sinn eða móður: dóttir eða son.
+islensk-tunga|7|Dagur íslenskrar tungu er 16. nóvember, afmælisdagur Jónasar Hallgrímssonar.
+islensk-tunga|7|Þorri og góa eru gömul íslensk mánaðaheiti.
+islensk-tunga|10|Mannanafnanefnd ákveður hvaða ný nöfn má gefa á Íslandi.
+islensk-tunga|10|Í íslensku símaskránni var fólki raðað eftir fornafni.
+islensk-tunga|10|Laugardagur er þvottadagurinn, dagurinn þegar fólk laugaði sig.
+islensk-tunga|10|Þriðjudagur, miðvikudagur og fimmtudagur heita ekki eftir goðum, eins og samsvarandi dagar í flestum grannmálum.
+islensk-tunga|13|Jón Ögmundsson Hólabiskup lét breyta heitum vikudaganna svo að þau minntu ekki á heiðin goð.
+islensk-tunga|13|Í gamla tímatalinu var árinu skipt í tvö misseri, sumar og vetur.
+islensk-tunga|13|Sumardagurinn fyrsti er fyrsti dagur hörpu í gamla tímatalinu.
+islensk-tunga|13|Á degi íslenskrar tungu eru Verðlaun Jónasar Hallgrímssonar veitt.
+islensk-tunga|16|Ný ættarnöfn hafa verið bönnuð á Íslandi síðan 1925.
+
+# Orð og orðtök
+islensk-tunga|7|Íslenska á mörg orð yfir snjó, eins og mjöll, fönn, hjarn og slyddu.
+islensk-tunga|7|Gluggaveður er veður sem er fallegt að sjá út um gluggann en kalt úti.
+islensk-tunga|7|„Þetta reddast“ er oft sagt lýsa íslensku hugarfari.
+islensk-tunga|7|„Margur er knár þótt hann sé smár“ er gamall málsháttur.
+islensk-tunga|7|„Að slá tvær flugur í einu höggi“ merkir að ná tvennu í einu.
+islensk-tunga|7|„Takk fyrir síðast“ er sagt til að þakka fyrir síðustu samverustund.
+islensk-tunga|10|Hundslappadrífa er snjókoma með stórum flygsum.
+islensk-tunga|10|Íslenska á mörg orð yfir vind: gola, kaldi, stinningskaldi, stormur og rok.
+islensk-tunga|10|Jólabókaflóðið er þegar flestar íslenskar bækur ársins koma út fyrir jólin.
+islensk-tunga|10|„Að fara í hundana“ merkir að fara illa.
+islensk-tunga|10|„Að hafa vaðið fyrir neðan sig“ merkir að fara varlega.
+islensk-tunga|10|Orðtakið „að leggja árar í bát“, að gefast upp, kemur úr sjómannamáli.
+islensk-tunga|10|„Að gera úlfalda úr mýflugu“ merkir að gera mikið úr litlu.
+islensk-tunga|10|„Sjaldan fellur eplið langt frá eikinni“ merkir að börn líkjast foreldrum sínum.
+islensk-tunga|13|„Að vera með böggum hildar“ merkir að vera áhyggjufullur.
+islensk-tunga|13|„Glöggt er gests augað“ merkir að gestir sjá oft það sem heimamenn taka ekki eftir.
+islensk-tunga|13|„Að kasta perlum fyrir svín“ merkir að gefa dýrmæti þeim sem kann ekki að meta það.
+islensk-tunga|13|Fáir Íslendingar þéra, það er að segja þér í stað þú við ókunnuga.
+islensk-tunga|16|„Svo bregðast krosstré sem önnur tré“ merkir að jafnvel hinir traustustu geta brugðist.
+islensk-tunga|16|„Að eiga hönk upp í bakið á einhverjum“ merkir að eiga greiða inni hjá honum.
+
+# Skyldleiki og nöfn
+islensk-tunga|7|Algengustu nöfn Íslendinga eru Jón og Guðrún.
+islensk-tunga|7|Íslendingar nota oft gælunöfn, eins og Siggi fyrir Sigurð og Gunna fyrir Guðrúnu.
+islensk-tunga|7|Nöfnin Þór og Freyja, eftir norrænum goðum, eru enn algeng á Íslandi.
+islensk-tunga|13|Mörg ensk orð eru komin úr norrænu, eins og sky, egg og window, sem er vindauga.
+islensk-tunga|13|Íslenska orðið vatn og enska orðið water eiga sér sömu rót.
+islensk-tunga|13|Árnastofnun gefur út Íslenska nútímamálsorðabók á netinu.
+islensk-tunga|16|Íslenska og færeyska eru einu norrænu málin sem enn hafa fjögur föll.
+islensk-tunga|16|Íslenska er indóevrópskt mál, og móðir á sér skyldmenni í latínu, mater, og sanskrít, matar.
+islensk-tunga|16|Í „mig dreymdi“ og „mér líkar“ er frumlagið ekki í nefnifalli. Það kallast aukafallsfrumlag.
+islensk-tunga|16|Höfundur Fyrstu málfræðiritgerðarinnar lagði til ný tákn svo að rita mætti öll íslensk sérhljóð.
+islensk-tunga|16|Í íslensku eru tvíhljóð eins og á, ó, æ og au, sem eru eitt hljóð sem rennur úr einu sérhljóði í annað.
 
 # Bókmenntir og goðafræði
 bokmenntir|7|Sleipnir, hestur Óðins, hafði átta fætur.
