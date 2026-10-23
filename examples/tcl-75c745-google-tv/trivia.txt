@@ -743,6 +743,121 @@ mannslikaminn|16|Sýklalyf vinna á bakteríum en ekki á veirum.
 edlisfraedi|7|Vatn þenst út þegar það frýs. Þess vegna flýtur ísinn ofan á vatninu.
 edlisfraedi|7|Á tunglinu falla fjöður og hamar jafnhratt, því þar er ekkert loft.
 edlisfraedi|10|Ljósið fer næstum milljón sinnum hraðar en hljóðið.
+# Kraftar og hreyfing
+edlisfraedi|7|Þyngdaraflið togar allt niður að jörðinni.
+edlisfraedi|7|Núningur gerir okkur kleift að ganga án þess að renna.
+edlisfraedi|7|Á svelli er lítill núningur, og því er hált.
+edlisfraedi|7|Fallhlíf hægir á fallinu með því að auka loftmótstöðuna.
+edlisfraedi|7|Risastór stálskip fljóta af því að þau eru full af lofti.
+edlisfraedi|7|Ef fötu er sveiflað nógu hratt í hring helst vatnið í henni.
+edlisfraedi|10|Hlutur flýtur ef hann er léttari en vatnið sem hann ryður frá sér.
+edlisfraedi|10|Isaac Newton setti fram þyngdarlögmálið á 17. öld.
+edlisfraedi|10|Sagan af eplinu sem féll á höfuð Newtons er líklega ýkt, en hann sá epli falla og fór að hugsa.
+edlisfraedi|10|Galíleó er sagður hafa látið kúlur falla af skakka turninum í Písa.
+edlisfraedi|10|Fallhlífarstökkvari nær um 200 km hraða á klukkustund í frjálsu falli.
+edlisfraedi|13|Fyrsta lögmál Newtons: hlutur á hreyfingu heldur áfram nema kraftur stöðvi hann.
+edlisfraedi|13|Þriðja lögmál Newtons: hverjum krafti fylgir jafnstór gagnkraftur í gagnstæða átt.
+edlisfraedi|13|Eldflaugar komast áfram í tómu geimnum vegna þriðja lögmáls Newtons.
+edlisfraedi|13|Kraftur er mældur í njútonum, eftir Isaac Newton.
+edlisfraedi|13|Massi og þyngd eru ekki það sama. Á tunglinu er massinn sá sami en þyngdin minni.
+edlisfraedi|13|Arkímedes sagði: „Gefið mér fastan punkt og ég skal lyfta jörðinni“ með vogarstöng.
+edlisfraedi|13|Vogarstöng, trissa, skrúfa og hjól á öxli eru einfaldar vélar sem létta vinnuna.
+
+# Orka og varmi
+edlisfraedi|7|Ullarpeysa heldur á okkur hita því að loftið milli háranna einangrar.
+edlisfraedi|7|Dökk föt hitna meira í sólinni en ljós föt.
+edlisfraedi|10|Orka getur breyst úr einni mynd í aðra, en hún hverfur aldrei.
+edlisfraedi|10|Rússíbani breytir stöðuorku í hreyfiorku þegar hann þýtur niður brekkuna.
+edlisfraedi|10|Vatnsaflsvirkjanir breyta stöðuorku vatnsins í rafmagn.
+edlisfraedi|10|Jarðvarmavirkjanir á Íslandi nýta gufu úr jörðinni til að snúa hverflum.
+edlisfraedi|10|Celsíus-kvarðinn miðar við frostmark og suðumark vatns, 0 og 100 gráður.
+edlisfraedi|10|Í Bandaríkjunum er hiti mældur í Fahrenheit-gráðum, og þar frýs vatn við 32 gráður.
+edlisfraedi|10|Hitabrúsi heldur heitu heitu og köldu köldu, því að milli veggjanna er tómarúm.
+edlisfraedi|10|Matarorka er mæld í kaloríum.
+edlisfraedi|13|Orka er mæld í júlum, eftir eðlisfræðingnum James Joule.
+edlisfraedi|13|Varmi flæðir alltaf af sjálfu sér frá heitum hlut til kaldari.
+edlisfraedi|13|Ekki er hægt að smíða eilífðarvél sem gengur að eilífu án orku.
+edlisfraedi|13|Alkul, −273,15 °C, er lægsta hitastig sem til er.
+edlisfraedi|16|Varmi berst á þrjá vegu: með varmaleiðni, varmaburði og geislun.
+edlisfraedi|16|Vísindamenn hafa kælt efni niður í örlítið brot úr gráðu frá alkuli.
+
+# Ljós og litir
+edlisfraedi|7|Regnboginn verður til þegar sólarljós brotnar í regndropum.
+edlisfraedi|7|Til að sjá regnboga þarf sólin að vera fyrir aftan mann.
+edlisfraedi|7|Í regnboga eru litirnir alltaf í sömu röð, rauður yst og fjólublár innst.
+edlisfraedi|7|Hvítt ljós er blanda allra lita regnbogans.
+edlisfraedi|7|Spegill snýr myndinni við frá hægri til vinstri.
+edlisfraedi|7|Fjarstýringin fyrir sjónvarpið sendir ósýnilegt innrautt ljós.
+edlisfraedi|7|Skuggarnir eru lengstir að morgni og kvöldi.
+edlisfraedi|10|Newton sýndi með glerstrendingi að hvítt ljós er gert úr öllum litum regnbogans.
+edlisfraedi|10|Himinninn er blár því að loftið dreifir bláu ljósi meira en rauðu.
+edlisfraedi|10|Ljósið fer um 300.000 km á sekúndu.
+edlisfraedi|10|Á einni sekúndu gæti ljósið farið um sjö og hálfan hring um jörðina.
+edlisfraedi|10|Ljós fer hægar í vatni en í lofti, og því sýnist rör í vatnsglasi brotið.
+edlisfraedi|10|Útfjólubláa ljósið sjáum við ekki, en það veldur sólbruna.
+edlisfraedi|10|Innrautt ljós sjáum við ekki heldur, en við finnum það sem varma.
+edlisfraedi|10|Í gegnum myndavél síma má stundum sjá ljósið frá fjarstýringu.
+edlisfraedi|13|Sólsetrið er rautt því að ljósið fer þá lengri leið gegnum lofthjúpinn.
+edlisfraedi|13|Gleraugu brjóta ljósið svo að það falli rétt á sjónhimnuna.
+edlisfraedi|13|Hillingar verða þegar ljós sveigir í loftlögum með ólíkan hita.
+edlisfraedi|16|Rasmus Bartholin uppgötvaði tvöfalt ljósbrot í íslensku silfurbergi árið 1669.
+edlisfraedi|16|Útvarpsbylgjur, örbylgjur, sýnilegt ljós og röntgengeislar eru allt sama fyrirbærið, rafsegulbylgjur.
+
+# Hljóð
+edlisfraedi|7|Hljóð er titringur sem berst um loftið.
+edlisfraedi|7|Bergmál er hljóð sem endurkastast af kletti eða vegg.
+edlisfraedi|7|Í flugvél stíflast eyrun vegna þess að loftþrýstingurinn breytist.
+edlisfraedi|10|Hljóð berst um 340 metra á sekúndu í lofti, en hraðar í vatni.
+edlisfraedi|10|Fjarlægð til eldingar má áætla: þrjár sekúndur frá leiftri að þrumu eru um einn kílómetri.
+edlisfraedi|10|Leðurblökur og höfrungar heyra hljóð sem eru of há fyrir okkur.
+edlisfraedi|10|Fílar tala saman með hljóðum sem eru of djúp fyrir eyru manna.
+edlisfraedi|13|Þegar flugvél fer hraðar en hljóðið rýfur hún hljóðmúrinn, og þá heyrist hvellur.
+edlisfraedi|13|Smellurinn í svipu er lítill hljóðmúrshvellur, því endi hennar fer hraðar en hljóðið.
+edlisfraedi|13|Hljóðstyrkur er mældur í desíbelum.
+edlisfraedi|13|Rödd hljómar skræk eftir að andað er að sér helíni, því hljóð berst hraðar í helíni en í lofti.
+edlisfraedi|13|Sírena sjúkrabíls hljómar hærra þegar hann nálgast og lægra þegar hann fjarlægist. Það kallast Doppler-hrif.
+
+# Rafmagn og segulmagn
+edlisfraedi|7|Segull dregur að sér járn.
+edlisfraedi|7|Tveir eins pólar á seglum ýta hvor öðrum frá sér.
+edlisfraedi|7|Nálin í áttavita er segull sem vísar í norður.
+edlisfraedi|7|Ef blaðra er nudduð við hárið rís það vegna stöðurafmagns.
+edlisfraedi|7|Elding er risastór neisti.
+edlisfraedi|7|Jörðin er risastór segull.
+edlisfraedi|7|Málmar leiða rafmagn, en plast og gúmmí einangra.
+edlisfraedi|10|Elding er um fimm sinnum heitari en yfirborð sólarinnar.
+edlisfraedi|10|Spennan í íslenskum innstungum er 230 volt.
+edlisfraedi|10|Fuglar geta setið á rafmagnslínum því að straumurinn fer ekki í gegnum þá.
+edlisfraedi|10|Norðurljósin sjást helst nærri segulpólunum, og Ísland er vel staðsett til að sjá þau.
+edlisfraedi|13|Segulsvið jarðar ver okkur fyrir hlöðnum ögnum frá sólinni.
+edlisfraedi|13|Rafstraumur er mældur í amperum og spenna í voltum.
+edlisfraedi|13|Rafsegull er segull sem kveikja má og slökkva á með rafmagni.
+edlisfraedi|16|Hans Christian Ørsted uppgötvaði árið 1820 að rafstraumur hreyfir áttavitanál.
+edlisfraedi|16|Segulpólar jarðar hafa víxlast mörgum sinnum í jarðsögunni.
+edlisfraedi|16|Íslenskt hraun geymir stefnu segulsviðs jarðar frá þeim tíma þegar það storknaði.
+edlisfraedi|16|Segulnorðurpóllinn færist til um tugi kílómetra á ári.
+edlisfraedi|16|Ofurleiðarar leiða rafmagn án nokkurrar mótstöðu þegar þeir eru kældir nógu mikið.
+
+# Nútímaeðlisfræði
+edlisfraedi|10|Ekkert getur farið hraðar en ljósið.
+edlisfraedi|13|Einstein setti fram sértæku afstæðiskenninguna árið 1905.
+edlisfraedi|13|Jafnan E = mc² segir að massi og orka séu tvær hliðar á sama hlutnum.
+edlisfraedi|13|Kjarnorkuver framleiða orku með því að kljúfa atómkjarna.
+edlisfraedi|13|Stóri sterkeindahraðallinn í CERN er hringur um 27 km að ummáli.
+edlisfraedi|16|Tíminn líður hægar fyrir þann sem ferðast mjög hratt.
+edlisfraedi|16|Klukka á fjallstindi gengur örlítið hraðar en klukka við sjávarmál.
+edlisfraedi|16|Einstein fékk Nóbelsverðlaunin fyrir ljósröfunarhrifin, ekki fyrir afstæðiskenninguna.
+edlisfraedi|16|Róteindir og nifteindir eru gerðar úr enn smærri ögnum, kvörkum.
+edlisfraedi|16|Í skammtafræði hefur ögn ekki ákveðna stöðu fyrr en hún er mæld.
+edlisfraedi|16|Higgs-bóseindin fannst í CERN árið 2012.
+edlisfraedi|16|Niels Bohr setti fram líkan af atóminu þar sem rafeindir eru á ákveðnum brautum.
+edlisfraedi|16|Stephen Hawking sýndi fram á að svarthol gefa frá sér örlitla geislun.
+
+# Eðlisfræði hversdagsins
+edlisfraedi|10|Örbylgjuofn hitar matinn með því að láta vatnssameindirnar í honum titra.
+edlisfraedi|13|Rör virkar af því að loftþrýstingurinn ýtir drykknum upp þegar sogið er.
+edlisfraedi|16|Loftþrýstingur við sjávarmál jafngildir um tíu tonnum á hvern fermetra.
+#? edlisfraedi|13|Skautar renna af því að þunnt vatnslag myndast milli íssins og blaðsins.
 
 # Efnafræði: frumefnaspjöld, eitt á hvert frumefni í röð sætistölu.
 # Heiti eftir is.wikipedia.org/wiki/Listi_yfir_frumefni; flokkar: alkalímálmur, jarðalkalímálmur, hliðarmálmur,
