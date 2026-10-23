@@ -1470,6 +1470,129 @@ taekni|7|Wright-bræður flugu fyrstu vélknúnu flugvélinni árið 1903 og flu
 taekni|10|Gutenberg prentaði fyrstu bækurnar með lausaletri um miðja 15. öld.
 taekni|10|Ísland komst í símasamband við útlönd árið 1906, þegar sæstrengur var lagður til Seyðisfjarðar.
 taekni|13|Fyrsta tölva landsins, IBM 1620, kom til Háskóla Íslands árið 1964.
+# Fornar uppfinningar og tíminn
+taekni|7|Sólúr voru meðal fyrstu klukknanna.
+taekni|7|Stundaglas mælir tímann með sandi sem rennur úr efra glasinu í það neðra.
+taekni|10|Pappír var fundinn upp í Kína fyrir um 2.000 árum.
+taekni|10|Áttavitinn var fundinn upp í Kína.
+taekni|10|Víkingaskipin ristu svo grunnt að þau gátu siglt langt upp eftir ám.
+taekni|10|Vatnsmyllur og vindmyllur nýttu krafta náttúrunnar til að mala korn.
+taekni|13|Kínverjar fundu líka upp púður og prentun með útskornum trékubbum.
+taekni|13|Sjónaukinn var fundinn upp í Hollandi árið 1608, og Galíleó endurbætti hann.
+taekni|13|Antonie van Leeuwenhoek sá fyrstur manna bakteríur, í smásjá sem hann smíðaði sjálfur.
+#? taekni|13|Talið er að víkingar hafi notað sólarsteina úr silfurbergi til að finna sólina í skýjuðu veðri.
+taekni|16|Atómklukkur skeika um innan við sekúndu á milljónum ára.
+
+# Rafmagn og orka
+taekni|7|Thomas Edison bjó til ljósaperu sem entist lengi, árið 1879.
+taekni|7|Vindmyllur sem framleiða rafmagn geta verið hærri en Hallgrímskirkja.
+taekni|10|Benjamin Franklin sýndi fram á að elding er rafmagn.
+taekni|10|Sólarsellur breyta sólarljósi beint í rafmagn.
+taekni|10|Kárahnjúkavirkjun er stærsta virkjun á Íslandi.
+taekni|10|Rafbílar eru hlutfallslega fleiri á Íslandi og í Noregi en víðast annars staðar.
+taekni|13|Benjamin Franklin fann líka upp eldingavarann.
+taekni|13|Alessandro Volta bjó til fyrstu rafhlöðuna árið 1800, og einingin volt er nefnd eftir honum.
+taekni|13|Nikola Tesla þróaði riðstraum, sem nú er fluttur um rafkerfi um allan heim.
+taekni|13|Hellisheiðarvirkjun er ein stærsta jarðvarmavirkjun heims.
+taekni|13|Fyrsta hitaveitan í Reykjavík tók til starfa árið 1930.
+taekni|16|Michael Faraday smíðaði fyrsta rafalinn, sem breytir hreyfingu í rafmagn, árið 1831.
+taekni|16|Edison og Tesla deildu harðlega um hvort nota ætti jafnstraum eða riðstraum.
+taekni|16|Fyrsta vatnsaflsvirkjun heims tók til starfa árið 1882.
+
+# Samskipti
+taekni|7|Fyrsti farsíminn sem seldur var almenningi vó um 800 grömm.
+taekni|10|Alexander Graham Bell fékk einkaleyfi á símanum árið 1876.
+taekni|10|Fyrstu orð Bells í síma voru: „Watson, komdu hingað, ég vil hitta þig.“
+taekni|10|Samuel Morse bjó til morsstafrófið, þar sem stafirnir eru punktar og strik.
+taekni|10|Neyðarkallið SOS á morsi er þrír punktar, þrjú strik og þrír punktar.
+taekni|10|Lumière-bræður sýndu fyrstu kvikmyndirnar fyrir borgandi áhorfendur árið 1895.
+taekni|10|Ríkisútvarpið hóf útsendingar árið 1930.
+taekni|10|Fyrstu textaskilaboðin, „Merry Christmas“, voru send árið 1992.
+taekni|10|Fyrsti iPhone-síminn kom út árið 2007.
+taekni|13|Fyrsta ljósmyndin var tekin um 1826 og þurfti margra klukkustunda lýsingu.
+taekni|13|Guglielmo Marconi sendi fyrstu útvarpsboðin yfir Atlantshaf árið 1901.
+taekni|13|John Logie Baird sýndi sjónvarp fyrstur manna árið 1926.
+taekni|13|Ljósleiðarar flytja gögn sem ljóspúlsa eftir örþunnum glerþráðum.
+taekni|13|Ísland er tengt umheiminum með nokkrum sæstrengjum fyrir netið.
+taekni|16|Fyrsti ritsímastrengurinn yfir Atlantshaf var lagður árið 1858.
+taekni|16|Nær allt netsamband milli heimsálfa fer um sæstrengi á hafsbotni.
+
+# Samgöngur
+taekni|7|Fyrstu farþegarnir í loftbelg árið 1783 voru kind, önd og hani.
+taekni|7|Reiðhjól með fótstigum komu fram á 19. öld.
+taekni|7|Þyrla getur flogið beint upp og staðið kyrr í loftinu.
+taekni|7|Burj Khalifa í Dúbaí er hæsta bygging heims, yfir 800 metra há.
+taekni|10|Sama ár, 1783, flugu fyrstu mennirnir í loftbelg.
+taekni|10|Henry Ford gerði bíla ódýra með færibandinu, og Ford T kom á markað árið 1908.
+taekni|10|Kafbátar sökkva og fljóta upp með því að fylla tanka af sjó eða lofti.
+taekni|10|Concorde-þotan flaug yfir Atlantshaf á innan við fjórum klukkustundum.
+taekni|10|Hvalfjarðargöngin voru opnuð árið 1998.
+taekni|10|Segullestir svífa yfir teinunum og geta farið yfir 400 km á klukkustund.
+taekni|13|Volvo fann upp þriggja punkta bílbeltið árið 1959 og leyfði öllum að nota það.
+taekni|13|Lyftur með öryggishemli Elisha Otis gerðu skýjakljúfa mögulega.
+taekni|13|Gotthard-göngin í Sviss eru lengstu járnbrautargöng heims, um 57 km.
+taekni|16|Robert Fulton smíðaði eitt fyrsta gufuskipið sem stóð undir sér, árið 1807.
+taekni|16|Fyrsta þotan flaug árið 1939.
+taekni|16|Fyrsta eldflaugin sem komst út í geim var þýsk, árið 1944.
+
+# Tölvur og netið
+taekni|7|Fyrstu tölvurnar fylltu heil herbergi.
+taekni|10|Fyrsta tölvumúsin var úr tré.
+taekni|10|Í snjallsíma er meiri reiknigeta en í tölvunum sem fluttu menn til tunglsins.
+taekni|10|Tölvur reikna í tvíundakerfi, aðeins með tölunum 0 og 1.
+taekni|10|Pong frá 1972 var einn fyrsti tölvuleikurinn sem varð vinsæll.
+taekni|10|Íslendingar eru meðal þeirra þjóða sem mest nota netið.
+taekni|13|ENIAC, ein fyrsta tölvan, vó um 27 tonn.
+taekni|13|Ada Lovelace skrifaði fyrsta tölvuforritið, um 1843.
+taekni|13|Alan Turing lagði grunn að tölvunarfræði og hjálpaði til við að ráða dulmál Þjóðverja í stríðinu.
+taekni|13|Villa í tölvu kallast bug á ensku, og það er stundum rakið til mölflugu sem fannst í tölvu árið 1947.
+taekni|13|Eitt bæti er átta bitar.
+taekni|13|Netið varð til úr ARPANET, sem tengdi fyrst saman tölvur árið 1969.
+taekni|13|Fyrsti tölvupósturinn var sendur árið 1971, og þá var @-merkið tekið upp í netföngum.
+taekni|13|Tim Berners-Lee fann upp veraldarvefinn árið 1989.
+taekni|13|Gervigreind er tölva sem lærir af gögnum í stað þess að fylgja aðeins föstum reglum.
+taekni|13|Skáktölvan Deep Blue sigraði heimsmeistarann Garrí Kasparov árið 1997.
+taekni|13|Orðið róbót kemur úr tékknesku leikriti frá árinu 1920.
+#? taekni|13|Ísland tengdist netinu árið 1986.
+
+# Hversdagslegar uppfinningar
+taekni|7|LEGO-kubbarnir eru frá Danmörku, og nafnið kemur af dönsku orðunum leg godt, leiktu vel.
+taekni|7|Rennilásinn var fundinn upp snemma á 20. öld.
+taekni|7|Franski rennilásinn var fundinn upp eftir að krókótt fræ festust í feldi hunds uppfinningamannsins.
+taekni|7|Ísskápurinn gerði fólki kleift að geyma mat lengi án þess að salta hann eða þurrka.
+taekni|10|Örbylgjuofninn var fundinn upp þegar súkkulaði bráðnaði í vasa manns sem vann við ratsjá.
+taekni|10|Gulu límmiðarnir urðu til úr lími sem átti að vera sterkt en reyndist veikt.
+taekni|10|Niðursuðudósin var fundin upp mörgum áratugum á undan dósaopnaranum.
+taekni|10|Snertiskjáir skynja fingurinn af því að hann leiðir rafmagn, og því virka þeir illa með hönskum.
+taekni|10|Þrívíddarprentarar búa til hluti lag fyrir lag.
+taekni|13|Josephine Cochrane fann upp uppþvottavélina árið 1886.
+taekni|13|Strikamerki var fyrst skannað í verslun árið 1974, á tyggjópakka.
+taekni|13|Leysigeislar eru notaðir í strikamerkjaskönnum, augnaðgerðum og geislaspilurum.
+taekni|16|Fyrsti hraðbankinn var opnaður í London árið 1967.
+taekni|16|QR-kóðinn var fundinn upp í Japan árið 1994 til að fylgjast með bílahlutum.
+taekni|16|Fyrsti leysirinn var smíðaður árið 1960.
+
+# Staðsetning, hljóð og bylgjur
+taekni|7|Flugvélar fljúga af því að vængirnir eru lagaðir þannig að loftið lyftir þeim.
+taekni|10|Ratsjá notar útvarpsbylgjur til að finna flugvélar og skip.
+taekni|13|Sónar notar hljóðbylgjur til að finna hluti í sjónum, og sjómenn finna fisk með fiskileitartækjum.
+taekni|13|GPS byggir á um 30 gervitunglum sem senda frá sér nákvæm tímamerki.
+taekni|16|GPS-tæki þarf merki frá að minnsta kosti fjórum gervitunglum til að reikna út staðsetningu.
+taekni|16|Klukkurnar í GPS-gervitunglum þarf að leiðrétta vegna afstæðiskenningar Einsteins.
+
+# Íslensk tækni
+taekni|10|Össur framleiðir gervifætur sem notaðir eru um allan heim.
+taekni|10|Tölvuleikurinn EVE Online er gerður af íslenska fyrirtækinu CCP.
+taekni|13|Marel smíðar vélar til matvælavinnslu sem notaðar eru um allan heim.
+
+# Smátt og stórt
+taekni|7|Tannburstinn með nælonhárum kom á markað árið 1938.
+taekni|7|Áður en rafmagnsljósin komu voru götur lýstar með gasluktum.
+taekni|7|Egyptar til forna notuðu skæri fyrir meira en 3.000 árum.
+taekni|7|Fyrsta rafknúna vasaljósið kom fram undir lok 19. aldar.
+taekni|16|Smárinn, sem fundinn var upp árið 1947, er undirstaða allra rafeindatækja nútímans.
+taekni|16|Fyrsti örgjörvinn, Intel 4004, kom út árið 1971.
+taekni|16|Lögmál Moores spáði því að fjöldi smára á tölvukubbi tvöfaldaðist á um tveggja ára fresti.
 
 # Stærðfræði og tölur
 staerdfraedi|10|Rómverjar áttu ekkert tákn fyrir núll.
