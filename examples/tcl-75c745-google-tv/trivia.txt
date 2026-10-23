@@ -563,6 +563,113 @@ listir|13|Lagið „Smoke on the Water“ með Deep Purple segir frá bruna í M
 listir|13|Fender Stratocaster-gítarinn kom á markað árið 1954 og er enn framleiddur í svipaðri mynd.
 listir|10|Mynd af Jóhannesi Kjarval prýðir 2.000 króna seðilinn.
 listir|10|Leonardo da Vinci málaði Mónu Lísu í byrjun 16. aldar.
+# Rokk og þungarokk
+listir|7|Rafmagnsgítar hefur yfirleitt sex strengi en bassagítar fjóra.
+listir|7|Rokkhljómsveit er oft skipuð söngvara, gítarleikara, bassaleikara og trommara.
+listir|7|Rafmagnsgítar er tengdur við magnara til að hljóma hátt.
+listir|7|Bítlarnir komu frá Liverpool á Englandi. Í þeim voru John, Paul, George og Ringo.
+listir|7|Freddie Mercury var söngvari Queen.
+listir|7|Ozzy Osbourne var söngvari Black Sabbath.
+listir|7|Mick Jagger er söngvari Rolling Stones.
+listir|7|Elvis Presley var kallaður konungur rokksins.
+listir|7|Angus Young, gítarleikari AC/DC, kemur fram í skólabúningi.
+listir|7|Liðsmenn KISS mála andlitin svört og hvít.
+listir|7|Slash, gítarleikari Guns N' Roses, er þekktur fyrir pípuhattinn sinn.
+listir|7|Í „We Will Rock You“ með Queen stappa áheyrendur og klappa taktinn.
+listir|10|Rokkið varð til í Bandaríkjunum upp úr 1950, úr blús, kántrí og ryþmablús.
+listir|10|Chuck Berry er oft kallaður einn af feðrum rokksins.
+listir|10|Rokkarar teygja upp fingurna í „djöflahorn“ á tónleikum. Ronnie James Dio gerði merkið frægt.
+listir|10|Orðið þungarokk er íslenska heitið á heavy metal.
+listir|10|Jimi Hendrix var örvhentur og spilaði á rétthentan gítar sem hann sneri við.
+listir|10|Paul McCartney dreymdi lagið „Yesterday“ og vaknaði með það í höfðinu.
+listir|10|Bítlarnir léku síðast opinberlega á þaki húss útgáfufyrirtækis síns í London árið 1969.
+listir|10|Myndin á umslagi „Abbey Road“ var tekin á gangbraut við hljóðverið þar sem Bítlarnir tóku upp.
+listir|10|Brian May, gítarleikari Queen, smíðaði gítarinn sinn með föður sínum, meðal annars úr gamalli arinhillu.
+listir|10|Freddie Mercury fæddist á Sansibar, eyju undan strönd Afríku.
+listir|10|Rick Allen, trommari Def Leppard, missti handlegg árið 1984 og spilar síðan á sérsmíðað trommusett.
+listir|10|Motörhead setti tvo punkta yfir ö í nafnið af því að það þótti líta grimmilega út.
+listir|10|Iron Maiden á lukkudýrið Eddie, uppvakning sem birtist á nær öllum plötuumslögum sveitarinnar.
+listir|13|Bítlarnir eiga metið yfir flest lög á toppi bandaríska vinsældalistans, 20 talsins.
+listir|13|Brian May, gítarleikari Queen, er með doktorspróf í stjarneðlisfræði.
+listir|13|Queen lék á Live Aid-tónleikunum árið 1985, sem söfnuðu fé vegna hungursneyðar í Eþíópíu.
+listir|13|Black Sabbath var nefnd eftir samnefndri hryllingsmynd frá 1963.
+listir|13|„Paranoid“ með Black Sabbath var samið á skömmum tíma sem uppfylling á plötuna.
+listir|13|Nafnið Led Zeppelin kemur af spá um að hljómsveitin myndi sökkva eins og blýloftbelgur.
+listir|13|Jimmy Page lék stundum á gítarinn með fiðluboga.
+listir|13|Ozzy Osbourne beit höfuðið af leðurblöku á tónleikum árið 1982. Hann hélt að hún væri leikfang.
+listir|13|Deep Purple var um tíma skráð í heimsmetabók Guinness sem háværasta hljómsveit heims.
+listir|13|Pink Floyd lét uppblásið svín svífa yfir orkuveri í London fyrir umslag plötunnar „Animals“.
+listir|13|„The Dark Side of the Moon“ með Pink Floyd var yfir 900 vikur á bandaríska plötulistanum.
+listir|13|Platan „Back in Black“ með AC/DC er ein mest selda plata allra tíma.
+listir|13|Eddie Van Halen gerði frægt að slá á strengina á gripbrettinu með fingrum beggja handa.
+listir|13|Metallica var stofnuð í Los Angeles árið 1981 og gaf út „Master of Puppets“ árið 1986.
+listir|13|Metallica, Slayer, Megadeth og Anthrax eru kallaðar fjórar stóru thrash-sveitirnar.
+listir|13|„Appetite for Destruction“ með Guns N' Roses frá 1987 er ein mest selda fyrsta plata sögunnar.
+listir|13|Dave Grohl, trommari Nirvana, stofnaði Foo Fighters og lék sjálfur á öll hljóðfærin á fyrstu plötunni.
+listir|13|Nirvana og Pearl Jam komu frá Seattle og gerðu grunge-rokkið vinsælt upp úr 1990.
+listir|13|The Ramones og Sex Pistols eru meðal fyrstu pönkhljómsveitanna.
+listir|13|Bob Dylan hlaut Nóbelsverðlaunin í bókmenntum árið 2016, fyrstur tónlistarmanna.
+listir|16|Nafnið rokk og ról er rakið til plötusnúðsins Alans Freed, sem notaði það í útvarpi upp úr 1951.
+listir|16|Blúsinn varð til meðal afkomenda þrælaðra Afríkumanna í suðurríkjum Bandaríkjanna.
+listir|16|Tony Iommi stillti gítarinn lægra til að hlífa gervigómunum, og það mótaði dimman hljóm þungarokksins.
+listir|16|Lagið „Black Sabbath“ hefst á tónbilinu tríton, sem kallað var „djöfullinn í tónlistinni“.
+listir|16|„A Day in the Life“ með Bítlunum endar á píanóhljómi sem ómar í um 40 sekúndur.
+listir|16|The Who gaf út rokkóperuna „Tommy“ árið 1969.
+listir|16|Yes og Genesis sömdu löng lög undir áhrifum klassískrar tónlistar. Sú stefna kallast framsækið rokk.
+listir|16|Pönkið varð til um miðjan áttunda áratuginn sem andsvar við löngum og flóknum rokklögum.
+listir|16|Judas Priest gerði leður- og naglaklæðnað að einkennisbúningi þungarokksins.
+listir|16|Ronnie James Dio söng bæði með Rainbow og Black Sabbath.
+listir|16|Jim Marshall byrjaði að smíða gítarmagnara í London árið 1962.
+#? listir|16|Geisladiskurinn tók 74 mínútur svo að níunda sinfónía Beethovens kæmist fyrir á einum diski.
+
+# Íslensk tónlist
+listir|7|Hatari keppti fyrir Ísland í Eurovision árið 2019.
+listir|7|Harpa, tónlistarhúsið við höfnina í Reykjavík, var opnuð árið 2011.
+listir|10|Björk var söngkona Sykurmolanna áður en hún hóf sólóferil sinn.
+listir|10|Björk kom fram á Óskarsverðlaunahátíðinni árið 2001 í kjól sem líktist svani.
+listir|10|Sigur Rós syngur stundum á bulltungumáli sem kallast vonlenska.
+listir|10|Of Monsters and Men sló í gegn um allan heim með laginu „Little Talks“.
+listir|10|Stuðmenn gerðu kvikmyndina „Með allt á hreinu“ árið 1982.
+listir|10|Hildur Guðnadóttir hlaut Óskarsverðlaun árið 2020 fyrir tónlistina í myndinni „Joker“.
+listir|10|Laufey hlaut Grammy-verðlaun árið 2024 fyrir plötuna „Bewitched“.
+listir|10|HAM, Dimma og Skálmöld eru meðal þekktustu þungarokkshljómsveita landsins.
+listir|10|Metallica lék í Egilshöll í Reykjavík árið 2004.
+#? listir|10|Iron Maiden lék í Egilshöll í Reykjavík árið 2005.
+listir|13|Sykurmolarnir slógu í gegn erlendis með laginu „Birthday“ árið 1987.
+listir|13|Björk var tilnefnd til Óskarsverðlauna fyrir lag í myndinni „Dancer in the Dark“.
+listir|13|Hljómar frá Keflavík voru kallaðir íslensku Bítlarnir.
+listir|13|Bubbi Morthens gaf út fyrstu sólóplötu sína, „Ísbjarnarblús“, árið 1980.
+#? listir|13|HAM var stofnuð árið 1988.
+listir|13|Þungarokkshátíðin Eistnaflug hefur verið haldin í Neskaupstað frá árinu 2005.
+listir|13|Sinfóníuhljómsveit Íslands var stofnuð árið 1950.
+listir|13|Rímur eru gömul íslensk kveðskaparhefð, kveðnar undir rímnalögum.
+listir|13|Langspil er gamalt íslenskt strengjahljóðfæri sem leikið er á með boga.
+listir|16|Kvikmyndin „Rokk í Reykjavík“ frá 1982 sýnir íslensku pönksenuna.
+listir|16|Mezzoforte komst á breska vinsældalistann árið 1983 með laginu „Garden Party“.
+listir|16|Jóhann Jóhannsson hlaut Golden Globe-verðlaun fyrir tónlistina í „The Theory of Everything“.
+listir|16|Íslenska fiðlan er gamalt íslenskt strengjahljóðfæri, ólíkt fiðlunni sem nú er þekkt.
+
+# Tónlist almennt
+listir|7|Píanó hefur 88 nótur: 52 hvítar og 36 svartar.
+listir|7|Fiðla hefur fjóra strengi.
+listir|7|Því hraðar sem strengur titrar, því hærri verður tónninn.
+listir|7|Mozart samdi fyrstu tónverk sín aðeins fimm ára gamall.
+
+# Myndlist og byggingarlist
+listir|7|Rauður, gulur og blár eru frumlitirnir í málaralist.
+listir|7|Ef blár og gulur litur eru blandaðir saman verður til grænn.
+listir|7|Hallgrímskirkja var teiknuð þannig að hún minnir á stuðlaberg.
+listir|10|Sólfarið við Sæbraut í Reykjavík er eftir Jón Gunnar Árnason.
+listir|10|Vincent van Gogh seldi aðeins örfá málverk meðan hann lifði.
+listir|10|„Ópið“ eftir Edvard Munch er eitt frægasta málverk Norðurlanda.
+listir|10|Banksy er götulistamaður sem enginn veit með vissu hver er.
+listir|13|Það tók 41 ár að reisa Hallgrímskirkju, frá 1945 til 1986. Guðjón Samúelsson teiknaði hana.
+listir|13|Glerhjúpur Hörpu var hannaður í samstarfi við myndlistarmanninn Ólaf Elíasson.
+listir|13|Einar Jónsson var fyrsti íslenski myndhöggvarinn, og safn hans stendur á Skólavörðuholti.
+listir|13|Michelangelo málaði loftið í Sixtínsku kapellunni á fjórum árum, standandi á vinnupöllum.
+listir|13|Verk eftir Banksy tættist í sundur rétt eftir að það var slegið á uppboði árið 2018.
+listir|16|Pablo Picasso og Georges Braque fundu upp kúbismann.
+listir|16|Erró gaf Reykjavíkurborg stórt safn verka sinna, sem varðveitt er í Hafnarhúsinu.
 
 # Plöntur og ræktun
 plontur|10|Birki var eina tréð sem myndaði skóga á Íslandi við landnám.
