@@ -8,6 +8,7 @@ Run from the repository root: python3 -m unittest discover -s tests -v
 """
 from collections import Counter
 from pathlib import Path
+import re
 import unittest
 
 
@@ -19,6 +20,25 @@ SUBJECTS = {
 }
 AGES = {"7", "10", "13", "16"}
 MAX_LENGTH = 130   # two lines over the clock at 1920x1080
+# Atomic number, symbol and Icelandic name, as in is.wikipedia.org/wiki/Listi_yfir_frumefni (checked 2026-10-23).
+ELEMENTS = """
+1 H Vetni|2 He Helín|3 Li Litín|4 Be Beryllín|5 B Bór|6 C Kolefni|7 N Köfnunarefni|8 O Súrefni|9 F Flúor|10 Ne Neon
+11 Na Natrín|12 Mg Magnesín|13 Al Ál|14 Si Kísill|15 P Fosfór|16 S Brennisteinn|17 Cl Klór|18 Ar Argon|19 K Kalín
+20 Ca Kalsín|21 Sc Skandín|22 Ti Títan|23 V Vanadín|24 Cr Króm|25 Mn Mangan|26 Fe Járn|27 Co Kóbolt|28 Ni Nikkel
+29 Cu Kopar|30 Zn Sink|31 Ga Gallín|32 Ge German|33 As Arsen|34 Se Selen|35 Br Bróm|36 Kr Krypton|37 Rb Rúbidín
+38 Sr Strontín|39 Y Yttrín|40 Zr Sirkon|41 Nb Níóbín|42 Mo Mólýbden|43 Tc Teknetín|44 Ru Rúþen|45 Rh Ródín
+46 Pd Palladín|47 Ag Silfur|48 Cd Kadmín|49 In Indín|50 Sn Tin|51 Sb Antimon|52 Te Tellúr|53 I Joð|54 Xe Xenon
+55 Cs Sesín|56 Ba Barín|57 La Lantan|58 Ce Serín|59 Pr Praseódým|60 Nd Neódým|61 Pm Prómetín|62 Sm Samarín
+63 Eu Evrópín|64 Gd Gadólín|65 Tb Terbín|66 Dy Dysprósín|67 Ho Hólmín|68 Er Erbín|69 Tm Túlín|70 Yb Ytterbín
+71 Lu Lútetín|72 Hf Hafnín|73 Ta Tantal|74 W Volfram|75 Re Renín|76 Os Osmín|77 Ir Iridín|78 Pt Platína|79 Au Gull
+80 Hg Kvikasilfur|81 Tl Þallín|82 Pb Blý|83 Bi Bismút|84 Po Pólon|85 At Astat|86 Rn Radon|87 Fr Fransín|88 Ra Radín
+89 Ac Aktín|90 Th Þórín|91 Pa Protaktín|92 U Úran|93 Np Neptúnín|94 Pu Plúton|95 Am Ameríkín|96 Cm Kúrín
+97 Bk Berkelín|98 Cf Kalifornín|99 Es Einsteinín|100 Fm Fermín|101 Md Mendelevín|102 No Nóbelín|103 Lr Lawrensín
+104 Rf Rutherfordín|105 Db Dubnín|106 Sg Seborgín|107 Bh Bohrín|108 Hs Hassín|109 Mt Meitnerín|110 Ds Darmstadtín
+111 Rg Röntgenín|112 Cn Kópernikín|113 Nh Níhonín|114 Fl Fleróvín|115 Mc Moskóvín|116 Lv Livermorín|117 Ts Tennessín
+118 Og Oganesson
+"""
+CARD = re.compile(r"^(\S+) \((\w+)\) hefur sætistöluna (\d+)\b")
 
 
 def entries():
@@ -54,6 +74,24 @@ class TriviaFileTest(unittest.TestCase):
         counts = Counter(line.split("|", 1)[0] for _, line in entries())
         others = [count for subject, count in counts.items() if subject != "efnafraedi"]
         self.assertGreaterEqual(counts["efnafraedi"], 3 * max(others))
+
+    def test_every_element_has_one_card_with_its_name_symbol_and_number(self):
+        table = {}
+        for entry in ELEMENTS.replace("\n", "|").split("|"):
+            if entry.strip():
+                number, symbol, name = entry.split()
+                table[int(number)] = (name, symbol)
+        self.assertEqual(list(range(1, 119)), sorted(table))
+        cards = Counter()
+        for n, line in entries():
+            match = CARD.match(line.split("|", 2)[-1])
+            if not match:
+                continue
+            name, symbol, number = match.group(1), match.group(2), int(match.group(3))
+            with self.subTest(line=n):
+                self.assertEqual(table.get(number), (name, symbol))
+            cards[number] += 1
+        self.assertEqual([], [z for z in table if cards[z] != 1], "elements without exactly one card")
 
     def test_the_file_reads_as_utf8_without_a_byte_order_mark(self):
         self.assertFalse(TRIVIA.read_bytes().startswith(b"\xef\xbb\xbf"))
