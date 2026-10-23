@@ -538,7 +538,7 @@ geimurinn|16|Í iðrum Júpíters og Satúrnusar gæti rignt demöntum.
 # Sólin
 geimurinn|13|Sólin er um 4,6 milljarða ára gömul.
 geimurinn|13|Í kjarna sólarinnar er um 15 milljón stiga hiti.
-geimurinn|16|Í kjarna sólarinnar renna vetniskjarnar saman í helín, og við það losnar orkan sem sólin gefur.
+geimurinn|16|Í kjarna sólarinnar renna vetniskjarnar saman í helíum, og við það losnar orkan sem sólin gefur.
 geimurinn|16|Eftir um 5 milljarða ára þenst sólin út og verður rauður risi.
 geimurinn|16|Sólin fer einn hring um miðju Vetrarbrautarinnar á um 230 milljónum ára.
 
@@ -814,7 +814,7 @@ edlisfraedi|10|Fílar tala saman með hljóðum sem eru of djúp fyrir eyru mann
 edlisfraedi|13|Þegar flugvél fer hraðar en hljóðið rýfur hún hljóðmúrinn, og þá heyrist hvellur.
 edlisfraedi|13|Smellurinn í svipu er lítill hljóðmúrshvellur, því endi hennar fer hraðar en hljóðið.
 edlisfraedi|13|Hljóðstyrkur er mældur í desíbelum.
-edlisfraedi|13|Rödd hljómar skræk eftir að andað er að sér helíni, því hljóð berst hraðar í helíni en í lofti.
+edlisfraedi|13|Rödd hljómar skræk eftir að andað er að sér helíum, því hljóð berst hraðar í helíum en í lofti.
 edlisfraedi|13|Sírena sjúkrabíls hljómar hærra þegar hann nálgast og lægra þegar hann fjarlægist. Það kallast Doppler-hrif.
 
 # Rafmagn og segulmagn
@@ -859,224 +859,224 @@ edlisfraedi|13|Rör virkar af því að loftþrýstingurinn ýtir drykknum upp �
 edlisfraedi|16|Loftþrýstingur við sjávarmál jafngildir um tíu tonnum á hvern fermetra.
 
 # Efnafræði: frumefnaspjöld, eitt á hvert frumefni í röð sætistölu.
-# Heiti eftir is.wikipedia.org/wiki/Listi_yfir_frumefni; flokkar: alkalímálmur, jarðalkalímálmur, hliðarmálmur,
-# tregur málmur, málmungur, málmleysingi, halógen, eðalgas, lantaníð, aktiníð. Zn, Cd og Hg fá 12. flokk, því
+# Heiti og flokkar eftir kennslubókinni Efnafræði á namsbokasafn.is: alkalímálmur, jarðalkalímálmur, hliðarmálmur,
+# tregur málmur, hálfmálmur, málmleysingi, halógen, eðalgastegund, lantaníði, aktíníði. Zn, Cd og Hg fá 12. flokk, því
 # deilt er um hvort þau teljist hliðarmálmar; frá 104 eru eiginleikar óþekktir og spjaldið segir af nafninu.
 efnafraedi|10|Vetni (H) hefur sætistöluna 1, er málmleysingi og algengasta frumefni alheimsins.
-efnafraedi|10|Helín (He) hefur sætistöluna 2 og er eðalgas. Það er léttara en loft og því svífa helínblöðrur.
-efnafraedi|10|Litín (Li) hefur sætistöluna 3, er alkalímálmur og léttasti málmur sem til er.
-efnafraedi|10|Beryllín (Be) hefur sætistöluna 4 og er jarðalkalímálmur.
-efnafraedi|10|Bór (B) hefur sætistöluna 5 og er málmungur.
+efnafraedi|10|Helíum (He) hefur sætistöluna 2 og er eðalgastegund. Það er léttara en loft og því svífa helíumblöðrur.
+efnafraedi|10|Litíum (Li) hefur sætistöluna 3, er alkalímálmur og léttasti málmur sem til er.
+efnafraedi|10|Beryllíum (Be) hefur sætistöluna 4 og er jarðalkalímálmur.
+efnafraedi|10|Bór (B) hefur sætistöluna 5 og er hálfmálmur.
 efnafraedi|10|Kolefni (C) hefur sætistöluna 6 og er málmleysingi. Allar þekktar lífverur eru byggðar á kolefni.
-efnafraedi|10|Köfnunarefni (N) hefur sætistöluna 7 og er málmleysingi. Það er um 78% af andrúmsloftinu.
+efnafraedi|10|Nitur (N) hefur sætistöluna 7 og er málmleysingi. Það er um 78% af andrúmsloftinu.
 efnafraedi|10|Súrefni (O) hefur sætistöluna 8 og er málmleysingi. Það er um 21% af andrúmsloftinu.
 efnafraedi|10|Flúor (F) hefur sætistöluna 9, er halógen og hvarfgjarnasta frumefnið.
-efnafraedi|10|Neon (Ne) hefur sætistöluna 10 og er eðalgas.
-efnafraedi|10|Natrín (Na) hefur sætistöluna 11 og er alkalímálmur.
-efnafraedi|10|Magnesín (Mg) hefur sætistöluna 12 og er jarðalkalímálmur. Það brennur með skærhvítum loga.
+efnafraedi|10|Neon (Ne) hefur sætistöluna 10 og er eðalgastegund.
+efnafraedi|10|Natríum (Na) hefur sætistöluna 11 og er alkalímálmur.
+efnafraedi|10|Magnesíum (Mg) hefur sætistöluna 12 og er jarðalkalímálmur. Það brennur með skærhvítum loga.
 efnafraedi|10|Ál (Al) hefur sætistöluna 13 og er tregur málmur. Það er algengasti málmurinn í jarðskorpunni.
-efnafraedi|10|Kísill (Si) hefur sætistöluna 14 og er málmungur.
+efnafraedi|10|Kísill (Si) hefur sætistöluna 14 og er hálfmálmur.
 efnafraedi|10|Fosfór (P) hefur sætistöluna 15 og er málmleysingi. Hvítur fosfór glóir í myrkri.
 efnafraedi|10|Brennisteinn (S) hefur sætistöluna 16 og er málmleysingi.
 efnafraedi|10|Klór (Cl) hefur sætistöluna 17 og er halógen. Sundlaugavatn er hreinsað með klór.
-efnafraedi|10|Argon (Ar) hefur sætistöluna 18 og er eðalgas.
-efnafraedi|10|Kalín (K) hefur sætistöluna 19 og er alkalímálmur.
-efnafraedi|10|Kalsín (Ca) hefur sætistöluna 20 og er jarðalkalímálmur. Það er í beinum og tönnum.
-efnafraedi|13|Skandín (Sc) hefur sætistöluna 21 og er hliðarmálmur, nefnt eftir Skandinavíu.
+efnafraedi|10|Argon (Ar) hefur sætistöluna 18 og er eðalgastegund.
+efnafraedi|10|Kalíum (K) hefur sætistöluna 19 og er alkalímálmur.
+efnafraedi|10|Kalsíum (Ca) hefur sætistöluna 20 og er jarðalkalímálmur. Það er í beinum og tönnum.
+efnafraedi|13|Skandíum (Sc) hefur sætistöluna 21 og er hliðarmálmur, nefnt eftir Skandinavíu.
 efnafraedi|13|Títan (Ti) hefur sætistöluna 22 og er hliðarmálmur. Það er bæði sterkt og létt.
-efnafraedi|13|Vanadín (V) hefur sætistöluna 23 og er hliðarmálmur, nefnt eftir Vanadís, öðru nafni Freyju.
+efnafraedi|13|Vanadíum (V) hefur sætistöluna 23 og er hliðarmálmur, nefnt eftir Vanadís, öðru nafni Freyju.
 efnafraedi|13|Króm (Cr) hefur sætistöluna 24 og er hliðarmálmur. Nafnið kemur af gríska orðinu yfir lit.
 efnafraedi|13|Mangan (Mn) hefur sætistöluna 25 og er hliðarmálmur.
 efnafraedi|10|Járn (Fe) hefur sætistöluna 26 og er hliðarmálmur.
-efnafraedi|13|Kóbolt (Co) hefur sætistöluna 27 og er hliðarmálmur. Það gefur gleri og leirmunum djúpbláan lit.
+efnafraedi|13|Kóbalt (Co) hefur sætistöluna 27 og er hliðarmálmur. Það gefur gleri og leirmunum djúpbláan lit.
 efnafraedi|13|Nikkel (Ni) hefur sætistöluna 28 og er hliðarmálmur.
 efnafraedi|10|Kopar (Cu) hefur sætistöluna 29 og er hliðarmálmur. Táknið kemur af latneska heitinu cuprum.
 efnafraedi|13|Sink (Zn) hefur sætistöluna 30 og er í 12. flokki lotukerfisins. Það ver járn gegn ryði.
-efnafraedi|13|Gallín (Ga) hefur sætistöluna 31 og er tregur málmur. Það bráðnar í lófa, við um 30 °C.
-efnafraedi|13|German (Ge) hefur sætistöluna 32 og er málmungur, nefnt eftir Þýskalandi.
-efnafraedi|13|Arsen (As) hefur sætistöluna 33 og er málmungur.
+efnafraedi|13|Gallíum (Ga) hefur sætistöluna 31 og er tregur málmur. Það bráðnar í lófa, við um 30 °C.
+efnafraedi|13|Germaníum (Ge) hefur sætistöluna 32 og er hálfmálmur, nefnt eftir Þýskalandi.
+efnafraedi|13|Arsen (As) hefur sætistöluna 33 og er hálfmálmur.
 efnafraedi|13|Selen (Se) hefur sætistöluna 34 og er málmleysingi, nefnt eftir Selenu, gyðju tunglsins.
 efnafraedi|13|Bróm (Br) hefur sætistöluna 35 og er halógen.
-efnafraedi|13|Krypton (Kr) hefur sætistöluna 36 og er eðalgas. Nafnið merkir „hið falda“ á grísku.
-efnafraedi|13|Rúbidín (Rb) hefur sætistöluna 37 og er alkalímálmur.
-efnafraedi|13|Strontín (Sr) hefur sætistöluna 38 og er jarðalkalímálmur. Það litar flugelda rauða.
-efnafraedi|13|Yttrín (Y) hefur sætistöluna 39 og er hliðarmálmur.
-efnafraedi|13|Sirkon (Zr) hefur sætistöluna 40 og er hliðarmálmur.
-efnafraedi|13|Níóbín (Nb) hefur sætistöluna 41 og er hliðarmálmur.
+efnafraedi|13|Krypton (Kr) hefur sætistöluna 36 og er eðalgastegund. Nafnið merkir „hið falda“ á grísku.
+efnafraedi|13|Rúbidíum (Rb) hefur sætistöluna 37 og er alkalímálmur.
+efnafraedi|13|Strontíum (Sr) hefur sætistöluna 38 og er jarðalkalímálmur. Það litar flugelda rauða.
+efnafraedi|13|Yttríum (Y) hefur sætistöluna 39 og er hliðarmálmur.
+efnafraedi|13|Sirkón (Zr) hefur sætistöluna 40 og er hliðarmálmur.
+efnafraedi|13|Níóbíum (Nb) hefur sætistöluna 41 og er hliðarmálmur.
 efnafraedi|13|Mólýbden (Mo) hefur sætistöluna 42 og er hliðarmálmur.
-efnafraedi|13|Teknetín (Tc) hefur sætistöluna 43 og er hliðarmálmur. Það var fyrsta frumefnið sem menn bjuggu til.
-efnafraedi|13|Rúþen (Ru) hefur sætistöluna 44 og er hliðarmálmur, nefnt eftir Rússlandi.
-efnafraedi|13|Ródín (Rh) hefur sætistöluna 45 og er hliðarmálmur.
-efnafraedi|13|Palladín (Pd) hefur sætistöluna 46 og er hliðarmálmur, nefnt eftir smástirninu Pallasi.
+efnafraedi|13|Teknetíum (Tc) hefur sætistöluna 43 og er hliðarmálmur. Það var fyrsta frumefnið sem menn bjuggu til.
+efnafraedi|13|Rúteníum (Ru) hefur sætistöluna 44 og er hliðarmálmur, nefnt eftir Rússlandi.
+efnafraedi|13|Ródíum (Rh) hefur sætistöluna 45 og er hliðarmálmur.
+efnafraedi|13|Palladíum (Pd) hefur sætistöluna 46 og er hliðarmálmur, nefnt eftir smástirninu Pallasi.
 efnafraedi|10|Silfur (Ag) hefur sætistöluna 47 og er hliðarmálmur. Það leiðir rafmagn best allra frumefna.
-efnafraedi|13|Kadmín (Cd) hefur sætistöluna 48 og er í 12. flokki lotukerfisins.
-efnafraedi|13|Indín (In) hefur sætistöluna 49 og er tregur málmur. Það er í snertiskjám.
+efnafraedi|13|Kadmíum (Cd) hefur sætistöluna 48 og er í 12. flokki lotukerfisins.
+efnafraedi|13|Indíum (In) hefur sætistöluna 49 og er tregur málmur. Það er í snertiskjám.
 efnafraedi|10|Tin (Sn) hefur sætistöluna 50 og er tregur málmur. Brons er blanda af kopar og tini.
-efnafraedi|13|Antimon (Sb) hefur sætistöluna 51 og er málmungur.
-efnafraedi|13|Tellúr (Te) hefur sætistöluna 52 og er málmungur, nefnt eftir jörðinni (tellus á latínu).
+efnafraedi|13|Antímón (Sb) hefur sætistöluna 51 og er hálfmálmur.
+efnafraedi|13|Tellúríum (Te) hefur sætistöluna 52 og er hálfmálmur, nefnt eftir jörðinni (tellus á latínu).
 efnafraedi|13|Joð (I) hefur sætistöluna 53 og er halógen.
-efnafraedi|13|Xenon (Xe) hefur sætistöluna 54 og er eðalgas. Það lýsir í sumum bílljósum.
-efnafraedi|13|Sesín (Cs) hefur sætistöluna 55 og er alkalímálmur. Atómklukkur mæla tímann með sesíni.
-efnafraedi|13|Barín (Ba) hefur sætistöluna 56 og er jarðalkalímálmur. Það litar flugelda græna.
-efnafraedi|13|Lantan (La) hefur sætistöluna 57 og er lantaníð. Lantaníðin eru nefnd eftir því.
-efnafraedi|13|Serín (Ce) hefur sætistöluna 58 og er lantaníð, nefnt eftir dvergreikistjörnunni Ceres.
-efnafraedi|13|Praseódým (Pr) hefur sætistöluna 59 og er lantaníð.
-efnafraedi|13|Neódým (Nd) hefur sætistöluna 60 og er lantaníð. Það er í sterkustu seglum sem til eru.
-efnafraedi|13|Prómetín (Pm) hefur sætistöluna 61 og er lantaníð, nefnt eftir Prómeþeifi sem færði mönnum eldinn.
-efnafraedi|13|Samarín (Sm) hefur sætistöluna 62 og er lantaníð.
-efnafraedi|13|Evrópín (Eu) hefur sætistöluna 63 og er lantaníð. Það lætur evruseðla glóa í útfjólubláu ljósi.
-efnafraedi|13|Gadólín (Gd) hefur sætistöluna 64 og er lantaníð.
-efnafraedi|13|Terbín (Tb) hefur sætistöluna 65 og er lantaníð.
-efnafraedi|13|Dysprósín (Dy) hefur sætistöluna 66 og er lantaníð. Nafnið merkir „torfengið“ á grísku.
-efnafraedi|13|Hólmín (Ho) hefur sætistöluna 67 og er lantaníð, nefnt eftir Stokkhólmi.
-efnafraedi|13|Erbín (Er) hefur sætistöluna 68 og er lantaníð.
-efnafraedi|13|Túlín (Tm) hefur sætistöluna 69 og er lantaníð, nefnt eftir Thule, fornu heiti á nyrstu löndum.
-efnafraedi|13|Ytterbín (Yb) hefur sætistöluna 70 og er lantaníð.
-efnafraedi|13|Lútetín (Lu) hefur sætistöluna 71 og er lantaníð, nefnt eftir París (Lutetia á latínu).
-efnafraedi|13|Hafnín (Hf) hefur sætistöluna 72 og er hliðarmálmur.
+efnafraedi|13|Xenon (Xe) hefur sætistöluna 54 og er eðalgastegund. Það lýsir í sumum bílljósum.
+efnafraedi|13|Sesíum (Cs) hefur sætistöluna 55 og er alkalímálmur. Atómklukkur mæla tímann með sesíum.
+efnafraedi|13|Baríum (Ba) hefur sætistöluna 56 og er jarðalkalímálmur. Það litar flugelda græna.
+efnafraedi|13|Lantan (La) hefur sætistöluna 57 og er lantaníði. Lantaníðarnir eru nefndir eftir því.
+efnafraedi|13|Seríum (Ce) hefur sætistöluna 58 og er lantaníði, nefnt eftir dvergreikistjörnunni Ceres.
+efnafraedi|13|Praseódým (Pr) hefur sætistöluna 59 og er lantaníði.
+efnafraedi|13|Neódým (Nd) hefur sætistöluna 60 og er lantaníði. Það er í sterkustu seglum sem til eru.
+efnafraedi|13|Prómetíum (Pm) hefur sætistöluna 61 og er lantaníði, nefnt eftir Prómeþeifi sem færði mönnum eldinn.
+efnafraedi|13|Samaríum (Sm) hefur sætistöluna 62 og er lantaníði.
+efnafraedi|13|Evrópíum (Eu) hefur sætistöluna 63 og er lantaníði. Það lætur evruseðla glóa í útfjólubláu ljósi.
+efnafraedi|13|Gadólíníum (Gd) hefur sætistöluna 64 og er lantaníði.
+efnafraedi|13|Terbíum (Tb) hefur sætistöluna 65 og er lantaníði.
+efnafraedi|13|Dysprósíum (Dy) hefur sætistöluna 66 og er lantaníði. Nafnið merkir „torfengið“ á grísku.
+efnafraedi|13|Hólmíum (Ho) hefur sætistöluna 67 og er lantaníði, nefnt eftir Stokkhólmi.
+efnafraedi|13|Erbíum (Er) hefur sætistöluna 68 og er lantaníði.
+efnafraedi|13|Túlíum (Tm) hefur sætistöluna 69 og er lantaníði, nefnt eftir Thule, fornu heiti á nyrstu löndum.
+efnafraedi|13|Ytterbíum (Yb) hefur sætistöluna 70 og er lantaníði.
+efnafraedi|13|Lútetíum (Lu) hefur sætistöluna 71 og er lantaníði, nefnt eftir París (Lutetia á latínu).
+efnafraedi|13|Hafníum (Hf) hefur sætistöluna 72 og er hliðarmálmur.
 efnafraedi|13|Tantal (Ta) hefur sætistöluna 73 og er hliðarmálmur, nefnt eftir Tantalosi úr grískum goðsögum.
-efnafraedi|13|Volfram (W) hefur sætistöluna 74, er hliðarmálmur og hefur hæsta bræðslumark allra málma, um 3.400 °C.
-efnafraedi|13|Renín (Re) hefur sætistöluna 75 og er hliðarmálmur, nefnt eftir ánni Rín.
-efnafraedi|13|Osmín (Os) hefur sætistöluna 76 og er hliðarmálmur. Það er eðlisþyngsta frumefnið.
-efnafraedi|13|Iridín (Ir) hefur sætistöluna 77 og er hliðarmálmur, nefnt eftir Írisi, gyðju regnbogans.
+efnafraedi|13|Wolfram (W) hefur sætistöluna 74, er hliðarmálmur og hefur hæsta bræðslumark allra málma, um 3.400 °C.
+efnafraedi|13|Reníum (Re) hefur sætistöluna 75 og er hliðarmálmur, nefnt eftir ánni Rín.
+efnafraedi|13|Osmíum (Os) hefur sætistöluna 76 og er hliðarmálmur. Það er eðlisþyngsta frumefnið.
+efnafraedi|13|Iridíum (Ir) hefur sætistöluna 77 og er hliðarmálmur, nefnt eftir Írisi, gyðju regnbogans.
 efnafraedi|13|Platína (Pt) hefur sætistöluna 78 og er hliðarmálmur.
 efnafraedi|10|Gull (Au) hefur sætistöluna 79 og er hliðarmálmur. Táknið kemur af latneska heitinu aurum.
 efnafraedi|13|Kvikasilfur (Hg) hefur sætistöluna 80. Táknið kemur af latneska heitinu hydrargyrum, „vatnssilfur“.
-efnafraedi|13|Þallín (Tl) hefur sætistöluna 81 og er tregur málmur.
+efnafraedi|13|Tallíum (Tl) hefur sætistöluna 81 og er tregur málmur.
 efnafraedi|10|Blý (Pb) hefur sætistöluna 82 og er tregur málmur. Táknið kemur af latneska heitinu plumbum.
 efnafraedi|13|Bismút (Bi) hefur sætistöluna 83 og er tregur málmur. Kristallar þess glitra í regnbogalitum.
-efnafraedi|13|Pólon (Po) hefur sætistöluna 84. Curie-hjónin fundu það, og Marie nefndi það eftir Póllandi, heimalandi sínu.
+efnafraedi|13|Pólóníum (Po) hefur sætistöluna 84. Curie-hjónin fundu það, og Marie nefndi það eftir Póllandi, heimalandi sínu.
 efnafraedi|13|Astat (At) hefur sætistöluna 85 og er halógen. Það er eitt sjaldgæfasta frumefni jarðskorpunnar.
-efnafraedi|13|Radon (Rn) hefur sætistöluna 86 og er geislavirkt eðalgas.
-efnafraedi|13|Fransín (Fr) hefur sætistöluna 87 og er alkalímálmur, nefnt eftir Frakklandi.
-efnafraedi|13|Radín (Ra) hefur sætistöluna 88 og er jarðalkalímálmur. Marie og Pierre Curie fundu það árið 1898.
-efnafraedi|13|Aktín (Ac) hefur sætistöluna 89 og er aktiníð. Aktiníðin eru nefnd eftir því.
-efnafraedi|13|Þórín (Th) hefur sætistöluna 90 og er aktiníð, nefnt eftir þrumuguðinum Þór.
-efnafraedi|13|Protaktín (Pa) hefur sætistöluna 91 og er aktiníð.
-efnafraedi|13|Úran (U) hefur sætistöluna 92 og er aktiníð.
-efnafraedi|13|Neptúnín (Np) hefur sætistöluna 93 og er aktiníð, nefnt eftir reikistjörnunni Neptúnusi.
-efnafraedi|13|Plúton (Pu) hefur sætistöluna 94 og er aktiníð, nefnt eftir Plútó.
-efnafraedi|13|Ameríkín (Am) hefur sætistöluna 95 og er aktiníð. Það er í mörgum reykskynjurum.
-efnafraedi|13|Kúrín (Cm) hefur sætistöluna 96 og er aktiníð, nefnt eftir Marie og Pierre Curie.
-efnafraedi|13|Berkelín (Bk) hefur sætistöluna 97 og er aktiníð, nefnt eftir borginni Berkeley í Kaliforníu.
-efnafraedi|13|Kalifornín (Cf) hefur sætistöluna 98 og er aktiníð.
-efnafraedi|13|Einsteinín (Es) hefur sætistöluna 99 og er aktiníð. Það fannst í leifum fyrstu vetnissprengjunnar árið 1952.
-efnafraedi|13|Fermín (Fm) hefur sætistöluna 100 og er aktiníð, nefnt eftir eðlisfræðingnum Enrico Fermi.
-efnafraedi|13|Mendelevín (Md) hefur sætistöluna 101 og er aktiníð, nefnt eftir Mendelejev sem setti saman lotukerfið.
-efnafraedi|13|Nóbelín (No) hefur sætistöluna 102 og er aktiníð, nefnt eftir Alfred Nobel.
-efnafraedi|13|Lawrensín (Lr) hefur sætistöluna 103 og er aktiníð.
-efnafraedi|13|Rutherfordín (Rf) hefur sætistöluna 104 og er nefnt eftir eðlisfræðingnum Ernest Rutherford.
-efnafraedi|13|Dubnín (Db) hefur sætistöluna 105 og er nefnt eftir rússnesku vísindaborginni Dubna.
-efnafraedi|13|Seborgín (Sg) hefur sætistöluna 106 og er nefnt eftir Glenn Seaborg, sem var á lífi þegar það fékk nafnið.
-efnafraedi|13|Bohrín (Bh) hefur sætistöluna 107 og er nefnt eftir danska eðlisfræðingnum Niels Bohr.
-efnafraedi|13|Hassín (Hs) hefur sætistöluna 108 og er nefnt eftir þýska héraðinu Hessen.
-efnafraedi|13|Meitnerín (Mt) hefur sætistöluna 109 og er nefnt eftir eðlisfræðingnum Lise Meitner.
-efnafraedi|13|Darmstadtín (Ds) hefur sætistöluna 110 og er nefnt eftir þýsku borginni Darmstadt.
-efnafraedi|13|Röntgenín (Rg) hefur sætistöluna 111 og er nefnt eftir Wilhelm Röntgen sem uppgötvaði röntgengeisla.
-efnafraedi|13|Kópernikín (Cn) hefur sætistöluna 112 og er nefnt eftir stjörnufræðingnum Kópernikusi.
-efnafraedi|13|Níhonín (Nh) hefur sætistöluna 113 og er nefnt eftir Japan, sem heitir Nihon á japönsku.
-efnafraedi|13|Fleróvín (Fl) hefur sætistöluna 114. Aðeins örfá atóm af því hafa nokkru sinni verið búin til.
-efnafraedi|13|Moskóvín (Mc) hefur sætistöluna 115 og er nefnt eftir Moskvuhéraði í Rússlandi.
-efnafraedi|13|Livermorín (Lv) hefur sætistöluna 116 og er nefnt eftir rannsóknarstofu í Livermore í Kaliforníu.
+efnafraedi|13|Radon (Rn) hefur sætistöluna 86 og er geislavirk eðalgastegund.
+efnafraedi|13|Fransíum (Fr) hefur sætistöluna 87 og er alkalímálmur, nefnt eftir Frakklandi.
+efnafraedi|13|Radíum (Ra) hefur sætistöluna 88 og er jarðalkalímálmur. Marie og Pierre Curie fundu það árið 1898.
+efnafraedi|13|Aktíníum (Ac) hefur sætistöluna 89 og er aktíníði. Aktíníðarnir eru nefndir eftir því.
+efnafraedi|13|Þóríum (Th) hefur sætistöluna 90 og er aktíníði, nefnt eftir þrumuguðinum Þór.
+efnafraedi|13|Prótaktín (Pa) hefur sætistöluna 91 og er aktíníði.
+efnafraedi|13|Úran (U) hefur sætistöluna 92 og er aktíníði.
+efnafraedi|13|Neptúníum (Np) hefur sætistöluna 93 og er aktíníði, nefnt eftir reikistjörnunni Neptúnusi.
+efnafraedi|13|Plútóníum (Pu) hefur sætistöluna 94 og er aktíníði, nefnt eftir Plútó.
+efnafraedi|13|Ameríkíum (Am) hefur sætistöluna 95 og er aktíníði. Það er í mörgum reykskynjurum.
+efnafraedi|13|Curíum (Cm) hefur sætistöluna 96 og er aktíníði, nefnt eftir Marie og Pierre Curie.
+efnafraedi|13|Berkelíum (Bk) hefur sætistöluna 97 og er aktíníði, nefnt eftir borginni Berkeley í Kaliforníu.
+efnafraedi|13|Kaliforníum (Cf) hefur sætistöluna 98 og er aktíníði.
+efnafraedi|13|Einsteiníum (Es) hefur sætistöluna 99 og er aktíníði. Það fannst í leifum fyrstu vetnissprengjunnar árið 1952.
+efnafraedi|13|Fermíum (Fm) hefur sætistöluna 100 og er aktíníði, nefnt eftir eðlisfræðingnum Enrico Fermi.
+efnafraedi|13|Mendelevíum (Md) hefur sætistöluna 101 og er aktíníði, nefnt eftir Mendelejev sem setti saman lotukerfið.
+efnafraedi|13|Nóbelíum (No) hefur sætistöluna 102 og er aktíníði, nefnt eftir Alfred Nobel.
+efnafraedi|13|Lárensíum (Lr) hefur sætistöluna 103 og er aktíníði.
+efnafraedi|13|Rutherfordíum (Rf) hefur sætistöluna 104 og er nefnt eftir eðlisfræðingnum Ernest Rutherford.
+efnafraedi|13|Dubníum (Db) hefur sætistöluna 105 og er nefnt eftir rússnesku vísindaborginni Dubna.
+efnafraedi|13|Seaborgíum (Sg) hefur sætistöluna 106 og er nefnt eftir Glenn Seaborg, sem var á lífi þegar það fékk nafnið.
+efnafraedi|13|Bohríum (Bh) hefur sætistöluna 107 og er nefnt eftir danska eðlisfræðingnum Niels Bohr.
+efnafraedi|13|Hassíum (Hs) hefur sætistöluna 108 og er nefnt eftir þýska héraðinu Hessen.
+efnafraedi|13|Meitneríum (Mt) hefur sætistöluna 109 og er nefnt eftir eðlisfræðingnum Lise Meitner.
+efnafraedi|13|Darmstadtíum (Ds) hefur sætistöluna 110 og er nefnt eftir þýsku borginni Darmstadt.
+efnafraedi|13|Röntgeníum (Rg) hefur sætistöluna 111 og er nefnt eftir Wilhelm Röntgen sem uppgötvaði röntgengeisla.
+efnafraedi|13|Kópernísíum (Cn) hefur sætistöluna 112 og er nefnt eftir stjörnufræðingnum Kópernikusi.
+efnafraedi|13|Níhóníum (Nh) hefur sætistöluna 113 og er nefnt eftir Japan, sem heitir Nihon á japönsku.
+efnafraedi|13|Flerovíum (Fl) hefur sætistöluna 114. Aðeins örfá atóm af því hafa nokkru sinni verið búin til.
+efnafraedi|13|Moskóvíum (Mc) hefur sætistöluna 115 og er nefnt eftir Moskvuhéraði í Rússlandi.
+efnafraedi|13|Livermóríum (Lv) hefur sætistöluna 116 og er nefnt eftir rannsóknarstofu í Livermore í Kaliforníu.
 efnafraedi|13|Tennessín (Ts) hefur sætistöluna 117 og er í flokki halógena, nefnt eftir Tennessee í Bandaríkjunum.
-efnafraedi|13|Oganesson (Og) hefur sætistöluna 118, er í 18. flokki með eðalgösunum og er þyngsta þekkta frumefnið.
+efnafraedi|13|Oganessón (Og) hefur sætistöluna 118, er í 18. flokki með eðalgastegundunum og er þyngsta þekkta frumefnið.
 
 # Efnafræði: lotukerfið
 efnafraedi|10|Sætistala frumefnis er fjöldi róteinda í kjarna þess.
 efnafraedi|13|Lotan sem frumefni er í segir til um hve mörg rafeindahvel það hefur.
-efnafraedi|13|Eðalgös hvarfast nánast ekki við önnur efni, því ysta rafeindahvel þeirra er fullt.
-efnafraedi|10|Neon (Ne) er eðalgas og glóir rauðappelsínugult í neonljósum.
-efnafraedi|10|Alkalímálmar eins og natrín (Na) og kalín (K) eru svo mjúkir að það má skera þá með hníf.
+efnafraedi|13|Eðalgastegundir hvarfast nánast ekki við önnur efni, því ysta rafeindahvel þeirra er fullt.
+efnafraedi|10|Neon (Ne) er eðalgastegund og glóir rauðappelsínugult í neonljósum.
+efnafraedi|10|Alkalímálmar eins og natríum (Na) og kalíum (K) eru svo mjúkir að það má skera þá með hníf.
 efnafraedi|13|Alkalímálmar hvarfast harkalega við vatn og eru því geymdir í olíu.
 efnafraedi|13|Flúor (F), klór (Cl) og joð (I) eru í 17. flokki lotukerfisins, flokki halógena.
 efnafraedi|13|Flest frumefni eru málmar. Málmleysingjarnir eru innan við tuttugu.
-efnafraedi|13|Kísill (Si) er málmungur, með eiginleika bæði málma og málmleysingja, og er undirstaða tölvukubba.
+efnafraedi|13|Kísill (Si) er hálfmálmur, með eiginleika bæði málma og málmleysingja, og er undirstaða tölvukubba.
 efnafraedi|13|Hliðarmálmarnir eru í miðju lotukerfisins. Þar eru meðal annars járn (Fe), kopar (Cu) og gull (Au).
 efnafraedi|13|Þrátt fyrir nafnið eru sjaldgæfu jarðmálmarnir flestir algengari í jarðskorpunni en silfur (Ag).
-efnafraedi|13|Öll aktiníð eru geislavirk, þar á meðal úran (U) og plúton (Pu).
+efnafraedi|13|Allir aktíníðar eru geislavirkir, þar á meðal úran (U) og plútóníum (Pu).
 # Lína sem byrjar á #? er óstaðfest: heimaskjárinn sleppir henni þar til #? er tekið af.
 efnafraedi|7|Frumefni er efni úr einni gerð atóma, eins og gull eða súrefni.
 efnafraedi|7|Lotukerfið er tafla yfir öll frumefnin, raðað eftir sætistölu.
 efnafraedi|10|Þekkt frumefni eru 118 og hvert þeirra hefur sína sætistölu, frá 1 upp í 118.
 efnafraedi|10|Lotukerfið hefur 18 flokka, sem eru dálkarnir, og 7 lotur, sem eru línurnar.
-efnafraedi|10|Í 1. lotu eru aðeins tvö frumefni: vetni (H) og helín (He).
+efnafraedi|10|Í 1. lotu eru aðeins tvö frumefni: vetni (H) og helíum (He).
 efnafraedi|13|Í 2. og 3. lotu eru 8 frumefni í hvorri, í 4. og 5. lotu 18 og í 6. og 7. lotu 32.
-efnafraedi|10|Lantaníðin og aktiníðin eru oftast sett í tvær línur neðan við lotukerfið svo það verði ekki of breitt.
+efnafraedi|10|Lantaníðarnir og aktíníðarnir eru oftast settir í tvær línur neðan við lotukerfið svo það verði ekki of breitt.
 efnafraedi|13|Efnaeiginleikar frumefna endurtaka sig reglulega eftir sætistölu. Þess vegna heitir taflan lotukerfi.
 efnafraedi|13|Frumefni í sama flokki hafa jafnmargar gildisrafeindir og því svipaða efnaeiginleika.
 efnafraedi|13|Gildisrafeindir eru rafeindirnar í ysta rafeindahveli atóms og ráða mestu um hvernig það hvarfast.
 efnafraedi|13|Mendelejev raðaði frumefnunum eftir atómmassa, en nú er þeim raðað eftir sætistölu.
 efnafraedi|16|Henry Moseley sýndi árið 1913 að sætistalan, ekki atómmassinn, ræður röð frumefnanna.
-efnafraedi|13|Argon (Ar) er þyngra en kalín (K), en kemur samt á undan því í lotukerfinu.
-efnafraedi|16|Mendelejev setti tellúr (Te) á undan joði (I) þótt það sé þyngra, því þannig pössuðu eiginleikarnir.
-efnafraedi|13|Gallín (Ga) fannst árið 1875 og passaði í eyðu sem Mendelejev hafði spáð fyrir um.
-efnafraedi|16|Mendelejev kallaði óþekkta frumefnið undir kísli „eka-kísil“. Það reyndist vera german (Ge).
+efnafraedi|13|Argon (Ar) er þyngra en kalíum (K), en kemur samt á undan því í lotukerfinu.
+efnafraedi|16|Mendelejev setti tellúríum (Te) á undan joði (I) þótt það sé þyngra, því þannig pössuðu eiginleikarnir.
+efnafraedi|13|Gallíum (Ga) fannst árið 1875 og passaði í eyðu sem Mendelejev hafði spáð fyrir um.
+efnafraedi|16|Mendelejev kallaði óþekkta frumefnið undir kísli „eka-kísil“. Það reyndist vera germaníum (Ge).
 efnafraedi|13|Sameinuðu þjóðirnar gerðu árið 2019 að ári lotukerfisins, þegar 150 ár voru liðin frá því Mendelejev birti það.
-efnafraedi|10|Alkalímálmarnir eru í 1. flokki: litín (Li), natrín (Na), kalín (K), rúbidín (Rb), sesín (Cs) og fransín (Fr).
+efnafraedi|10|Alkalímálmarnir eru í 1. flokki: litíum (Li), natríum (Na), kalíum (K), rúbidíum (Rb), sesíum (Cs) og fransíum (Fr).
 efnafraedi|10|Vetni (H) er efst í 1. flokki en er ekki alkalímálmur heldur málmleysingi.
 efnafraedi|13|Alkalímálmar hafa eina gildisrafeind og láta hana auðveldlega frá sér.
 efnafraedi|13|Alkalímálmar verða hvarfgjarnari eftir því sem neðar dregur í flokknum.
-efnafraedi|13|Sesín (Cs) hvarfast enn harkalegar við vatn en natrín (Na) og kalín (K).
-efnafraedi|10|Jarðalkalímálmarnir eru í 2. flokki: beryllín (Be), magnesín (Mg), kalsín (Ca), strontín (Sr), barín (Ba) og radín (Ra).
+efnafraedi|13|Sesíum (Cs) hvarfast enn harkalegar við vatn en natríum (Na) og kalíum (K).
+efnafraedi|10|Jarðalkalímálmarnir eru í 2. flokki: beryllíum (Be), magnesíum (Mg), kalsíum (Ca), strontíum (Sr), baríum (Ba) og radíum (Ra).
 efnafraedi|13|Jarðalkalímálmar hafa tvær gildisrafeindir og mynda jónir með hleðsluna +2.
 efnafraedi|13|Hliðarmálmarnir eru í 3. til 12. flokki lotukerfisins, en deilt er um 12. flokkinn.
 efnafraedi|10|Gull (Au), silfur (Ag) og kopar (Cu) eru öll í 11. flokki og hafa öll verið notuð í mynt.
-efnafraedi|16|Platínumálmarnir eru sex: rúþen (Ru), ródín (Rh), palladín (Pd), osmín (Os), iridín (Ir) og platína (Pt).
-efnafraedi|13|Í 13. flokki, bórflokknum, eru bór (B), ál (Al), gallín (Ga), indín (In), þallín (Tl) og níhonín (Nh).
-efnafraedi|13|Í 14. flokki, kolefnisflokknum, eru meðal annars kolefni (C), kísill (Si), german (Ge), tin (Sn) og blý (Pb).
+efnafraedi|16|Platínumálmarnir eru sex: rúteníum (Ru), ródíum (Rh), palladíum (Pd), osmíum (Os), iridíum (Ir) og platína (Pt).
+efnafraedi|13|Í 13. flokki, bórflokknum, eru bór (B), ál (Al), gallíum (Ga), indíum (In), tallíum (Tl) og níhóníum (Nh).
+efnafraedi|13|Í 14. flokki, kolefnisflokknum, eru meðal annars kolefni (C), kísill (Si), germaníum (Ge), tin (Sn) og blý (Pb).
 efnafraedi|13|Kolefni (C) og kísill (Si) eru bæði í 14. flokki og mynda bæði fjögur efnatengi.
-efnafraedi|13|Í 15. flokki, niturflokknum, eru meðal annars köfnunarefni (N), fosfór (P), arsen (As), antimon (Sb) og bismút (Bi).
-efnafraedi|13|Í 16. flokki, flokki kalkógena, eru meðal annars súrefni (O), brennisteinn (S), selen (Se), tellúr (Te) og pólon (Po).
+efnafraedi|13|Í 15. flokki, niturflokknum, eru meðal annars nitur (N), fosfór (P), arsen (As), antímón (Sb) og bismút (Bi).
+efnafraedi|13|Í 16. flokki, flokki kalkógena, eru meðal annars súrefni (O), brennisteinn (S), selen (Se), tellúríum (Te) og pólóníum (Po).
 efnafraedi|16|Nafnið kalkógen er dregið af gríska orðinu chalkos, kopar, því mörg málmgrýti eru súlfíð eða oxíð.
 efnafraedi|13|Nafnið halógen merkir „saltmyndari“ á grísku, því efni úr þessum flokki mynda sölt með málmum.
 efnafraedi|13|Í flokki halógena er flúor (F) gas við stofuhita, bróm (Br) vökvi og joð (I) fast efni.
-efnafraedi|10|Eðalgösin eru í 18. flokki: helín (He), neon (Ne), argon (Ar), krypton (Kr), xenon (Xe) og radon (Rn).
-efnafraedi|13|Argon (Ar) er um 1% af andrúmsloftinu og algengast eðalgasa.
-efnafraedi|16|Árið 1962 tókst fyrst að búa til efnasamband með eðalgasi. Í því var xenon (Xe).
-efnafraedi|16|Helín (He) er eina frumefnið sem frýs ekki við venjulegan loftþrýsting, sama hve kalt verður.
+efnafraedi|10|Eðalgastegundirnar eru í 18. flokki: helíum (He), neon (Ne), argon (Ar), krypton (Kr), xenon (Xe) og radon (Rn).
+efnafraedi|13|Argon (Ar) er um 1% af andrúmsloftinu og algengast eðalgastegunda.
+efnafraedi|16|Árið 1962 tókst fyrst að búa til efnasamband með eðalgastegund. Í því var xenon (Xe).
+efnafraedi|16|Helíum (He) er eina frumefnið sem frýs ekki við venjulegan loftþrýsting, sama hve kalt verður.
 efnafraedi|13|Atómin minnka eftir því sem farið er til hægri í lotu, því kjarninn togar fastar í rafeindirnar.
 efnafraedi|13|Atómin stækka eftir því sem neðar dregur í flokki, því við bætist rafeindahvel.
-efnafraedi|16|Sesín (Cs) og fransín (Fr) hafa stærstu atómin, en helín (He) það minnsta.
+efnafraedi|16|Sesíum (Cs) og fransíum (Fr) hafa stærstu atómin, en helíum (He) það minnsta.
 efnafraedi|13|Málmeiginleikar aukast eftir því sem neðar dregur í flokki og vinstra megin í lotu.
 efnafraedi|13|Málmar láta frá sér rafeindir og mynda jákvæðar jónir, en málmleysingjar taka við rafeindum og mynda neikvæðar.
 efnafraedi|16|Jónunarorka er orkan sem þarf til að slíta rafeind frá atómi.
 efnafraedi|16|Jónunarorkan hækkar eftir því sem farið er til hægri í lotu og lækkar niður eftir flokki.
-efnafraedi|16|Helín (He) hefur hæstu jónunarorku allra frumefna.
+efnafraedi|16|Helíum (He) hefur hæstu jónunarorku allra frumefna.
 efnafraedi|16|Flúor (F) hefur mesta rafneikvæðni allra frumefna: það togar fastast í rafeindir annarra atóma.
-efnafraedi|13|Atóm leitast við að fá átta rafeindir í ysta hvelið, eins og eðalgösin hafa. Það kallast áttureglan.
-efnafraedi|13|Málmungar liggja á mörkum málma og málmleysingja í lotukerfinu, eins og trappa.
-efnafraedi|13|Málmungarnir eru oftast taldir sex: bór (B), kísill (Si), german (Ge), arsen (As), antimon (Sb) og tellúr (Te).
+efnafraedi|13|Atóm leitast við að fá átta rafeindir í ysta hvelið, eins og eðalgastegundirnar hafa. Það kallast áttureglan.
+efnafraedi|13|Hálfmálmar liggja á mörkum málma og málmleysingja í lotukerfinu, eins og trappa.
+efnafraedi|13|Hálfmálmarnir eru oftast taldir sex: bór (B), kísill (Si), germaníum (Ge), arsen (As), antímón (Sb) og tellúríum (Te).
 efnafraedi|13|Tregir málmar eru málmarnir hægra megin við hliðarmálmana, eins og ál (Al), tin (Sn) og blý (Pb).
 efnafraedi|16|Tregir málmar eru yfirleitt mýkri en hliðarmálmar og bráðna við lægra hitastig.
 efnafraedi|13|Málmleysingjar leiða yfirleitt hvorki varma né rafmagn vel. Grafít er undantekning.
 efnafraedi|10|Allir málmar eru fastir við stofuhita nema kvikasilfur (Hg).
-efnafraedi|13|Ellefu frumefni eru gös við stofuhita: vetni (H), köfnunarefni (N), súrefni (O), flúor (F), klór (Cl) og eðalgösin sex.
-efnafraedi|13|Lantaníðin eru 15 talsins, frá lantani (La) til lútetíns (Lu).
-efnafraedi|13|Aktiníðin eru 15 talsins, frá aktíni (Ac) til lawrensíns (Lr).
-efnafraedi|16|Af aktiníðunum finnast aðeins aktín (Ac), þórín (Th), protaktín (Pa) og úran (U) að ráði í náttúrunni.
+efnafraedi|13|Ellefu frumefni eru gös við stofuhita: vetni (H), nitur (N), súrefni (O), flúor (F), klór (Cl) og eðalgastegundirnar sex.
+efnafraedi|13|Lantaníðarnir eru 15 talsins, frumefnin með sætistölurnar 57 til 71.
+efnafraedi|13|Aktíníðarnir eru 15 talsins, frumefnin með sætistölurnar 89 til 103.
+efnafraedi|16|Af aktíníðunum finnast aðeins aktíníum (Ac), þóríum (Th), prótaktín (Pa) og úran (U) að ráði í náttúrunni.
 efnafraedi|13|Öll frumefni þyngri en blý (Pb) eru geislavirk.
 efnafraedi|16|Bismút (Bi) er geislavirkt, en helmingunartími þess er um milljarð sinnum lengri en aldur alheimsins.
-efnafraedi|16|Teknetín (Tc) og prómetín (Pm) eru einu frumefnin léttari en blý (Pb) sem eiga engar stöðugar samsætur.
+efnafraedi|16|Teknetíum (Tc) og prómetíum (Pm) eru einu frumefnin léttari en blý (Pb) sem eiga engar stöðugar samsætur.
 efnafraedi|16|Frumefni 1 til 94 finnast í náttúrunni, þótt sum aðeins í örlitlu magni.
-efnafraedi|13|Fjögur síðustu frumefni 7. lotu fengu nöfn árið 2016: níhonín (Nh), moskóvín (Mc), tennessín (Ts) og oganesson (Og).
-efnafraedi|13|Frumefni 118, oganesson (Og), fullskipar 7. lotu lotukerfisins.
+efnafraedi|13|Fjögur síðustu frumefni 7. lotu fengu nöfn árið 2016: níhóníum (Nh), moskóvíum (Mc), tennessín (Ts) og oganessón (Og).
+efnafraedi|13|Frumefni 118, oganessón (Og), fullskipar 7. lotu lotukerfisins.
 efnafraedi|13|Engum hefur enn tekist að búa til frumefni 119, sem yrði fyrsta frumefni 8. lotu.
-efnafraedi|16|Oganesson (Og) er nefnt eftir Júríj Oganesjan. Hann var á lífi þegar frumefnið fékk nafn hans.
+efnafraedi|16|Oganessón (Og) er nefnt eftir Júríj Oganesjan. Hann var á lífi þegar frumefnið fékk nafn hans.
 efnafraedi|10|Súrefni (O) er algengasta frumefnið í jarðskorpunni og kísill (Si) kemur næst.
 efnafraedi|13|Járn (Fe) er algengasta frumefni jarðarinnar í heild, því kjarni hennar er að mestu úr járni.
-efnafraedi|13|Súrefni (O), kolefni (C), vetni (H) og köfnunarefni (N) eru um 96% af þyngd mannslíkamans.
-efnafraedi|16|Líkaminn ruglar strontíni (Sr) saman við kalsín (Ca), sem er í sama flokki, og setur það í beinin.
-efnafraedi|13|Natrín (Na) og kalín (K) eru bæði alkalímálmar og stýra saman taugaboðum í líkamanum.
+efnafraedi|13|Súrefni (O), kolefni (C), vetni (H) og nitur (N) eru um 96% af þyngd mannslíkamans.
+efnafraedi|16|Líkaminn ruglar strontíum (Sr) saman við kalsíum (Ca), sem er í sama flokki, og setur það í beinin.
+efnafraedi|13|Natríum (Na) og kalíum (K) eru bæði alkalímálmar og stýra saman taugaboðum í líkamanum.
 
 # Efnafræði: almenn
 efnafraedi|7|Ein vatnssameind er úr tveimur vetnisatómum og einu súrefnisatómi: H₂O.
 efnafraedi|13|Kvikasilfur (Hg) og bróm (Br) eru einu frumefnin sem eru fljótandi við stofuhita.
-efnafraedi|10|Natrín (Na) og klór (Cl) eru hættuleg hvort í sínu lagi, en saman mynda þau matarsalt (NaCl).
-efnafraedi|10|Helín (He) fannst fyrst í ljósi sólarinnar árið 1868, mörgum árum áður en það fannst á jörðinni.
+efnafraedi|10|Natríum (Na) og klór (Cl) eru hættuleg hvort í sínu lagi, en saman mynda þau matarsalt (NaCl).
+efnafraedi|10|Helíum (He) fannst fyrst í ljósi sólarinnar árið 1868, mörgum árum áður en það fannst á jörðinni.
 efnafraedi|10|Marie Curie er eina manneskjan sem hlotið hefur Nóbelsverðlaun bæði í eðlisfræði og efnafræði.
 efnafraedi|13|Mendelejev birti lotukerfið árið 1869 og skildi eftir eyður fyrir frumefni sem enn höfðu ekki fundist.
-efnafraedi|13|Frumefnið hafnín (Hf) er nefnt eftir Kaupmannahöfn, sem heitir Hafnia á latínu.
-efnafraedi|13|Fjögur frumefni eru nefnd eftir sænska þorpinu Ytterby: yttrín (Y), ytterbín (Yb), terbín (Tb) og erbín (Er).
+efnafraedi|13|Frumefnið hafníum (Hf) er nefnt eftir Kaupmannahöfn, sem heitir Hafnia á latínu.
+efnafraedi|13|Fjögur frumefni eru nefnd eftir sænska þorpinu Ytterby: yttríum (Y), ytterbíum (Yb), terbíum (Tb) og erbíum (Er).
 efnafraedi|10|Demantar og grafítið í blýöntum eru hvort tveggja hreint kolefni (C).
 efnafraedi|13|Silfurberg frá Helgustöðum í Reyðarfirði var um aldir notað í ljósfræðitæki um allan heim.
 efnafraedi|13|Á miðöldum var brennisteinn (S) unninn á íslenskum hverasvæðum og seldur úr landi í púður.
@@ -1094,7 +1094,7 @@ efnafraedi|10|Magasýra er að mestu saltsýra (HCl) og hefur pH-gildi um 1,5 ti
 efnafraedi|10|Sýra og basi hlutleysa hvort annað og mynda salt og vatn.
 efnafraedi|13|Hvati hraðar efnahvarfi án þess að eyðast sjálfur.
 efnafraedi|13|Ensím eru hvatar líkamans og hraða efnahvörfum sem annars tækju óralangan tíma.
-efnafraedi|13|Í hvarfakút bíla breyta platína (Pt), palladín (Pd) og ródín (Rh) eitruðum útblæstri í skaðminni efni.
+efnafraedi|13|Í hvarfakút bíla breyta platína (Pt), palladíum (Pd) og ródíum (Rh) eitruðum útblæstri í skaðminni efni.
 efnafraedi|13|Oxun er þegar efni lætur frá sér rafeindir, afoxun þegar það tekur við þeim.
 efnafraedi|16|Í rafhlöðu verður oxun við annað skautið og afoxun við hitt, og rafeindirnar renna á milli um rafrásina.
 efnafraedi|13|Útvermið efnahvarf gefur frá sér varma, en innvermið efnahvarf tekur til sín varma.
@@ -1126,8 +1126,8 @@ efnafraedi|13|Epli verða brún þegar efni í þeim hvarfast við súrefni loft
 efnafraedi|13|Brauð verður brúnt í brauðrist vegna efnahvarfs milli sykurs og prótína, Maillard-hvarfsins.
 efnafraedi|10|Blaðgræna gerir plöntur grænar og hjálpar þeim að breyta sólarljósi í næringu.
 efnafraedi|13|Ljóstillífun breytir koltvísýringi og vatni í sykur og súrefni með orku sólarljóssins.
-efnafraedi|10|Flugeldar fá litina úr frumefnum: strontín (Sr) gefur rautt, barín (Ba) grænt og kopar (Cu) blátt.
-efnafraedi|10|Natrín (Na) brennur með gulum loga, og gulu götuljósin voru natrínlampar.
+efnafraedi|10|Flugeldar fá litina úr frumefnum: strontíum (Sr) gefur rautt, baríum (Ba) grænt og kopar (Cu) blátt.
+efnafraedi|10|Natríum (Na) brennur með gulum loga, og gulu götuljósin voru natríumlampar.
 efnafraedi|13|Ósonlagið ver jörðina gegn útfjólubláu ljósi. Óson (O₃) er sameind úr þremur súrefnisatómum.
 efnafraedi|13|Montreal-bókunin frá 1987 bannaði efni sem eyddu ósonlaginu, og það er nú að jafna sig.
 efnafraedi|13|Koltvísýringur (CO₂) gerir gosdrykki freyðandi og leysist betur upp í köldum drykk en heitum.
@@ -1150,7 +1150,7 @@ efnafraedi|10|Ilmurinn af ilmvatni berst um herbergið því sameindir þess guf
 efnafraedi|13|Mjólk súrnar þegar gerlar breyta mjólkursykri í mjólkursýru.
 efnafraedi|13|Bensín og dísilolía eru unnin úr hráolíu með eimingu.
 efnafraedi|10|Þegar vetni (H) brennur verður aðeins vatn eftir.
-efnafraedi|13|Í flestum símum og rafbílum eru litínjónarafhlöður, kenndar við litín (Li).
+efnafraedi|13|Í flestum símum og rafbílum eru litíumjónarafhlöður, kenndar við litíum (Li).
 efnafraedi|10|Koffín finnst í kaffi, tei og súkkulaði og örvar taugakerfið.
 efnafraedi|10|Um 60% af mannslíkamanum er vatn.
 efnafraedi|10|Gull (Au) fellur ekki á, og því glóa gamlir gullpeningar enn eins og nýir.
@@ -1198,7 +1198,7 @@ efnafraedi|13|Ál (Al) er unnið úr súráli með rafgreiningu, sem krefst miki
 efnafraedi|16|Kísilgúr var unninn úr botni Mývatns, úr skeljum kísilþörunga, þar til verksmiðjunni var lokað árið 2004.
 efnafraedi|16|Í Svartsengi er framleitt metanól úr koltvísýringi frá jarðvarmaverinu og vetni.
 efnafraedi|16|Leirhverir eru súrir: brennisteinsvetni breytist þar í brennisteinssýru, sem leysir bergið upp í leir.
-efnafraedi|13|Íslenskt neysluvatn er mjúkt, með lítið af uppleystu kalsíni (Ca) og magnesíni (Mg).
+efnafraedi|13|Íslenskt neysluvatn er mjúkt, með lítið af uppleystu kalsíum (Ca) og magnesíum (Mg).
 efnafraedi|13|Eldgos losa brennisteinstvíoxíð (SO₂), sem veldur gosmengun.
 efnafraedi|16|Í Skaftáreldum 1783 losnaði svo mikið brennisteinsgas að móða lá yfir stórum hluta Evrópu.
 efnafraedi|16|Í heita vatnið frá Nesjavöllum er bætt örlitlu brennisteinsvetni sem bindur súrefni og ver lagnir gegn tæringu.
@@ -2096,8 +2096,8 @@ plontur|10|Sveppir eru ekki plöntur heldur sérstakt ríki lífvera.
 plontur|13|Laufblöð eru græn því að blaðgrænan nýtir rautt og blátt ljós en endurkastar því græna.
 plontur|13|Plöntur anda líka. Á nóttunni taka þær inn súrefni og losa koltvísýring.
 plontur|13|Um helmingur súrefnisins á jörðinni kemur frá örsmáum svifþörungum í hafinu.
-plontur|13|Belgjurtir, eins og baunir og lúpína, binda köfnunarefni úr loftinu með hjálp gerla.
-plontur|13|Áburður gefur plöntum einkum köfnunarefni (N), fosfór (P) og kalín (K).
+plontur|13|Belgjurtir, eins og baunir og lúpína, binda nitur úr loftinu með hjálp gerla.
+plontur|13|Áburður gefur plöntum einkum nitur (N), fosfór (P) og kalíum (K).
 plontur|16|Plöntur gufa út vatni um laufin, og stórt tré getur gufað út hundruðum lítra á dag.
 plontur|16|Sumar plöntur blómstra aðeins þegar dagurinn er orðinn nógu langur, og það nýta gróðurhús sér með lýsingu.
 plontur|16|Plöntur hafa vaxið á þurru landi í um 470 milljónir ára.
