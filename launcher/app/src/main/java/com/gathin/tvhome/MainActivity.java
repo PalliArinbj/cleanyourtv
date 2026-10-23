@@ -159,6 +159,12 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     private boolean shamsi;
     /** greeting_name: said after the greeting, which is shown in capitals. */
     private String greetingName = "";
+    /** A theme's trivia.txt, shown in place of the greeting (Trivia); empty keeps the greeting. */
+    private List<String> trivia = Collections.emptyList();
+    private String triviaText = "";
+    private long triviaMs;
+    /** SystemClock.elapsedRealtime() when the tidbit on screen came up. */
+    private long triviaShownAt;
     /** Optional time-of-day backdrop (config.xml, sky_intensity); 0 keeps it hidden. */
     private SkyView sky;
     private String vpnApp;
@@ -291,6 +297,8 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     private final Runnable minuteTick = new Runnable() {
         @Override
         public void run() {
+            if (!trivia.isEmpty() && triviaMs > 0
+                    && SystemClock.elapsedRealtime() - triviaShownAt >= triviaMs - MINUTE_MS / 2) nextTrivia();
             updateGreeting();
             updateRace();
             updateWifiLabel();
@@ -367,6 +375,9 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         showStats = cfg.showStats;
         shamsi = cfg.shamsiDate;
         greetingName = cfg.greetingName;
+        trivia = Trivia.read(cfg.trivia);
+        triviaMs = cfg.triviaMinutes * MINUTE_MS;
+        if (!trivia.isEmpty()) styleGreetingForTrivia();
         if (shamsi) {
             shamsiDate.setVisibility(View.VISIBLE);
             TextView date = findViewById(R.id.date);
@@ -661,6 +672,8 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             reloadApps(true);
         }
         rebuildOnResume = false;
+        // A new tidbit each time Home comes back: from an app, the screensaver or the TV turning on.
+        if (!trivia.isEmpty()) nextTrivia();
         updateGreeting();
         updateRace();
         // The network and Inputs pills keep their state while Home is in the background, and callbacks update them
@@ -1918,6 +1931,11 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     }
 
     private void updateGreeting() {
+        if (shamsi) shamsiDate.setText(Shamsi.today());
+        if (!trivia.isEmpty()) {
+            greeting.setText(triviaText);   // on festival days too
+            return;
+        }
         int hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
         int res;
         if (hour < 5) res = R.string.good_night;
@@ -1934,7 +1952,23 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
                     : getString(R.string.greeting_with_name, getString(res), greetingName));
             greeting.setTextColor(greetingColor);
         }
-        if (shamsi) shamsiDate.setText(Shamsi.today());
+    }
+
+    private void nextTrivia() {
+        triviaText = Trivia.next(this, trivia);
+        triviaShownAt = SystemClock.elapsedRealtime();
+    }
+
+    /** The greeting line made for a sentence: up to two lines in sentence case, sitting on the clock. */
+    private void styleGreetingForTrivia() {
+        greeting.setSingleLine(false);
+        greeting.setMaxLines(2);
+        greeting.setMinLines(2);   // the clock stays put whether a tidbit takes one line or two
+        greeting.setGravity(Gravity.LEFT | Gravity.BOTTOM);   // left, not start, as in the layout
+        greeting.setAllCaps(false);
+        greeting.setLetterSpacing(0.02f);
+        greeting.setTextSize(16f);
+        greeting.setLineSpacing(4 * density, 1f);
     }
 
     // ---- race-weekend panel (a theme's race_calendar) -----------------------------------------------

@@ -18,7 +18,7 @@ final class ThemeFiles {
         if (segments.size() == 1) {
             String name = segments.get(0);
             return Config.FILE_NAME.equals(name) || "wallpaper.jpg".equals(name) || "theme_revision".equals(name)
-                    ? name : null;
+                    || Config.TRIVIA_NAME.equals(name) ? name : null;
         }
         if (segments.size() == 2 && WALLPAPERS.equals(segments.get(0)) && collectionImage(segments.get(1))) {
             return WALLPAPERS + "/" + segments.get(1);
