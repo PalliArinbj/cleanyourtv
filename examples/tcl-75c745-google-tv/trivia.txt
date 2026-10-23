@@ -492,6 +492,119 @@ geimurinn|7|Fótspor geimfaranna sjást enn á tunglinu, því þar er enginn vi
 geimurinn|10|Ljósið frá sólinni er rúmar átta mínútur á leiðinni til jarðar.
 geimurinn|10|Satúrnus er eðlisléttari en vatn.
 geimurinn|13|Venus er lengur að snúast einn hring um sjálfa sig en að fara einn hring um sólina.
+# Sólkerfið
+geimurinn|7|Sólin er stjarna, sú stjarna sem er næst jörðinni.
+geimurinn|7|Í sólkerfinu eru átta reikistjörnur.
+geimurinn|7|Merkúríus er næst sólinni.
+geimurinn|7|Júpíter er stærsta reikistjarnan.
+geimurinn|7|Mars er kallaður rauða reikistjarnan því jarðvegurinn þar er ryðrauður.
+geimurinn|7|Satúrnus hefur hringi úr ís og grjóti.
+geimurinn|7|Jörðin snýst einn hring um sjálfa sig á sólarhring og fer einn hring um sólina á ári.
+geimurinn|7|Tunglið snýr alltaf sömu hliðinni að jörðinni.
+geimurinn|7|Á tunglinu er ekkert loft og því heyrist þar ekkert hljóð.
+geimurinn|7|Meira en milljón jarðir kæmust fyrir inni í sólinni.
+geimurinn|7|Rauði bletturinn á Júpíter er stormur sem er stærri en jörðin.
+geimurinn|7|Stjörnuhrap er ekki stjarna, heldur lítill steinn sem brennur upp í lofthjúpnum.
+geimurinn|7|Jörðin er eina reikistjarnan þar sem vitað er að líf sé að finna.
+geimurinn|7|Sólmyrkvi verður þegar tunglið gengur fyrir sólina.
+geimurinn|10|Plútó var talinn níunda reikistjarnan til ársins 2006, en er nú kallaður dvergreikistjarna.
+geimurinn|10|Venus er heitasta reikistjarnan, um 460 °C, þótt Merkúríus sé nær sólinni.
+geimurinn|10|Hæsta fjall sólkerfisins, Ólympusfjall á Mars, er um 22 km hátt.
+geimurinn|10|Dagur á Júpíter er innan við tíu klukkustundir.
+geimurinn|10|Tunglið er um 384.000 km frá jörðinni.
+geimurinn|10|Sjávarföllin stafa aðallega af aðdráttarafli tunglsins.
+geimurinn|10|Smástirnabeltið er á milli Mars og Júpíters.
+geimurinn|10|Halastjarna Halleys sést frá jörðinni á um 76 ára fresti og kemur næst árið 2061.
+geimurinn|10|Loftsteinn sem féll fyrir um 66 milljónum ára átti stóran þátt í því að risaeðlurnar dóu út.
+geimurinn|10|Mars hefur tvö lítil tungl, Fóbos og Deimos.
+geimurinn|10|Tunglmyrkvi verður þegar jörðin er milli sólar og tungls, og tunglið verður þá rauðleitt.
+geimurinn|10|Almyrkvi á sólu sást á vestanverðu Íslandi 12. ágúst 2026, sá fyrsti á landinu síðan 1954.
+geimurinn|10|Venus er oft fyrsta „stjarnan“ sem sést eftir sólsetur og er því kölluð kvöldstjarnan.
+geimurinn|10|Á Mars eru sólsetrin blá.
+geimurinn|13|Úranus snýst nánast á hliðinni.
+geimurinn|13|Á Neptúnusi blása hröðustu vindar sólkerfisins, yfir 2.000 km á klukkustund.
+geimurinn|13|Eitt ár á Neptúnusi er um 165 jarðár.
+geimurinn|13|Tunglið fjarlægist jörðina um tæpa 4 cm á ári.
+geimurinn|13|Halastjörnur eru úr ís og ryki, og halinn vísar alltaf frá sólinni.
+geimurinn|13|Evrópa, tungl Júpíters, er talin hafa haf af fljótandi vatni undir ísskorpunni.
+geimurinn|13|Á Íó, tungli Júpíters, eru hundruð virkra eldfjalla.
+geimurinn|13|Ganýmedes, tungl Júpíters, er stærsta tungl sólkerfisins, stærra en reikistjarnan Merkúríus.
+geimurinn|13|Á Venusi rís sólin í vestri, því Venus snýst öfugt miðað við flestar reikistjörnur.
+#? geimurinn|13|Satúrnus hefur flest þekkt tungl sólkerfisins, yfir 270 árið 2025.
+geimurinn|16|Tunglið er talið hafa orðið til þegar hnöttur á stærð við Mars rakst á jörðina.
+geimurinn|16|Títan, tungl Satúrnusar, hefur þykkan lofthjúp og stöðuvötn úr fljótandi metani.
+#? geimurinn|16|Í iðrum Júpíters og Satúrnusar gæti rignt demöntum.
+
+# Sólin
+geimurinn|13|Sólin er um 4,6 milljarða ára gömul.
+geimurinn|13|Í kjarna sólarinnar er um 15 milljón stiga hiti.
+geimurinn|16|Í kjarna sólarinnar renna vetniskjarnar saman í helín, og við það losnar orkan sem sólin gefur.
+geimurinn|16|Eftir um 5 milljarða ára þenst sólin út og verður rauður risi.
+geimurinn|16|Sólin fer einn hring um miðju Vetrarbrautarinnar á um 230 milljónum ára.
+
+# Stjörnur og alheimurinn
+geimurinn|7|Karlsvagninn er hluti af stjörnumerkinu Stóra birni.
+geimurinn|7|Í alheiminum eru taldar fleiri stjörnur en sandkorn á öllum ströndum jarðar.
+geimurinn|10|Vetrarbrautin er stjörnuþoka með hundruð milljarða stjarna.
+geimurinn|10|Á ensku heitir Vetrarbrautin Milky Way, mjólkurslóðin.
+geimurinn|10|Þegar við horfum á stjörnur sjáum við ljós sem lagði af stað fyrir löngu, stundum þúsundum ára.
+geimurinn|10|Pólstjarnan er nær beint yfir norðurpólnum og hreyfist því varla á himninum.
+geimurinn|10|Stjörnur tindra af því að loftið í lofthjúpnum er á hreyfingu.
+geimurinn|10|Svarthol er svo þétt að ekki einu sinni ljós sleppur frá því.
+geimurinn|13|Næsta stjarna við sólina er Proxima Centauri, um 4,2 ljósár í burtu.
+geimurinn|13|Ljósár er vegalengdin sem ljósið fer á einu ári, um 9,5 billjónir km.
+geimurinn|13|Litur stjörnu fer eftir hitanum. Bláar stjörnur eru heitastar og rauðar kaldastar.
+geimurinn|13|Andrómeduþokan, um 2,5 milljón ljósár í burtu, er fjarlægasti hlutur sem sést með berum augum.
+geimurinn|13|Nær allar stjörnur sem við sjáum á næturhimninum eru í Vetrarbrautinni.
+geimurinn|13|Stjörnumerkin á himninum eru 88.
+geimurinn|13|Stjörnur verða til í risastórum skýjum úr gasi og ryki, geimþokum.
+geimurinn|13|Þyngri frumefnin í líkama okkar urðu til í stjörnum. Við erum gerð úr stjörnuryki.
+geimurinn|13|Alheimurinn er um 13,8 milljarða ára gamall.
+geimurinn|13|Alheimurinn varð til í Miklahvelli og hefur þanist út síðan.
+geimurinn|13|Fyrsta myndin af svartholi var birt árið 2019.
+geimurinn|13|Þúsundir reikistjarna hafa fundist við aðrar stjörnur en sólina.
+geimurinn|13|Í geimnum milli stjarnanna er um −270 °C kuldi.
+geimurinn|16|Edwin Hubble sýndi fram á það árið 1929 að alheimurinn þenst út.
+geimurinn|16|Í miðju Vetrarbrautarinnar er risasvarthol sem kallast Bogmaður A*.
+geimurinn|16|Nifteindastjörnur eru svo þéttar að teskeið af efni þeirra myndi vega milljarða tonna.
+geimurinn|16|Gullið á jörðinni er talið hafa orðið til þegar nifteindastjörnur rákust saman.
+geimurinn|16|Fyrsta reikistjarnan sem fannst við aðra sólstjörnu fannst árið 1995.
+geimurinn|16|Um 85% af efni alheimsins er hulduefni, sem enginn hefur séð.
+geimurinn|16|Myrk orka er talin vera um 68% af öllu sem er í alheiminum.
+geimurinn|16|Andrómeduþokan og Vetrarbrautin munu rekast saman eftir nokkra milljarða ára.
+#? geimurinn|16|Um 100 tonn af geimryki falla á jörðina á hverjum degi.
+
+# Geimferðir
+geimurinn|7|Tíkin Laika var fyrsta dýrið sem fór á braut um jörðina, árið 1957.
+geimurinn|7|Geimfararnir í geimstöðinni sjá sólina rísa og setjast um 16 sinnum á sólarhring.
+geimurinn|7|Alan Shepard sló golfbolta á tunglinu árið 1971.
+geimurinn|7|Barn sem vegur 30 kíló á jörðinni myndi vega um 5 kíló á tunglinu.
+geimurinn|10|Spútnik 1, fyrsta gervitunglið, var sent á loft árið 1957.
+geimurinn|10|Valentína Tereshkova varð fyrsta konan í geimnum, árið 1963.
+geimurinn|10|Tólf menn hafa gengið á tunglinu, allir á árunum 1969 til 1972.
+geimurinn|10|Bandarískir geimfarar, þar á meðal Neil Armstrong, æfðu sig í íslenskum hraunum fyrir tunglferðirnar.
+geimurinn|10|Alþjóðlega geimstöðin fer hring um jörðina á um 90 mínútum.
+geimurinn|10|Alþjóðlega geimstöðin sést stundum frá Íslandi eins og björt stjarna sem fer hratt yfir himininn.
+geimurinn|10|Í geimnum lengjast geimfarar um nokkra sentímetra því að hryggurinn þjappast ekki saman.
+geimurinn|10|Voyager-geimförin bera gullplötur með hljóðum og myndum frá jörðinni.
+geimurinn|10|Bjarni Tryggvason, sem fæddist í Reykjavík, fór út í geim með geimferjunni Discovery árið 1997.
+geimurinn|10|Ferð til Mars tekur um sjö mánuði.
+geimurinn|10|Geimbúningur til geimgöngu vegur um 130 kíló á jörðinni.
+geimurinn|13|Voyager 1, sem sent var á loft 1977, er sá manngerði hlutur sem lengst er kominn frá jörðinni.
+geimurinn|13|Hubble-sjónaukinn var sendur á braut um jörðu árið 1990, og James Webb-sjónaukinn árið 2021.
+geimurinn|13|Árið 2021 flaug þyrlan Ingenuity á Mars, fyrst þyrlna á annarri reikistjörnu.
+geimurinn|13|Á braut um jörðina eru tugir þúsunda stykkja af geimrusli.
+geimurinn|13|Apollo-geimfararnir skildu eftir spegla á tunglinu sem enn eru notaðir til að mæla fjarlægðina þangað.
+geimurinn|16|Mynd Voyager 1 af jörðinni úr um 6 milljarða km fjarlægð er kölluð „fölblái depillinn“.
+
+# Hvernig vitum við það
+geimurinn|16|Kópernikus setti fram þá kenningu árið 1543 að jörðin gengi um sólina en ekki sólin um jörðina.
+geimurinn|16|Kepler sýndi á 17. öld að reikistjörnurnar ganga á sporbaugum, ekki hringjum, umhverfis sólina.
+geimurinn|16|Fjarlægð til nálægra stjarna er mæld með hliðrun: þær virðast færast örlítið til eftir því hvar jörðin er.
+geimurinn|16|Árstíðirnar stafa af halla jarðmöndulsins, um 23,5 gráðum, en ekki af fjarlægðinni frá sólinni.
+geimurinn|16|Jörðin er næst sólinni í byrjun janúar, um hávetur á norðurhveli jarðar.
+geimurinn|16|Einstein spáði fyrir um þyngdarbylgjur árið 1916, en þær mældust fyrst árið 2015.
+geimurinn|16|Örbylgjukliðurinn, daufur ómur frá Miklahvelli, fannst fyrir slysni árið 1964.
 
 # Mannslíkaminn
 mannslikaminn|7|Hjartað slær um 100.000 sinnum á sólarhring.
