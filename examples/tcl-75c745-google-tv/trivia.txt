@@ -182,6 +182,79 @@ efnafraedi|13|Kísill (Si) er málmungur, með eiginleika bæði málma og málm
 efnafraedi|13|Hliðarmálmarnir eru í miðju lotukerfisins. Þar eru meðal annars járn (Fe), kopar (Cu) og gull (Au).
 efnafraedi|13|Þrátt fyrir nafnið eru sjaldgæfu jarðmálmarnir flestir algengari í jarðskorpunni en silfur (Ag).
 efnafraedi|13|Öll aktiníð eru geislavirk, þar á meðal úran (U) og plúton (Pu).
+# Lína sem byrjar á #? er óstaðfest: heimaskjárinn sleppir henni þar til #? er tekið af.
+efnafraedi|7|Frumefni er efni úr einni gerð atóma, eins og gull eða súrefni.
+efnafraedi|7|Lotukerfið er tafla yfir öll frumefnin, raðað eftir sætistölu.
+efnafraedi|10|Þekkt frumefni eru 118 og hvert þeirra hefur sína sætistölu, frá 1 upp í 118.
+efnafraedi|10|Lotukerfið hefur 18 flokka, sem eru dálkarnir, og 7 lotur, sem eru línurnar.
+efnafraedi|10|Í 1. lotu eru aðeins tvö frumefni: vetni (H) og helín (He).
+efnafraedi|13|Í 2. og 3. lotu eru 8 frumefni í hvorri, í 4. og 5. lotu 18 og í 6. og 7. lotu 32.
+efnafraedi|10|Lantaníðin og aktiníðin eru oftast sett í tvær línur neðan við lotukerfið svo það verði ekki of breitt.
+efnafraedi|13|Efnaeiginleikar frumefna endurtaka sig reglulega eftir sætistölu. Þess vegna heitir taflan lotukerfi.
+efnafraedi|13|Frumefni í sama flokki hafa jafnmargar gildisrafeindir og því svipaða efnaeiginleika.
+efnafraedi|13|Gildisrafeindir eru rafeindirnar í ysta rafeindahveli atóms og ráða mestu um hvernig það hvarfast.
+efnafraedi|13|Mendelejev raðaði frumefnunum eftir atómmassa, en nú er þeim raðað eftir sætistölu.
+efnafraedi|16|Henry Moseley sýndi árið 1913 að sætistalan, ekki atómmassinn, ræður röð frumefnanna.
+efnafraedi|13|Argon (Ar) er þyngra en kalín (K), en kemur samt á undan því í lotukerfinu.
+efnafraedi|16|Mendelejev setti tellúr (Te) á undan joði (I) þótt það sé þyngra, því þannig pössuðu eiginleikarnir.
+efnafraedi|13|Gallín (Ga) fannst árið 1875 og passaði í eyðu sem Mendelejev hafði spáð fyrir um.
+efnafraedi|16|Mendelejev kallaði óþekkta frumefnið undir kísli „eka-kísil“. Það reyndist vera german (Ge).
+efnafraedi|13|Sameinuðu þjóðirnar gerðu árið 2019 að ári lotukerfisins, þegar 150 ár voru liðin frá því Mendelejev birti það.
+efnafraedi|10|Alkalímálmarnir eru í 1. flokki: litín (Li), natrín (Na), kalín (K), rúbidín (Rb), sesín (Cs) og fransín (Fr).
+efnafraedi|10|Vetni (H) er efst í 1. flokki en er ekki alkalímálmur heldur málmleysingi.
+efnafraedi|13|Alkalímálmar hafa eina gildisrafeind og láta hana auðveldlega frá sér.
+efnafraedi|13|Alkalímálmar verða hvarfgjarnari eftir því sem neðar dregur í flokknum.
+efnafraedi|13|Sesín (Cs) hvarfast enn harkalegar við vatn en natrín (Na) og kalín (K).
+efnafraedi|10|Jarðalkalímálmarnir eru í 2. flokki: beryllín (Be), magnesín (Mg), kalsín (Ca), strontín (Sr), barín (Ba) og radín (Ra).
+efnafraedi|13|Jarðalkalímálmar hafa tvær gildisrafeindir og mynda jónir með hleðsluna +2.
+efnafraedi|13|Hliðarmálmarnir eru í 3. til 12. flokki lotukerfisins.
+efnafraedi|10|Gull (Au), silfur (Ag) og kopar (Cu) eru öll í 11. flokki og hafa öll verið notuð í mynt.
+efnafraedi|16|Platínumálmarnir eru sex: rúþen (Ru), ródín (Rh), palladín (Pd), osmín (Os), iridín (Ir) og platína (Pt).
+efnafraedi|13|Í 13. flokki, bórflokknum, eru bór (B), ál (Al), gallín (Ga), indín (In), þallín (Tl) og níhonín (Nh).
+efnafraedi|13|Í 14. flokki, kolefnisflokknum, eru kolefni (C), kísill (Si), german (Ge), tin (Sn) og blý (Pb).
+efnafraedi|13|Kolefni (C) og kísill (Si) eru bæði í 14. flokki og mynda bæði fjögur efnatengi.
+efnafraedi|13|Í 15. flokki, niturflokknum, eru köfnunarefni (N), fosfór (P), arsen (As), antimon (Sb) og bismút (Bi).
+efnafraedi|13|Í 16. flokki, flokki kalkógena, eru súrefni (O), brennisteinn (S), selen (Se), tellúr (Te) og pólon (Po).
+#? efnafraedi|16|Kalkógen merkir „málmgrýtismyndari“, því margir málmar finnast í náttúrunni sem oxíð eða súlfíð.
+efnafraedi|13|Nafnið halógen merkir „saltmyndari“ á grísku, því efni úr þessum flokki mynda sölt með málmum.
+efnafraedi|13|Í flokki halógena er flúor (F) gas við stofuhita, bróm (Br) vökvi og joð (I) fast efni.
+efnafraedi|10|Eðalgösin eru í 18. flokki: helín (He), neon (Ne), argon (Ar), krypton (Kr), xenon (Xe) og radon (Rn).
+efnafraedi|13|Argon (Ar) er um 1% af andrúmsloftinu og algengast eðalgasa.
+efnafraedi|16|Árið 1962 tókst fyrst að búa til efnasamband með eðalgasi. Í því var xenon (Xe).
+efnafraedi|16|Helín (He) er eina frumefnið sem frýs ekki við venjulegan loftþrýsting, sama hve kalt verður.
+efnafraedi|13|Atómin minnka eftir því sem farið er til hægri í lotu, því kjarninn togar fastar í rafeindirnar.
+efnafraedi|13|Atómin stækka eftir því sem neðar dregur í flokki, því við bætist rafeindahvel.
+#? efnafraedi|16|Sesín (Cs) og fransín (Fr) hafa stærstu atómin, en helín (He) það minnsta.
+efnafraedi|13|Málmeiginleikar aukast eftir því sem neðar dregur í flokki og vinstra megin í lotu.
+efnafraedi|13|Málmar láta frá sér rafeindir og mynda jákvæðar jónir, en málmleysingjar taka við rafeindum og mynda neikvæðar.
+efnafraedi|16|Jónunarorka er orkan sem þarf til að slíta rafeind frá atómi.
+efnafraedi|16|Jónunarorkan hækkar eftir því sem farið er til hægri í lotu og lækkar niður eftir flokki.
+efnafraedi|16|Helín (He) hefur hæstu jónunarorku allra frumefna.
+#? efnafraedi|16|Flúor (F) hefur mesta rafdrægni allra frumefna: það togar fastast í rafeindir annarra atóma.
+#? efnafraedi|13|Atóm leitast við að fá átta rafeindir í ysta hvelið, eins og eðalgösin hafa. Það kallast áttureglan.
+efnafraedi|13|Málmungar liggja á mörkum málma og málmleysingja í lotukerfinu, eins og trappa.
+efnafraedi|13|Málmungarnir eru oftast taldir sex: bór (B), kísill (Si), german (Ge), arsen (As), antimon (Sb) og tellúr (Te).
+efnafraedi|13|Tregir málmar eru málmarnir hægra megin við hliðarmálmana, eins og ál (Al), tin (Sn) og blý (Pb).
+efnafraedi|16|Tregir málmar eru yfirleitt mýkri en hliðarmálmar og bráðna við lægra hitastig.
+efnafraedi|13|Málmleysingjar leiða yfirleitt hvorki varma né rafmagn vel. Grafít er undantekning.
+efnafraedi|10|Allir málmar eru fastir við stofuhita nema kvikasilfur (Hg).
+efnafraedi|13|Ellefu frumefni eru gös við stofuhita: vetni (H), köfnunarefni (N), súrefni (O), flúor (F), klór (Cl) og eðalgösin sex.
+efnafraedi|13|Lantaníðin eru 15 talsins, frá lantani (La) til lútetíns (Lu).
+efnafraedi|13|Aktiníðin eru 15 talsins, frá aktíni (Ac) til lawrensíns (Lr).
+efnafraedi|16|Af aktiníðunum finnast aðeins aktín (Ac), þórín (Th), protaktín (Pa) og úran (U) að ráði í náttúrunni.
+efnafraedi|13|Öll frumefni þyngri en blý (Pb) eru geislavirk.
+efnafraedi|16|Bismút (Bi) er geislavirkt, en helmingunartími þess er um milljarð sinnum lengri en aldur alheimsins.
+efnafraedi|16|Teknetín (Tc) og prómetín (Pm) eru einu frumefnin léttari en blý (Pb) sem eiga engar stöðugar samsætur.
+efnafraedi|16|Frumefni 1 til 94 finnast í náttúrunni, þótt sum aðeins í örlitlu magni.
+efnafraedi|13|Fjögur síðustu frumefni 7. lotu fengu nöfn árið 2016: níhonín (Nh), moskóvín (Mc), tennessín (Ts) og oganesson (Og).
+efnafraedi|13|Frumefni 118, oganesson (Og), fullskipar 7. lotu lotukerfisins.
+#? efnafraedi|13|Engum hefur enn tekist að búa til frumefni 119, sem yrði fyrsta frumefni 8. lotu.
+efnafraedi|16|Oganesson (Og) er nefnt eftir Júríj Oganesjan. Hann var á lífi þegar frumefnið fékk nafn hans.
+efnafraedi|10|Súrefni (O) er algengasta frumefnið í jarðskorpunni og kísill (Si) kemur næst.
+efnafraedi|13|Járn (Fe) er algengasta frumefni jarðarinnar í heild, því kjarni hennar er að mestu úr járni.
+efnafraedi|13|Súrefni (O), kolefni (C), vetni (H) og köfnunarefni (N) eru um 96% af þyngd mannslíkamans.
+efnafraedi|16|Líkaminn ruglar strontíni (Sr) saman við kalsín (Ca), sem er í sama flokki, og setur það í beinin.
+efnafraedi|13|Natrín (Na) og kalín (K) eru bæði alkalímálmar og stýra saman taugaboðum í líkamanum.
 
 # Efnafræði: almenn
 efnafraedi|7|Ein vatnssameind er úr tveimur vetnisatómum og einu súrefnisatómi: H₂O.
