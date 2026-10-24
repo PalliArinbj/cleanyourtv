@@ -34,6 +34,7 @@
     <string name="rows_below_dock_label">Rows below dock</string>
     <string name="wallpaper_label">Wallpaper</string>
     <string name="wallpaper_state">Wallpaper: %1$s</string>
+    <string name="wallpaper_state_dim">Wallpaper: %1$s, dimmed %2$d%%</string>
     <string name="wallpaper_none">None</string>
     <string name="wallpaper_applied">Wallpaper changed</string>
     <string name="wallpaper_theme_default">Theme default</string>
@@ -79,6 +80,10 @@
     <string name="reorder">Reorder apps</string>
     <string name="reorder_hint">OK picks up an app, arrows move it, Back places it. Back again to finish.</string>
     <string name="reorder_not_saved">Couldn\'t save the new order</string>
+    <string name="wallpaper_preview">Wallpaper preview</string>
+    <string name="wallpaper_preview_state">%1$s · dimmed %2$d%%</string>
+    <string name="wallpaper_preview_hint">◀ ▶ picture · ▲ brighter · ▼ darker · OK keeps this dim · Back leaves</string>
+    <string name="wallpaper_dim_kept">Wallpaper dimmed %1$d%% on this TV</string>
     <string name="app_library">App library</string>
     <string name="library_empty">No launchable apps found</string>
     <string name="library_on_home">On Home</string>

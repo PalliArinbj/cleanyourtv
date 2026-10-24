@@ -116,6 +116,12 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     private RecyclerView grid;
     private FrameLayout root;
     private WallpaperPlayer wallpaperPlayer;
+    /** Wallpaper preview (Settings menu): Left/Right step pictures, Up/Down the dim, OK keeps the dim, Back leaves. */
+    private boolean previewing;
+    private int previewDimAtStart;
+    private String previewName = "";
+    private View previewPanel;
+    private TextView previewState;
     private GlassView glass;
     private View ambient;
     private TextView heroName;
@@ -804,6 +810,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         super.onPause();
         root.removeCallbacks(showIdleClock);
         endReorder();   // Home or another app while reordering keeps the order so far
+        endWallpaperPreview(false);   // leaving Home mid-preview keeps nothing
         wallpaperPlayer.stop();
         stopAmbientAnimation();
         hero.animate().cancel();
@@ -908,6 +915,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
         if (handleSettingsKey(event)) return true;
+        if (previewing) return dispatchPreview(event);
         if (!reordering) return super.dispatchKeyEvent(event);
         if (dockEditing) return dispatchDockEdit(event);
         boolean down = event.getAction() == KeyEvent.ACTION_DOWN;
@@ -2493,6 +2501,84 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         rows.addView(row);
     }
 
+    // ---- wallpaper preview -----------------------------------------------------------------------
+
+    /**
+     * Wallpaper preview (Settings menu): the rotation pauses and every key comes here first. Left and Right step
+     * through all of the theme's pictures, Up makes the wallpaper brighter and Down darker, OK keeps that dim as an
+     * on-TV choice (Follow theme or a theme push clears it), Back leaves without keeping it. Either way the rotation
+     * carries on from the picture on screen. Home's own text stays, so the picture is judged as Home shows it.
+     */
+    private void startWallpaperPreview() {
+        if (reordering) endReorder();
+        File dir = Config.dir(this);
+        List<File> images = new ArrayList<>(WallpaperRotation.images(dir == null ? null : new File(dir, "wallpapers")));
+        File single = dir == null ? null : new File(dir, Config.WALLPAPER_NAME);
+        if (single != null && single.isFile() && single.length() > 0) images.add(0, single);
+        previewing = true;
+        previewDimAtStart = wallpaperPlayer.dim();
+        wallpaperPlayer.beginPreview(images);
+        previewPanel = getLayoutInflater().inflate(R.layout.view_wallpaper_preview, root, false);
+        previewState = previewPanel.findViewById(R.id.previewState);
+        root.addView(previewPanel);
+        showPreviewState(wallpaperPlayer.step(0));
+    }
+
+    private boolean dispatchPreview(KeyEvent event) {
+        boolean down = event.getAction() == KeyEvent.ACTION_DOWN;
+        switch (event.getKeyCode()) {
+            case KeyEvent.KEYCODE_DPAD_LEFT:
+            case KeyEvent.KEYCODE_DPAD_RIGHT:
+                if (down) {
+                    int delta = event.getKeyCode() == KeyEvent.KEYCODE_DPAD_RIGHT ? 1 : -1;
+                    showPreviewState(wallpaperPlayer.step(rtlAppGrid ? -delta : delta));   // Hebrew reads right to left
+                }
+                return true;
+            case KeyEvent.KEYCODE_DPAD_UP:
+            case KeyEvent.KEYCODE_DPAD_DOWN:
+                if (down) {
+                    // Up is brighter, so less dim
+                    wallpaperPlayer.setDim(WallpaperRotation.stepDim(wallpaperPlayer.dim(),
+                            event.getKeyCode() == KeyEvent.KEYCODE_DPAD_UP ? -1 : 1));
+                    showPreviewState(null);
+                }
+                return true;
+            case KeyEvent.KEYCODE_DPAD_CENTER:
+            case KeyEvent.KEYCODE_ENTER:
+            case KeyEvent.KEYCODE_NUMPAD_ENTER:
+                if (!down && !event.isCanceled()) endWallpaperPreview(true);
+                return true;
+            case KeyEvent.KEYCODE_BACK:
+            case KeyEvent.KEYCODE_ESCAPE:
+                if (!down) endWallpaperPreview(false);
+                return true;
+            default:
+                return super.dispatchKeyEvent(event);   // volume, Home and the rest as usual
+        }
+    }
+
+    /** The label's picture name (without its extension) and dim; a null name keeps the one shown. */
+    private void showPreviewState(String name) {
+        if (name != null) previewName = name.contains(".") ? name.substring(0, name.lastIndexOf('.')) : name;
+        previewState.setText(getString(R.string.wallpaper_preview_state, previewName, wallpaperPlayer.dim()));
+    }
+
+    private void endWallpaperPreview(boolean keepDim) {
+        if (!previewing) return;
+        previewing = false;
+        if (keepDim) {
+            getSharedPreferences(Config.SETTINGS_NAME, MODE_PRIVATE).edit()
+                    .putInt(Config.WALLPAPER_DIM_KEY, wallpaperPlayer.dim()).apply();
+            Toast.makeText(this, getString(R.string.wallpaper_dim_kept, wallpaperPlayer.dim()), Toast.LENGTH_SHORT).show();
+        } else {
+            wallpaperPlayer.setDim(previewDimAtStart);
+        }
+        wallpaperPlayer.endPreview();
+        root.removeView(previewPanel);
+        previewPanel = null;
+        previewState = null;
+    }
+
     // ---- launcher settings and module cards -------------------------------------------------------
 
     /** Keep a normal Settings click for the TV; the launcher's choices live behind hold OK. */
@@ -2506,6 +2592,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         if (moduleCards) addSettingsMenuRow(rows, popup, R.string.module_cards, this::showModuleCards);
         if (dockRow) addSettingsMenuRow(rows, popup, R.string.dock_edit, this::startDockEdit);
         addSettingsMenuRow(rows, popup, R.string.reorder, this::toggleReorder);
+        if (wallpaperPlayer.showing()) addSettingsMenuRow(rows, popup, R.string.wallpaper_preview, this::startWallpaperPreview);
         panel.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
         popup.setWidth(Math.max((int) (200 * density), panel.getMeasuredWidth()));
         // Hebrew puts Settings at the left of the header: grow the menu inward from it.

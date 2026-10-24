@@ -103,6 +103,40 @@ public class WallpaperRotationTest {
         assertTrue(WallpaperRotation.due(20 * minute, 10 * minute, 5 * minute));   // clock went back
     }
 
+    @Test
+    public void thePreviewStepsBothWaysAndWrapsAtTheEnds() {
+        List<File> images = Arrays.asList(new File("a.jpg"), new File("b.jpg"), new File("c.jpg"));
+        assertEquals("b.jpg", WallpaperRotation.step(images, "a.jpg", 1).getName());
+        assertEquals("c.jpg", WallpaperRotation.step(images, "a.jpg", -1).getName());   // before the first: the last
+        assertEquals("a.jpg", WallpaperRotation.step(images, "c.jpg", 1).getName());    // after the last: the first
+        assertEquals("b.jpg", WallpaperRotation.step(images, "b.jpg", 0).getName());    // where the preview starts
+    }
+
+    @Test
+    public void thePreviewStartsAtTheFirstPictureWhenTheCurrentOneIsGone() {
+        List<File> images = Arrays.asList(new File("a.jpg"), new File("b.jpg"));
+        assertEquals("a.jpg", WallpaperRotation.step(images, "gone.jpg", 1).getName());
+        assertEquals("a.jpg", WallpaperRotation.step(images, "", 0).getName());
+        assertNull(WallpaperRotation.step(Collections.emptyList(), "a.jpg", 1));
+    }
+
+    @Test
+    public void theDimStepsByTenWithinItsRange() {
+        assertEquals(70, WallpaperRotation.stepDim(60, 1));
+        assertEquals(50, WallpaperRotation.stepDim(60, -1));
+        assertEquals(90, WallpaperRotation.stepDim(90, 1));    // the top stays
+        assertEquals(0, WallpaperRotation.stepDim(0, -1));     // and the bottom
+        assertEquals(10, WallpaperRotation.stepDim(0, 1));
+    }
+
+    @Test
+    public void aThemesOddDimLandsOnTheStepsAtTheFirstPress() {
+        assertEquals(40, WallpaperRotation.stepDim(35, 1));
+        assertEquals(30, WallpaperRotation.stepDim(35, -1));
+        assertEquals(90, WallpaperRotation.stepDim(85, 1));
+        assertEquals(0, WallpaperRotation.stepDim(5, -1));
+    }
+
     private static List<String> names(List<File> files) {
         String[] out = new String[files.size()];
         for (int i = 0; i < out.length; i++) out[i] = files.get(i).getName();

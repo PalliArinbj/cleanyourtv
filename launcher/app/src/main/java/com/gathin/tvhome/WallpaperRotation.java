@@ -65,6 +65,33 @@ final class WallpaperRotation {
         return ORDER_SEQUENTIAL.equals(order) ? next(images, previous) : pick(images, previous, random);
     }
 
+    /** wallpaper_dim's range, and the step the wallpaper preview changes it by. */
+    static final int MAX_DIM = 90;
+    static final int DIM_STEP = 10;
+
+    /**
+     * The wallpaper preview's Left and Right: the picture {@code delta} places from {@code current} in the sorted
+     * collection, wrapping at both ends. A current name that is not in the collection starts from the first.
+     */
+    static File step(List<File> images, String current, int delta) {
+        if (images.isEmpty()) return null;
+        int at = -1;
+        for (int i = 0; i < images.size(); i++) {
+            if (images.get(i).getName().equals(current)) at = i;
+        }
+        if (at < 0) return images.get(0);
+        return images.get(Math.floorMod(at + delta, images.size()));
+    }
+
+    /**
+     * The wallpaper preview's Up and Down: the next multiple of DIM_STEP above or below {@code dim}, within 0 to
+     * MAX_DIM. A theme's 35 goes to 40 or 30, so every press lands on the same steps.
+     */
+    static int stepDim(int dim, int delta) {
+        int next = delta > 0 ? (dim / DIM_STEP + 1) * DIM_STEP : ((dim + DIM_STEP - 1) / DIM_STEP - 1) * DIM_STEP;
+        return Math.max(0, Math.min(MAX_DIM, next));
+    }
+
     static boolean due(long previous, long now, long interval) {
         return interval > 0 && (previous == 0 || now < previous || now - previous >= interval);
     }

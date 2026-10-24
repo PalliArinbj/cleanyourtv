@@ -97,7 +97,8 @@ public final class LauncherSettingsActivity extends Activity {
         followThemeChoice.setOnClickListener(v -> {
             if (!hasOnTvChoices()) return;
             choices.edit().remove("columns").remove(Config.ROWS_BELOW_DOCK_KEY).remove("animations")
-                    .remove("advanced_effects").remove(Config.WALLPAPER_CHOICE_KEY).commit();
+                    .remove("advanced_effects").remove(Config.WALLPAPER_CHOICE_KEY).remove(Config.WALLPAPER_DIM_KEY)
+                    .commit();
             Config current = Config.load(this);
             columns = current.columns;
             rowsBelowDock = current.rowsBelowDock;
@@ -187,17 +188,21 @@ public final class LauncherSettingsActivity extends Activity {
         advancedChoice.setEnabled(animations);
         advancedChoice.setAlpha(animations ? 1f : 0.5f);
         String wallpaperCurrent = choices.getString(Config.WALLPAPER_CHOICE_KEY, null);
-        wallpaperChoice.setText(getString(R.string.wallpaper_state,
-                "none".equals(wallpaperCurrent) ? getString(R.string.wallpaper_none)
-                        : wallpaperCurrent != null ? wallpaperCurrent
-                        : getString(R.string.wallpaper_theme_default)));
+        String wallpaperName = "none".equals(wallpaperCurrent) ? getString(R.string.wallpaper_none)
+                : wallpaperCurrent != null ? wallpaperCurrent
+                : getString(R.string.wallpaper_theme_default);
+        // A dim kept from the wallpaper preview shows here, where Follow theme takes it back.
+        int dim = choices.getInt(Config.WALLPAPER_DIM_KEY, -1);
+        wallpaperChoice.setText(dim >= 0 && !"none".equals(wallpaperCurrent)
+                ? getString(R.string.wallpaper_state_dim, wallpaperName, dim)
+                : getString(R.string.wallpaper_state, wallpaperName));
         followThemeChoice.setSelected(!hasOnTvChoices());
     }
 
     private boolean hasOnTvChoices() {
         return choices.contains("columns") || choices.contains(Config.ROWS_BELOW_DOCK_KEY)
                 || choices.contains("animations") || choices.contains("advanced_effects")
-                || choices.contains(Config.WALLPAPER_CHOICE_KEY);
+                || choices.contains(Config.WALLPAPER_CHOICE_KEY) || choices.contains(Config.WALLPAPER_DIM_KEY);
     }
 
     private void open(Intent intent) {

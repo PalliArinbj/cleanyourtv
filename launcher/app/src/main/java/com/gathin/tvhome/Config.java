@@ -40,6 +40,8 @@ final class Config {
     static final String SETTINGS_NAME = "launcher_settings";
     static final String ROWS_BELOW_DOCK_KEY = "rows_below_dock";
     static final String WALLPAPER_CHOICE_KEY = "wallpaper_choice";
+    /** The dim kept from the wallpaper preview; over the theme's wallpaper_dim until Follow theme or a push. */
+    static final String WALLPAPER_DIM_KEY = "wallpaper_dim";
     private static final String THEME_REVISION_NAME = "theme_revision";
     private static final String THEME_SIGNATURE_KEY = "theme_signature";
 
@@ -325,6 +327,8 @@ final class Config {
         if (!wallpaperEnabled) wallpaper = null;
         int rotationMinutes = json == null ? 0 : integer(json, "wallpaper_rotation_minutes", 0, 0, 1440);
         int wallpaperDim = json == null ? 0 : integer(json, "wallpaper_dim", 0, 0, 90);
+        int chosenDim = choices.getInt(WALLPAPER_DIM_KEY, -1);
+        if (chosenDim >= 0 && chosenDim <= WallpaperRotation.MAX_DIM) wallpaperDim = chosenDim;
         File trivia = dir != null ? new File(dir, TRIVIA_NAME) : null;
         if (trivia != null && !(trivia.isFile() && trivia.length() > 0)) trivia = null;
         int triviaMinutes = json == null ? 5 : integer(json, "trivia_minutes", 5, 0, 1440);
@@ -411,11 +415,12 @@ final class Config {
             // explicit theme push or reset by the updated tools.
             SharedPreferences.Editor editor = choices.edit();
             if (!"absent".equals(token)) editor.remove("columns").remove("animations")
-                    .remove("advanced_effects").remove(ROWS_BELOW_DOCK_KEY).remove(WALLPAPER_CHOICE_KEY);
+                    .remove("advanced_effects").remove(ROWS_BELOW_DOCK_KEY).remove(WALLPAPER_CHOICE_KEY)
+                    .remove(WALLPAPER_DIM_KEY);
             editor.putString(THEME_SIGNATURE_KEY, signature).commit();
         } else if (!seen.equals(signature)) {
             choices.edit().remove("columns").remove("animations").remove("advanced_effects")
-                    .remove(ROWS_BELOW_DOCK_KEY).remove(WALLPAPER_CHOICE_KEY)
+                    .remove(ROWS_BELOW_DOCK_KEY).remove(WALLPAPER_CHOICE_KEY).remove(WALLPAPER_DIM_KEY)
                     .putString(THEME_SIGNATURE_KEY, signature).commit();
         }
     }

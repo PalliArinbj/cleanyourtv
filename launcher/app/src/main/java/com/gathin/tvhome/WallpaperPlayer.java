@@ -18,11 +18,23 @@ import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/** Displays and rotates a theme's local wallpaper images while Home is visible. */
+/**
+ * Displays and rotates a theme's local wallpaper images while Home is visible. In preview mode (Home's Settings
+ * menu) the rotation pauses and the owner steps through the theme's pictures and dim levels instead.
+ */
 final class WallpaperPlayer {
+    private final Context context;
     private final FrameLayout root;
     private final ImageView image;
     private final List<File> files;
+    /** The black overlay for wallpaper_dim, or null while nothing has dimmed. */
+    private View shade;
+    private int dim;
+    private boolean previewing;
+    /** Every picture of the theme, which the preview steps through even while one picture is chosen on the TV. */
+    private List<File> previewImages = new ArrayList<>();
+    /** The picture the preview last asked for; a load still in flight moves on to it when it lands. */
+    private File previewTarget;
     private final long interval;
     private final String order;
     private final SharedPreferences preferences;
@@ -38,7 +50,9 @@ final class WallpaperPlayer {
     private String displayed = "";
 
     WallpaperPlayer(Context context, FrameLayout root, Config config) {
+        this.context = context;
         this.root = root;
+        dim = config.wallpaperDim;
         files = new ArrayList<>(config.wallpapers);
         interval = config.wallpaperRotationMinutes * 60_000L;
         bitmapConfig = config.wallpaperTrueColor ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565;
@@ -61,15 +75,80 @@ final class WallpaperPlayer {
             root.addView(image, 0, new FrameLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             // No shade layer at all when the theme doesn't dim: a full-screen view is overdraw on 1 GB TVs.
-            if (config.wallpaperDim > 0) {
-                View shade = new View(context);
-                shade.setBackgroundColor((config.wallpaperDim * 255 / 100) << 24);
-                shade.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
-                root.addView(shade, 1, new FrameLayout.LayoutParams(
-                        ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-            }
+            if (dim > 0) setDim(dim);
             showFirst();
         }
+    }
+
+    /** Whether a picture is on screen: only then is there anything to preview. */
+    boolean showing() {
+        return image.getParent() != null && !displayed.isEmpty();
+    }
+
+    int dim() {
+        return dim;
+    }
+
+    /** Changes the dim at once, adding the shade the first time it is needed. */
+    void setDim(int percent) {
+        dim = percent;
+        if (shade == null) {
+            if (percent == 0) return;
+            shade = new View(context);
+            shade.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
+            root.addView(shade, root.indexOfChild(image) + 1, new FrameLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        }
+        shade.setBackgroundColor((percent * 255 / 100) << 24);
+    }
+
+    /** Pauses the rotation; the preview steps through {@code images}, the theme's whole collection. */
+    void beginPreview(List<File> images) {
+        previewing = true;
+        previewImages = images.isEmpty() ? new ArrayList<>(files) : new ArrayList<>(images);
+    }
+
+    /** Shows the picture {@code delta} places from the one asked for last, and returns its name. */
+    String step(int delta) {
+        File next = WallpaperRotation.step(previewImages,
+                previewTarget != null ? previewTarget.getName() : displayed, delta);
+        if (next == null) return displayed;
+        previewTarget = next;
+        if (!loading && !next.getName().equals(displayed)) load(next);
+        return next.getName();
+    }
+
+    /**
+     * Back to the rotation, which carries on from the picture on screen. A picture outside the rotation (another
+     * one is chosen on the TV) gives way to the rotation's own at once.
+     */
+    void endPreview() {
+        previewing = false;
+        previewTarget = null;
+        if (WallpaperRotation.find(files, displayed) != null) {
+            preferences.edit().putString("image", displayed).putLong("changed", System.currentTimeMillis()).apply();
+        }
+        update();
+    }
+
+    private void load(File next) {
+        loading = true;
+        decoder.execute(() -> {
+            Bitmap bitmap = decode(next);
+            root.post(() -> {
+                loading = false;
+                if (closed) {
+                    if (bitmap != null) bitmap.recycle();
+                    return;
+                }
+                if (bitmap != null) {
+                    image.setImageBitmap(bitmap);
+                    displayed = next.getName();
+                }
+                if (!previewing) update();
+                else if (previewTarget != null && previewTarget != next) load(previewTarget);
+            });
+        });
     }
 
     /**
@@ -113,7 +192,7 @@ final class WallpaperPlayer {
     }
 
     void update() {
-        if (!active || closed || loading || files.isEmpty()) return;
+        if (!active || closed || loading || previewing || files.isEmpty()) return;
         String previous = preferences.getString("image", "");
         File selected = WallpaperRotation.find(files, previous);
         long changed = preferences.getLong("changed", 0);
@@ -127,8 +206,10 @@ final class WallpaperPlayer {
             Bitmap bitmap = decode(next);
             root.post(() -> {
                 loading = false;
-                if (closed || !active) {
+                if (closed || !active || previewing) {
                     if (bitmap != null) bitmap.recycle();
+                    // the preview began while this picture was loading: its own pick goes first
+                    if (previewing && !closed && previewTarget != null) load(previewTarget);
                     return;
                 }
                 if (bitmap == null) {
