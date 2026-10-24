@@ -1,0 +1,9 @@
+# The scenes of themes/iceland, drawn by tools/photo_scenes.py: NAME PHOTO BAND_TOP [key=value ...]
+# (the keys are explained in photo_scenes.py). The photos are the theme author's own and are not in the repo.
+01-lake-sunset      20201220_145421.jpg  0.24  water=0.59
+02-golden-valley    20201101_160707.jpg  0.25  horizon=0.56 darkland=42 cool=0.4
+03-spruce-sunrise   IMG_5288.JPEG        0.28  horizon=0.71 depth=150 glow=1.6
+04-cairn            20200616_220030.jpg  0.15  horizon=0.67 trees=0 darkland=40
+05-mountain         20220731_150633.jpg  0.20  land=fill
+06-lava-coast       IMG_6214.JPEG        0.35  water=0.43 sea=1 warm=0.2 cool=0.3 chroma=1.5 foam=175
+07-headland         IMG_6216.JPEG        0.35  horizon=0.74 darkland=58 trees=0
