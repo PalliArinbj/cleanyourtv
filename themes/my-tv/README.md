@@ -2,8 +2,9 @@
 
 This fork's own theme for its TCL 75C745 (the TV in `examples/tcl-75c745-google-tv/`). It is
 that folder's `config.json` plus the look: the dock, six columns, advanced effects, the top bar, the
-Icelandic trivia and 21 wallpapers rotated hourly (the 14 of `themes/scenes/` and the 7 of `themes/iceland/`),
-dimmed 60% and decoded in true colour (the TV has 2.4 GB).
+Icelandic trivia and 5 wallpapers rotated hourly, chosen on the TV with the wallpaper preview from the 14 of
+`themes/scenes/` and the 7 of `themes/iceland/` (moon lake, aurora, dunes, tea hills, autumn valley), dimmed 60%
+and decoded in true colour (the TV has 2.4 GB).
 
 ```bash
 TV_HOST=<tv ip> tools/theme.sh themes/my-tv
