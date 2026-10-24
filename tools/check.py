@@ -40,6 +40,9 @@ NOT_LAUNCHERS = {"com.google.android.tungsten.setupwraith", "com.android.tv.sett
 # com.android.tv.settings/.system.FallbackHome). disable.sh already refuses to count one as a
 # launcher (#435); --fix must not move Home onto one either, or the next boot lands in the placeholder.
 FALLBACK_HOME_RE = re.compile(r"/\S*FallbackHome$")
+# A factory-test app is not one either: com.duokan.factorytest/.FactoryLauncher answers HOME on a
+# Xiaomi Mi TV 4A, and Home on it is the factory test screen (disable.sh skips these too).
+FACTORY_HOME_RE = re.compile(r"factorytest|factory_test|factorymode", re.I)
 # The first-run wizard's app. Android deletes a Wi-Fi network saved by it the moment it is disabled.
 SETUPWRAITH = "com.google.android.tungsten.setupwraith"
 INPUT_PERMISSION = "android.permission.TV_INPUT_HARDWARE"
@@ -84,7 +87,7 @@ def launcher_to_use(dev, listed, preferred=None):
         return match[0]
     candidates = [c for c in home_activities(dev)
                   if home_of(c) not in listed and home_of(c) not in NOT_LAUNCHERS
-                  and not FALLBACK_HOME_RE.search(c)]
+                  and not FALLBACK_HOME_RE.search(c) and not FACTORY_HOME_RE.search(home_of(c))]
     if not candidates:
         return None
     own = [c for c in candidates if home_of(c) == recovery.CUSTOM_LAUNCHER]
@@ -154,13 +157,23 @@ def asks_for_input_hardware(dev, name):
     return bool(block and INPUT_PERMISSION in block.group(1))
 
 
+def handler_apps(dev):
+    """The apps the TV opens its inputs with (VIEW on a passthrough channel) and the ones it opens
+    Settings with, as two sets of package names, the same query disable.sh makes."""
+    q = "cmd package query-activities --brief"
+    inputs = recovery.shell(dev, f"{q} -a android.intent.action.VIEW -t vnd.android.cursor.item/channel")
+    settings = recovery.shell(dev, f"{q} -a android.settings.SETTINGS")
+    names = lambda out: set(re.findall(r"^\s*([A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z0-9_]+)+)/", out, re.M))
+    return names(inputs), names(settings)
+
+
 def safety_checks(dev, names):
     """The names disable.sh would leave enabled, each with the reason, as a list of (name, why).
 
     These are the checks disable.sh runs, in the same order, repeated here for the same reason they
-    exist there: each one is a package an owner cannot put back from the couch. FORCE_SETUPWRAITH=1
-    and TVINPUT_ALLOW=1 mean what they mean in disable.sh, so a TV on Ethernet or an owner who wants
-    the inputs off does not have to remember two switches.
+    exist there: each one is a package an owner cannot put back from the couch. FORCE_SETUPWRAITH=1,
+    TVINPUT_ALLOW=1 and HANDLERS_ALLOW=1 mean what they mean in disable.sh, so a TV on Ethernet or an
+    owner who wants the inputs off does not have to remember more switches.
     """
     skipped = []
     if SETUPWRAITH in names and not os.environ.get("FORCE_SETUPWRAITH"):
@@ -184,6 +197,18 @@ def safety_checks(dev, names):
                                       "disabled those ports stay black and only a full restore and "
                                       "a cold boot bring them back (set TVINPUT_ALLOW=1 to disable "
                                       "it)"))
+    if not os.environ.get("HANDLERS_ALLOW") and any(n not in {k for k, _ in skipped} for n in names):
+        inputs, settings = handler_apps(dev)
+        for name in names:
+            if any(name == skipped_name for skipped_name, _ in skipped):
+                continue
+            if name in inputs:
+                skipped.append((name, "the TV opens its HDMI/AV inputs and channels with it, so with "
+                                      "it disabled the launcher's input tiles do nothing (set "
+                                      "HANDLERS_ALLOW=1 to disable it)"))
+            elif name in settings:
+                skipped.append((name, "the TV opens Settings with it, so with it disabled Settings "
+                                      "does not open (set HANDLERS_ALLOW=1 to disable it)"))
     return skipped
 
 
@@ -252,6 +277,13 @@ def main():
     # read_list validates every name before anything is sent to the TV: its entries end up in the
     # TV's shell, and a list edited by hand since then is not to be trusted.
     listed = recovery.read_list(list_path)
+    core = recovery.core_packages(listed)
+    if core:
+        # The same refusal as disable.sh: --fix would disable these again (#884).
+        sys.stderr.write(f"refusing {list_path}: it disables core Android packages, and without them "
+                         f"the TV may not boot again (#884): {', '.join(core)}. Take these lines out "
+                         f"of the list and run it again. Nothing was checked or changed.\n")
+        return 2
 
     # Exit 1 means drift and nothing else. Whatever keeps the check from a verdict is 2: adb_shell's own
     # errors (a timeout, a refused authorisation) are not OSErrors and used to escape as a traceback with

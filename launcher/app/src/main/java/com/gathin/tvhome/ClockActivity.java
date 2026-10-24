@@ -23,6 +23,7 @@ public class ClockActivity extends Activity {
                 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE);
         Config cfg = Config.load(this);
         scene = new ClockScene(getWindow().getDecorView(), Trivia.read(cfg.trivia), cfg.triviaMinutes);
+        scene.useHomeWallpaper(this);
     }
 
     @Override

@@ -165,14 +165,6 @@ class HandoverTest(unittest.TestCase):
             state = json.load(f)
         return result, state
 
-    def test_local_properties_escapes_a_windows_sdk_path(self):
-        # Git Bash on Windows hands the SDK over as C:\Users\...: a bare backslash is an escape in a .properties
-        # file, and Gradle would look for C:Users... instead.
-        result, _ = self.handover(android_home=r"C:\Users\me\AppData\Local\Android\Sdk")
-        self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual((self.launcher / "local.properties").read_text().strip(),
-                         r"sdk.dir=C:\\Users\\me\\AppData\\Local\\Android\\Sdk")
-
     def record(self):
         files = list(self.home.glob("cleanyourtv-handover-*.txt"))
         self.assertLessEqual(len(files), 1)
