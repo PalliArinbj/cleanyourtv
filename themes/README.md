@@ -140,7 +140,9 @@ efnafraedi|13|Kvikasilfur (Hg) og bróm (Br) eru einu frumefnin sem eru fljótan
 The tidbits come as a shuffled deck: each is shown once before any repeats, the place in the deck survives
 a restart, and a new deck never starts with the last one shown. A subject with three times the lines comes
 up three times as often. Pushing a theme with a changed list starts a new deck; a theme without the file
-brings the greeting back. Keep a tidbit to about 130 characters so it fits in two lines.
+brings the greeting back. The clock screensaver (the launcher's own, and Home's idle clock) shows a tidbit too, under the
+date: a new one each time it starts and every `trivia_minutes` (every 5 when that is 0), drawn from the same
+deck as Home, so nothing repeats between the two. Keep a tidbit to about 130 characters so it fits in two lines.
 
 ## Reduced motion
 

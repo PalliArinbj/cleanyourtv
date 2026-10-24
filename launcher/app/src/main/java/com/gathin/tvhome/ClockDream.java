@@ -19,7 +19,8 @@ public class ClockDream extends DreamService {
         setScreenBright(false);
         // A service's own resources are in the TV's language, not the launcher's (AppLocale).
         setContentView(View.inflate(AppLocale.localized(this), R.layout.dream_clock, null));
-        scene = new ClockScene(getWindow().getDecorView());
+        Config cfg = Config.load(this);
+        scene = new ClockScene(getWindow().getDecorView(), Trivia.read(cfg.trivia), cfg.triviaMinutes);
     }
 
     @Override

@@ -33,6 +33,18 @@ public class ClockSceneTest {
         assertArrayEquals(GRAIN, ClockScene.grainPixels(ClockScene.GRAIN_SIZE, ClockScene.GRAIN_MAX_ALPHA, 1L));
     }
 
+    @Test public void theTidbitChangesEveryTriviaMinutes() {
+        assertEquals(5, ClockScene.triviaEvery(5));
+        assertEquals(1, ClockScene.triviaEvery(1));
+        assertEquals(30, ClockScene.triviaEvery(30));
+    }
+
+    @Test public void zeroTriviaMinutesStillChangesTheTidbitInTheScreensaver() {
+        // On Home 0 means "only when Home comes back", which never happens while the screensaver runs.
+        assertEquals(ClockScene.DEFAULT_TRIVIA_MINUTES, ClockScene.triviaEvery(0));
+        assertTrue(ClockScene.DEFAULT_TRIVIA_MINUTES > 0);
+    }
+
     @Test public void theGrainIsAboutOneBandingStep() {
         // The glow's strongest stop is a quarter of a channel (0x40): at most 64 levels over half the screen, one
         // level per band. Grain of 1 to 3 levels covers a step without becoming visible noise on black.

@@ -11,12 +11,15 @@ import android.graphics.drawable.LayerDrawable;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
+import android.widget.TextView;
 
+import java.util.List;
 import java.util.Random;
 
 /**
  * The clock screensaver's scene (layout dream_clock): the thin clock and date on black over a slow ambient
- * glow. Every minute the clock drifts to a new spot and the glow shifts colour, so nothing burns in.
+ * glow, with a tidbit from the theme's trivia.txt under the date. Every minute the clock drifts to a new spot and
+ * the glow shifts colour, so nothing burns in; every trivia_minutes the tidbit changes as the clock moves.
  * Shared by ClockDream (the system screensaver) and ClockActivity (Home left idle).
  */
 final class ClockScene {
@@ -28,24 +31,36 @@ final class ClockScene {
     static final int GRAIN_SIZE = 128;
     static final int GRAIN_MAX_ALPHA = 2;
 
+    /** Minutes between tidbits when the theme's trivia_minutes is 0, which on Home means "only on return". */
+    static final int DEFAULT_TRIVIA_MINUTES = 5;
+
     private final Handler handler = new Handler(Looper.getMainLooper());
     private final Random random = new Random();
     private final View content;
     private final GradientDrawable glow;
+    /** The theme's trivia (Trivia), shown under the date and drawn from Home's deck; empty hides the line. */
+    private final List<String> trivia;
+    private final TextView triviaView;
+    private final int triviaEvery;
+    private int minutesSinceTrivia;
     private int colorIndex;
     private int glowColor;
 
     private final Runnable tick = new Runnable() {
         @Override
         public void run() {
-            moveClock();
+            minutesSinceTrivia++;
+            moveClock(!trivia.isEmpty() && minutesSinceTrivia >= triviaEvery);
             shiftGlow();
             handler.postDelayed(this, MOVE_MS);
         }
     };
 
-    /** root is the inflated dream_clock layout. */
-    ClockScene(View root) {
+    /** root is the inflated dream_clock layout; trivia and triviaMinutes come from the theme (Config). */
+    ClockScene(View root, List<String> trivia, int triviaMinutes) {
+        this.trivia = trivia;
+        triviaEvery = triviaEvery(triviaMinutes);
+        triviaView = root.findViewById(R.id.dreamTrivia);
         content = root.findViewById(R.id.dreamContent);
         View ambient = root.findViewById(R.id.dreamAmbient);
         glow = new GradientDrawable();
@@ -65,6 +80,7 @@ final class ClockScene {
 
     void start() {
         content.setAlpha(0f);
+        if (!trivia.isEmpty()) nextTrivia();   // a new tidbit each time the screensaver starts
         content.post(() -> {
             placeClock();
             content.animate().alpha(1f).setDuration(1200).start();
@@ -77,11 +93,26 @@ final class ClockScene {
         handler.removeCallbacks(tick);
     }
 
-    private void moveClock() {
+    /** Fades the clock out and in somewhere new; a new tidbit, when due, swaps in while it is invisible. */
+    private void moveClock(boolean newTrivia) {
         content.animate().alpha(0f).setDuration(900).withEndAction(() -> {
-            placeClock();
-            content.animate().alpha(1f).setDuration(1200).start();
+            if (newTrivia) nextTrivia();
+            // Posted, so it runs after the layout pass and places the clock by its width with the new tidbit.
+            content.post(() -> {
+                placeClock();
+                content.animate().alpha(1f).setDuration(1200).start();
+            });
         }).start();
+    }
+
+    private void nextTrivia() {
+        triviaView.setText(Trivia.next(content.getContext(), trivia));
+        triviaView.setVisibility(View.VISIBLE);
+        minutesSinceTrivia = 0;
+    }
+
+    static int triviaEvery(int triviaMinutes) {
+        return triviaMinutes > 0 ? triviaMinutes : DEFAULT_TRIVIA_MINUTES;
     }
 
     /** A random spot that keeps the whole clock on screen, with the glow centred behind it. */

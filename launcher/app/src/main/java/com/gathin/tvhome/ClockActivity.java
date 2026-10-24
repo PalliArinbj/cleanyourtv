@@ -21,7 +21,8 @@ public class ClockActivity extends Activity {
         setContentView(R.layout.dream_clock);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN
                 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE);
-        scene = new ClockScene(getWindow().getDecorView());
+        Config cfg = Config.load(this);
+        scene = new ClockScene(getWindow().getDecorView(), Trivia.read(cfg.trivia), cfg.triviaMinutes);
     }
 
     @Override
