@@ -1,33 +1,10 @@
 {
-  "dock_apps": [
-    "com.plexapp.android",
-    "is.vodafone.play.vodafone_play",
-    "com.disney.disneyplus",
-    "com.spotify.tv.android"
-  ],
   "hidden_apps": [
     "com.tcl.suspension",
     "com.tcl.dashboard",
     "com.tcl.partnercustomizer",
-    "com.tcl.tv",
-    "com.spocky.projengmenu",
-    "com.android.tv.settings"
+    "com.tcl.tv"
   ],
-  "live_tv_package": "",
-  "columns": 6,
-  "advanced_effects": true,
-  "background_color": "#000000",
-  "wallpaper": true,
-  "wallpaper_rotation_minutes": 60,
-  "ambient_glow": false,
-  "wallpaper_dim": 60,
-  "wallpaper_true_color": true,
-  "show_network_pill": false,
-  "show_inputs_pill": true,
-  "icon_only_buttons": true,
-  "icon_only_inputs": true,
-  "dock_title": false,
-  "settings_key_panel": true,
   "app_keys": [
     "scan:566:com.netflix.ninja",
     "scan:569:com.google.android.youtube.tv"

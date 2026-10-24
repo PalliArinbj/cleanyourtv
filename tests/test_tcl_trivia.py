@@ -12,7 +12,7 @@ import re
 import unittest
 
 
-TRIVIA = Path(__file__).resolve().parents[1] / "examples/tcl-75c745-google-tv/trivia.txt"
+TRIVIA = Path(__file__).resolve().parents[1] / "themes/my-tv/trivia.txt"
 SUBJECTS = {
     "saga-islands", "mannkynssaga", "nattura-islands", "dyr", "geimurinn", "mannslikaminn", "edlisfraedi",
     "efnafraedi", "islensk-tunga", "bokmenntir", "landafraedi", "taekni", "staerdfraedi", "ithrottir", "listir",

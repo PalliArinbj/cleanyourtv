@@ -26,15 +26,12 @@
 # com.tcl.initsetup, com.tcl.useragreement, com.tcl.globalkeyoverlay, com.tcl.systemui.plugin, com.tcl.dashboard,
 # com.tcl.partnercustomizer (also holds the T-key activities), com.google.android.tv.remote.service,
 # Play Store and Play Services, all com.mediatek.* and com.dolby.* except AirPlay, com.tcl.showmode.
-# Launcher: config.json next to this list is the theme (tools/theme.sh examples/tcl-75c745-google-tv), built with
-# HOME_KEY_SERVICE=1 and settings_key_scancodes 561 (the IR remote's gear) in config.xml; TCL's boot manager needs
-# `appops set com.gathin.tvhome AUTO_START allow; appops write-settings` (the op is AUTO_START on this firmware).
-# The dock and tile order were then arranged on the TV (Settings pill, hold OK: Reorder apps / Edit dock). That
-# order is saved under the theme's dock_apps, so dock_apps stays as first pushed: changing it would make the next
-# theme push discard the arrangement. wallpapers/ is a copy of themes/scenes/wallpapers (rotated hourly), so this
-# folder alone puts the whole look back; the TV Settings tile is hidden, the Settings pill and gear still open it.
-# The launcher alone runs in Icelandic (greeting and date, launcher res/values-is; the TV stays English):
-# `cmd locale set-app-locales com.gathin.tvhome --locales is`, set again after a fresh install.
+# Launcher: built with HOME_KEY_SERVICE=1 and settings_key_scancodes 561 (the IR remote's gear) in config.xml;
+# TCL's boot manager needs `appops set com.gathin.tvhome AUTO_START allow; appops write-settings` (the op is
+# AUTO_START on this firmware). config.json next to this list holds only what is about this TV: TCL's own system
+# apps kept off the grid, and the remote's Netflix (566) and YouTube (569) buttons by scancode. Push it as it is
+# (tools/theme.sh examples/tcl-75c745-google-tv), or copy it into a theme of your own and add the look; a push
+# replaces the whole theme, so a theme of your own needs these two keys too.
 # Checked on the TV: com.tcl.ttvs holds Samba TV ACR, TCL BI analytics, Alexa, T-Cast AND the firmware updater
 # (versionUpdateApp.core.service.SystemUpdateService): off by choice, so re-enable it to update.
 # com.tcl.UpdatePeripheral only updates TCL soundbars and cameras.
