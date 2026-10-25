@@ -31,6 +31,7 @@
   "settings_key_panel": true,
   "app_keys": [
     "scan:566:com.netflix.ninja",
-    "scan:569:com.google.android.youtube.tv"
+    "scan:569:com.google.android.youtube.tv",
+    "scan:752:input:com.tcl.tvinput/.TvPassThroughService/HW15"
   ]
 }

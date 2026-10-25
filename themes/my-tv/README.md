@@ -13,6 +13,9 @@ TV_HOST=<tv ip> tools/theme.sh themes/my-tv
 - The dock and tile order were arranged on the TV (Settings pill, hold OK: Reorder apps / Edit dock). That
   order is saved under the theme's `dock_apps`, so `dock_apps` stays as first pushed: changing it would make the
   next push discard the arrangement.
+- The remote's Prime Video button (scancode 752; Prime Video itself is disabled) switches to HDMI 1, the PS5:
+  `"scan:752:input:com.tcl.tvinput/.TvPassThroughService/HW15"` in `app_keys` (HW15 is hdmi_port 1 in
+  `dumpsys tv_input`).
 - The TV Settings tile is hidden; the Settings pill and the gear (quick panel) still open it.
 - The launcher alone runs in Icelandic (greeting and date, launcher `res/values-is`; the TV stays English):
   `cmd locale set-app-locales com.gathin.tvhome --locales is`, set again after a fresh install.
