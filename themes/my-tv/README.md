@@ -16,6 +16,9 @@ TV_HOST=<tv ip> tools/theme.sh themes/my-tv
 - The remote's Prime Video button (scancode 752; Prime Video itself is disabled) switches to HDMI 1, the PS5:
   `"scan:752:input:com.tcl.tvinput/.TvPassThroughService/HW15"` in `app_keys` (HW15 is hdmi_port 1 in
   `dumpsys tv_input`).
+- The focus highlight is the quiet `rim` (`glass_style`) and the dock band frosted glass (`dock_glass`), chosen on
+  the TV from before/after screenshots against `halo`, `uniform_tiles` and `fade_rows` (which shows nothing here:
+  Home has only the dock and one row).
 - The TV Settings tile is hidden; the Settings pill and the gear (quick panel) still open it.
 - The launcher alone runs in Icelandic (greeting and date, launcher `res/values-is`; the TV stays English):
   `cmd locale set-app-locales com.gathin.tvhome --locales is`, set again after a fresh install.

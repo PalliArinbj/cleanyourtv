@@ -20,6 +20,8 @@
   "wallpaper": true,
   "wallpaper_rotation_minutes": 60,
   "ambient_glow": false,
+  "glass_style": "rim",
+  "dock_glass": true,
   "wallpaper_dim": 60,
   "trivia_minutes": 1,
   "wallpaper_true_color": true,
