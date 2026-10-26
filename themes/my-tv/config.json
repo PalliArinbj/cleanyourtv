@@ -26,7 +26,7 @@
   "trivia_minutes": 1,
   "wallpaper_true_color": true,
   "show_network_pill": false,
-  "show_inputs_pill": true,
+  "show_inputs_pill": false,
   "icon_only_buttons": true,
   "icon_only_inputs": true,
   "dock_title": false,
