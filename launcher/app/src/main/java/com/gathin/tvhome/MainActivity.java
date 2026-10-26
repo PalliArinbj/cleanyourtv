@@ -29,6 +29,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.LayerDrawable;
 import android.media.tv.TvContract;
 import android.media.tv.TvInputInfo;
 import android.media.tv.TvInputManager;
@@ -332,6 +333,11 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         @Override
         public void onInputRemoved(String inputId) {
             updateInputsButton();
+        }
+
+        @Override
+        public void onInputStateChanged(String inputId, int state) {
+            if (topInputIds.contains(inputId)) updateTopBarInputs();
         }
     };
     /** Listens for any VPN coming up or going down, even one this app's traffic is excluded from. */
@@ -726,6 +732,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         });
         btnLibraryTop.setVisibility(cfg.libraryButton && cfg.appLibrary ? View.VISIBLE : View.GONE);
         addTopBarApps(cfg.topBarApps);
+        addTopBarInputs(cfg.topBarInputs);
         iconOnlyButtons = cfg.iconOnlyButtons;
         topMenu = cfg.topMenu;
         wifiIconOnly = iconOnlyButtons && cfg.wifiLabelWidth <= 0;
@@ -939,6 +946,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         }
         restartIdleClock();
         promptsPaused = false;
+        updateTopBarInputs();   // a console switched on or off while an input or an app was in front
         if (grid.getAdapter() == null) grid.setAdapter(adapter);   // dropped by onTrimMemory
         switch (tileRefresh.onResume(packagesChangedSinceRebuild())) {
             case REBUILD:
@@ -2313,6 +2321,72 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             button.setOnClickListener(v -> open(new Intent(target)));
             bar.addView(button, bar.indexOfChild(btnWifi));
             topAppButtons.add(button);
+        }
+    }
+
+    /** top_bar_inputs buttons, their input ids and logo names, in bar order. */
+    private final List<TextView> topInputButtons = new ArrayList<>();
+    private final List<String> topInputIds = new ArrayList<>();
+    private final List<String> topInputLogos = new ArrayList<>();
+
+    /**
+     * Puts each top_bar_inputs input (a console's HDMI port) in the top bar as a round pill with the console's logo,
+     * after the top_bar_apps. OK switches to the input, as the Inputs pill's row for it does.
+     */
+    private void addTopBarInputs(List<String> entries) {
+        TvInputManager tim = (TvInputManager) getSystemService(TV_INPUT_SERVICE);
+        if (tim == null) return;
+        ViewGroup bar = findViewById(R.id.topButtons);
+        for (String line : entries) {
+            TopBarInputs.Entry entry = TopBarInputs.parse(line);
+            if (entry == null) continue;
+            TvInputInfo info;
+            try {
+                info = tim.getTvInputInfo(entry.inputId);
+            } catch (RuntimeException e) {
+                info = null;
+            }
+            if (info == null) continue;   // not an input this TV has
+            TextView button = (TextView) getLayoutInflater().inflate(R.layout.top_app_button, bar, false);
+            button.setId(View.generateViewId());   // pillKeys finds the bar's ends by id, as for top_bar_apps
+            String name = TopBarInputs.name(entry.logo);
+            button.setContentDescription(name != null ? name : info.loadLabel(this));
+            String id = entry.inputId;
+            button.setOnClickListener(v -> openInput(id));
+            bar.addView(button, bar.indexOfChild(btnWifi));
+            topInputButtons.add(button);
+            topInputIds.add(id);
+            topInputLogos.add(entry.logo);
+        }
+        updateTopBarInputs();
+    }
+
+    /** Each console's logo, full white with a green dot while the TV reports a picture on its input, dimmed otherwise. */
+    private void updateTopBarInputs() {
+        if (topInputButtons.isEmpty()) return;
+        TvInputManager tim = (TvInputManager) getSystemService(TV_INPUT_SERVICE);
+        int size = Math.round(22 * density), dot = Math.round(8 * density);
+        for (int i = 0; i < topInputButtons.size(); i++) {
+            boolean on;
+            try {
+                on = tim != null && TopBarInputs.on(tim.getInputState(topInputIds.get(i)));
+            } catch (RuntimeException e) {
+                on = false;
+            }
+            Drawable logo = getDrawable(TopBarInputs.logoRes(topInputLogos.get(i)));
+            if (logo == null) continue;
+            logo = logo.mutate();
+            Drawable icon = logo;
+            if (on) {
+                LayerDrawable layers = new LayerDrawable(new Drawable[] {logo, new TopBarInputs.Dot(1.5f * density)});
+                layers.setLayerSize(1, dot, dot);
+                layers.setLayerGravity(1, Gravity.BOTTOM | Gravity.END);
+                icon = layers;
+            } else {
+                logo.setAlpha(TopBarInputs.STANDBY_ALPHA);
+            }
+            icon.setBounds(0, 0, size, size);
+            topInputButtons.get(i).setCompoundDrawablesRelative(icon, null, null, null);
         }
     }
 
