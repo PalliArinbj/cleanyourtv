@@ -34,5 +34,6 @@
     <string name="quit_question">Hætta í leiknum?</string>
     <string name="keep_playing">Halda áfram</string>
     <string name="quit">Hætta</string>
+    <string name="milestone">%1$d í röð!</string>
     <string name="no_questions">Engar spurningar fundust.</string>
 </resources>

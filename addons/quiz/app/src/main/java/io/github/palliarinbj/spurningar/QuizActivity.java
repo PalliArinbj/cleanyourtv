@@ -1,11 +1,15 @@
 package io.github.palliarinbj.spurningar;
 
+import android.animation.ObjectAnimator;
+import android.animation.PropertyValuesHolder;
+import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.SystemClock;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
@@ -14,6 +18,8 @@ import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.OvershootInterpolator;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -42,6 +48,15 @@ public class QuizActivity extends Activity {
     private final Handler handler = new Handler(Looper.getMainLooper());
     private final Random random = new Random();
     private FrameLayout root;
+    /** The screens go here; the effects layer sits over it. */
+    private FrameLayout stage;
+    private FxView fx;
+    private Sfx sfx;
+    /** Focus moved by the code, not the remote, makes no tick until then. */
+    private long quietUntil;
+    private ObjectAnimator pulse;
+    /** The game over fanfare plays once a game, not again on Back from the name screens. */
+    private boolean celebrated;
     private Store store;
     private List<Question> bank = new ArrayList<>();
     private float dp;
@@ -51,7 +66,7 @@ public class QuizActivity extends Activity {
     private boolean busy;
     private View gameView;
     private View quitView;
-    private TextView numberView, scoreView, subjectView, questionView;
+    private TextView numberView, scoreView, subjectView, questionView, bannerView;
     private final Tile[] answers = new Tile[Round.SLOTS];
     private final Tile[] helpers = new Tile[Game.HELPERS.length];
 
@@ -72,6 +87,16 @@ public class QuizActivity extends Activity {
         root = new FrameLayout(this);
         root.setBackground(new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,
                 new int[] {0xFF2A1F4E, 0xFF120E24}));
+        stage = new FrameLayout(this);
+        root.addView(stage, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
+        fx = new FxView(this);
+        root.addView(fx, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
+        sfx = new Sfx(this);
+        root.getViewTreeObserver().addOnGlobalFocusChangeListener((was, now) -> {
+            if (was != null && now != null && !busy && SystemClock.uptimeMillis() > quietUntil) sfx.play(Sfx.MOVE);
+        });
         setContentView(root);
         showStart();
     }
@@ -79,6 +104,7 @@ public class QuizActivity extends Activity {
     @Override
     protected void onDestroy() {
         handler.removeCallbacksAndMessages(null);
+        sfx.release();
         super.onDestroy();
     }
 
@@ -138,6 +164,8 @@ public class QuizActivity extends Activity {
     private void startGame(int level) {
         store.setLastLevel(level);
         game = new Game(new Deck(bank, level, store.seen(), random), level, random);
+        celebrated = false;
+        sfx.play(Sfx.START);
         buildGameView();
         showRound();
     }
@@ -196,7 +224,19 @@ public class QuizActivity extends Activity {
         LinearLayout.LayoutParams helpAt = margins(wrap(), 0, 18, 0, 0);
         helpAt.gravity = Gravity.CENTER_HORIZONTAL;
         column.addView(help, helpAt);
-        gameView = column;
+
+        // "5 í röð!" pops up over the question at every fifth right answer.
+        FrameLayout frame = new FrameLayout(this);
+        frame.addView(column, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
+        bannerView = text("", 64, Tile.AMBER, R.font.outfit_bold);
+        bannerView.setShadowLayer(px(18), 0, 0, 0xCC000000);
+        bannerView.setVisibility(View.INVISIBLE);
+        FrameLayout.LayoutParams bannerAt = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.CENTER_HORIZONTAL | Gravity.TOP);
+        bannerAt.topMargin = px(120);
+        frame.addView(bannerView, bannerAt);
+        gameView = frame;
     }
 
     private void showRound() {
@@ -217,10 +257,27 @@ public class QuizActivity extends Activity {
             s.setSpan(new ForegroundColorSpan(Tile.AMBER), 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
             answers[slot].setText(s);
             answers[slot].setLook(Tile.Look.NORMAL);
+            answers[slot].setScaleX(1f);   // a helper shrank it, a reveal popped it
+            answers[slot].setScaleY(1f);
         }
         refreshHelpers();
         busy = false;
+        enter();
+        quietUntil = SystemClock.uptimeMillis() + 150;
         answers[0].requestFocus();
+    }
+
+    /** The question rises into place, then the answers one after another. */
+    private void enter() {
+        View[] parts = {subjectView, questionView, answers[0], answers[1], answers[2], answers[3]};
+        for (int i = 0; i < parts.length; i++) {
+            View v = parts[i];
+            v.animate().cancel();
+            v.setAlpha(0f);
+            v.setTranslationY(px(i < 2 ? 14 : 22));
+            v.animate().alpha(1f).translationY(0).setStartDelay(i < 2 ? i * 40L : 120 + (i - 2) * 60L)
+                    .setDuration(260).setInterpolator(new DecelerateInterpolator(1.6f)).start();
+        }
     }
 
     /** A helper is dimmed once used, and while the question has too few wrong answers left for it. */
@@ -234,7 +291,18 @@ public class QuizActivity extends Activity {
 
     private void useHelper(int size) {
         if (busy || !game.canUse(size)) return;
-        for (int slot : game.useHelper(size)) answers[slot].setLook(Tile.Look.REMOVED);
+        sfx.play(Sfx.HELPER);
+        long delay = 0;
+        for (int slot : game.useHelper(size)) {
+            Tile t = answers[slot];
+            t.setLook(Tile.Look.REMOVED);   // at once, so the remote cannot reach it while it breaks away
+            t.setAlpha(1f);
+            handler.postDelayed(() -> {
+                fx.burst(t, new int[] {0xFFFFFFFF, 0xFFB8B0D8, 0xFF8E86B0}, 22, 150, true);
+                t.animate().alpha(0.18f).scaleX(0.96f).scaleY(0.96f).setDuration(220).start();
+            }, delay);
+            delay += 110;
+        }
         refreshHelpers();
         for (Tile t : answers) {
             if (t.isFocusable()) {
@@ -247,25 +315,78 @@ public class QuizActivity extends Activity {
     private void choose(int slot) {
         if (busy || game.over()) return;
         busy = true;
-        answers[slot].setLook(Tile.Look.LOCKED);
+        Tile chosen = answers[slot];
+        chosen.setLook(Tile.Look.LOCKED);
         for (Tile h : helpers) h.setLook(h.look() == Tile.Look.REMOVED ? Tile.Look.REMOVED : Tile.Look.OFF);
+        sfx.play(Sfx.LOCK);
+        pulse = ObjectAnimator.ofPropertyValuesHolder(chosen, PropertyValuesHolder.ofFloat(View.SCALE_X, 1.04f, 1.08f),
+                PropertyValuesHolder.ofFloat(View.SCALE_Y, 1.04f, 1.08f));
+        pulse.setDuration(280);
+        pulse.setRepeatMode(ValueAnimator.REVERSE);
+        pulse.setRepeatCount(ValueAnimator.INFINITE);
+        pulse.start();
         handler.postDelayed(() -> reveal(slot), LOCK_MS);
     }
 
     private void reveal(int slot) {
         int right = game.round().correctSlot();
+        Tile chosen = answers[slot];
+        if (pulse != null) pulse.cancel();
+        sfx.stopLock();
         if (game.answer(slot) == Game.Result.RIGHT) {
-            answers[slot].setLook(Tile.Look.RIGHT);
+            chosen.setLook(Tile.Look.RIGHT);
+            sfx.play(Sfx.RIGHT);
+            pop(chosen, 1.1f);
+            fx.burst(chosen, new int[] {Tile.GREEN, 0xFF8AF0A8, Tile.AMBER, 0xFFFFFFFF}, 34, 260, false);
             scoreView.setText(getString(R.string.score, game.score()));
+            pop(scoreView, 1.35f);
+            boolean milestone = game.score() % 5 == 0;
+            if (milestone) handler.postDelayed(this::milestone, 350);
             handler.postDelayed(() -> {
                 game.next();
                 showRound();
-            }, RIGHT_MS);
+            }, RIGHT_MS + (milestone ? 900 : 0));
         } else {
-            answers[slot].setLook(Tile.Look.WRONG);
+            chosen.setLook(Tile.Look.WRONG);
+            chosen.animate().scaleX(1f).scaleY(1f).setDuration(120).start();
+            sfx.play(Sfx.WRONG);
+            shake(chosen);
             answers[right].setLook(Tile.Look.RIGHT);
+            pop(answers[right], 1.06f);
             handler.postDelayed(this::showOver, WRONG_MS);
         }
+    }
+
+    /** Five more in a row: a banner, a fanfare and confetti. */
+    private void milestone() {
+        sfx.play(Sfx.MILESTONE);
+        fx.confetti(70);
+        bannerView.setText(getString(R.string.milestone, game.score()));
+        bannerView.setVisibility(View.VISIBLE);
+        bannerView.setAlpha(0f);
+        bannerView.setScaleX(0.4f);
+        bannerView.setScaleY(0.4f);
+        bannerView.animate().alpha(1f).scaleX(1f).scaleY(1f).setStartDelay(0).setDuration(380)
+                .setInterpolator(new OvershootInterpolator(2.2f)).withEndAction(() ->
+                        bannerView.animate().alpha(0f).setStartDelay(650).setDuration(300).start()).start();
+    }
+
+    /** A quick grow and settle back, with a little bounce. */
+    private void pop(View v, float by) {
+        v.animate().cancel();
+        v.setScaleX(by);
+        v.setScaleY(by);
+        v.animate().scaleX(1f).scaleY(1f).setStartDelay(0).setDuration(420)
+                .setInterpolator(new OvershootInterpolator(3f)).start();
+    }
+
+    /** A head shake: no. */
+    private void shake(View v) {
+        float d = px(14);
+        ObjectAnimator a = ObjectAnimator.ofFloat(v, View.TRANSLATION_X, 0, -d, d, -d * 0.7f, d * 0.7f,
+                -d * 0.35f, d * 0.35f, 0);
+        a.setDuration(520);
+        a.start();
     }
 
     private void showQuit() {
@@ -290,12 +411,13 @@ public class QuizActivity extends Activity {
         game.setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);
         game.setVisibility(View.INVISIBLE);
         quitView = shade;
-        root.addView(shade);
+        stage.addView(shade);
+        quietUntil = SystemClock.uptimeMillis() + 150;
         keep.requestFocus();
     }
 
     private void closeQuit() {
-        root.removeView(quitView);
+        stage.removeView(quitView);
         quitView = null;
         ViewGroup game = (ViewGroup) gameView;
         game.setVisibility(View.VISIBLE);
@@ -316,7 +438,8 @@ public class QuizActivity extends Activity {
         place = store.board(game.level).place(game.score(), game.helpersUsed(), System.currentTimeMillis());
         LinearLayout column = column();
         column.addView(text(getString(R.string.game_over), 26, 0xB3FFFFFF, R.font.outfit_medium));
-        column.addView(text(String.valueOf(game.score()), 96, Tile.AMBER, R.font.outfit_bold));
+        TextView score = text(String.valueOf(game.score()), 96, Tile.AMBER, R.font.outfit_bold);
+        column.addView(score);
         column.addView(text(getString(R.string.in_a_row), 22, Tile.WHITE, R.font.outfit_regular),
                 margins(wrap(), 0, -6, 0, 24));
         if (game.outOfQuestions()) {
@@ -344,7 +467,28 @@ public class QuizActivity extends Activity {
         }
         column.addView(row, margins(wrap(), 0, 30, 0, 0));
         swap(column);
+        quietUntil = SystemClock.uptimeMillis() + 150;
         first.requestFocus();
+        if (!celebrated) {
+            celebrated = true;
+            countUp(score, game.score());
+            if (place >= 0) {
+                handler.postDelayed(() -> {
+                    sfx.play(Sfx.FANFARE);
+                    fx.confetti(110);
+                }, 450);
+            }
+        }
+    }
+
+    /** The score counts up from 0, quickly. */
+    private void countUp(TextView view, int to) {
+        if (to <= 0) return;
+        ValueAnimator a = ValueAnimator.ofInt(0, to);
+        a.setDuration(Math.min(1200, 300 + to * 60L));
+        a.setInterpolator(new DecelerateInterpolator());
+        a.addUpdateListener(an -> view.setText(String.valueOf(an.getAnimatedValue())));
+        a.start();
     }
 
     // ---- a name for the board ----------------------------------------------------------------------------------
@@ -499,6 +643,7 @@ public class QuizActivity extends Activity {
         column.addView(play, margins(buttonSize(), 0, 20, 0, 0));
         swap(column);
         play.requestFocus();
+        if (newPlace >= 0) fx.confetti(60);
     }
 
     // ---- keys --------------------------------------------------------------------------------------------------
@@ -526,9 +671,10 @@ public class QuizActivity extends Activity {
 
     private void swap(View content) {
         handler.removeCallbacksAndMessages(null);
-        root.removeAllViews();
+        quietUntil = SystemClock.uptimeMillis() + 150;
+        stage.removeAllViews();
         if (content.getParent() != null) ((ViewGroup) content.getParent()).removeView(content);
-        root.addView(content, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+        stage.addView(content, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT));
         content.setAlpha(0f);
         content.animate().alpha(1f).setDuration(180).start();

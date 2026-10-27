@@ -53,6 +53,9 @@ final class Tile extends TextView {
     protected void onFocusChanged(boolean focused, int direction, Rect previous) {
         super.onFocusChanged(focused, direction, previous);
         refresh();
+        // Focus springs onto a tile, as on Home.
+        animate().scaleX(focused ? 1.04f : 1f).scaleY(focused ? 1.04f : 1f).setStartDelay(0).setDuration(180)
+                .setInterpolator(new android.view.animation.OvershootInterpolator(2f)).start();
     }
 
     private void refresh() {
