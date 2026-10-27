@@ -11,6 +11,7 @@
 # 10 ára og fullorðinsstigið er nú 13 ára. Engar gildrur eða hártoganir. Aldur 16 er fullorðið fólk.
 # "#?" geymir spurningu þar til hún hefur verið yfirfarin. tests/test_quiz_questions.py heldur skránni í réttu formi.
 
+
 # 7 ára
 landafraedi|7|Hver er höfuðborg Noregs?|Ósló|Stokkhólmur|Helsinki|Kaupmannahöfn|Ósló er höfuðborg Noregs og Stokkhólmur höfuðborg Svíþjóðar.
 landafraedi|7|Hvaða fjall blasir við Reykjavík handan sundanna?|Esja|Hekla|Herðubreið|Keilir|Esjan er um 914 metra há og vinsæl gönguleið.
@@ -83,6 +84,37 @@ bokmenntir|7|Hver skrifaði bækurnar um Línu Langsokk?|Astrid Lindgren|Roald D
 bokmenntir|7|Hvað heitir besti vinur Harrys Potters?|Ron Weasley|Draco Malfoy|Neville Longbottom|Albus Dumbledore|Harry, Ron og Hermione eru bestu vinir í Hogwarts-skóla.
 bokmenntir|7|Hver skrifaði ævintýrið um litlu hafmeyjuna?|H.C. Andersen|Grimmsbræður|Astrid Lindgren|Roald Dahl|H.C. Andersen var danskur og skrifaði líka Ljóta andarungann.
 bokmenntir|7|Hvað heitir kýrin í þjóðsögunni sem hjálpaði stelpu að flýja tröllin?|Búkolla|Huppa|Skjalda|Grýla|Búkolla gat talað og sagði stelpunni hvað hún ætti að gera.
+landafraedi|7|Hver er höfuðborg Danmerkur?|Kaupmannahöfn|Ósló|Stokkhólmur|Helsinki|Kaupmannahöfn var höfuðborg Íslands líka á meðan landið laut Danakonungi.
+landafraedi|7|Í hvaða heimsálfu er Egyptaland?|Afríku|Asíu|Evrópu|Ameríku|Egyptaland er í norðausturhorni Afríku, og þar rennur áin Níl.
+landafraedi|7|Hvert er stærsta land í heimi?|Rússland|Kína|Bandaríkin|Brasilía|Rússland er svo stórt að það nær yfir hluta af bæði Evrópu og Asíu.
+landafraedi|7|Í hvaða landi búa kengúrur villtar?|Ástralíu|Indlandi|Brasilíu|Kanada|Kengúrur búa villtar aðeins í Ástralíu og á eyjunum í kring.
+geimurinn|7|Hver er stærsta reikistjarnan í sólkerfinu?|Júpíter|Satúrnus|Jörðin|Neptúnus|Júpíter er svo stór að allar hinar reikistjörnurnar kæmust fyrir inni í honum.
+geimurinn|7|Hvaða stjarna er næst jörðinni?|Sólin|Pólstjarnan|Síríus|Tunglið|Sólin er stjarna, sú sem er næst okkur. Tunglið er ekki stjarna heldur fylgitungl.
+staerdfraedi|7|Hvað er 6 sinnum 8?|48|42|54|36|Sex sinnum átta eru fjörutíu og átta.
+staerdfraedi|7|Hvað eru margar mínútur í hálftíma?|30|50|15|60|Klukkutíminn hefur 60 mínútur, svo hálftíminn hefur 30.
+staerdfraedi|7|Hve margar hliðar hefur sexhyrningur?|Sex|Fimm|Átta|Sjö|Sexhyrningur hefur sex hliðar, eins og hólfin í býflugnabúi.
+staerdfraedi|7|Hvað er 1000 mínus 1?|999|990|900|9999|Þúsund mínus einn eru níu hundruð níutíu og níu.
+dyr|7|Hvað kallast karlkyns kind?|Hrútur|Tarfur|Graðhestur|Hafur|Hrútur er karlkyns kind og ær er kvenkyns.
+dyr|7|Hvaða dýr hefur lengsta hálsinn?|Gíraffi|Fíll|Úlfaldi|Strútur|Hálsinn á gíraffa getur orðið um tveir metrar, en í honum eru aðeins sjö hálsliðir, eins og í okkur.
+dyr|7|Hvað borðar risapandan helst?|Bambus|Fisk|Hunang|Ber|Risapandan borðar bambus mestallan daginn, allt að 12 klukkustundir.
+dyr|7|Hvaða dýr er kallað skip eyðimerkurinnar?|Úlfaldi|Fíll|Asni|Hestur|Úlfaldinn getur verið lengi án vatns og ber byrðar yfir eyðimerkur.
+mannslikaminn|7|Hvaða líffæri hugsar og stjórnar líkamanum?|Heilinn|Hjartað|Maginn|Lungun|Heilinn sendir boð um taugarnar til allra hluta líkamans.
+mannslikaminn|7|Hve margar barnatennur hafa börn?|20|10|32|16|Börn hafa 20 barnatennur, en fullorðnir hafa 32 tennur.
+nattura-islands|7|Hvaða eldfjall á Suðurlandi hefur gosið um 20 sinnum frá landnámi?|Hekla|Esja|Keilir|Herðubreið|Hekla er eitt virkasta eldfjall Íslands og var á miðöldum sögð inngangur að helvíti.
+nattura-islands|7|Hvaðan kemur heita vatnið sem hitar flest hús á Íslandi?|Úr jörðinni|Úr sjónum|Úr jöklunum|Frá sólinni|Heita vatnið kemur upp úr borholum á jarðhitasvæðum.
+saga-islands|7|Hvaða víkingur fann Ameríku um árið 1000?|Leifur heppni|Eiríkur rauði|Ingólfur Arnarson|Egill Skallagrímsson|Leifur heppni kom til Ameríku nærri 500 árum á undan Kólumbusi.
+saga-islands|7|Hvar var Alþingi haldið til forna?|Á Þingvöllum|Í Reykjavík|Á Akureyri|Í Vestmannaeyjum|Alþingi kom saman á Þingvöllum á hverju sumri í meira en 800 ár.
+islensk-tunga|7|Hver er fleirtalan af orðinu „mús“?|Mýs|Músar|Músir|Mýsur|Ein mús, tvær mýs.
+islensk-tunga|7|Hvert þessara orða er sagnorð?|Synda|Sundlaug|Blautur|Undir|Sagnorð segja hvað einhver gerir: synda, hlaupa, borða.
+ithrottir|7|Hvað heitir gamla íslenska fangbragðaíþróttin?|Glíma|Júdó|Karate|Box|Glíma hefur verið stunduð á Íslandi frá landnámi, og keppt er um Grettisbeltið.
+ithrottir|7|Í hvaða íþrótt er boltanum kastað í körfu?|Körfubolta|Handbolta|Blaki|Fótbolta|Karfan í körfubolta er rúmlega þrjá metra frá gólfinu.
+listir|7|Hvaða hljóðfæri hefur 88 nótur, svartar og hvítar?|Píanó|Gítar|Fiðla|Harmonikka|Á venjulegu píanói eru 52 hvítar nótur og 36 svartar.
+listir|7|Hvaða hljómsveit söng lagið „Mamma Mia“?|ABBA|Queen|Bítlarnir|Kiss|ABBA var sænsk hljómsveit sem vann Eurovision árið 1974.
+plontur|7|Úr hvaða korni er popp gert?|Maís|Hveiti|Hrísgrjónum|Höfrum|Poppmaís springur af því að vatnið í korninu verður að gufu.
+taekni|7|Hvað kallast tækið sem breytir sólarljósi í rafmagn?|Sólarsella|Vindmylla|Rafhlaða|Ljósapera|Sólarsellur eru oft á þökum húsa og á gervitunglum.
+edlisfraedi|7|Hvaða málm dregur segull að sér?|Járn|Gull|Ál|Kopar|Seglar draga að sér járn, en ekki gull, ál eða kopar.
+efnafraedi|7|Hvað kallast það þegar járn verður brúnt og skemmist í vatni og lofti?|Ryð|Mygla|Sót|Kalk|Járn ryðgar þegar það kemst í snertingu við vatn og súrefni.
+bokmenntir|7|Í hvaða ævintýri blæs úlfurinn húsin niður?|Grísunum þremur|Rauðhettu|Geitunum þremur|Öskubusku|Aðeins múrsteinshúsið stóðst blástur úlfsins.
 
 # 10 ára
 landafraedi|10|Hver er höfuðborg Þýskalands?|Berlín|München|Hamborg|Vín|Berlín er höfuðborg Þýskalands, en Vín er höfuðborg Austurríkis.
@@ -154,6 +186,46 @@ taekni|10|Hver stýrir bæði Tesla og geimfyrirtækinu SpaceX?|Elon Musk|Jeff B
 nattura-islands|10|Í hvaða landshluta er Mývatn?|Á Norðurlandi|Á Suðurlandi|Á Vestfjörðum|Á Austurlandi|Mývatn er þekkt fyrir fuglalíf, gervigíga og mýið sem það heitir eftir.
 nattura-islands|10|Hvaða foss er talinn sá aflmesti í Evrópu?|Dettifoss|Gullfoss|Goðafoss|Skógafoss|Dettifoss er í Jökulsá á Fjöllum og er um 44 metra hár.
 nattura-islands|10|Hvaða íslenska eyja liggur á heimskautsbaugnum?|Grímsey|Hrísey|Flatey|Viðey|Grímsey er nyrsta byggð Íslands, um 40 km norður af landinu.
+landafraedi|10|Hvaða borg er kölluð Stóra eplið?|New York|Los Angeles|Chicago|Boston|New York hefur verið kölluð The Big Apple síðan á þriðja áratug 20. aldar.
+mannkynssaga|10|Hver var leiðtogi Þýskalands í seinni heimsstyrjöldinni?|Adolf Hitler|Otto von Bismarck|Benito Mussolini|Jósef Stalín|Mussolini var leiðtogi Ítalíu og Stalín Sovétríkjanna á sama tíma.
+mannkynssaga|10|Hver var fyrsti svarti forseti Bandaríkjanna?|Barack Obama|Martin Luther King|Colin Powell|Nelson Mandela|Barack Obama var forseti Bandaríkjanna frá 2009 til 2017.
+efnafraedi|10|Hvaða gas er sett í blöðrur svo þær svífi?|Helíum|Súrefni|Koltvíoxíð|Nitur|Helíum er léttara en loft og brennur ekki, ólíkt vetni.
+dyr|10|Hvaða dýr er í merki náttúruverndarsamtakanna WWF?|Risapanda|Ísbjörn|Tígrisdýr|Górilla|Risapandan hefur verið merki WWF frá stofnun samtakanna árið 1961.
+ithrottir|10|Hvaða Íslendingur lék Fjallið í Game of Thrones?|Hafþór Júlíus Björnsson|Jón Páll Sigmarsson|Magnús Ver Magnússon|Gunnar Nelson|Hafþór Júlíus Björnsson vann keppnina um sterkasta mann heims árið 2018.
+ithrottir|10|Hvað eru margir leikmenn hvors liðs inni á vellinum í körfubolta?|Fimm|Sex|Sjö|Ellefu|Í körfubolta eru fimm leikmenn inni á vellinum í hvoru liði.
+landafraedi|10|Hver er höfuðborg Spánar?|Madríd|Barcelona|Lissabon|Sevilla|Madríd er höfuðborg Spánar, en Lissabon höfuðborg Portúgals.
+landafraedi|10|Hver er lengsti fjallgarður heims ofan sjávar?|Andesfjöll|Himalajafjöll|Alpafjöll|Klettafjöll|Andesfjöllin teygja sig um 7.000 km eftir vesturströnd Suður-Ameríku.
+landafraedi|10|Í hvaða landi er Taj Mahal?|Indlandi|Egyptalandi|Tyrklandi|Íran|Taj Mahal er grafhýsi sem keisari lét reisa yfir konu sína á 17. öld.
+landafraedi|10|Hvaða á rennur um London?|Thames|Signa|Dóná|Rín|Signa rennur um París, en Thames um London.
+geimurinn|10|Hvað kallast fyrirbærið í geimnum sem gleypir allt, jafnvel ljós?|Svarthol|Stjörnuþoka|Sólblettur|Halastjarna|Í miðju Vetrarbrautarinnar er risastórt svarthol.
+geimurinn|10|Hvaða reikistjarna er lengst frá sólu?|Neptúnus|Úranus|Plútó|Satúrnus|Plútó er lengra í burtu, en hann telst ekki lengur til reikistjarnanna.
+staerdfraedi|10|Hvað er 13 sinnum 4?|52|48|56|44|Þrettán sinnum fjórir eru fimmtíu og tveir.
+staerdfraedi|10|Hvert er ummál fernings sem er 6 cm á hvern kant?|24 cm|36 cm|12 cm|30 cm|Ummálið er allar fjórar hliðarnar saman: 6 + 6 + 6 + 6.
+staerdfraedi|10|Hvað þýðir rómverska talan X?|10|5|50|100|Í rómverskum tölum er I einn, V fimm, X tíu og L fimmtíu.
+dyr|10|Hvert er stærsta spendýr í heimi?|Steypireyður|Afríkufíll|Hvalháfur|Búrhvalur|Steypireyðurin getur orðið um 30 metrar. Hvalháfurinn er fiskur.
+dyr|10|Hvað kallast það þegar fuglar fljúga til heitari landa á haustin?|Farflug|Varp|Fjaðraskipti|Dvali|Farfuglar eins og lóa og kría fljúga suður á haustin og koma aftur á vorin.
+mannslikaminn|10|Hvaða líffæri sía blóðið og búa til þvag?|Nýrun|Lifrin|Lungun|Maginn|Nýrun eru tvö og sía allt blóð líkamans mörgum sinnum á dag.
+mannslikaminn|10|Hve oft slær hjartað um það bil á mínútu í hvíld?|60 til 100 sinnum|10 til 20 sinnum|200 til 300 sinnum|Einu sinni|Hjartað slær hraðar þegar við hreyfum okkur eða erum spennt.
+nattura-islands|10|Hvaða fugl er stundum kallaður prófastur?|Lundi|Hrafn|Kría|Æður|Lundinn þykir svartklæddur og virðulegur eins og prestur, og þaðan kemur nafnið.
+nattura-islands|10|Hvað kallast bráðið berg undir yfirborði jarðar?|Kvika|Hraun|Gjóska|Vikur|Kvikan kallast hraun þegar hún er komin upp á yfirborðið.
+nattura-islands|10|Hver er elsti þjóðgarður Íslands?|Þingvellir|Vatnajökulsþjóðgarður|Snæfellsjökulsþjóðgarður|Jökulsárgljúfur|Þingvellir urðu þjóðgarður árið 1930, þegar Alþingi var þúsund ára.
+saga-islands|10|Hver var forseti Íslands á undan Höllu Tómasdóttur?|Guðni Th. Jóhannesson|Ólafur Ragnar Grímsson|Vigdís Finnbogadóttir|Davíð Oddsson|Guðni Th. Jóhannesson var forseti frá 2016 til 2024.
+saga-islands|10|Hvað heitir bókin sem segir frá landnámsmönnum Íslands?|Landnámabók|Njáls saga|Snorra-Edda|Heimskringla|Landnámabók segir frá um 400 landnámsmönnum og hvar þeir námu land.
+saga-islands|10|Hvaða land réð yfir Íslandi í margar aldir fyrir sjálfstæðið?|Danmörk|Svíþjóð|England|Þýskaland|Ísland laut Danakonungi frá 1380 og varð fullvalda árið 1918.
+mannkynssaga|10|Hver stýrði fyrsta leiðangrinum sem sigldi í kringum jörðina?|Ferdinand Magellan|Kristófer Kólumbus|James Cook|Vasco da Gama|Magellan lést á leiðinni, en skip úr leiðangri hans komst heim árið 1522.
+mannkynssaga|10|Í hvaða landi var Kleópatra drottning?|Egyptalandi|Grikklandi|Persíu|Indlandi|Kleópatra var síðasti faraó Egyptalands.
+islensk-tunga|10|Hvert er nafnorðið í setningunni „Hundurinn geltir hátt“?|Hundurinn|Geltir|Hátt|Ekkert þeirra|Hundurinn er nafnorð, geltir er sagnorð og hátt er atviksorð.
+islensk-tunga|10|Í hvaða falli er orð á eftir „um“, eins og í „um hest“?|Þolfalli|Nefnifalli|Þágufalli|Eignarfalli|Hér er hestur, um hest, frá hesti, til hests.
+ithrottir|10|Hve margir hringir eru í merki Ólympíuleikanna?|Fimm|Fjórir|Sex|Sjö|Hringirnir fimm tákna heimsálfurnar sem taka þátt.
+ithrottir|10|Í hvaða íþrótt keppir Gunnar Nelson?|Blönduðum bardagalistum|Hnefaleikum|Glímu|Júdó|Gunnar Nelson hefur keppt í UFC, stærstu keppni heims í blönduðum bardagalistum.
+listir|10|Á hvaða hljóðfæri spilaði Jimi Hendrix?|Gítar|Trommur|Píanó|Saxófón|Jimi Hendrix er af mörgum talinn besti rafgítarleikari sögunnar.
+listir|10|Hvað hét söngvari hljómsveitarinnar Queen?|Freddie Mercury|Mick Jagger|Elton John|David Bowie|Freddie Mercury samdi meðal annars „Bohemian Rhapsody“.
+plontur|10|Hvað kallast tré sem fella laufin á haustin?|Lauftré|Barrtré|Pálmatré|Sígræn tré|Birki og reynir eru lauftré, en greni og fura barrtré.
+taekni|10|Hver fann upp prentvélina um árið 1450?|Johannes Gutenberg|Leonardo da Vinci|Thomas Edison|Galileo Galilei|Með prentvél Gutenbergs varð hægt að prenta bækur í stórum upplögum.
+edlisfraedi|10|Hvaða litur verður til þegar allir litir ljóssins blandast saman?|Hvítur|Svartur|Brúnn|Grár|Sólarljósið er hvítt en í því eru allir litir regnbogans.
+efnafraedi|10|Hvað kallast það þegar vatn breytist í gufu?|Uppgufun|Þétting|Bráðnun|Storknun|Þegar gufa verður aftur að vatni kallast það þétting.
+bokmenntir|10|Hvað heitir skólinn sem Harry Potter gengur í?|Hogwarts|Narnía|Durmstrang|Beauxbatons|Hogwarts er galdraskóli í skoskum kastala.
+landafraedi|10|Hver er höfuðborg Bandaríkjanna?|Washington|New York|Los Angeles|Chicago|Washington heitir eftir George Washington, fyrsta forseta Bandaríkjanna.
 
 # 13 ára
 landafraedi|13|Í hvaða landi eru rústirnar Machu Picchu?|Perú|Mexíkó|Chile|Bólivíu|Machu Picchu er borg Inkanna, hátt uppi í Andesfjöllum í Perú.
@@ -179,28 +251,22 @@ islensk-tunga|13|Hvaða stafur er ekki í íslenska stafrófinu?|W|Ð|Þ|Ý|Í �
 nattura-islands|13|Hver er hæsti tindur Íslands?|Hvannadalshnúkur|Herðubreið|Snæfell|Hekla|Hvannadalshnúkur í Öræfajökli er um 2.110 metra hár.
 plontur|13|Hvaða tré myndaði skóga Íslands við landnám?|Birki|Greni|Fura|Eik|Við landnám er talið að birkiskógur hafi þakið um fjórðung landsins.
 dyr|13|Hvert þessara spendýra verpir eggjum?|Breiðnefur|Kengúra|Leðurblaka|Höfrungur|Breiðnefurinn í Ástralíu er eitt fárra spendýra sem verpa eggjum.
-landafraedi|13|Hvaða borg er kölluð Stóra eplið?|New York|Los Angeles|Chicago|Boston|New York hefur verið kölluð The Big Apple síðan á þriðja áratug 20. aldar.
 landafraedi|13|Í hvaða landi er borgin Prag?|Tékklandi|Póllandi|Ungverjalandi|Austurríki|Prag er höfuðborg Tékklands og stendur við ána Moldá.
 landafraedi|13|Hvaða haf liggur á milli Evrópu og Afríku?|Miðjarðarhaf|Rauðahaf|Svartahaf|Kaspíahaf|Við Gíbraltarsund eru aðeins um 14 km á milli Evrópu og Afríku.
 saga-islands|13|Hver var forseti Íslands frá 1996 til 2016?|Ólafur Ragnar Grímsson|Guðni Th. Jóhannesson|Vigdís Finnbogadóttir|Davíð Oddsson|Ólafur Ragnar Grímsson sat lengst allra forseta Íslands, í 20 ár.
 saga-islands|13|Hvaða ár varð bankahrunið á Íslandi?|2008|2001|2011|1998|Í október 2008 féllu stóru bankarnir þrír á nokkrum dögum.
 saga-islands|13|Undir hvaða konung gengu Íslendingar með Gamla sáttmála 1262?|Noregskonung|Danakonung|Svíakonung|Englandskonung|Með Gamla sáttmála lauk þjóðveldisöld og Ísland komst undir Noregskonung.
-mannkynssaga|13|Hver var leiðtogi Þýskalands í seinni heimsstyrjöldinni?|Adolf Hitler|Otto von Bismarck|Benito Mussolini|Jósef Stalín|Mussolini var leiðtogi Ítalíu og Stalín Sovétríkjanna á sama tíma.
 mannkynssaga|13|Hvaða ár hófst fyrri heimsstyrjöldin?|1914|1918|1905|1939|Fyrri heimsstyrjöldin hófst eftir morðið á Frans Ferdínand erkihertoga í Sarajevó.
-mannkynssaga|13|Hver var fyrsti svarti forseti Bandaríkjanna?|Barack Obama|Martin Luther King|Colin Powell|Nelson Mandela|Barack Obama var forseti Bandaríkjanna frá 2009 til 2017.
 mannkynssaga|13|Hvaða ár stigu menn fyrst á tunglið?|1969|1959|1979|1989|Apollo 11 lenti á tunglinu 20. júlí 1969.
 geimurinn|13|Hvað kallast það þegar jörðin skyggir á tunglið?|Tunglmyrkvi|Sólmyrkvi|Sólstöður|Jafndægur|Í tunglmyrkva verður tunglið oft rauðleitt.
 geimurinn|13|Hvaða geimsjónauka var skotið á loft árið 1990?|Hubble|James Webb|Kepler|Voyager|Hubble-sjónaukinn hefur tekið myndir af stjörnuþokum í milljarða ljósára fjarlægð.
 efnafraedi|13|Hver er efnaformúla koltvíoxíðs?|CO₂|CO|C₂O|O₂C|Í koltvíoxíði eru eitt kolefnisatóm og tvö súrefnisatóm.
 efnafraedi|13|Hvaða pH-gildi hefur hreint vatn?|7|0|1|14|Hreint vatn er hlutlaust með pH 7; lægra er súrt og hærra basískt.
-efnafraedi|13|Hvaða gas er sett í blöðrur svo þær svífi?|Helíum|Súrefni|Koltvíoxíð|Nitur|Helíum er léttara en loft og brennur ekki, ólíkt vetni.
 edlisfraedi|13|Hvað er mælt á Richter-kvarða?|Styrkur jarðskjálfta|Vindhraði|Hiti|Hljóðstyrkur|Hvert heilt skref á kvarðanum þýðir um þrjátíu sinnum meiri orku.
 edlisfraedi|13|Í hvaða einingu er rafspenna mæld?|Voltum|Amperum|Vöttum|Ómum|Venjuleg innstunga á Íslandi er 230 volt.
 mannslikaminn|13|Hvað eru mörg bein í líkama fullorðins manns?|206|106|306|56|Ungbörn fæðast með um 300 bein, en mörg þeirra gróa saman með aldrinum.
 mannslikaminn|13|Hvaða líffæri hreinsar eiturefni úr blóðinu og býr til gall?|Lifrin|Nýrun|Miltað|Brisið|Lifrin er stærsta innra líffærið og getur vaxið aftur að hluta.
 mannslikaminn|13|Hvaða sjúkdóm veldur skortur á C-vítamíni?|Skyrbjúg|Beinkröm|Blóðleysi|Sykursýki|Sjómenn fengu skyrbjúg á löngum siglingum áður en þeir tóku sítrusávexti með sér.
-dyr|13|Hvaða dýr er í merki náttúruverndarsamtakanna WWF?|Risapanda|Ísbjörn|Tígrisdýr|Górilla|Risapandan hefur verið merki WWF frá stofnun samtakanna árið 1961.
-dyr|13|Hvaða flokki dýra tilheyra hvalir?|Spendýrum|Fiskum|Skriðdýrum|Froskdýrum|Hvalir anda með lungum, eru með heitt blóð og gefa afkvæmum sínum mjólk.
 bokmenntir|13|Hver skrifaði skáldsöguna 1984?|George Orwell|Aldous Huxley|Ernest Hemingway|Franz Kafka|Í 1984 fylgist Stóri bróðir með öllum.
 bokmenntir|13|Hvaða höfundur skrifaði bækurnar um Erlend lögreglumann?|Arnaldur Indriðason|Yrsa Sigurðardóttir|Ragnar Jónasson|Stefán Máni|Mýrin eftir Arnald Indriðason var kvikmynduð árið 2006.
 bokmenntir|13|Hver orti Passíusálmana?|Hallgrímur Pétursson|Jónas Hallgrímsson|Matthías Jochumsson|Bólu-Hjálmar|Hallgrímskirkja í Reykjavík heitir eftir Hallgrími Péturssyni.
@@ -208,8 +274,6 @@ listir|13|Hver orti þjóðsönginn Lofsöng?|Matthías Jochumsson|Jónas Hallgr
 listir|13|Hvaða hljómsveit gerði lagið „Stairway to Heaven“?|Led Zeppelin|Deep Purple|Pink Floyd|Black Sabbath|„Stairway to Heaven“ kom út árið 1971 á fjórðu plötu Led Zeppelin.
 listir|13|Hvaða íslenska hljómsveit sló í gegn með laginu „Little Talks“?|Of Monsters and Men|Sigur Rós|Kaleo|Retro Stefson|Of Monsters and Men vann Músíktilraunir árið 2010.
 listir|13|Hver málaði loftið í Sixtínsku kapellunni?|Michelangelo|Rafael|Leonardo da Vinci|Caravaggio|Michelangelo var um fjögur ár að mála loftið, oftast liggjandi á vinnupöllum.
-ithrottir|13|Hvaða Íslendingur lék Fjallið í Game of Thrones?|Hafþór Júlíus Björnsson|Jón Páll Sigmarsson|Magnús Ver Magnússon|Gunnar Nelson|Hafþór Júlíus Björnsson vann keppnina um sterkasta mann heims árið 2018.
-ithrottir|13|Hvað eru margir leikmenn hvors liðs inni á vellinum í körfubolta?|Fimm|Sex|Sjö|Ellefu|Í körfubolta eru fimm leikmenn inni á vellinum í hvoru liði.
 ithrottir|13|Hvaða land hefur oftast orðið heimsmeistari í fótbolta?|Brasilía|Þýskaland|Ítalía|Argentína|Brasilía hefur orðið heimsmeistari fimm sinnum.
 staerdfraedi|13|Hvað er 7 sinnum 13?|91|81|87|97|Sjö sinnum tíu eru 70 og sjö sinnum þrír 21, samtals 91.
 staerdfraedi|13|Hvað eru hornin í ferhyrningi samtals margar gráður?|360|180|270|540|Ferhyrningi má skipta í tvo þríhyrninga, og 2 sinnum 180 eru 360.
@@ -222,6 +286,53 @@ islensk-tunga|13|Hvað merkir að vera „með böggum hildar“?|Að vera áhyg
 nattura-islands|13|Hvar gaus árið 2021 og dró að sér tugþúsundir gesta?|Í Fagradalsfjalli|Í Heklu|Í Eldfelli|Í Kötlu|Gosið í Fagradalsfjalli á Reykjanesskaga hófst í mars 2021.
 nattura-islands|13|Hvaða hryggur, sem skilur að tvo jarðskorpufleka, liggur um Ísland?|Mið-Atlantshafshryggurinn|Kyrrahafshryggurinn|Alpafjallgarðurinn|Úralfjöll|Ísland stækkar um tæpa tvo sentímetra á ári þar sem flekana rekur í sundur.
 plontur|13|Hvaða blóm var valið þjóðarblóm Íslands árið 2004?|Holtasóley|Fífill|Gleym-mér-ei|Blágresi|Holtasóley var valin þjóðarblóm Íslands í kosningu árið 2004.
+landafraedi|13|Hver er höfuðborg Portúgals?|Lissabon|Madríd|Portó|Barcelona|Lissabon stendur við ósa árinnar Tejo, við Atlantshaf.
+landafraedi|13|Hvað heitir vatnið sem er svo salt að fólk flýtur í því?|Dauðahafið|Kaspíahaf|Svartahaf|Rauðahaf|Dauðahafið er um tíu sinnum saltara en venjulegur sjór.
+landafraedi|13|Í hvaða landi er fjallið Kilimanjaro?|Tansaníu|Kenía|Suður-Afríku|Egyptalandi|Kilimanjaro er hæsta fjall Afríku, um 5.900 metra hátt.
+geimurinn|13|Hvað heitir geimstöðin sem mörg lönd reka saman á braut um jörðu?|Alþjóðlega geimstöðin|Mír|Skylab|Apollo|Alþjóðlega geimstöðin fer hring um jörðina á um 90 mínútum.
+geimurinn|13|Hvað er ljósár?|Vegalengdin sem ljós fer á einu ári|Tíminn sem stjarna lifir|Ár þegar sólin skín mest|Birta sólarinnar|Eitt ljósár er um 9.500 milljarðar kílómetra.
+staerdfraedi|13|Hvað er ummál hrings sem er 10 cm í þvermál, um það bil?|31,4 cm|10 cm|100 cm|20 cm|Ummál hrings er þvermálið sinnum pí, um 3,14.
+staerdfraedi|13|Hvert er meðaltal talnanna 4, 8 og 12?|8|12|24|6|Meðaltalið er summan deilt með fjöldanum: 24 deilt með 3.
+staerdfraedi|13|Hvað eru þrír áttundu sem tugabrot?|0,375|0,38|0,3|0,83|Einn áttundi er 0,125, svo þrír áttundu eru 0,375.
+efnafraedi|13|Hvert er efnatákn silfurs?|Ag|Si|Sl|Au|Ag kemur af latneska orðinu argentum. Si er kísill og Au gull.
+efnafraedi|13|Hvað myndast þegar vetni brennur með súrefni?|Vatn|Salt|Sót|Helíum|Vetni og súrefni mynda vatn, H₂O, og þess vegna er vetni hreint eldsneyti.
+edlisfraedi|13|Í hvaða einingu er kraftur mældur?|Njútonum|Júlum|Vöttum|Kílóum|Einingin heitir eftir Isaac Newton.
+edlisfraedi|13|Hvað kallast það þegar ljós breytir um stefnu á leið úr lofti í vatn?|Ljósbrot|Endurkast|Bergmál|Myrkvi|Vegna ljósbrots sýnist strá í vatnsglasi vera brotið.
+mannslikaminn|13|Hvað kallast fínustu æðar líkamans?|Háræðar|Slagæðar|Bláæðar|Ósæðar|Í háræðunum fer súrefni úr blóðinu út í frumurnar.
+mannslikaminn|13|Hver uppgötvaði pensilín árið 1928?|Alexander Fleming|Louis Pasteur|Marie Curie|Robert Koch|Fleming tók eftir því að mygla drap bakteríur í skál sem hann hafði gleymt.
+dyr|13|Hvaða fugl verpir stærstu eggjunum?|Strútur|Örn|Mörgæs|Svanur|Strútsegg getur vegið um eitt og hálft kíló.
+dyr|13|Hver er stærstur tannhvala?|Búrhvalur|Háhyrningur|Hnúfubakur|Hrefna|Búrhvalurinn getur kafað niður á meira en kílómetra dýpi.
+saga-islands|13|Hver orti kvæðið Ísland, sem hefst á „Ísland! farsælda frón“?|Jónas Hallgrímsson|Matthías Jochumsson|Hannes Hafstein|Einar Benediktsson|Jónas Hallgrímsson orti kvæðið árið 1835, og það birtist í Fjölni.
+saga-islands|13|Hvaða ár gaus Eyjafjallajökull og stöðvaði flug um Evrópu?|2010|2004|2014|2021|Askan úr Eyjafjallajökli lokaði flugvöllum víða um Evrópu í nærri viku.
+saga-islands|13|Hvar var Snorri Sturluson veginn árið 1241?|Í Reykholti|Á Þingvöllum|Í Skálholti|Á Hólum|Snorri var veginn í kjallara sínum í Reykholti, á tímum Sturlunga.
+mannkynssaga|13|Hver komst fyrstur manna á suðurpólinn?|Roald Amundsen|Robert Scott|Ernest Shackleton|Fridtjof Nansen|Norðmaðurinn Amundsen kom á suðurpólinn í desember 1911, mánuði á undan Scott.
+mannkynssaga|13|Hvaða ár var sjálfstæðisyfirlýsing Bandaríkjanna undirrituð?|1776|1789|1812|1865|Bandaríkjamenn halda upp á sjálfstæðisdaginn 4. júlí.
+islensk-tunga|13|Hvað merkir að vera „á báðum áttum“?|Að vera óákveðinn|Að vera á ferðalagi|Að vera mjög glaður|Að vera rammvilltur|Sá sem er á báðum áttum getur ekki ákveðið sig.
+islensk-tunga|13|Hvað kallast orð eins og „ég, þú og hann“?|Fornöfn|Nafnorð|Sagnorð|Atviksorð|Fornöfn standa í stað nafnorða, svo ekki þarf að endurtaka nöfn.
+ithrottir|13|Hvaða land vann EM karla í fótbolta 2016, þegar Ísland komst í 8-liða úrslit?|Portúgal|Frakkland|Þýskaland|Spánn|Portúgal vann Frakkland 1–0 í úrslitaleiknum í París.
+listir|13|Hver samdi óperuna Töfraflautuna?|Wolfgang Amadeus Mozart|Ludwig van Beethoven|Johann Sebastian Bach|Giuseppe Verdi|Mozart samdi Töfraflautuna árið 1791, sama ár og hann lést.
+listir|13|Hvaða hljómsveit gaf út plötuna „The Dark Side of the Moon“?|Pink Floyd|Led Zeppelin|The Doors|Deep Purple|Platan kom út árið 1973 og var meira en 900 vikur á bandaríska vinsældalistanum.
+plontur|13|Hvað kallast plöntur sem geyma vatn í þykkum blöðum eða stönglum?|Þykkblöðungar|Burknar|Mosar|Fléttur|Kaktusar og aloe vera eru þykkblöðungar sem lifa af langa þurrka.
+taekni|13|Hver stofnaði Amazon?|Jeff Bezos|Bill Gates|Elon Musk|Larry Page|Amazon byrjaði sem bókabúð á netinu árið 1994.
+nattura-islands|13|Í hvaða dal eru goshverirnir Geysir og Strokkur?|Haukadal|Hveragerði|Námaskarði|Krýsuvík|Strokkur gýs á fárra mínútna fresti en Geysir sjaldan.
+bokmenntir|13|Hver skrifaði söguna um ferðina að miðju jarðar niður um Snæfellsjökul?|Jules Verne|H.G. Wells|Halldór Laxness|J.R.R. Tolkien|Leyndardómar Snæfellsjökuls eftir Jules Verne kom út árið 1864.
+landafraedi|13|Hvert er stærsta land Suður-Ameríku?|Brasilía|Argentína|Perú|Kólumbía|Brasilía þekur nær helming Suður-Ameríku, og þar er mestur hluti Amasónfrumskógarins.
+landafraedi|13|Hver er höfuðborg Japans?|Tókýó|Kýótó|Ósaka|Peking|Kýótó var höfuðborg Japans í meira en þúsund ár, áður en Tókýó tók við.
+landafraedi|13|Í hvaða firði stendur Akureyri?|Eyjafirði|Skagafirði|Skjálfanda|Hrútafirði|Eyjafjörður er einn lengsti fjörður landsins, um 60 km.
+geimurinn|13|Á hvaða reikistjörnu er Stóri rauði bletturinn?|Júpíter|Mars|Satúrnusi|Neptúnusi|Stóri rauði bletturinn er stormur sem er stærri en jörðin og hefur geisað í aldir.
+edlisfraedi|13|Hvað kallast orkan sem hlutur á hreyfingu býr yfir?|Hreyfiorka|Stöðuorka|Varmaorka|Kjarnorka|Því hraðar sem hlutur fer, því meiri hreyfiorku hefur hann.
+efnafraedi|13|Hvað kallast efni sem hafa pH-gildi undir 7?|Sýrur|Basar|Sölt|Málmar|Sítrónusafi og edik eru sýrur, en sápa og matarsódi basísk.
+staerdfraedi|13|Hvað er 2 í fimmta veldi?|32|10|25|64|Tveir í fimmta veldi eru 2 · 2 · 2 · 2 · 2 = 32.
+mannslikaminn|13|Hvert er stærsta innra líffæri líkamans?|Lifrin|Lungun|Heilinn|Maginn|Lifrin vegur um eitt og hálft kíló hjá fullorðnum.
+dyr|13|Hvert er stærst kattardýra?|Tígrisdýrið|Ljónið|Jagúarinn|Hlébarðinn|Síberíutígrisdýr geta vegið yfir 300 kíló.
+saga-islands|13|Hvað kallast tímabilið á 13. öld þegar höfðingjaættir börðust um völd á Íslandi?|Sturlungaöld|Þjóðveldisöld|Landnámsöld|Siðaskiptaöld|Sturlungaöld er kennd við Sturlunga, ætt Snorra Sturlusonar.
+mannkynssaga|13|Hver var Nelson Mandela?|Forseti Suður-Afríku|Konungur Kenía|Hershöfðingi í Egyptalandi|Rithöfundur frá Nígeríu|Mandela sat 27 ár í fangelsi og varð svo fyrsti svarti forseti Suður-Afríku árið 1994.
+islensk-tunga|13|Hvert er andheiti orðsins „hugrakkur“?|Huglaus|Hraustur|Djarfur|Áræðinn|Andheiti merkja hið gagnstæða, eins og heitt og kalt.
+ithrottir|13|Hvaða íþrótt er Wimbledon-mótið í?|Tennis|Golfi|Krikket|Rúgbí|Á Wimbledon er keppt á grasi og leikmenn klæðast hvítu.
+listir|13|Hver söng lagið „Imagine“?|John Lennon|Paul McCartney|Elton John|Bob Dylan|John Lennon gaf „Imagine“ út árið 1971, eftir að Bítlarnir hættu.
+taekni|13|Hvað heitir stýrikerfið á Mac-tölvum frá Apple?|macOS|Windows|Android|Linux|Windows er frá Microsoft og Android frá Google.
+plontur|13|Úr hverju er súkkulaði búið til?|Kakóbaunum|Kaffibaunum|Hnetum|Sykurrófum|Kakóbaunir vaxa í aldinum kakótrésins í hitabeltinu.
+bokmenntir|13|Hver skrifaði Gulleyjuna?|Robert Louis Stevenson|Mark Twain|Jules Verne|Charles Dickens|Gulleyjan kom út árið 1883 og fjallar um sjóræningja og falinn fjársjóð.
 
 # 16 ára (fullorðið fólk)
 saga-islands|16|Hvaða ár var Alþingi endurreist í Reykjavík?|1845|1874|1904|1918|Alþingi var endurreist sem ráðgefandi þing í Reykjavík árið 1845.
@@ -292,3 +403,43 @@ nattura-islands|16|Hvaða jökull liggur yfir eldstöðinni Kötlu?|Mýrdalsjök
 nattura-islands|16|Hvað segir þjóðsagan að Ásbyrgi sé?|Hófspor Sleipnis|Fótspor trölls|Gröf Ingólfs Arnarsonar|Bústaður álfadrottningar|Samkvæmt þjóðsögunni steig Sleipnir, hestur Óðins, þar niður fæti.
 plontur|16|Úr hvaða plöntu er tekíla búið til?|Agave|Kaktusi|Maís|Sykurreyr|Tekíla er bruggað úr bláu agave í Mexíkó.
 plontur|16|Hvaða trjátegund verður elst?|Broddfura|Eik|Rauðviður|Ólífutré|Sumar broddfurur í Kaliforníu eru taldar nær 5.000 ára gamlar.
+saga-islands|16|Hvaða ár fékk Reykjavík kaupstaðarréttindi?|1786|1874|1904|1944|Reykjavík fékk kaupstaðarréttindi 18. ágúst 1786, og afmæli borgarinnar er haldið þann dag.
+saga-islands|16|Hver var fyrsti forseti lýðveldisins Íslands?|Sveinn Björnsson|Ásgeir Ásgeirsson|Jón Sigurðsson|Hannes Hafstein|Sveinn Björnsson var kjörinn forseti á Þingvöllum 17. júní 1944.
+saga-islands|16|Hvaða ár var Tyrkjaránið?|1627|1550|1783|1703|Í Tyrkjaráninu voru um 400 Íslendingar teknir og seldir í þrældóm í Norður-Afríku.
+saga-islands|16|Hvaða ár hófust Skaftáreldar og Móðuharðindin?|1783|1918|1627|1874|Í Móðuharðindunum eftir Skaftárelda dó um fimmtungur landsmanna.
+mannkynssaga|16|Hver var fyrsti kanslari sameinaðs Þýskalands árið 1871?|Otto von Bismarck|Konrad Adenauer|Vilhjálmur II|Helmut Kohl|Bismarck var kallaður járnkanslarinn.
+mannkynssaga|16|Hvaða ár féll Konstantínópel í hendur Tyrkja?|1453|1066|1517|1683|Með falli Konstantínópel, Miklagarðs, lauk Austrómverska ríkinu.
+mannkynssaga|16|Hvaða orrusta árið 1066 færði Normönnum England?|Orrustan við Hastings|Orrustan við Waterloo|Orrustan við Stiklastaði|Orrustan við Agincourt|Vilhjálmur bastarður varð konungur Englands eftir sigurinn við Hastings.
+mannkynssaga|16|Hver var síðasti keisari Rússlands?|Nikulás II|Pétur mikli|Alexander III|Ívan grimmi|Nikulás II og fjölskylda hans voru tekin af lífi árið 1918, eftir rússnesku byltinguna.
+landafraedi|16|Hver er höfuðborg Nýja-Sjálands?|Wellington|Auckland|Christchurch|Sydney|Auckland er stærsta borgin, en Wellington höfuðborgin.
+landafraedi|16|Hvert er lengsta fljót Evrópu?|Volga|Dóná|Rín|Signa|Volga í Rússlandi er um 3.500 km löng og rennur í Kaspíahaf.
+landafraedi|16|Hvaða land nær yfir flest tímabelti?|Frakkland|Rússland|Bandaríkin|Kína|Með landsvæðum sínum víða um heim nær Frakkland yfir 12 tímabelti, Rússland 11.
+landafraedi|16|Hver er höfuðborg Sviss?|Bern|Genf|Zürich|Basel|Zürich er stærsta borg Sviss, en stjórnin situr í Bern.
+geimurinn|16|Hvaða reikistjarna snýst nánast á hliðinni?|Úranus|Neptúnus|Satúrnus|Mars|Möndull Úranusar hallar um 98 gráður, líklega eftir árekstur fyrir löngu.
+geimurinn|16|Hvaða stjarna er næst sólinni?|Proxima Centauri|Síríus|Betelgás|Pólstjarnan|Proxima Centauri er um 4,2 ljósár frá okkur.
+edlisfraedi|16|Hver var fyrsta konan til að hljóta Nóbelsverðlaun?|Marie Curie|Lise Meitner|Rosalind Franklin|Ada Lovelace|Marie Curie hlaut Nóbelsverðlaun bæði í eðlisfræði og efnafræði.
+edlisfraedi|16|Í hvaða einingu er rafviðnám mælt?|Ómum|Voltum|Amperum|Vöttum|Einingin óm heitir eftir þýska eðlisfræðingnum Georg Ohm.
+efnafraedi|16|Hvert er efnatákn kalíums?|K|Ka|Kl|P|K kemur af nýlatneska heitinu kalium. P er fosfór.
+efnafraedi|16|Hvaða frumefni er algengast í jarðskorpunni?|Súrefni|Kísill|Járn|Ál|Nær helmingur jarðskorpunnar er súrefni, bundið í bergi.
+efnafraedi|16|Hvaða lofttegund lyktar eins og fúlegg við hverasvæði?|Brennisteinsvetni|Metan|Ammoníak|Koltvíoxíð|Brennisteinsvetni, H₂S, gefur hveralyktina sem sumir finna af heita vatninu.
+mannslikaminn|16|Hvað heitir minnsta bein líkamans?|Ístaðið|Hamarinn|Steðjinn|Hnéskelin|Ístaðið í miðeyranu er um þrír millímetrar.
+mannslikaminn|16|Skortur á hvaða vítamíni veldur beinkröm?|D-vítamíni|C-vítamíni|B12-vítamíni|K-vítamíni|Lýsi var gefið íslenskum börnum til að verjast beinkröm.
+mannslikaminn|16|Hvar í líkamanum er heiladingullinn?|Neðan á heilanum|Í hálsinum|Í maganum|Ofan á nýrunum|Heiladingullinn er á stærð við baun og stjórnar mörgum öðrum kirtlum.
+dyr|16|Hvaða íslenski fugl fer lengsta farflugið?|Krían|Lóan|Spóinn|Lundinn|Krían flýgur á milli norðurslóða og Suðurskautslandsins á hverju ári.
+dyr|16|Hvaða spendýr getur orðið elst, yfir 200 ára?|Grænlandssléttbakur|Afríkufíll|Steypireyður|Maðurinn|Grænlandssléttbakurinn er langlífasta spendýr sem vitað er um.
+bokmenntir|16|Hver skrifaði Hundrað ára einsemd?|Gabriel García Márquez|Jorge Luis Borges|Isabel Allende|Mario Vargas Llosa|García Márquez hlaut Nóbelsverðlaunin í bókmenntum árið 1982.
+bokmenntir|16|Hver skrifaði Engla alheimsins?|Einar Már Guðmundsson|Arnaldur Indriðason|Hallgrímur Helgason|Sjón|Englar alheimsins hlaut Bókmenntaverðlaun Norðurlandaráðs árið 1995.
+bokmenntir|16|Í hvaða Íslendingasögu er kvæðið Sonatorrek?|Egils sögu|Njáls sögu|Laxdæla sögu|Grettis sögu|Egill Skallagrímsson orti Sonatorrek eftir lát sona sinna.
+bokmenntir|16|Hver skrifaði Stríð og frið?|Lev Tolstoj|Fjodor Dostojevskí|Anton Tsjekhov|Alexander Púshkín|Stríð og friður gerist í Rússlandi á tímum Napóleonsstyrjaldanna.
+listir|16|Hver samdi lagið við þjóðsönginn Lofsöng?|Sveinbjörn Sveinbjörnsson|Jón Leifs|Páll Ísólfsson|Sigvaldi Kaldalóns|Sveinbjörn Sveinbjörnsson samdi lagið í Edinborg árið 1874.
+listir|16|Hvaða málari skar af sér hluta af eyranu?|Vincent van Gogh|Paul Gauguin|Claude Monet|Edvard Munch|Van Gogh gerði það árið 1888 eftir rifrildi við Gauguin.
+listir|16|Hver leikstýrði Börnum náttúrunnar, sem tilnefnd var til Óskarsverðlauna?|Friðrik Þór Friðriksson|Baltasar Kormákur|Hrafn Gunnlaugsson|Dagur Kári|Börn náttúrunnar var tilnefnd sem besta erlenda kvikmyndin árið 1992.
+ithrottir|16|Hver vann brons í stangarstökki á Ólympíuleikunum í Sydney 2000?|Vala Flosadóttir|Þórey Edda Elísdóttir|Guðrún Arnardóttir|Ásdís Hjálmsdóttir|Vala Flosadóttir varð fyrsta íslenska konan til að vinna Ólympíuverðlaun.
+ithrottir|16|Í hvaða borg voru Ólympíuleikarnir 1936?|Berlín|París|Amsterdam|Los Angeles|Jesse Owens vann fern gullverðlaun á leikunum í Berlín.
+staerdfraedi|16|Hvað eru hornin í fimmhyrningi samtals margar gráður?|540|360|720|450|Fimmhyrningi má skipta í þrjá þríhyrninga, og 3 sinnum 180 eru 540.
+staerdfraedi|16|Hvaða tala kemur næst í röðinni 1, 1, 2, 3, 5, 8?|13|11|12|16|Í Fibonacci-röðinni er hver tala summa tveggja næstu á undan: 5 + 8 = 13.
+taekni|16|Hver er talin fyrsti forritari sögunnar?|Ada Lovelace|Grace Hopper|Alan Turing|Charles Babbage|Ada Lovelace skrifaði forrit fyrir reiknivél Babbages um 1843.
+islensk-tunga|16|Hvaða bókstafur var tekinn úr íslenskri stafsetningu árið 1973?|Z|C|Q|W|Áður var skrifað til dæmis „verzlun“ og „íslenzka“.
+islensk-tunga|16|Hvað merkir að „hafa vaðið fyrir neðan sig“?|Að fara varlega|Að vera í vanda|Að vera blautur í fæturna|Að segja ósatt|Sá sem hefur vaðið fyrir neðan sig gætir þess að lenda ekki í vandræðum.
+nattura-islands|16|Hver er stærsta eyjan við Ísland?|Heimaey|Hrísey|Grímsey|Viðey|Heimaey er um 13 ferkílómetrar og stækkaði í gosinu 1973.
+plontur|16|Hvað eru fjallagrös í raun og veru?|Fléttur|Mosi|Gras|Þörungar|Fjallagrös eru fléttur, sambýli svepps og þörungs, og voru lengi höfð í mat.
