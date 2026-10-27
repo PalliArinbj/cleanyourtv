@@ -36,6 +36,9 @@
     "scan:569:com.google.android.youtube.tv",
     "scan:752:input:com.tcl.tvinput/.TvPassThroughService/HW15"
   ],
+  "top_bar_apps": [
+    "io.github.palliarinbj.spurningar"
+  ],
   "top_bar_inputs": [
     "playstation|com.tcl.tvinput/.TvPassThroughService/HW15",
     "switch|com.tcl.tvinput/.TvPassThroughService/HW16"
