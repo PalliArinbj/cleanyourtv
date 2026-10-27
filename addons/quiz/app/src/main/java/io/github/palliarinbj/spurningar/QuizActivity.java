@@ -88,6 +88,7 @@ public class QuizActivity extends Activity {
         root.setBackground(new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,
                 new int[] {0xFF2A1F4E, 0xFF120E24}));
         stage = new FrameLayout(this);
+        unclipped(stage);
         root.addView(stage, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT));
         fx = new FxView(this);
@@ -172,6 +173,7 @@ public class QuizActivity extends Activity {
 
     private void buildGameView() {
         LinearLayout column = new LinearLayout(this);
+        unclipped(column);
         column.setOrientation(LinearLayout.VERTICAL);
         column.setPadding(px(56), px(36), px(56), px(36));
 
@@ -227,6 +229,7 @@ public class QuizActivity extends Activity {
 
         // "5 í röð!" pops up over the question at every fifth right answer.
         FrameLayout frame = new FrameLayout(this);
+        unclipped(frame);
         frame.addView(column, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT));
         bannerView = text("", 64, Tile.AMBER, R.font.outfit_bold);
@@ -682,6 +685,7 @@ public class QuizActivity extends Activity {
 
     private LinearLayout column() {
         LinearLayout l = new LinearLayout(this);
+        unclipped(l);
         l.setOrientation(LinearLayout.VERTICAL);
         l.setGravity(Gravity.CENTER);
         l.setPadding(px(48), px(36), px(48), px(36));
@@ -690,9 +694,16 @@ public class QuizActivity extends Activity {
 
     private LinearLayout row() {
         LinearLayout l = new LinearLayout(this);
+        unclipped(l);
         l.setOrientation(LinearLayout.HORIZONTAL);
         l.setGravity(Gravity.CENTER);
         return l;
+    }
+
+    /** Focus, the amber pulse and a pop grow a tile past its box: let it draw there instead of cutting it flat. */
+    private static void unclipped(ViewGroup g) {
+        g.setClipChildren(false);
+        g.setClipToPadding(false);
     }
 
     private TextView text(CharSequence s, float sp, int color, int font) {
