@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spurningakeppni</string>
+    <string name="choose_level">Veldu erfiðleikastig</string>
+    <string name="level_7">7 ára</string>
+    <string name="level_10">10 ára</string>
+    <string name="level_13">13 ára</string>
+    <string name="level_16">Fullorðnir</string>
+    <string name="best">Met: %1$s, %2$d</string>
+    <string name="no_best">Ekkert met enn</string>
+    <string name="leaderboards">Stigatöflur</string>
+    <string name="question_number">%1$s · spurning %2$d</string>
+    <string name="score">%1$d rétt</string>
+    <string name="helpers">Hjálp</string>
+    <string name="helper_1">Fjarlægja eitt rangt svar</string>
+    <string name="helper_2">Fjarlægja tvö röng svör</string>
+    <string name="helper_3">Fjarlægja þrjú röng svör</string>
+    <string name="game_over">Leik lokið</string>
+    <string name="in_a_row">rétt í röð</string>
+    <string name="the_answer">Rétta svarið: %1$s</string>
+    <string name="out_of_questions">Þú svaraðir öllum spurningunum á þessu stigi!</string>
+    <string name="made_board">Þú komst á stigatöfluna: %1$d. sæti!</string>
+    <string name="save_name">Skrá nafnið</string>
+    <string name="play_again">Spila aftur</string>
+    <string name="other_level">Annað stig</string>
+    <string name="who_are_you">Hver ert þú?</string>
+    <string name="new_name">Nýtt nafn</string>
+    <string name="type_name">Skrifaðu nafnið þitt</string>
+    <string name="space">Bil</string>
+    <string name="delete">Eyða</string>
+    <string name="done">Lokið</string>
+    <string name="nobody_yet">Enginn enn</string>
+    <string name="play">Spila</string>
+    <string name="quit_question">Hætta í leiknum?</string>
+    <string name="keep_playing">Halda áfram</string>
+    <string name="quit">Hætta</string>
+    <string name="no_questions">Engar spurningar fundust.</string>
+</resources>

@@ -1,0 +1,593 @@
+package io.github.palliarinbj.spurningar;
+
+import android.app.Activity;
+import android.graphics.Typeface;
+import android.graphics.drawable.GradientDrawable;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.RelativeSizeSpan;
+import android.view.Gravity;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+/**
+ * The quiz, one activity whose screens are swapped in place: pick a difficulty, answer until the first wrong answer,
+ * then the score, the right answer with its fact, and a place on the difficulty's top ten with a name.
+ * Nobody picks a player first: a name is asked for only when a game makes the board.
+ */
+public class QuizActivity extends Activity {
+    private enum Screen { START, GAME, QUIT, OVER, NAMES, KEYBOARD, BOARDS }
+
+    /** How long an answer glows amber before it is revealed, then how long the reveal stays. */
+    private static final long LOCK_MS = 1200, RIGHT_MS = 1000, WRONG_MS = 2200;
+    private static final String[] LETTERS = {"A", "B", "C", "D"};
+    /** The on-screen keyboard: the Icelandic alphabet, eight to a row. */
+    private static final String KEYS = "AÁBDÐEÉFGHIÍJKLMNOÓPRSTUÚVXYÝÞÆÖ";
+
+    private final Handler handler = new Handler(Looper.getMainLooper());
+    private final Random random = new Random();
+    private FrameLayout root;
+    private Store store;
+    private List<Question> bank = new ArrayList<>();
+    private float dp;
+    private Screen screen = Screen.START;
+
+    private Game game;
+    private boolean busy;
+    private View gameView;
+    private View quitView;
+    private TextView numberView, scoreView, subjectView, questionView;
+    private final Tile[] answers = new Tile[Round.SLOTS];
+    private final Tile[] helpers = new Tile[Game.HELPERS.length];
+
+    /** Where the last game would go on its board, -1 when it did not make it. */
+    private int place = -1;
+    private final StringBuilder typed = new StringBuilder();
+    private TextView typedView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        dp = getResources().getDisplayMetrics().density;
+        store = new Store(this);
+        try (InputStreamReader in = new InputStreamReader(getAssets().open("questions.txt"), StandardCharsets.UTF_8)) {
+            bank = QuestionBank.parse(in);
+        } catch (IOException ignored) {
+        }
+        root = new FrameLayout(this);
+        root.setBackground(new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,
+                new int[] {0xFF2A1F4E, 0xFF120E24}));
+        setContentView(root);
+        showStart();
+    }
+
+    @Override
+    protected void onDestroy() {
+        handler.removeCallbacksAndMessages(null);
+        super.onDestroy();
+    }
+
+    // ---- start -------------------------------------------------------------------------------------------------
+
+    private void showStart() {
+        screen = Screen.START;
+        LinearLayout column = column();
+        column.addView(text(getString(R.string.app_name), 52, Tile.WHITE, R.font.outfit_bold));
+        TextView sub = text(getString(R.string.choose_level), 22, 0xB3FFFFFF, R.font.outfit_regular);
+        column.addView(sub, margins(wrap(), 0, 6, 0, 36));
+        if (bank.isEmpty()) {
+            column.addView(text(getString(R.string.no_questions), 22, Tile.RED, R.font.outfit_regular));
+            swap(column);
+            return;
+        }
+        LinearLayout row = row();
+        Tile first = null;
+        for (int level : QuestionBank.AGES) {
+            Tile t = tile(levelCard(level), 0, 14);
+            t.setOnClickListener(v -> startGame(level));
+            row.addView(t, margins(new LinearLayout.LayoutParams(px(190), px(132)), 9, 0, 9, 0));
+            if (level == store.lastLevel()) first = t;
+        }
+        column.addView(row);
+        Tile boards = tile(getString(R.string.leaderboards), 20, 28);
+        boards.setPadding(px(28), 0, px(28), 0);
+        boards.setOnClickListener(v -> showBoards(0, -1));
+        column.addView(boards, margins(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, px(56)), 0, 34, 0, 0));
+        swap(column);
+        if (first != null) first.requestFocus();
+    }
+
+    /** "10 ára" big, the board's best under it small. */
+    private CharSequence levelCard(int level) {
+        Leaderboard board = store.board(level);
+        String best = board.entries().isEmpty() ? getString(R.string.no_best)
+                : getString(R.string.best, board.entries().get(0).name, board.entries().get(0).score);
+        String label = levelName(level);
+        SpannableString s = new SpannableString(label + "\n" + best);
+        s.setSpan(new RelativeSizeSpan(1.9f), 0, label.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        s.setSpan(new RelativeSizeSpan(0.95f), label.length() + 1, s.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        return s;
+    }
+
+    private String levelName(int level) {
+        switch (level) {
+            case 7: return getString(R.string.level_7);
+            case 10: return getString(R.string.level_10);
+            case 13: return getString(R.string.level_13);
+            default: return getString(R.string.level_16);
+        }
+    }
+
+    // ---- the game ----------------------------------------------------------------------------------------------
+
+    private void startGame(int level) {
+        store.setLastLevel(level);
+        game = new Game(new Deck(bank, level, store.seen(), random), level, random);
+        buildGameView();
+        showRound();
+    }
+
+    private void buildGameView() {
+        LinearLayout column = new LinearLayout(this);
+        column.setOrientation(LinearLayout.VERTICAL);
+        column.setPadding(px(56), px(36), px(56), px(36));
+
+        LinearLayout top = row();
+        numberView = text("", 18, 0xB3FFFFFF, R.font.outfit_regular);
+        numberView.setGravity(Gravity.START);
+        scoreView = text("", 20, Tile.AMBER, R.font.outfit_bold);
+        top.addView(numberView, new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1));
+        top.addView(scoreView);
+        column.addView(top);
+
+        column.addView(new View(this), new LinearLayout.LayoutParams(1, 0, 1));
+        subjectView = text("", 16, Tile.AMBER, R.font.outfit_medium);
+        subjectView.setLetterSpacing(0.12f);
+        column.addView(subjectView);
+        questionView = text("", 34, Tile.WHITE, R.font.outfit_medium);
+        questionView.setLineSpacing(0, 1.1f);
+        column.addView(questionView, margins(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT), 60, 10, 60, 0));
+        column.addView(new View(this), new LinearLayout.LayoutParams(1, 0, 1));
+
+        for (int r = 0; r < 2; r++) {
+            LinearLayout line = row();
+            for (int c = 0; c < 2; c++) {
+                int slot = r * 2 + c;
+                Tile t = tile("", 24, 18);
+                t.setGravity(Gravity.CENTER_VERTICAL | Gravity.START);
+                t.setPadding(px(26), 0, px(20), 0);
+                t.setSingleLine(true);
+                t.setOnClickListener(v -> choose(slot));
+                answers[slot] = t;
+                line.addView(t, margins(new LinearLayout.LayoutParams(0, px(70), 1), 8, 8, 8, 8));
+            }
+            column.addView(line, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT));
+        }
+
+        LinearLayout help = row();
+        help.addView(text(getString(R.string.helpers), 18, 0xB3FFFFFF, R.font.outfit_regular),
+                margins(wrap(), 0, 0, 14, 0));
+        int[] descriptions = {R.string.helper_1, R.string.helper_2, R.string.helper_3};
+        for (int i = 0; i < helpers.length; i++) {
+            int size = Game.HELPERS[i];
+            Tile t = tile("−" + size, 22, 29);
+            t.setContentDescription(getString(descriptions[i]));
+            t.setOnClickListener(v -> useHelper(size));
+            helpers[i] = t;
+            help.addView(t, margins(new LinearLayout.LayoutParams(px(58), px(58)), 6, 0, 6, 0));
+        }
+        LinearLayout.LayoutParams helpAt = margins(wrap(), 0, 18, 0, 0);
+        helpAt.gravity = Gravity.CENTER_HORIZONTAL;
+        column.addView(help, helpAt);
+        gameView = column;
+    }
+
+    private void showRound() {
+        screen = Screen.GAME;
+        if (gameView.getParent() == null) swap(gameView);
+        Round round = game.round();
+        if (round == null) {
+            showOver();
+            return;
+        }
+        store.markSeen(round.question.id());
+        numberView.setText(getString(R.string.question_number, levelName(game.level), game.number()));
+        scoreView.setText(getString(R.string.score, game.score()));
+        subjectView.setText(Subjects.name(round.question.subject).toUpperCase(java.util.Locale.ROOT));
+        questionView.setText(round.question.text);
+        for (int slot = 0; slot < Round.SLOTS; slot++) {
+            SpannableString s = new SpannableString(LETTERS[slot] + "   " + round.answer(slot));
+            s.setSpan(new ForegroundColorSpan(Tile.AMBER), 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            answers[slot].setText(s);
+            answers[slot].setLook(Tile.Look.NORMAL);
+        }
+        refreshHelpers();
+        busy = false;
+        answers[0].requestFocus();
+    }
+
+    /** A helper is dimmed once used, and while the question has too few wrong answers left for it. */
+    private void refreshHelpers() {
+        for (int i = 0; i < helpers.length; i++) {
+            int size = Game.HELPERS[i];
+            helpers[i].setLook(!game.helperLeft(size) ? Tile.Look.REMOVED
+                    : game.canUse(size) ? Tile.Look.NORMAL : Tile.Look.OFF);
+        }
+    }
+
+    private void useHelper(int size) {
+        if (busy || !game.canUse(size)) return;
+        for (int slot : game.useHelper(size)) answers[slot].setLook(Tile.Look.REMOVED);
+        refreshHelpers();
+        for (Tile t : answers) {
+            if (t.isFocusable()) {
+                t.requestFocus();
+                break;
+            }
+        }
+    }
+
+    private void choose(int slot) {
+        if (busy || game.over()) return;
+        busy = true;
+        answers[slot].setLook(Tile.Look.LOCKED);
+        for (Tile h : helpers) h.setLook(h.look() == Tile.Look.REMOVED ? Tile.Look.REMOVED : Tile.Look.OFF);
+        handler.postDelayed(() -> reveal(slot), LOCK_MS);
+    }
+
+    private void reveal(int slot) {
+        int right = game.round().correctSlot();
+        if (game.answer(slot) == Game.Result.RIGHT) {
+            answers[slot].setLook(Tile.Look.RIGHT);
+            scoreView.setText(getString(R.string.score, game.score()));
+            handler.postDelayed(() -> {
+                game.next();
+                showRound();
+            }, RIGHT_MS);
+        } else {
+            answers[slot].setLook(Tile.Look.WRONG);
+            answers[right].setLook(Tile.Look.RIGHT);
+            handler.postDelayed(this::showOver, WRONG_MS);
+        }
+    }
+
+    private void showQuit() {
+        screen = Screen.QUIT;
+        FrameLayout shade = new FrameLayout(this);
+        shade.setBackgroundColor(0xF2120E24);
+        LinearLayout column = column();
+        column.addView(text(getString(R.string.quit_question), 34, Tile.WHITE, R.font.outfit_bold),
+                margins(wrap(), 0, 0, 0, 28));
+        LinearLayout row = row();
+        Tile keep = button(getString(R.string.keep_playing), this::closeQuit);
+        Tile quit = button(getString(R.string.quit), this::showStart);
+        row.addView(keep, margins(buttonSize(), 8, 0, 8, 0));
+        row.addView(quit, margins(buttonSize(), 8, 0, 8, 0));
+        column.addView(row);
+        shade.addView(column, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
+        shade.setClickable(true);
+        // The game behind is hidden and out of reach: focus could otherwise move onto an answer under the prompt
+        // and OK would answer it.
+        ViewGroup game = (ViewGroup) gameView;
+        game.setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);
+        game.setVisibility(View.INVISIBLE);
+        quitView = shade;
+        root.addView(shade);
+        keep.requestFocus();
+    }
+
+    private void closeQuit() {
+        root.removeView(quitView);
+        quitView = null;
+        ViewGroup game = (ViewGroup) gameView;
+        game.setVisibility(View.VISIBLE);
+        game.setDescendantFocusability(ViewGroup.FOCUS_AFTER_DESCENDANTS);
+        screen = Screen.GAME;
+        for (Tile t : answers) {
+            if (t.isFocusable()) {
+                t.requestFocus();
+                break;
+            }
+        }
+    }
+
+    // ---- game over ---------------------------------------------------------------------------------------------
+
+    private void showOver() {
+        screen = Screen.OVER;
+        place = store.board(game.level).place(game.score(), game.helpersUsed(), System.currentTimeMillis());
+        LinearLayout column = column();
+        column.addView(text(getString(R.string.game_over), 26, 0xB3FFFFFF, R.font.outfit_medium));
+        column.addView(text(String.valueOf(game.score()), 96, Tile.AMBER, R.font.outfit_bold));
+        column.addView(text(getString(R.string.in_a_row), 22, Tile.WHITE, R.font.outfit_regular),
+                margins(wrap(), 0, -6, 0, 24));
+        if (game.outOfQuestions()) {
+            column.addView(text(getString(R.string.out_of_questions), 22, Tile.GREEN, R.font.outfit_medium));
+        } else if (game.round() != null) {
+            Question q = game.round().question;
+            column.addView(text(getString(R.string.the_answer, q.correct()), 24, Tile.GREEN, R.font.outfit_medium));
+            if (!q.fact.isEmpty()) {
+                column.addView(text(q.fact, 20, 0xCCFFFFFF, R.font.outfit_regular), margins(wrap(), 120, 8, 120, 0));
+            }
+        }
+        Tile first;
+        LinearLayout row = row();
+        if (place >= 0) {
+            column.addView(text(getString(R.string.made_board, place + 1), 24, Tile.WHITE, R.font.outfit_bold),
+                    margins(wrap(), 0, 26, 0, 0));
+            first = button(getString(R.string.save_name), this::showNames);
+            row.addView(first, margins(buttonSize(), 8, 0, 8, 0));
+        } else {
+            first = button(getString(R.string.play_again), () -> startGame(game.level));
+            row.addView(first, margins(buttonSize(), 8, 0, 8, 0));
+            row.addView(button(getString(R.string.other_level), this::showStart), margins(buttonSize(), 8, 0, 8, 0));
+            row.addView(button(getString(R.string.leaderboards), () -> showBoards(game.level, -1)),
+                    margins(buttonSize(), 8, 0, 8, 0));
+        }
+        column.addView(row, margins(wrap(), 0, 30, 0, 0));
+        swap(column);
+        first.requestFocus();
+    }
+
+    // ---- a name for the board ----------------------------------------------------------------------------------
+
+    private void showNames() {
+        List<String> names = store.names();
+        if (names.isEmpty()) {
+            showKeyboard();
+            return;
+        }
+        screen = Screen.NAMES;
+        LinearLayout column = column();
+        column.addView(text(getString(R.string.who_are_you), 40, Tile.WHITE, R.font.outfit_bold),
+                margins(wrap(), 0, 0, 0, 28));
+        LinearLayout row = null;
+        Tile first = null;
+        List<String> chips = new ArrayList<>(names);
+        chips.add(null);   // "New name"
+        for (int i = 0; i < chips.size(); i++) {
+            if (i % 5 == 0) {
+                row = row();
+                column.addView(row, margins(wrap(), 0, 6, 0, 6));
+            }
+            String name = chips.get(i);
+            Tile t = name == null ? button(getString(R.string.new_name), this::showKeyboard)
+                    : button(name, () -> saveName(name));
+            row.addView(t, margins(new LinearLayout.LayoutParams(px(170), px(60)), 7, 0, 7, 0));
+            if (first == null) first = t;
+        }
+        swap(column);
+        first.requestFocus();
+    }
+
+    private void showKeyboard() {
+        screen = Screen.KEYBOARD;
+        typed.setLength(0);
+        LinearLayout column = column();
+        column.addView(text(getString(R.string.type_name), 26, 0xB3FFFFFF, R.font.outfit_medium));
+        typedView = text("", 44, Tile.WHITE, R.font.outfit_bold);
+        typedView.setMinWidth(px(360));
+        GradientDrawable line = new GradientDrawable();
+        line.setColor(0x14FFFFFF);
+        line.setCornerRadius(px(12));
+        typedView.setBackground(line);
+        typedView.setPadding(px(24), px(6), px(24), px(6));
+        column.addView(typedView, margins(wrap(), 0, 12, 0, 22));
+        Tile first = null;
+        LinearLayout row = null;
+        for (int i = 0; i < KEYS.length(); i++) {
+            if (i % 8 == 0) {
+                row = row();
+                column.addView(row);
+            }
+            String key = String.valueOf(KEYS.charAt(i));
+            Tile t = tile(key, 24, 12);
+            t.setOnClickListener(v -> type(key));
+            row.addView(t, margins(new LinearLayout.LayoutParams(px(58), px(54)), 4, 4, 4, 4));
+            if (first == null) first = t;
+        }
+        LinearLayout last = row();
+        Tile space = tile(getString(R.string.space), 20, 12);
+        space.setOnClickListener(v -> type(" "));
+        Tile delete = tile(getString(R.string.delete), 20, 12);
+        delete.setOnClickListener(v -> {
+            if (typed.length() > 0) typed.setLength(typed.length() - 1);
+            showTyped();
+        });
+        Tile done = tile(getString(R.string.done), 20, 12);
+        done.setOnClickListener(v -> {
+            String name = Leaderboard.cleanName(typed.toString());
+            if (!name.isEmpty()) saveName(name);
+        });
+        last.addView(space, margins(new LinearLayout.LayoutParams(px(190), px(54)), 4, 4, 4, 4));
+        last.addView(delete, margins(new LinearLayout.LayoutParams(px(124), px(54)), 4, 4, 4, 4));
+        last.addView(done, margins(new LinearLayout.LayoutParams(px(190), px(54)), 4, 4, 4, 4));
+        column.addView(last);
+        swap(column);
+        showTyped();
+        first.requestFocus();
+    }
+
+    private void type(String key) {
+        if (typed.length() >= Leaderboard.MAX_NAME) return;
+        if (key.equals(" ") && (typed.length() == 0 || typed.charAt(typed.length() - 1) == ' ')) return;
+        // Capital first letter of each word, the rest small: "PÁLL" typed on the grid reads Páll.
+        boolean wordStart = typed.length() == 0 || typed.charAt(typed.length() - 1) == ' ';
+        typed.append(wordStart ? key : key.toLowerCase(new java.util.Locale("is")));
+        showTyped();
+    }
+
+    private void showTyped() {
+        typedView.setText(typed.length() == 0 ? "_" : typed + "_");
+    }
+
+    private void saveName(String name) {
+        Leaderboard board = store.board(game.level);
+        int at = board.add(name, game.score(), game.helpersUsed(), System.currentTimeMillis());
+        store.saveBoard(game.level, board);
+        store.useName(Leaderboard.cleanName(name));
+        showBoards(game.level, at);
+    }
+
+    // ---- leaderboards ------------------------------------------------------------------------------------------
+
+    /** All four boards side by side; the given place on the given board is marked as just added. */
+    private void showBoards(int level, int newPlace) {
+        screen = Screen.BOARDS;
+        LinearLayout column = column();
+        column.addView(text(getString(R.string.leaderboards), 36, Tile.WHITE, R.font.outfit_bold),
+                margins(wrap(), 0, 0, 0, 16));
+        LinearLayout boards = row();
+        boards.setGravity(Gravity.TOP);
+        for (int age : QuestionBank.AGES) {
+            LinearLayout list = new LinearLayout(this);
+            list.setOrientation(LinearLayout.VERTICAL);
+            GradientDrawable bg = new GradientDrawable();
+            bg.setColor(0x14FFFFFF);
+            bg.setCornerRadius(px(16));
+            list.setBackground(bg);
+            list.setPadding(px(16), px(12), px(16), px(12));
+            TextView head = text(levelName(age), 22, Tile.AMBER, R.font.outfit_bold);
+            list.addView(head, margins(wrap(), 0, 0, 0, 8));
+            List<Leaderboard.Entry> entries = store.board(age).entries();
+            if (entries.isEmpty()) list.addView(text(getString(R.string.nobody_yet), 16, 0x99FFFFFF, R.font.outfit_regular));
+            for (int i = 0; i < entries.size(); i++) {
+                Leaderboard.Entry e = entries.get(i);
+                boolean fresh = age == level && i == newPlace;
+                LinearLayout line = new LinearLayout(this);
+                line.setPadding(px(8), px(3), px(8), px(3));
+                if (fresh) {
+                    GradientDrawable mark = new GradientDrawable();
+                    mark.setColor(Tile.AMBER);
+                    mark.setCornerRadius(px(8));
+                    line.setBackground(mark);
+                }
+                int color = fresh ? Tile.DARK : Tile.WHITE;
+                TextView rank = text((i + 1) + ".", 17, fresh ? Tile.DARK : 0x99FFFFFF, R.font.outfit_regular);
+                rank.setGravity(Gravity.END);
+                line.addView(rank, new LinearLayout.LayoutParams(px(28), ViewGroup.LayoutParams.WRAP_CONTENT));
+                TextView name = text(e.name, 17, color, R.font.outfit_medium);
+                name.setGravity(Gravity.START);
+                name.setSingleLine(true);
+                line.addView(name, margins(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1), 10, 0, 6, 0));
+                line.addView(text(String.valueOf(e.score), 17, color, R.font.outfit_bold));
+                list.addView(line, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                        ViewGroup.LayoutParams.WRAP_CONTENT));
+            }
+            boards.addView(list, margins(new LinearLayout.LayoutParams(px(200), px(292)), 8, 0, 8, 0));
+        }
+        column.addView(boards);
+        Tile play = button(getString(R.string.play), this::showStart);
+        column.addView(play, margins(buttonSize(), 0, 20, 0, 0));
+        swap(column);
+        play.requestFocus();
+    }
+
+    // ---- keys --------------------------------------------------------------------------------------------------
+
+    @Override
+    public void onBackPressed() {
+        switch (screen) {
+            case START: super.onBackPressed(); break;
+            case GAME: if (!busy) showQuit(); break;
+            case QUIT: closeQuit(); break;
+            case NAMES: showOver(); break;
+            case KEYBOARD: if (store.names().isEmpty()) showOver(); else showNames(); break;
+            default: showStart();
+        }
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        // While an answer is locked in or revealed, the remote does nothing but Back.
+        if (screen == Screen.GAME && busy && keyCode != KeyEvent.KEYCODE_BACK) return true;
+        return super.onKeyDown(keyCode, event);
+    }
+
+    // ---- building blocks ---------------------------------------------------------------------------------------
+
+    private void swap(View content) {
+        handler.removeCallbacksAndMessages(null);
+        root.removeAllViews();
+        if (content.getParent() != null) ((ViewGroup) content.getParent()).removeView(content);
+        root.addView(content, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
+        content.setAlpha(0f);
+        content.animate().alpha(1f).setDuration(180).start();
+    }
+
+    private LinearLayout column() {
+        LinearLayout l = new LinearLayout(this);
+        l.setOrientation(LinearLayout.VERTICAL);
+        l.setGravity(Gravity.CENTER);
+        l.setPadding(px(48), px(36), px(48), px(36));
+        return l;
+    }
+
+    private LinearLayout row() {
+        LinearLayout l = new LinearLayout(this);
+        l.setOrientation(LinearLayout.HORIZONTAL);
+        l.setGravity(Gravity.CENTER);
+        return l;
+    }
+
+    private TextView text(CharSequence s, float sp, int color, int font) {
+        TextView t = new TextView(this);
+        t.setText(s);
+        t.setTextSize(sp);
+        t.setTextColor(color);
+        t.setGravity(Gravity.CENTER);
+        t.setTypeface(getResources().getFont(font), Typeface.NORMAL);
+        return t;
+    }
+
+    private Tile tile(CharSequence s, float sp, float radiusDp) {
+        Tile t = new Tile(this, radiusDp);
+        t.setText(s);
+        if (sp > 0) t.setTextSize(sp);
+        return t;
+    }
+
+    private Tile button(String label, Runnable action) {
+        Tile t = tile(label, 20, 28);
+        t.setPadding(px(24), 0, px(24), 0);
+        t.setOnClickListener(v -> action.run());
+        return t;
+    }
+
+    private LinearLayout.LayoutParams buttonSize() {
+        LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, px(56));
+        return p;
+    }
+
+    private LinearLayout.LayoutParams wrap() {
+        return new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+    }
+
+    private LinearLayout.LayoutParams margins(LinearLayout.LayoutParams p, int l, int t, int r, int b) {
+        p.setMargins(px(l), px(t), px(r), px(b));
+        return p;
+    }
+
+    private int px(float dps) {
+        return Math.round(dps * dp);
+    }
+}
