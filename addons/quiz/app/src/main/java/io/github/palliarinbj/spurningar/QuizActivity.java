@@ -1,5 +1,6 @@
 package io.github.palliarinbj.spurningar;
 
+import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
@@ -14,6 +15,7 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.RelativeSizeSpan;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -37,7 +39,7 @@ import java.util.Random;
  * Nobody picks a player first: a name is asked for only when a game makes the board.
  */
 public class QuizActivity extends Activity {
-    private enum Screen { START, GAME, QUIT, OVER, NAMES, KEYBOARD, BOARDS }
+    private enum Screen { START, GAME, QUIT, BREAK, OVER, NAMES, KEYBOARD, BOARDS }
 
     /** How long an answer glows amber before it is revealed, then how long the reveal stays. */
     private static final long LOCK_MS = 1200, RIGHT_MS = 1000, WRONG_MS = 2200;
@@ -65,8 +67,12 @@ public class QuizActivity extends Activity {
     private Game game;
     private boolean busy;
     private View gameView;
-    private View quitView;
-    private TextView numberView, scoreView, subjectView, questionView, bannerView;
+    /** The stop prompt, the subject pick or the big question offer over the game; null when none is up. */
+    private View overlayView;
+    private TextView numberView, scoreView, subjectView, questionView, bannerView, tierView;
+    /** The screen's gradient, recoloured as a run reaches bronze, silver and gold. */
+    private GradientDrawable backdrop;
+    private int backdropTier;
     private final Tile[] answers = new Tile[Round.SLOTS];
     private final Tile[] helpers = new Tile[Game.HELPERS.length];
 
@@ -85,8 +91,8 @@ public class QuizActivity extends Activity {
         } catch (IOException ignored) {
         }
         root = new FrameLayout(this);
-        root.setBackground(new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,
-                new int[] {0xFF2A1F4E, 0xFF120E24}));
+        backdrop = new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM, Progress.BACKGROUND[Progress.NONE]);
+        root.setBackground(backdrop);
         stage = new FrameLayout(this);
         unclipped(stage);
         root.addView(stage, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
@@ -113,6 +119,7 @@ public class QuizActivity extends Activity {
 
     private void showStart() {
         screen = Screen.START;
+        setBackdrop(Progress.NONE);
         LinearLayout column = column();
         column.addView(text(getString(R.string.app_name), 52, Tile.WHITE, R.font.outfit_bold));
         TextView sub = text(getString(R.string.choose_level), 22, 0xB3FFFFFF, R.font.outfit_regular);
@@ -167,8 +174,25 @@ public class QuizActivity extends Activity {
         game = new Game(new Deck(bank, level, store.seen(), random), level, random);
         celebrated = false;
         sfx.play(Sfx.START);
+        fastForward();
         buildGameView();
+        showTier(false);
         showRound();
+    }
+
+    /**
+     * Debug builds only, for checking the breaks on a TV: `am start -n <app>/.QuizActivity --ei score 9 --ei helper 1`
+     * and then any level starts with that many answered right and that helper used.
+     */
+    private void fastForward() {
+        if ((getApplicationInfo().flags & android.content.pm.ApplicationInfo.FLAG_DEBUGGABLE) == 0) return;
+        int score = getIntent().getIntExtra("score", 0), helper = getIntent().getIntExtra("helper", 0);
+        if (helper > 0 && game.canUse(helper)) game.useHelper(helper);
+        for (int i = 0; i < score && !game.over(); i++) {
+            game.answer(game.round().correctSlot());
+            if (i < score - 1) game.next();
+        }
+        if (score > 0 && !game.over()) game.next();
     }
 
     private void buildGameView() {
@@ -181,8 +205,13 @@ public class QuizActivity extends Activity {
         numberView = text("", 18, 0xB3FFFFFF, R.font.outfit_regular);
         numberView.setGravity(Gravity.START);
         scoreView = text("", 20, Tile.AMBER, R.font.outfit_bold);
+        scoreView.setGravity(Gravity.END);
+        tierView = text("", 16, Tile.DARK, R.font.outfit_bold);
+        tierView.setPadding(px(14), px(4), px(14), px(4));
+        tierView.setVisibility(View.INVISIBLE);
         top.addView(numberView, new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1));
-        top.addView(scoreView);
+        top.addView(tierView);
+        top.addView(scoreView, new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1));
         column.addView(top);
 
         column.addView(new View(this), new LinearLayout.LayoutParams(1, 0, 1));
@@ -202,7 +231,9 @@ public class QuizActivity extends Activity {
                 Tile t = tile("", 24, 18);
                 t.setGravity(Gravity.CENTER_VERTICAL | Gravity.START);
                 t.setPadding(px(26), 0, px(20), 0);
-                t.setSingleLine(true);
+                t.setMaxLines(1);   // not setSingleLine(): autosize takes a sideways-scrolling line as endless
+                // an answer of up to 40 characters, the most the question test allows, shrinks to fit
+                t.setAutoSizeTextTypeUniformWithConfiguration(17, 24, 1, TypedValue.COMPLEX_UNIT_SP);
                 t.setOnClickListener(v -> choose(slot));
                 answers[slot] = t;
                 line.addView(t, margins(new LinearLayout.LayoutParams(0, px(70), 1), 8, 8, 8, 8));
@@ -233,7 +264,6 @@ public class QuizActivity extends Activity {
         frame.addView(column, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT));
         bannerView = text("", 64, Tile.AMBER, R.font.outfit_bold);
-        bannerView.setShadowLayer(px(18), 0, 0, 0xCC000000);
         bannerView.setVisibility(View.INVISIBLE);
         FrameLayout.LayoutParams bannerAt = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.CENTER_HORIZONTAL | Gravity.TOP);
@@ -253,7 +283,10 @@ public class QuizActivity extends Activity {
         store.markSeen(round.question.id());
         numberView.setText(getString(R.string.question_number, levelName(game.level), game.number()));
         scoreView.setText(getString(R.string.score, game.score()));
-        subjectView.setText(Subjects.name(round.question.subject).toUpperCase(java.util.Locale.ROOT));
+        String subject = Subjects.name(round.question.subject);
+        if (game.big()) subject = getString(R.string.big_title) + " · " + subject;
+        subjectView.setText(subject.toUpperCase(java.util.Locale.ROOT));
+        subjectView.setTextColor(game.big() ? Progress.COLOR[Progress.GOLD] : Tile.AMBER);
         questionView.setText(round.question.text);
         for (int slot = 0; slot < Round.SLOTS; slot++) {
             SpannableString s = new SpannableString(LETTERS[slot] + "   " + round.answer(slot));
@@ -343,12 +376,11 @@ public class QuizActivity extends Activity {
             fx.burst(chosen, new int[] {Tile.GREEN, 0xFF8AF0A8, Tile.AMBER, 0xFFFFFFFF}, 34, 260, false);
             scoreView.setText(getString(R.string.score, game.score()));
             pop(scoreView, 1.35f);
+            int back = game.regained();
+            if (back > 0) handler.postDelayed(() -> winBack(back), 250);
             boolean milestone = game.score() % 5 == 0;
-            if (milestone) handler.postDelayed(this::milestone, 350);
-            handler.postDelayed(() -> {
-                game.next();
-                showRound();
-            }, RIGHT_MS + (milestone ? 900 : 0));
+            if (milestone) handler.postDelayed(this::milestone, back > 0 ? 1300 : 350);
+            handler.postDelayed(this::afterRight, RIGHT_MS + (milestone ? 900 : 0) + (back > 0 ? 950 : 0));
         } else {
             chosen.setLook(Tile.Look.WRONG);
             chosen.animate().scaleX(1f).scaleY(1f).setDuration(120).start();
@@ -360,11 +392,53 @@ public class QuizActivity extends Activity {
         }
     }
 
-    /** Five more in a row: a banner, a fanfare and confetti. */
+    /** After a right answer: the next question, or first the subject pick or the big question offer. */
+    private void afterRight() {
+        switch (game.pending()) {
+            case SUBJECT: showSubjectPick(); break;
+            case BIG: showBigOffer(); break;
+            default:
+                game.next();
+                showRound();
+        }
+    }
+
+    /** The big question answered right: the helper it won comes back with a flash of sparks. */
+    private void winBack(int size) {
+        Tile t = helpers[size - 1];
+        refreshHelpers();
+        sfx.play(Sfx.HELPER);
+        pop(t, 1.5f);
+        fx.burst(t, new int[] {Progress.COLOR[Progress.GOLD], Tile.AMBER, 0xFFFFFFFF}, 30, 200, false);
+        banner(getString(R.string.regained, "−" + size), Progress.COLOR[Progress.GOLD], 40);
+    }
+
+    /** Five more in a row: a banner, a fanfare and confetti. A new tier says so and recolours the screen. */
     private void milestone() {
         sfx.play(Sfx.MILESTONE);
         fx.confetti(70);
-        bannerView.setText(getString(R.string.milestone, game.score()));
+        int score = game.score();
+        if (Progress.reached(score)) {
+            int tier = Progress.tier(score);
+            showTier(true);
+            banner(getString(R.string.tier_reached, tierName(tier), tierTitle(tier)), Progress.COLOR[tier], 60);
+        } else {
+            banner(getString(R.string.milestone, score), Tile.AMBER, 64);
+        }
+    }
+
+    /** A banner over the question, on a pill of the screen's own dark colour so the question doesn't show through. */
+    private void banner(CharSequence text, int color, float sp) {
+        GradientDrawable pill = new GradientDrawable();
+        pill.setColor(Progress.BACKGROUND[backdropTier][1] & 0x00FFFFFF | 0xEB000000);
+        pill.setStroke(px(2), color & 0x00FFFFFF | 0x80000000);
+        pill.setCornerRadius(px(28));
+        bannerView.setBackground(pill);
+        bannerView.setIncludeFontPadding(false);
+        bannerView.setPadding(px(36), px(2), px(36), px(8));
+        bannerView.setText(text);
+        bannerView.setTextColor(color);
+        bannerView.setTextSize(sp);
         bannerView.setVisibility(View.VISIBLE);
         bannerView.setAlpha(0f);
         bannerView.setScaleX(0.4f);
@@ -392,10 +466,151 @@ public class QuizActivity extends Activity {
         a.start();
     }
 
+    /** The tier badge beside the question number, and the screen's colour for the run's tier. */
+    private void showTier(boolean animate) {
+        int tier = Progress.tier(game.score());
+        setBackdrop(tier);
+        if (tier == Progress.NONE) {
+            tierView.setVisibility(View.INVISIBLE);
+            return;
+        }
+        GradientDrawable pill = new GradientDrawable();
+        pill.setColor(Progress.COLOR[tier]);
+        pill.setCornerRadius(px(14));
+        tierView.setBackground(pill);
+        tierView.setText(getString(R.string.tier_badge, tierName(tier), tierTitle(tier)));
+        tierView.setVisibility(View.VISIBLE);
+        if (animate) pop(tierView, 1.4f);
+    }
+
+    private String tierName(int tier) {
+        return getString(new int[] {0, R.string.tier_1, R.string.tier_2, R.string.tier_3}[tier]);
+    }
+
+    private String tierTitle(int tier) {
+        return getString(new int[] {0, R.string.title_1, R.string.title_2, R.string.title_3}[tier]);
+    }
+
+    /** Fades the background gradient to the tier's colours. */
+    private void setBackdrop(int tier) {
+        if (tier == backdropTier) return;
+        int[] from = Progress.BACKGROUND[backdropTier], to = Progress.BACKGROUND[tier];
+        backdropTier = tier;
+        ArgbEvaluator mix = new ArgbEvaluator();
+        ValueAnimator a = ValueAnimator.ofFloat(0f, 1f);
+        a.setDuration(900);
+        a.addUpdateListener(an -> {
+            float f = (float) an.getAnimatedValue();
+            backdrop.setColors(new int[] {(int) mix.evaluate(f, from[0], to[0]), (int) mix.evaluate(f, from[1], to[1])});
+        });
+        a.start();
+    }
+
+    // ---- breaks in the run -------------------------------------------------------------------------------------
+
+    /** Every fifth right answer: two subject cards flip over and the player picks the next question's subject. */
+    private void showSubjectPick() {
+        screen = Screen.BREAK;
+        LinearLayout column = column();
+        column.addView(text(getString(R.string.choose_subject), 40, Tile.WHITE, R.font.outfit_bold));
+        column.addView(text(getString(R.string.choose_subject_hint), 20, 0xB3FFFFFF, R.font.outfit_regular),
+                margins(wrap(), 0, 8, 0, 30));
+        LinearLayout row = row();
+        Tile first = null;
+        int i = 0;
+        for (String subject : game.subjectChoices()) {
+            Tile card = tile(Subjects.name(subject), 30, 22);
+            card.setOnClickListener(v -> {
+                closeOverlay();
+                game.next(subject);
+                showRound();
+            });
+            row.addView(card, margins(new LinearLayout.LayoutParams(px(280), px(150)), 14, 0, 14, 0));
+            card.setRotationY(90f);
+            card.setAlpha(0f);
+            card.animate().rotationY(0f).alpha(1f).setStartDelay(150 + i * 180L).setDuration(380)
+                    .setInterpolator(new DecelerateInterpolator(1.5f)).start();
+            if (first == null) first = card;
+            i++;
+        }
+        column.addView(row);
+        openOverlay(column, first);
+        sfx.play(Sfx.START);
+    }
+
+    /** Every tenth, with a helper to win back: a harder question, taken up or not. */
+    private void showBigOffer() {
+        screen = Screen.BREAK;
+        int gold = Progress.COLOR[Progress.GOLD];
+        LinearLayout column = column();
+        TextView title = text(getString(R.string.big_title), 56, gold, R.font.outfit_bold);
+        title.setShadowLayer(px(24), 0, 0, 0x99F2C744);
+        column.addView(title);
+        String helper = "−" + game.toWinBack();
+        String body = getString(Deck.above(game.level) > 0 ? R.string.big_text : R.string.big_text_top, helper);
+        TextView text = text(body, 22, 0xE6FFFFFF, R.font.outfit_regular);
+        text.setLineSpacing(0, 1.15f);
+        column.addView(text, margins(wrap(), 160, 14, 160, 32));
+        LinearLayout row = row();
+        Tile take = button(getString(R.string.big_take), () -> {
+            closeOverlay();
+            game.nextBig();
+            sfx.play(Sfx.LOCK);
+            sfx.stopLock();
+            showRound();
+            // not pop(): cancelling the view's animation would leave the line faded out from enter()
+            ObjectAnimator grow = ObjectAnimator.ofPropertyValuesHolder(subjectView,
+                    PropertyValuesHolder.ofFloat(View.SCALE_X, 1.4f, 1f), PropertyValuesHolder.ofFloat(View.SCALE_Y, 1.4f, 1f));
+            grow.setDuration(520);
+            grow.setInterpolator(new OvershootInterpolator(3f));
+            grow.start();
+        });
+        Tile skip = button(getString(R.string.big_skip), () -> {
+            closeOverlay();
+            game.next();
+            showRound();
+        });
+        row.addView(take, margins(buttonSize(), 8, 0, 8, 0));
+        row.addView(skip, margins(buttonSize(), 8, 0, 8, 0));
+        column.addView(row);
+        title.setScaleX(0.5f);
+        title.setScaleY(0.5f);
+        title.animate().scaleX(1f).scaleY(1f).setDuration(450).setInterpolator(new OvershootInterpolator(2.5f)).start();
+        openOverlay(column, take);
+        sfx.play(Sfx.MILESTONE);
+    }
+
+    /**
+     * Puts a prompt over the game. The game behind is hidden and out of reach: focus could otherwise move onto an
+     * answer under the prompt, and OK would answer it.
+     */
+    private void openOverlay(View content, View focus) {
+        FrameLayout shade = new FrameLayout(this);
+        shade.setBackgroundColor(0x59000000);   // the run's tier colour shows through
+        shade.addView(content, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
+        shade.setClickable(true);
+        ViewGroup game = (ViewGroup) gameView;
+        game.setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);
+        game.setVisibility(View.INVISIBLE);
+        overlayView = shade;
+        stage.addView(shade);
+        shade.setAlpha(0f);
+        shade.animate().alpha(1f).setDuration(200).start();
+        quietUntil = SystemClock.uptimeMillis() + 150;
+        if (focus != null) focus.requestFocus();
+    }
+
+    private void closeOverlay() {
+        if (overlayView != null) stage.removeView(overlayView);
+        overlayView = null;
+        ViewGroup game = (ViewGroup) gameView;
+        game.setVisibility(View.VISIBLE);
+        game.setDescendantFocusability(ViewGroup.FOCUS_AFTER_DESCENDANTS);
+    }
+
     private void showQuit() {
         screen = Screen.QUIT;
-        FrameLayout shade = new FrameLayout(this);
-        shade.setBackgroundColor(0xF2120E24);
         LinearLayout column = column();
         column.addView(text(getString(R.string.quit_question), 34, Tile.WHITE, R.font.outfit_bold),
                 margins(wrap(), 0, 0, 0, 28));
@@ -405,26 +620,11 @@ public class QuizActivity extends Activity {
         row.addView(keep, margins(buttonSize(), 8, 0, 8, 0));
         row.addView(quit, margins(buttonSize(), 8, 0, 8, 0));
         column.addView(row);
-        shade.addView(column, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT));
-        shade.setClickable(true);
-        // The game behind is hidden and out of reach: focus could otherwise move onto an answer under the prompt
-        // and OK would answer it.
-        ViewGroup game = (ViewGroup) gameView;
-        game.setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);
-        game.setVisibility(View.INVISIBLE);
-        quitView = shade;
-        stage.addView(shade);
-        quietUntil = SystemClock.uptimeMillis() + 150;
-        keep.requestFocus();
+        openOverlay(column, keep);
     }
 
     private void closeQuit() {
-        stage.removeView(quitView);
-        quitView = null;
-        ViewGroup game = (ViewGroup) gameView;
-        game.setVisibility(View.VISIBLE);
-        game.setDescendantFocusability(ViewGroup.FOCUS_AFTER_DESCENDANTS);
+        closeOverlay();
         screen = Screen.GAME;
         for (Tile t : answers) {
             if (t.isFocusable()) {
@@ -445,6 +645,11 @@ public class QuizActivity extends Activity {
         column.addView(score);
         column.addView(text(getString(R.string.in_a_row), 22, Tile.WHITE, R.font.outfit_regular),
                 margins(wrap(), 0, -6, 0, 24));
+        int tier = Progress.tier(game.score());
+        if (tier > Progress.NONE) {
+            column.addView(text(getString(R.string.tier_badge, tierName(tier), tierTitle(tier)), 24, Progress.COLOR[tier],
+                    R.font.outfit_bold), margins(wrap(), 0, -14, 0, 20));
+        }
         if (game.outOfQuestions()) {
             column.addView(text(getString(R.string.out_of_questions), 22, Tile.GREEN, R.font.outfit_medium));
         } else if (game.round() != null) {
@@ -635,7 +840,8 @@ public class QuizActivity extends Activity {
                 name.setGravity(Gravity.START);
                 name.setSingleLine(true);
                 line.addView(name, margins(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1), 10, 0, 6, 0));
-                line.addView(text(String.valueOf(e.score), 17, color, R.font.outfit_bold));
+                line.addView(text(String.valueOf(e.score), 17, fresh ? Tile.DARK : Progress.COLOR[Progress.tier(e.score)],
+                        R.font.outfit_bold));
                 list.addView(line, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                         ViewGroup.LayoutParams.WRAP_CONTENT));
             }
@@ -657,6 +863,7 @@ public class QuizActivity extends Activity {
             case START: super.onBackPressed(); break;
             case GAME: if (!busy) showQuit(); break;
             case QUIT: closeQuit(); break;
+            case BREAK: break;   // a choice is waiting: Back must not throw the run away
             case NAMES: showOver(); break;
             case KEYBOARD: if (store.names().isEmpty()) showOver(); else showNames(); break;
             default: showStart();

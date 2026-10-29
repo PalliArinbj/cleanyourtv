@@ -6,6 +6,11 @@ remove one, two or three wrong answers. A wrong answer shows the right one and a
 top ten kept on the TV; a game that makes it asks for a name, and names used before are offered again so nobody
 has to type twice.
 
+A run has breaks. After every fifth right answer the player picks the next question's subject from two. After
+every tenth, a player who has used a helper is offered the big question: a harder one, from the difficulty above,
+that wins the largest used helper back if it is answered right. A run earns bronze at 5 right, silver at 10 and
+gold at 20, shown as a badge and in the colour of the screen.
+
 The questions are general knowledge in Icelandic across sixteen subjects, pitched so that an average person of
 that age gets about 5 to 10 right in a row: `app/src/main/assets/questions.txt`, checked by
 `tests/test_quiz_questions.py`.

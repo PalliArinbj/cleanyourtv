@@ -35,5 +35,21 @@
     <string name="keep_playing">Halda áfram</string>
     <string name="quit">Hætta</string>
     <string name="milestone">%1$d í röð!</string>
+    <string name="choose_subject">Veldu efnisflokk</string>
+    <string name="choose_subject_hint">Næsta spurning kemur úr flokknum sem þú velur.</string>
+    <string name="big_title">Stóra spurningin</string>
+    <string name="big_text">Erfiðari spurning, af stiginu fyrir ofan.\nRétt svar gefur þér hjálpina %1$s aftur.\nRangt svar endar leikinn.</string>
+    <string name="big_text_top">Rétt svar gefur þér hjálpina %1$s aftur.\nRangt svar endar leikinn.</string>
+    <string name="big_take">Taka áhættuna</string>
+    <string name="big_skip">Venjuleg spurning</string>
+    <string name="regained">Hjálpin %1$s er komin aftur!</string>
+    <string name="tier_1">Brons</string>
+    <string name="tier_2">Silfur</string>
+    <string name="tier_3">Gull</string>
+    <string name="title_1">Nemi</string>
+    <string name="title_2">Spekingur</string>
+    <string name="title_3">Snillingur</string>
+    <string name="tier_badge">%1$s · %2$s</string>
+    <string name="tier_reached">%1$s! %2$s</string>
     <string name="no_questions">Engar spurningar fundust.</string>
 </resources>
